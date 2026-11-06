@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "compilation_version": "2026-11-07-r1",
+  "base_commit": "9ba27a5a0dd21fd9f6ac26f010866dde2c5cdfe6",
+  "scope": "Documentation only; complete-scope glossary snapshot, not a new author-ratified specification.",
+  "source_record": "docs/GLOSSARY_SOURCES.json",
+  "original_projects_modified": false,
+  "experiments_executed_or_interrupted": false,
+  "license_changed": false,
+  "private_originals_included": false,
+  "new_source_code_or_weights_included": false,
+  "v057_full_original_obtained": false,
+  "checked_utc": "2026-11-06T17:40:09.269677+00:00",
+  "checks": {
+    "bilingual_numbered_entries_each": 100,
+    "matched_term_ids": true,
+    "meeting_questions_each": 9,
+    "relative_links_checked": 364,
+    "reference_links_resolved": 136,
+    "broken_links": [],
+    "json_files_parsed": 38,
+    "original_files_deleted": [],
+    "existing_modified": [
+      "README.en.md",
+      "README.md",
+      "SHA256SUMS",
+      "evidence/INCLUSION.json",
+      "projects/hongchenxian/README.en.md",
+      "projects/hongchenxian/README.md",
+      "projects/the-abyss/README.en.md",
+      "projects/the-abyss/README.md"
+    ],
+    "implementation_and_frozen_experiments_unchanged": true,
+    "private_originals_not_copied": true
+  },
+  "release_scan": {
+    "status": "passed",
+    "scannedFiles": 262,
+    "findings": [],
+    "limits": "Heuristic candidate-only review; does not prove absence of all secrets or rights issues."
+  }
+}

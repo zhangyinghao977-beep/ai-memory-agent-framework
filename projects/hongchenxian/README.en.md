@@ -2,6 +2,8 @@
 
 [简体中文](README.md) · [Repository entry](../../README.en.md)
 
+**Glossary:** [Complete bilingual glossary](../../docs/GLOSSARY.en.md) distinguishes agent work event chains, empiricist AST structures and occurrence records.
+
 This directory studies collaboration among black-box agents. It contains an offline engineering path for native memory-tool calls, a final lifecycle decision, per-step usage accounting, source verification, and conservative recovery after interruption. It does not implement The Abyss's complete empiricist learning architecture.
 
 This is a research candidate, not a deployable product. It contains no real member data, model credentials, or server entry point.

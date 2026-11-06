@@ -38,6 +38,13 @@
       "executable": true,
       "evidence": "New local run completed 2/10 balanced seeds, 28/140 units; stopped at resource gate. No generated datasets or weight-bearing receipts are distributed.",
       "record": "evidence/RESEARCH_UPDATE_20261107.json"
+    },
+    {
+      "path": "docs/GLOSSARY.md",
+      "content": "Complete-scope bilingual terminology compilation, correction precedence, event-chain distinctions, implementation crosswalk, and source-version metadata. English counterpart: docs/GLOSSARY.en.md.",
+      "executable": false,
+      "evidence": "Definitions and operationalizations are separate from experimental validation; source originals with private conversation are omitted.",
+      "record": "evidence/GLOSSARY_UPDATE_20261107.json"
     }
   ],
   "notIncluded": [

@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "compilation_version": "2026-11-07-r1",
+  "base_commit": "9ba27a5a0dd21fd9f6ac26f010866dde2c5cdfe6",
+  "source_verification_utc": "2026-11-06T17:25:09.872432Z",
+  "source_verification_scope": "Bounded source snapshot; not a complete-chat review or global-latest-version guarantee.",
+  "v057_full_original_obtained": false,
+  "sources": [
+    {
+      "id": "R26",
+      "source_title": "名词对照_用户确认_20261107.md",
+      "source_version": "2026-11-07 local project date; captured discussion snapshot",
+      "sha256": "71c5745af5184d53ba36a2369ea4e7aa3284349a04eaca81a596619930df94b8",
+      "modified_utc": "2026-11-06T17:17:46.829111Z",
+      "public_original_included": false,
+      "access": "Local technical source inspected; original contains private discussion and is not distributed. Technical paraphrases only.",
+      "authority": "Technical record explicitly identifying three rounds of user confirmation; contains both author definitions and assistant experiment mappings. Those columns are not equivalent authority."
+    },
+    {
+      "id": "D54",
+      "source_title": "经验主义AI_项目名词解释_20261023_v0.54.md",
+      "source_version": "v0.54",
+      "sha256": "1731f59e361aac0c5d55bd2cdf3fac5d8ddff18fe57db6cac41a28f269e6fb70",
+      "modified_utc": "2026-10-31T02:26:33.790996Z",
+      "public_original_included": false,
+      "access": "Local technical source inspected; original contains private discussion and is not distributed. Technical paraphrases only.",
+      "authority": "Latest formal glossary copy located in this reference directory; contains explicit author confirmations, labelled assistant working interpretations, and historical revisions. Not established as the globally latest glossary."
+    },
+    {
+      "id": "T13",
+      "source_title": "切片草稿.md",
+      "source_version": "2026-11-07 local project date; captured discussion snapshot",
+      "sha256": "d86c30a63850dda52143381abb082e19516cdeef4f7d02a1133cd2b33e3e40ff",
+      "modified_utc": "2026-11-06T17:17:46.883102Z",
+      "public_original_included": false,
+      "access": "Local technical source inspected; original contains private discussion and is not distributed. Technical paraphrases only.",
+      "authority": "Evolving, unfrozen experiment proposal. Old wording and later revisions coexist; no execution evidence is implied by this draft."
+    },
+    {
+      "id": "D57",
+      "access": "Public repository source at the inspected base commit",
+      "base_commit": "9ba27a5a0dd21fd9f6ac26f010866dde2c5cdfe6",
+      "files": [
+        {
+          "path": "projects/the-abyss/DESIGN.md",
+          "sha256": "b8e1049a0e97fa7c8730733a8460858dfc36a2369185400030c9af463134ce28"
+        },
+        {
+          "path": "projects/the-abyss/DESIGN.en.md",
+          "sha256": "52f160440ffefbca5ab39ecc9ebf6e48cc28b82506d99b490ae97d81cea19f40"
+        },
+        {
+          "path": "projects/the-abyss/SOURCES.md",
+          "sha256": "02f9bef593c5fff15c207ef76579ab71208c63f981eb91be3f4a071d7c123889"
+        },
+        {
+          "path": "projects/the-abyss/SOURCES.en.md",
+          "sha256": "492311e283c8830cea7c67caa8bdcc0a5e63e886ff75cc56558aeb8db4e9dc1b"
+        }
+      ]
+    },
+    {
+      "id": "A0",
+      "access": "Public repository source at the inspected base commit",
+      "base_commit": "9ba27a5a0dd21fd9f6ac26f010866dde2c5cdfe6",
+      "files": [
+        {
+          "path": "projects/the-abyss/implementation/project/empirical_core/event_ast.py",
+          "sha256": "8b2911e60a4d71e0c568479448765a3ff1f60662cdbf17ced73e56e285b0a7ee"
+        },
+        {
+          "path": "projects/the-abyss/implementation/docs/CORE_CHANGES.md",
+          "sha256": "ea47ce71e0993bfd4f158df49c71922f14ecbab9a9b15f0006f77b0cb74a9a6f"
+        }
+      ]
+    },
+    {
+      "id": "H0",
+      "access": "Public repository source at the inspected base commit",
+      "base_commit": "9ba27a5a0dd21fd9f6ac26f010866dde2c5cdfe6",
+      "files": [
+        {
+          "path": "projects/hongchenxian/README.md",
+          "sha256": "8204ec0c47af87f26d059a235681c1b8e2c0326467b31856dc1f06c7544a34ae"
+        },
+        {
+          "path": "projects/hongchenxian/docs/ARCHITECTURE.md",
+          "sha256": "3818a74cacd454f48ba4310453fca150e4cf05e2f4e44ad7419431ee797c4f55"
+        },
+        {
+          "path": "projects/hongchenxian/docs/EVIDENCE.md",
+          "sha256": "c37b3e6bde5fa4c2f14fb82f6f843d48ee5a17794b2ea47593ff4c9d8bbc083e"
+        }
+      ]
+    },
+    {
+      "id": "E26",
+      "access": "Public repository source at the inspected base commit",
+      "base_commit": "9ba27a5a0dd21fd9f6ac26f010866dde2c5cdfe6",
+      "files": [
+        {
+          "path": "projects/the-abyss/evidence/2026-11-07/README.md",
+          "sha256": "8d667d0b91f02307b8bb97af27eb8a65cf4b041cd8ddf11b91044884b91cbc37"
+        },
+        {
+          "path": "projects/the-abyss/evidence/2026-11-07/RESULTS.json",
+          "sha256": "9ea60c4849a56bfe31a87e503b4171ab8e2893a5d924c9589105f66fc27eb2e7"
+        },
+        {
+          "path": "projects/the-abyss/evidence/2026-11-07/ongoing_snapshot.json",
+          "sha256": "e5e2bcd6f5b87ad08b3470bb16d0e7f397c77dfa285082ca15d081b17e1f590e"
+        }
+      ]
+    },
+    {
+      "id": "G1",
+      "access": "Public repository source at the inspected base commit",
+      "base_commit": "9ba27a5a0dd21fd9f6ac26f010866dde2c5cdfe6",
+      "files": [
+        {
+          "path": "projects/the-abyss/research/g1-granularity-20261107/PREREG.md",
+          "sha256": "08c2af9dec47beab4111b6e35805ee9b3743530a551fb36c71fa5c9a9de16ff5"
+        },
+        {
+          "path": "projects/the-abyss/research/g1-granularity-20261107/RESULTS.md",
+          "sha256": "145f71bdd495a592b7bba17708d5c601d0bfcc65536c837bc1a9ea7e665dde11"
+        },
+        {
+          "path": "projects/the-abyss/research/g1-granularity-20261107/pilot.py",
+          "sha256": "f39de1ecf490310a4ae968ee1a34d4f390b4ca3f3b25135911777f5476f405e6"
+        }
+      ]
+    },
+    {
+      "id": "V18",
+      "access": "Public numerical/source digest plus read-only original code audit; original code and materials not included in this update.",
+      "public_record": "projects/the-abyss/evidence/2026-11-07/source_snapshot.json",
+      "files": [
+        {
+          "path": "v18_1_purified_nucleation_20261106/recrystallized_lattice_builder.py",
+          "sha256": "a7aef6029f89473a3ef09867744f4e643f45ad914c9b1af2676c652f09ea44db"
+        },
+        {
+          "path": "v18_1_purified_nucleation_20261106/recrystallized_trainer.py",
+          "sha256": "1c95a010412acb5833feb0f57bbe4f7820a7175b0ac3e9adda8b6f0ac4472b96"
+        },
+        {
+          "path": "v18_1_purified_nucleation_20261106/purified_corpus_bridge.py",
+          "sha256": "f7806b6ff935b34b66799d17b08e0886fc3e0de574454f6ced436aee45c6b0e6"
+        }
+      ]
+    },
+    {
+      "id": "U-AST",
+      "source_date": "2026-10-25",
+      "scope": "Explicit generalized-AST naming",
+      "access": "Author history inspected through the authorized message reader; technical paraphrase only.",
+      "original_public": false,
+      "file_hash": null,
+      "private_messages_or_identifiers_included": false
+    },
+    {
+      "id": "U-COMPOSE",
+      "source_date": "2026-10-31",
+      "scope": "Knowledge composition and event chains",
+      "access": "Author history inspected through the authorized message reader; technical paraphrase only.",
+      "original_public": false,
+      "file_hash": null,
+      "private_messages_or_identifiers_included": false
+    },
+    {
+      "id": "U-KA",
+      "source_date": "2026-11-02",
+      "scope": "KA / EA / PA scopes and iterative reference-frame organization",
+      "access": "Author history inspected through the authorized message reader; technical paraphrase only.",
+      "original_public": false,
+      "file_hash": null,
+      "private_messages_or_identifiers_included": false
+    },
+    {
+      "id": "U-HCX",
+      "source_date": "2026-11-05",
+      "scope": "Agent work-event-chain distinction",
+      "access": "Author history inspected through the authorized message reader; technical paraphrase only.",
+      "original_public": false,
+      "file_hash": null,
+      "private_messages_or_identifiers_included": false
+    },
+    {
+      "id": "U-ENTROPY",
+      "source_date": "2026-11-05",
+      "scope": "Entropy-loss motivation concerning changes in the event chain",
+      "access": "Author history inspected through the authorized message reader; technical paraphrase only.",
+      "original_public": false,
+      "file_hash": null,
+      "private_messages_or_identifiers_included": false
+    },
+    {
+      "id": "U-ITER",
+      "source_date": "2026-11-06",
+      "scope": "Loops, iteration and continuing accumulation",
+      "access": "Author history inspected through the authorized message reader; technical paraphrase only.",
+      "original_public": false,
+      "file_hash": null,
+      "private_messages_or_identifiers_included": false
+    }
+  ],
+  "precedence": [
+    "Explicit R26 round-two corrections supersede the initial table and contrary ending.",
+    "R26 round three supersedes the previous learning/restart criterion.",
+    "Original frozen experiments remain unchanged; new terminology changes interpretation, not prior predictions."
+  ],
+  "excluded": [
+    "private quotations and complete chats",
+    "message identifiers and personal account details",
+    "absolute original-machine paths",
+    "source documents containing private discussion",
+    "datasets, model weights and credentials"
+  ],
+  "unresolved": [
+    "Full v0.57 glossary original not acquired in this pass.",
+    "CA / PA equivalence and full acronym expansions are not established.",
+    "Nine transformation algorithms, flattening measurement, and thermodynamic correspondence remain incomplete.",
+    "T13 remains an evolving proposal in the inspected directory."
+  ]
+}
