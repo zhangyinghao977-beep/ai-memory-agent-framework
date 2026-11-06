@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "base_commit": "0fb1c8ef85933c8eb7023d4e233654d21164a0d4",
+  "scope": "Complete isolated re-execution of the original G1 plan; additive evidence only.",
+  "entry": "projects/the-abyss/research/g1-granularity-20261107/followup-20261107-execution3/README.md",
+  "status": "COMPLETED",
+  "complete_seeds": 10,
+  "receipts": 140,
+  "source_and_resource_parameters_changed": false,
+  "original_partial_run_preserved": true,
+  "old_frozen_evidence_modified": false,
+  "other_experiments_modified": false,
+  "training_weights_or_datasets_included": false,
+  "license_changed": false,
+  "independent_verification": "passed: all 140 cells and entire summary recomputed from saved weights with independent arithmetic; no SGD retraining during audit.",
+  "independent_audit": "projects/the-abyss/research/g1-granularity-20261107/followup-20261107-execution3/INDEPENDENT_AUDIT.json",
+  "old_run_unchanged_files": 53,
+  "old_overlap_matching_receipts_except_completed_utc": 28,
+  "checked_utc": "2026-11-06T18:02:59.546151+00:00",
+  "checks": {
+    "json_files_parsed": 45,
+    "relative_links_checked": 392,
+    "reference_links_resolved": 136,
+    "broken_links": [],
+    "existing_modified": [
+      "README.en.md",
+      "README.md",
+      "SHA256SUMS",
+      "evidence/INCLUSION.json",
+      "projects/the-abyss/README.en.md",
+      "projects/the-abyss/README.md",
+      "projects/the-abyss/evidence/2026-11-07/README.en.md",
+      "projects/the-abyss/evidence/2026-11-07/README.md",
+      "projects/the-abyss/research/g1-granularity-20261107/RESULTS.en.md",
+      "projects/the-abyss/research/g1-granularity-20261107/RESULTS.md"
+    ],
+    "existing_deleted": [],
+    "frozen_sources_unchanged": 7,
+    "prior_attempt2_files_unchanged": 53,
+    "all_prior_historical_evidence_json_unchanged": true,
+    "raw_data_or_weights_published": false
+  },
+  "scan": {
+    "status": "passed",
+    "scannedFiles": 271,
+    "findings": [],
+    "limits": "Heuristic candidate-only review; does not prove absence of all secrets or rights issues."
+  }
+}

@@ -1,0 +1,1044 @@
+{
+  "schema_version": 1,
+  "execution": "execution3",
+  "finished_utc": "2026-11-06T17:52:38.228794+00:00",
+  "method": "New isolated execution of the original ten-seed plan using unchanged frozen sources and input files. It reruns all ten seeds, not an automatic resume of the old output directory.",
+  "historical_input_freeze_created_utc": "2026-11-06T16:55:16.517679+00:00",
+  "frozen_input_manifest_sha256": "769ee5d20e79e0e8dc8c5e8d2cc68d430086079516a46a2bd8de6cc982e0a3d8",
+  "historical_note_boundary": "FROZEN training_started=false records the original preparation snapshot, not the final execution state. Original source README/ATTEMPT_NOTE retain their historical wording. This file describes the later execution.",
+  "sources": {
+    "ATTEMPT_NOTE.md": "e1696a85a9fb5db23c2dc6ba0c87d9656c438e1f89fba304484eaa864015d6f7",
+    "PLAN.json": "77b6f5b9fb7bc550cc9022f32c46251d7eaecbddb0729def3876c98d86a9b5b6",
+    "PREREG.md": "08c2af9dec47beab4111b6e35805ee9b3743530a551fb36c71fa5c9a9de16ff5",
+    "README.md": "c8327a98c37af6b4d934d78c2ca85855fd016fb1749dbf2465815d546dd53346",
+    "pilot.py": "f39de1ecf490310a4ae968ee1a34d4f390b4ca3f3b25135911777f5476f405e6",
+    "report.py": "48dedccc9470308187afc1730d9f6758a07b6382c3e3c37f66b4eed85f852be7",
+    "vendor/t1_task.py": "3aafbb86d81723021f1f825857524e8acdc0e33b7550288071a4d85bca65b4a5"
+  },
+  "input_files": {
+    "DATA_AUDIT.json": "65cdbcf737cf41062449ec050591e710841542c9013f32a1a48edd8cfe71a627",
+    "data/seed-2026110700.json": "8cef32260226f3c295b137af6364c36db1244d8e27ad0e1a66e7c2b70f84a508",
+    "data/seed-2026110701.json": "248048070b59f7b56addc7d352375e3c1da4449cc2982d18343fea9df2e689b9",
+    "data/seed-2026110702.json": "34c8c7bd93c972df54c052e7cd9057bbc470d3ced6d1545f5bff3bfb9156c099",
+    "data/seed-2026110703.json": "747c28b59fcf5ecbb703ef3a13114e6cb6a089fd956d40fe0743bbff7eb7cbfe",
+    "data/seed-2026110704.json": "eb7bbb5225757a5670aefa4e425f32da4c1c602d3ff33b39b4b151602c1913c2",
+    "data/seed-2026110705.json": "7f662ccc9e2242b27fcf19c68c7d4b5e598f3dfea8acc5b7ae6634c31c4916da",
+    "data/seed-2026110706.json": "f78efed113d05cfa65819f5b2726e35eefd31e4647e0d609a92c03451697229b",
+    "data/seed-2026110707.json": "3d2d2449984dbe267952700cc35206268b7bce49c81a510bf83481477ab5de69",
+    "data/seed-2026110708.json": "a2344fe1c272e457595dd2d2754735c81766b3cc2b26d07c9be8586603da31fc",
+    "data/seed-2026110709.json": "95e7e1f8b5257a44829a76a9f3cee8fc75ab3e48e6b6d479fb0f5a811a8af6a6"
+  },
+  "new_run_status": {
+    "complete_seeds": [
+      2026110700,
+      2026110701,
+      2026110702,
+      2026110703,
+      2026110704,
+      2026110705,
+      2026110706,
+      2026110707,
+      2026110708,
+      2026110709
+    ],
+    "finished_utc": "2026-11-06T17:52:38.228794+00:00",
+    "receipts": 140,
+    "status": "COMPLETED"
+  },
+  "outputs": {
+    "SUMMARY.json": "d0e60ffaee4e20f40fc849f299edf4b4cf6cc592340b33d146b29f25b7591d35",
+    "RUN_STATUS.json": "6c8b2737e1a4865be29177a830cfd1164bd214ea13eb2b6741b9354ee46bc4dc",
+    "RESOURCES_run.json": "ec1605df99b1217dfe79be2b0d375d4694036357ffdcbaa5a3d470b3e38b9aa4",
+    "VERIFICATION.json": "a6d639de9fe1e3f211427be69654e321bd30fc904083365afb1f52ffd8effdd8"
+  },
+  "original_partial_run": "Original attempt2 retained with 2/10 balanced seeds and 28/140 receipts. No old receipt is copied as a new result.",
+  "overlap_policy": "The repeated two seeds are counted once in the new ten-seed summary; the two executions must not be pooled as twelve independent seeds.",
+  "receipt_hashes_only": [
+    {
+      "file": "s2026110700-n512-atomic.json",
+      "seed": 2026110700,
+      "train_pairs": 512,
+      "arm": "atomic",
+      "sha256": "37e7c1510e3a8b05427aeea27e206ef5516aba45d629b0e1194d470b9912f9d6"
+    },
+    {
+      "file": "s2026110700-n512-family2.json",
+      "seed": 2026110700,
+      "train_pairs": 512,
+      "arm": "family2",
+      "sha256": "40199db2022c93968ecbc56d9217ac5f76719ba51473ea6f57077c7143df782f"
+    },
+    {
+      "file": "s2026110700-n512-family4.json",
+      "seed": 2026110700,
+      "train_pairs": 512,
+      "arm": "family4",
+      "sha256": "4f94e08bc3d9d84d8421bfd499618e37c1ab345b88a4e7be3615a538c5121b3d"
+    },
+    {
+      "file": "s2026110700-n512-family8.json",
+      "seed": 2026110700,
+      "train_pairs": 512,
+      "arm": "family8",
+      "sha256": "ba28f44bc0104abe335d361eb2aff378e35883e5e7cbef11ef48071c1223bd8f"
+    },
+    {
+      "file": "s2026110700-n512-random2.json",
+      "seed": 2026110700,
+      "train_pairs": 512,
+      "arm": "random2",
+      "sha256": "7319d73fa457c578058a9dfe781d16b764a1ecd785e00ad6d207bf16b6442724"
+    },
+    {
+      "file": "s2026110700-n512-random4.json",
+      "seed": 2026110700,
+      "train_pairs": 512,
+      "arm": "random4",
+      "sha256": "f11772d54fa70daeb1848b5abeb18e2227e897f5a3db9a0c1a936ea358f7f64e"
+    },
+    {
+      "file": "s2026110700-n512-random8.json",
+      "seed": 2026110700,
+      "train_pairs": 512,
+      "arm": "random8",
+      "sha256": "1e609858f962f1ffa8d718bd951ba3deb17e677b17c86264b391e3c6045a4913"
+    },
+    {
+      "file": "s2026110700-n64-atomic.json",
+      "seed": 2026110700,
+      "train_pairs": 64,
+      "arm": "atomic",
+      "sha256": "a0cea5c52a78eb070600702f3c775844f3c78be7eeb4fbe2d41c8cc3f3b66407"
+    },
+    {
+      "file": "s2026110700-n64-family2.json",
+      "seed": 2026110700,
+      "train_pairs": 64,
+      "arm": "family2",
+      "sha256": "03b1e58da90f6513ac4beb5aa2b0ba5023bccb11e7809cf6e68fce0cfdd9eda7"
+    },
+    {
+      "file": "s2026110700-n64-family4.json",
+      "seed": 2026110700,
+      "train_pairs": 64,
+      "arm": "family4",
+      "sha256": "44b22f49446dacea5267c32aac2cc16d06e5f910f8e7699839f022b405d3fe3c"
+    },
+    {
+      "file": "s2026110700-n64-family8.json",
+      "seed": 2026110700,
+      "train_pairs": 64,
+      "arm": "family8",
+      "sha256": "a9309df1756546b1b2203ca2a9b9c9d1dae81a4baf576c4dc1caa1f3b8d8f66e"
+    },
+    {
+      "file": "s2026110700-n64-random2.json",
+      "seed": 2026110700,
+      "train_pairs": 64,
+      "arm": "random2",
+      "sha256": "b6aa8ff3f38c510f19103a285dfae8044618c54a682c1f529faa3e8ba7fe540c"
+    },
+    {
+      "file": "s2026110700-n64-random4.json",
+      "seed": 2026110700,
+      "train_pairs": 64,
+      "arm": "random4",
+      "sha256": "8c7ba8d4631cfe1b8b1fd0a9627b8d10a1e1f4f3bfd92e826a9eb152b2ca9d4d"
+    },
+    {
+      "file": "s2026110700-n64-random8.json",
+      "seed": 2026110700,
+      "train_pairs": 64,
+      "arm": "random8",
+      "sha256": "040bd82127875828e778d5a758e5b1427639cce7e6a4546c6dfcbc210287062d"
+    },
+    {
+      "file": "s2026110701-n512-atomic.json",
+      "seed": 2026110701,
+      "train_pairs": 512,
+      "arm": "atomic",
+      "sha256": "31353044052c8ef09895c80312bcdcf1dccd53fa8c52a690142ddce2809f6967"
+    },
+    {
+      "file": "s2026110701-n512-family2.json",
+      "seed": 2026110701,
+      "train_pairs": 512,
+      "arm": "family2",
+      "sha256": "b2533b36e457430da5653c523dea01491633e79e9d43f576029561003ca2c57f"
+    },
+    {
+      "file": "s2026110701-n512-family4.json",
+      "seed": 2026110701,
+      "train_pairs": 512,
+      "arm": "family4",
+      "sha256": "6ad566da0943274cac479fb6f2782a74c601ad23deac497f98abb805ab7f4fd3"
+    },
+    {
+      "file": "s2026110701-n512-family8.json",
+      "seed": 2026110701,
+      "train_pairs": 512,
+      "arm": "family8",
+      "sha256": "87714de041d9ae56212af7c032a6aa000b7fcaed232bffd00d13b8ed44f435af"
+    },
+    {
+      "file": "s2026110701-n512-random2.json",
+      "seed": 2026110701,
+      "train_pairs": 512,
+      "arm": "random2",
+      "sha256": "35e478b254f7a4c5d43ce7e6651f40d52edc75082b45b0ec6603b0047e68e1cc"
+    },
+    {
+      "file": "s2026110701-n512-random4.json",
+      "seed": 2026110701,
+      "train_pairs": 512,
+      "arm": "random4",
+      "sha256": "6c774666635f665c93bff0f1ef86d93186bb90ee8f80c44403a82831c763a791"
+    },
+    {
+      "file": "s2026110701-n512-random8.json",
+      "seed": 2026110701,
+      "train_pairs": 512,
+      "arm": "random8",
+      "sha256": "7378ae0194a1ce78aec9f9ec89cd976f1d4b3bdbee77ca629299327b109b73cf"
+    },
+    {
+      "file": "s2026110701-n64-atomic.json",
+      "seed": 2026110701,
+      "train_pairs": 64,
+      "arm": "atomic",
+      "sha256": "89969b69b36ae6fbaa1ab3cdebbd519c57024c0bdaf42866a4a69da454146d1b"
+    },
+    {
+      "file": "s2026110701-n64-family2.json",
+      "seed": 2026110701,
+      "train_pairs": 64,
+      "arm": "family2",
+      "sha256": "edaa8aac377a59dbfcb97697e4f43634a28e9b38b614aa7cd000ddeec60b488b"
+    },
+    {
+      "file": "s2026110701-n64-family4.json",
+      "seed": 2026110701,
+      "train_pairs": 64,
+      "arm": "family4",
+      "sha256": "a52de110ac5300a81789cec9357729f54443f488c9e145c6afa2b5b85abeb174"
+    },
+    {
+      "file": "s2026110701-n64-family8.json",
+      "seed": 2026110701,
+      "train_pairs": 64,
+      "arm": "family8",
+      "sha256": "77bf249078c47b69eb694a2987c13d82c446561f2112c917b616711f14cc9e06"
+    },
+    {
+      "file": "s2026110701-n64-random2.json",
+      "seed": 2026110701,
+      "train_pairs": 64,
+      "arm": "random2",
+      "sha256": "189760887b4e73421cf5eeb51fd97c14bf392a25025a7b2f1688f3b9555be01b"
+    },
+    {
+      "file": "s2026110701-n64-random4.json",
+      "seed": 2026110701,
+      "train_pairs": 64,
+      "arm": "random4",
+      "sha256": "fa17e23f3cb5d0b47b7dc37138de8f647d020af25ebf1a850f4e3490c1279b63"
+    },
+    {
+      "file": "s2026110701-n64-random8.json",
+      "seed": 2026110701,
+      "train_pairs": 64,
+      "arm": "random8",
+      "sha256": "5b228c5dcda0db1fb73a793eee83f5a9e2ccca8e271ca56c85b9feab8e8e2482"
+    },
+    {
+      "file": "s2026110702-n512-atomic.json",
+      "seed": 2026110702,
+      "train_pairs": 512,
+      "arm": "atomic",
+      "sha256": "8f065f6e2640bfae4586b745eae0300be2db992abeb8aa0f173fc2184084057e"
+    },
+    {
+      "file": "s2026110702-n512-family2.json",
+      "seed": 2026110702,
+      "train_pairs": 512,
+      "arm": "family2",
+      "sha256": "349e01b33890a5007a3169624e40855386b0ef2e449497dad4c8fbaead6cc083"
+    },
+    {
+      "file": "s2026110702-n512-family4.json",
+      "seed": 2026110702,
+      "train_pairs": 512,
+      "arm": "family4",
+      "sha256": "b1313338f42e5898730012a5e5fbcbc66957363e52263674d54717e478da18ad"
+    },
+    {
+      "file": "s2026110702-n512-family8.json",
+      "seed": 2026110702,
+      "train_pairs": 512,
+      "arm": "family8",
+      "sha256": "e35930e280422ed32f6d6a7d0d9ea2e0bb62c7ea0d5d373ba8fee502c4adfd7e"
+    },
+    {
+      "file": "s2026110702-n512-random2.json",
+      "seed": 2026110702,
+      "train_pairs": 512,
+      "arm": "random2",
+      "sha256": "8d49ccd5f5198c8ba37dce6de0ecd0002e8893bd30f424cbb7585ae25468565e"
+    },
+    {
+      "file": "s2026110702-n512-random4.json",
+      "seed": 2026110702,
+      "train_pairs": 512,
+      "arm": "random4",
+      "sha256": "24edd469c2c7eccb1d91dc9051c83d32023018b3e322b5d21edaaff8bc981f86"
+    },
+    {
+      "file": "s2026110702-n512-random8.json",
+      "seed": 2026110702,
+      "train_pairs": 512,
+      "arm": "random8",
+      "sha256": "1444d4a05907e614781f170a3fe4150bcac06b33157907903d65690b90fa583f"
+    },
+    {
+      "file": "s2026110702-n64-atomic.json",
+      "seed": 2026110702,
+      "train_pairs": 64,
+      "arm": "atomic",
+      "sha256": "fc972e4d53f9a78e4ef98f2314fd74307b85a0a69f4aa8725125bc974740c555"
+    },
+    {
+      "file": "s2026110702-n64-family2.json",
+      "seed": 2026110702,
+      "train_pairs": 64,
+      "arm": "family2",
+      "sha256": "d6434d6daea935736e2c81ed3a7631fdbc60b204e8442e0ba5e59df76c7c0207"
+    },
+    {
+      "file": "s2026110702-n64-family4.json",
+      "seed": 2026110702,
+      "train_pairs": 64,
+      "arm": "family4",
+      "sha256": "f1ccbaf92c8b69b2c9db37d985d87971e173ad8e5eba9530e8aeb0787c788f44"
+    },
+    {
+      "file": "s2026110702-n64-family8.json",
+      "seed": 2026110702,
+      "train_pairs": 64,
+      "arm": "family8",
+      "sha256": "e713dbafb0ca7c2fafbe11041d42794c5107c2fc00b32388f87f8b447e1f5772"
+    },
+    {
+      "file": "s2026110702-n64-random2.json",
+      "seed": 2026110702,
+      "train_pairs": 64,
+      "arm": "random2",
+      "sha256": "48fa427e6739ec588160665598ee97652857d14ae14c5bc83fc1db5ba2b1ca04"
+    },
+    {
+      "file": "s2026110702-n64-random4.json",
+      "seed": 2026110702,
+      "train_pairs": 64,
+      "arm": "random4",
+      "sha256": "127dac4499026d0540de31f91f2118b53dc0fa9e3772ff6d170ed6b336425d51"
+    },
+    {
+      "file": "s2026110702-n64-random8.json",
+      "seed": 2026110702,
+      "train_pairs": 64,
+      "arm": "random8",
+      "sha256": "e2fa124107042748ed610221fd9a175a10da6c3acd9afa8961a3be5d9d3dd9ad"
+    },
+    {
+      "file": "s2026110703-n512-atomic.json",
+      "seed": 2026110703,
+      "train_pairs": 512,
+      "arm": "atomic",
+      "sha256": "3c570bfa359adfff616bc82465a3976da39aadf8a02cc02f9a67d8f67c75d1c5"
+    },
+    {
+      "file": "s2026110703-n512-family2.json",
+      "seed": 2026110703,
+      "train_pairs": 512,
+      "arm": "family2",
+      "sha256": "2ed49e44fc6af32547370b180a47f4c41b348f4ea7e026f39b0dfac5a44a509b"
+    },
+    {
+      "file": "s2026110703-n512-family4.json",
+      "seed": 2026110703,
+      "train_pairs": 512,
+      "arm": "family4",
+      "sha256": "36b1619ca9af591f3876009e21213ecc0eef97ab7466bdc1bf96a17966750168"
+    },
+    {
+      "file": "s2026110703-n512-family8.json",
+      "seed": 2026110703,
+      "train_pairs": 512,
+      "arm": "family8",
+      "sha256": "dbbb64ef1548336b74cb112ff50dcc47879874f5cdeb70bd62dd81d43bcf51dc"
+    },
+    {
+      "file": "s2026110703-n512-random2.json",
+      "seed": 2026110703,
+      "train_pairs": 512,
+      "arm": "random2",
+      "sha256": "fc4068eff51c9d44318e48253e81b7fa3a902f6f85b8bfba103a6fcc2a638d74"
+    },
+    {
+      "file": "s2026110703-n512-random4.json",
+      "seed": 2026110703,
+      "train_pairs": 512,
+      "arm": "random4",
+      "sha256": "528b4a4922d0d42d45dc75086f4c3ba20ba692ba5ed0e9f368c60f666e62b636"
+    },
+    {
+      "file": "s2026110703-n512-random8.json",
+      "seed": 2026110703,
+      "train_pairs": 512,
+      "arm": "random8",
+      "sha256": "e2fef10cdf560f7b5ffea3d9043b61e789893ffa9aa3ec82cbd67a1474001c09"
+    },
+    {
+      "file": "s2026110703-n64-atomic.json",
+      "seed": 2026110703,
+      "train_pairs": 64,
+      "arm": "atomic",
+      "sha256": "e07fe0b0c752cdc4ccefd8ebc3af00ccadeba52bdccc497b03265e6277727489"
+    },
+    {
+      "file": "s2026110703-n64-family2.json",
+      "seed": 2026110703,
+      "train_pairs": 64,
+      "arm": "family2",
+      "sha256": "0e908b07fe1714343cee95eef5e1acbca51dc01c0de59e1976bc84bcf7434afb"
+    },
+    {
+      "file": "s2026110703-n64-family4.json",
+      "seed": 2026110703,
+      "train_pairs": 64,
+      "arm": "family4",
+      "sha256": "f06737b4ce48e16ade7ce830430cda81b4af76f83f8ab0cc4b32c342ca29f605"
+    },
+    {
+      "file": "s2026110703-n64-family8.json",
+      "seed": 2026110703,
+      "train_pairs": 64,
+      "arm": "family8",
+      "sha256": "c9152399b2a3e1fcc5337d8d44222472db80b5e544c5ac8b941cd528e6741bb7"
+    },
+    {
+      "file": "s2026110703-n64-random2.json",
+      "seed": 2026110703,
+      "train_pairs": 64,
+      "arm": "random2",
+      "sha256": "327f7f3813f34b0675f2738f082f0e4e2f4e3a73efd739dde3a5ce9243b5116f"
+    },
+    {
+      "file": "s2026110703-n64-random4.json",
+      "seed": 2026110703,
+      "train_pairs": 64,
+      "arm": "random4",
+      "sha256": "1643d535b609defa552f9de26acb417b617a59884477ca382b7eccf470f2743c"
+    },
+    {
+      "file": "s2026110703-n64-random8.json",
+      "seed": 2026110703,
+      "train_pairs": 64,
+      "arm": "random8",
+      "sha256": "11dd018525d0e9d9c29aaecc2413e4bf9a162835b91a560b20928522f20f3c80"
+    },
+    {
+      "file": "s2026110704-n512-atomic.json",
+      "seed": 2026110704,
+      "train_pairs": 512,
+      "arm": "atomic",
+      "sha256": "9890f94e52af25504cb3182453a3831df8c401db97ddab34c0e362b4be82827b"
+    },
+    {
+      "file": "s2026110704-n512-family2.json",
+      "seed": 2026110704,
+      "train_pairs": 512,
+      "arm": "family2",
+      "sha256": "9fcf6168adfc3b9e139506b79af0aa3943639911ae19b1972b30967ef19171be"
+    },
+    {
+      "file": "s2026110704-n512-family4.json",
+      "seed": 2026110704,
+      "train_pairs": 512,
+      "arm": "family4",
+      "sha256": "48a7976ae611c309fcf4e57e40e94f57f77f7011bf21ed7b33425534ade4f082"
+    },
+    {
+      "file": "s2026110704-n512-family8.json",
+      "seed": 2026110704,
+      "train_pairs": 512,
+      "arm": "family8",
+      "sha256": "5a2d3c01943cfc2da6d546ed91eefd64413f4aabf805206cd7285b5bd485ac95"
+    },
+    {
+      "file": "s2026110704-n512-random2.json",
+      "seed": 2026110704,
+      "train_pairs": 512,
+      "arm": "random2",
+      "sha256": "64768c5938843334976391381ded71cad5707b3203c229e0331ad10be6ac26fc"
+    },
+    {
+      "file": "s2026110704-n512-random4.json",
+      "seed": 2026110704,
+      "train_pairs": 512,
+      "arm": "random4",
+      "sha256": "29d9f251acb7c6fea6318caf3b285fe2cd7392f4d1486cb26255083b2b2caa2f"
+    },
+    {
+      "file": "s2026110704-n512-random8.json",
+      "seed": 2026110704,
+      "train_pairs": 512,
+      "arm": "random8",
+      "sha256": "6bc0a92884fedc9d933c212b81f9ec118f0458d245ad1d4716688b813cf44331"
+    },
+    {
+      "file": "s2026110704-n64-atomic.json",
+      "seed": 2026110704,
+      "train_pairs": 64,
+      "arm": "atomic",
+      "sha256": "5a07b815414dabb9300b1c467187bbbfc0b9c7e43c8714dbee8d7278a87b1c3d"
+    },
+    {
+      "file": "s2026110704-n64-family2.json",
+      "seed": 2026110704,
+      "train_pairs": 64,
+      "arm": "family2",
+      "sha256": "b4b026de30638c8b64416e3e077fdb91991125d7663638278a6da13759ab0005"
+    },
+    {
+      "file": "s2026110704-n64-family4.json",
+      "seed": 2026110704,
+      "train_pairs": 64,
+      "arm": "family4",
+      "sha256": "de161e38fc3b3f3b2d79fd80cef4438169194cb0ebd4b980f6a5979e262f385e"
+    },
+    {
+      "file": "s2026110704-n64-family8.json",
+      "seed": 2026110704,
+      "train_pairs": 64,
+      "arm": "family8",
+      "sha256": "f05bf3990f4886b3ee5e4d75237c4bd3b2d437d22f04cf07031b388427455fe1"
+    },
+    {
+      "file": "s2026110704-n64-random2.json",
+      "seed": 2026110704,
+      "train_pairs": 64,
+      "arm": "random2",
+      "sha256": "e6ffa2291500e11f67bf3b360779f9bd611cd32a1c794b5960c6f385640cd609"
+    },
+    {
+      "file": "s2026110704-n64-random4.json",
+      "seed": 2026110704,
+      "train_pairs": 64,
+      "arm": "random4",
+      "sha256": "e9411a18e8587f5ab412bc5a53e48ebeca1fcddbc23a1cbc7fbf537993cfadd6"
+    },
+    {
+      "file": "s2026110704-n64-random8.json",
+      "seed": 2026110704,
+      "train_pairs": 64,
+      "arm": "random8",
+      "sha256": "4854efbe9c9ff72ee4aee502e3fb4837dcfc9871af9f619a708a9b01e6df545a"
+    },
+    {
+      "file": "s2026110705-n512-atomic.json",
+      "seed": 2026110705,
+      "train_pairs": 512,
+      "arm": "atomic",
+      "sha256": "386267b6bbbf9cea0e7204b1e005c096644c76537355d00b51f8ea3fb101e050"
+    },
+    {
+      "file": "s2026110705-n512-family2.json",
+      "seed": 2026110705,
+      "train_pairs": 512,
+      "arm": "family2",
+      "sha256": "1d39d396532a67615d027e258f325407138a0682725288d640a1576bffa218af"
+    },
+    {
+      "file": "s2026110705-n512-family4.json",
+      "seed": 2026110705,
+      "train_pairs": 512,
+      "arm": "family4",
+      "sha256": "778c2f763e04c997a7da6edcb57e3d30641bda54486065897ab1baef0b503d59"
+    },
+    {
+      "file": "s2026110705-n512-family8.json",
+      "seed": 2026110705,
+      "train_pairs": 512,
+      "arm": "family8",
+      "sha256": "a9e5dd2b1d8e18e276805cce2ff2d679ef72aebd3cfd323fb4ce7ba79cbc1b04"
+    },
+    {
+      "file": "s2026110705-n512-random2.json",
+      "seed": 2026110705,
+      "train_pairs": 512,
+      "arm": "random2",
+      "sha256": "e4885d988049698f7830b0d9a64105e24a5f365b5fecedd7fe754fb8954543d8"
+    },
+    {
+      "file": "s2026110705-n512-random4.json",
+      "seed": 2026110705,
+      "train_pairs": 512,
+      "arm": "random4",
+      "sha256": "a68474e1027e775738362a61181c85295fe585c6748172f4603174efa26eb169"
+    },
+    {
+      "file": "s2026110705-n512-random8.json",
+      "seed": 2026110705,
+      "train_pairs": 512,
+      "arm": "random8",
+      "sha256": "b0ab2e3967cd2ec879039639979b3c0d4f31eb65784a64be468231c9d13441e5"
+    },
+    {
+      "file": "s2026110705-n64-atomic.json",
+      "seed": 2026110705,
+      "train_pairs": 64,
+      "arm": "atomic",
+      "sha256": "856954b3b16fb3149423b91131504c31a1483bf6d78f99b26283b00d30c1febe"
+    },
+    {
+      "file": "s2026110705-n64-family2.json",
+      "seed": 2026110705,
+      "train_pairs": 64,
+      "arm": "family2",
+      "sha256": "410f0838bf4355d387820b2ded17d2d9360244b8a2e1a7b21e37f43a0d7da729"
+    },
+    {
+      "file": "s2026110705-n64-family4.json",
+      "seed": 2026110705,
+      "train_pairs": 64,
+      "arm": "family4",
+      "sha256": "2a4b2983fd723f4a7865d3b6a490d432975b75830f40134e72903c537c624fe9"
+    },
+    {
+      "file": "s2026110705-n64-family8.json",
+      "seed": 2026110705,
+      "train_pairs": 64,
+      "arm": "family8",
+      "sha256": "187b0e840da0d5f7daac32875dad070e62ecfb804e44cb67e8e360f712b0703b"
+    },
+    {
+      "file": "s2026110705-n64-random2.json",
+      "seed": 2026110705,
+      "train_pairs": 64,
+      "arm": "random2",
+      "sha256": "1d319a47cd557339f5b2115e5e234277fc44fc2d6e510c58b6082e01e5310308"
+    },
+    {
+      "file": "s2026110705-n64-random4.json",
+      "seed": 2026110705,
+      "train_pairs": 64,
+      "arm": "random4",
+      "sha256": "b0bab432d04c608eb2f9f81c082fd0135e002bd46d299727742c2b7c6ff584f9"
+    },
+    {
+      "file": "s2026110705-n64-random8.json",
+      "seed": 2026110705,
+      "train_pairs": 64,
+      "arm": "random8",
+      "sha256": "f1dfb325459c4370261b8cc51dd1591d2517e77d9de38c62ebcfb79dbbe30475"
+    },
+    {
+      "file": "s2026110706-n512-atomic.json",
+      "seed": 2026110706,
+      "train_pairs": 512,
+      "arm": "atomic",
+      "sha256": "e1faf0256f4c13a869c3c48c5a960548fa1d4213b59d16cf173d0214a135eabb"
+    },
+    {
+      "file": "s2026110706-n512-family2.json",
+      "seed": 2026110706,
+      "train_pairs": 512,
+      "arm": "family2",
+      "sha256": "9fd62fac443afb47f53e29f60e495a1511f4ebd6f7d371bc24af197343cea6b3"
+    },
+    {
+      "file": "s2026110706-n512-family4.json",
+      "seed": 2026110706,
+      "train_pairs": 512,
+      "arm": "family4",
+      "sha256": "0c68c29d9de023ee927c776d0e12d889a8069409725f4784bd4dd0c19198abcd"
+    },
+    {
+      "file": "s2026110706-n512-family8.json",
+      "seed": 2026110706,
+      "train_pairs": 512,
+      "arm": "family8",
+      "sha256": "90a95abe102e05e2e03ac7f69869eb96f663aa7182a5b17697e7441b9f8f47c6"
+    },
+    {
+      "file": "s2026110706-n512-random2.json",
+      "seed": 2026110706,
+      "train_pairs": 512,
+      "arm": "random2",
+      "sha256": "7b7a1c8e52f30b2b0a47026444e838f7f59ec8f1854a1c405becbc640efdc41d"
+    },
+    {
+      "file": "s2026110706-n512-random4.json",
+      "seed": 2026110706,
+      "train_pairs": 512,
+      "arm": "random4",
+      "sha256": "3113d7a409b6d16a64acb09ce2ef6af32b83fdb19d0cf0e9f9f5ebb09237796f"
+    },
+    {
+      "file": "s2026110706-n512-random8.json",
+      "seed": 2026110706,
+      "train_pairs": 512,
+      "arm": "random8",
+      "sha256": "5690e37357c580aa9ce17e7f6b027a0a6abe8f6bdf0dab0cc8f6890a850f0437"
+    },
+    {
+      "file": "s2026110706-n64-atomic.json",
+      "seed": 2026110706,
+      "train_pairs": 64,
+      "arm": "atomic",
+      "sha256": "5dcf020c16eb4fbe6ad6c67f1870c7a3a99e66ac775d102a885a4e79a768c193"
+    },
+    {
+      "file": "s2026110706-n64-family2.json",
+      "seed": 2026110706,
+      "train_pairs": 64,
+      "arm": "family2",
+      "sha256": "e7bb24a6d9b591cfe57de7b30d383b92cb48d8d2ab7678915afb254d44e4cc2b"
+    },
+    {
+      "file": "s2026110706-n64-family4.json",
+      "seed": 2026110706,
+      "train_pairs": 64,
+      "arm": "family4",
+      "sha256": "fd37740a60e65c4a42b94ccf9cb2092c03dc7dcb9a79b48c9ed76cfe65691b51"
+    },
+    {
+      "file": "s2026110706-n64-family8.json",
+      "seed": 2026110706,
+      "train_pairs": 64,
+      "arm": "family8",
+      "sha256": "435961b69ba855f32149bdcd3e09277777a4564810f4e8242ad7e34d886c31ce"
+    },
+    {
+      "file": "s2026110706-n64-random2.json",
+      "seed": 2026110706,
+      "train_pairs": 64,
+      "arm": "random2",
+      "sha256": "de5caad197bb0de11c6512ffbc7da6e6a03245b3bc3bfdef019c01c3f39c6aec"
+    },
+    {
+      "file": "s2026110706-n64-random4.json",
+      "seed": 2026110706,
+      "train_pairs": 64,
+      "arm": "random4",
+      "sha256": "e03377f1965e81bc7ece0f7a9ea6eade9879d1cfb284d7930dc552a434eb0eef"
+    },
+    {
+      "file": "s2026110706-n64-random8.json",
+      "seed": 2026110706,
+      "train_pairs": 64,
+      "arm": "random8",
+      "sha256": "503e14720d34b2b4047764d3e4b198c849cd307e3ea35204b87c61e8c5d296e8"
+    },
+    {
+      "file": "s2026110707-n512-atomic.json",
+      "seed": 2026110707,
+      "train_pairs": 512,
+      "arm": "atomic",
+      "sha256": "cfdcb107aa4edb23ee4524795003a05ea8a148884eb926232b4774ed9420b6fa"
+    },
+    {
+      "file": "s2026110707-n512-family2.json",
+      "seed": 2026110707,
+      "train_pairs": 512,
+      "arm": "family2",
+      "sha256": "0a8ebcd8cf863a2dfce2fa37af89a7342f88365b640dda38658e439d447da85e"
+    },
+    {
+      "file": "s2026110707-n512-family4.json",
+      "seed": 2026110707,
+      "train_pairs": 512,
+      "arm": "family4",
+      "sha256": "c48e848bc25386313261376b0f4cb24036929200a329af6d1e46378f0e59391c"
+    },
+    {
+      "file": "s2026110707-n512-family8.json",
+      "seed": 2026110707,
+      "train_pairs": 512,
+      "arm": "family8",
+      "sha256": "9ac224850e8ea6ee15747d12e9111f874102cd973d5003e1239829b3a6e8a6e7"
+    },
+    {
+      "file": "s2026110707-n512-random2.json",
+      "seed": 2026110707,
+      "train_pairs": 512,
+      "arm": "random2",
+      "sha256": "7425a5eb15c1ad8774ecf37600c139d4dc453d7a919bf6c649fab282744cd8fc"
+    },
+    {
+      "file": "s2026110707-n512-random4.json",
+      "seed": 2026110707,
+      "train_pairs": 512,
+      "arm": "random4",
+      "sha256": "e9a75a2963e4728541be2468c37fffd49d27fbf76ee36e90668c12c5638a1144"
+    },
+    {
+      "file": "s2026110707-n512-random8.json",
+      "seed": 2026110707,
+      "train_pairs": 512,
+      "arm": "random8",
+      "sha256": "53dc58c9b3ee29ea8e6a9fd6e3f7d45db71ed809da3728ba394dac9fff2e6143"
+    },
+    {
+      "file": "s2026110707-n64-atomic.json",
+      "seed": 2026110707,
+      "train_pairs": 64,
+      "arm": "atomic",
+      "sha256": "2b2b55036275bacb8289de2c87a2ecf2eb73e38b7cb33762f474348c2eff3b22"
+    },
+    {
+      "file": "s2026110707-n64-family2.json",
+      "seed": 2026110707,
+      "train_pairs": 64,
+      "arm": "family2",
+      "sha256": "15699712beca98eaba48ba5270122e3fe59f5dc424b2fd1b7f4ebf9d01acaf35"
+    },
+    {
+      "file": "s2026110707-n64-family4.json",
+      "seed": 2026110707,
+      "train_pairs": 64,
+      "arm": "family4",
+      "sha256": "2263c30c3de1fb2cce4e0c0818d231a1801e2ab11c0a3c6d625f1d360e7ee226"
+    },
+    {
+      "file": "s2026110707-n64-family8.json",
+      "seed": 2026110707,
+      "train_pairs": 64,
+      "arm": "family8",
+      "sha256": "888e56ac8b9a59bbb0976f0f57a31dbdab3ca9fc3f6b348f8f9e4fb8bf8d5b14"
+    },
+    {
+      "file": "s2026110707-n64-random2.json",
+      "seed": 2026110707,
+      "train_pairs": 64,
+      "arm": "random2",
+      "sha256": "65820a2ac77f5799190081d8600b7b7aa3982b0633a792323d0a9b249f39d9d0"
+    },
+    {
+      "file": "s2026110707-n64-random4.json",
+      "seed": 2026110707,
+      "train_pairs": 64,
+      "arm": "random4",
+      "sha256": "bd5a26d6720995bca910a40fc0c6d65c24a8369e0081b089452c74cd53beecf3"
+    },
+    {
+      "file": "s2026110707-n64-random8.json",
+      "seed": 2026110707,
+      "train_pairs": 64,
+      "arm": "random8",
+      "sha256": "f0c18e5b3c80548f13712348499c2bb3552724c18016a405f144ca1318c574ce"
+    },
+    {
+      "file": "s2026110708-n512-atomic.json",
+      "seed": 2026110708,
+      "train_pairs": 512,
+      "arm": "atomic",
+      "sha256": "f2a023828f1d8dcc18d1bd1f22fa338772767775ce48ce457efb7caecd86c24d"
+    },
+    {
+      "file": "s2026110708-n512-family2.json",
+      "seed": 2026110708,
+      "train_pairs": 512,
+      "arm": "family2",
+      "sha256": "9153a757e1ef8a280081081c1fdd3be51353151ac923f5b32fcc3f79b9414ba1"
+    },
+    {
+      "file": "s2026110708-n512-family4.json",
+      "seed": 2026110708,
+      "train_pairs": 512,
+      "arm": "family4",
+      "sha256": "1073c10174fcb91c9a8ae4c1a59e2eeb5b0d7091f92bf01b8e9ef7b30673aac3"
+    },
+    {
+      "file": "s2026110708-n512-family8.json",
+      "seed": 2026110708,
+      "train_pairs": 512,
+      "arm": "family8",
+      "sha256": "95dbc5b6623b5f19d1417cbe89f457249122ab8bc7db26344f13d1386b42a376"
+    },
+    {
+      "file": "s2026110708-n512-random2.json",
+      "seed": 2026110708,
+      "train_pairs": 512,
+      "arm": "random2",
+      "sha256": "20001b447d0b736dcd0a3a016c2c68c7ac31341eb5da79ba40c0feca2110c4bc"
+    },
+    {
+      "file": "s2026110708-n512-random4.json",
+      "seed": 2026110708,
+      "train_pairs": 512,
+      "arm": "random4",
+      "sha256": "b2f56397c4d7f45cda83f9ca4b7455d8a49aa9362a63aa5bdff5ef5385e75c4a"
+    },
+    {
+      "file": "s2026110708-n512-random8.json",
+      "seed": 2026110708,
+      "train_pairs": 512,
+      "arm": "random8",
+      "sha256": "7a98b8b9e3ff855bdf570c551fd88aaf03cecdd2bf2a3a0e25286e3323e7df50"
+    },
+    {
+      "file": "s2026110708-n64-atomic.json",
+      "seed": 2026110708,
+      "train_pairs": 64,
+      "arm": "atomic",
+      "sha256": "bfe5b0fb266be27790e5e6b86ba1f811eace9bba37ad1828b625db049d9eb678"
+    },
+    {
+      "file": "s2026110708-n64-family2.json",
+      "seed": 2026110708,
+      "train_pairs": 64,
+      "arm": "family2",
+      "sha256": "f4d6ed1f5b00d420182360e9d5d16e2dc5003df4439467b92ec86e740727cde7"
+    },
+    {
+      "file": "s2026110708-n64-family4.json",
+      "seed": 2026110708,
+      "train_pairs": 64,
+      "arm": "family4",
+      "sha256": "7daf70c2b074ccf08da3d2ed24239383a23f1a32e82aae9936d72dcb47af7429"
+    },
+    {
+      "file": "s2026110708-n64-family8.json",
+      "seed": 2026110708,
+      "train_pairs": 64,
+      "arm": "family8",
+      "sha256": "8b6fd2d4b3b683b01c93d774a5527787aa16676369d325e9e1a6f4ad56369cd5"
+    },
+    {
+      "file": "s2026110708-n64-random2.json",
+      "seed": 2026110708,
+      "train_pairs": 64,
+      "arm": "random2",
+      "sha256": "343bd91ba449aa9a22d39221ecf29b2933f75dc198216988e49b0a9d41623f09"
+    },
+    {
+      "file": "s2026110708-n64-random4.json",
+      "seed": 2026110708,
+      "train_pairs": 64,
+      "arm": "random4",
+      "sha256": "23741ca8fe8eba0fc04730ce1017dcc0e99a949656d271ca65600863d95b191b"
+    },
+    {
+      "file": "s2026110708-n64-random8.json",
+      "seed": 2026110708,
+      "train_pairs": 64,
+      "arm": "random8",
+      "sha256": "71d489065fdccadc82ed3df5cb5fd93874f18c0b151344acb8c0ccc3dadb353a"
+    },
+    {
+      "file": "s2026110709-n512-atomic.json",
+      "seed": 2026110709,
+      "train_pairs": 512,
+      "arm": "atomic",
+      "sha256": "c639cc81ae7077b8e55ddf78e4f261ee31f6146f388ca96dce79926d8666db33"
+    },
+    {
+      "file": "s2026110709-n512-family2.json",
+      "seed": 2026110709,
+      "train_pairs": 512,
+      "arm": "family2",
+      "sha256": "7a646a638b605fdd4599160c98ae9c5927b5140faa8196831410c09606a3cb15"
+    },
+    {
+      "file": "s2026110709-n512-family4.json",
+      "seed": 2026110709,
+      "train_pairs": 512,
+      "arm": "family4",
+      "sha256": "49ac898d60fb8aa523b8f42da81b167a83dff9f73a2f16c2277bfe9506e15a52"
+    },
+    {
+      "file": "s2026110709-n512-family8.json",
+      "seed": 2026110709,
+      "train_pairs": 512,
+      "arm": "family8",
+      "sha256": "7969e3fb69a2e9f0d34ce1c76c1a4e2a851a2d9de7da5b8e2194da57672637ff"
+    },
+    {
+      "file": "s2026110709-n512-random2.json",
+      "seed": 2026110709,
+      "train_pairs": 512,
+      "arm": "random2",
+      "sha256": "078829909ee26d4b7619200f7cdc49b8318d56270872b68d000331259c492111"
+    },
+    {
+      "file": "s2026110709-n512-random4.json",
+      "seed": 2026110709,
+      "train_pairs": 512,
+      "arm": "random4",
+      "sha256": "fb4e25aabca8bd0fe4c01c8d1a0c48788aef1c7f1fce6843bc5a2eff73c5d033"
+    },
+    {
+      "file": "s2026110709-n512-random8.json",
+      "seed": 2026110709,
+      "train_pairs": 512,
+      "arm": "random8",
+      "sha256": "932bd18728bd970ff48bc8cc2561638ef4add51f8b5d1aa501f44c96e31dc633"
+    },
+    {
+      "file": "s2026110709-n64-atomic.json",
+      "seed": 2026110709,
+      "train_pairs": 64,
+      "arm": "atomic",
+      "sha256": "67eb00c97539662359c2a663459a29c5f2812365b730af2d7e6cb21bb35c2df1"
+    },
+    {
+      "file": "s2026110709-n64-family2.json",
+      "seed": 2026110709,
+      "train_pairs": 64,
+      "arm": "family2",
+      "sha256": "11ac51e03b6fd9beaf9cdb9b1ae750a530520dcda83514c897bea9d2f95c42fa"
+    },
+    {
+      "file": "s2026110709-n64-family4.json",
+      "seed": 2026110709,
+      "train_pairs": 64,
+      "arm": "family4",
+      "sha256": "d7710b5ecb397f6551b62be9f286d72935b9d416b16856f7567bb2bc18f26c8b"
+    },
+    {
+      "file": "s2026110709-n64-family8.json",
+      "seed": 2026110709,
+      "train_pairs": 64,
+      "arm": "family8",
+      "sha256": "097e3ebb540cf1a4b28092176a7ce7d5b6df99d2f5ec95c316bc9fcc18330c6a"
+    },
+    {
+      "file": "s2026110709-n64-random2.json",
+      "seed": 2026110709,
+      "train_pairs": 64,
+      "arm": "random2",
+      "sha256": "43930b9def82842b9a65d744b113a9c7e1e0b659c4ec0973b19607f7beec4b5e"
+    },
+    {
+      "file": "s2026110709-n64-random4.json",
+      "seed": 2026110709,
+      "train_pairs": 64,
+      "arm": "random4",
+      "sha256": "225a7a4d5ec449405f78389bff8ff7b439e2cc58949411f6c8e62dfa79d02d34"
+    },
+    {
+      "file": "s2026110709-n64-random8.json",
+      "seed": 2026110709,
+      "train_pairs": 64,
+      "arm": "random8",
+      "sha256": "c62bc0eeaafaba340ae26ba0201df47c936182bc701a1c92ad056b1987ca32a2"
+    }
+  ],
+  "raw_datasets_distributed": false,
+  "weight_bearing_receipts_distributed": false,
+  "reproduction_boundary": "The published source can generate a fresh dataset/run. This public follow-up omits raw data and trained weights, so it is insufficient by itself to recompute the historical weight-based metrics.",
+  "report_boundary": "VERIFICATION.json is the frozen report.py structural check. Independent metric and provenance checks are reported separately.",
+  "research_and_resource_parameters_changed": false,
+  "original_project_or_other_process_modified": false
+}

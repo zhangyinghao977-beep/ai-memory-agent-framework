@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "frozen_sources_and_data_match": true,
+  "same_data_observations_order_and_allocated_slots_within_each_condition": true,
+  "same_presentation_budget": true,
+  "finite_weights": true,
+  "only_balanced_seeds_aggregated": true,
+  "complete_balanced_seeds": [
+    2026110700,
+    2026110701,
+    2026110702,
+    2026110703,
+    2026110704,
+    2026110705,
+    2026110706,
+    2026110707,
+    2026110708,
+    2026110709
+  ],
+  "receipt_count": 140,
+  "runtime_status": "COMPLETED"
+}

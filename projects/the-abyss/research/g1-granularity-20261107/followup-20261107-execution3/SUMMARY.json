@@ -1,0 +1,4574 @@
+{
+  "status": "COMPLETED",
+  "complete_balanced_seeds": [
+    2026110700,
+    2026110701,
+    2026110702,
+    2026110703,
+    2026110704,
+    2026110705,
+    2026110706,
+    2026110707,
+    2026110708,
+    2026110709
+  ],
+  "planned_seeds": [
+    2026110700,
+    2026110701,
+    2026110702,
+    2026110703,
+    2026110704,
+    2026110705,
+    2026110706,
+    2026110707,
+    2026110708,
+    2026110709
+  ],
+  "receipts_total": 140,
+  "partial_seeds_excluded_from_aggregation": [],
+  "statistical_scope": "Descriptive seed-level paired differences; sample SD is not a confidence interval; two worlds repeat one unordered pair.",
+  "cells": [
+    {
+      "train_pairs": 64,
+      "arm": {
+        "name": "atomic",
+        "kind": "family",
+        "size": 1
+      },
+      "overall": {
+        "mean": 0.69697265625,
+        "sample_std": 0.03460042998157594,
+        "min": 0.6484375,
+        "max": 0.7431640625,
+        "n_seeds": 10
+      },
+      "within_reference": {
+        "mean": 0.5732396596868081,
+        "sample_std": 0.1330301092431205,
+        "min": 0.38095238095238093,
+        "max": 0.7236842105263158,
+        "n_seeds": 10
+      },
+      "cross_reference": {
+        "mean": 0.70501599320454,
+        "sample_std": 0.03593768618904557,
+        "min": 0.648068669527897,
+        "max": 0.75,
+        "n_seeds": 10
+      },
+      "paired_delta_atomic": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n_seeds": 10
+      },
+      "delta_positive_seeds": 0,
+      "delta_negative_seeds": 0,
+      "shared_slot_fraction": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n_seeds": 10
+      },
+      "conflicting_row_fraction": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n_seeds": 10
+      },
+      "posthoc_lookup_reference": {
+        "mean": 1.0,
+        "sample_std": 0.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n_seeds": 10
+      },
+      "per_seed": [
+        {
+          "seed": 2026110700,
+          "overall": 0.6484375,
+          "within_reference": 0.6521739130434783,
+          "cross_reference": 0.648068669527897,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 32,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 560,
+            "cross_reference": 932,
+            "different_atomic_components": 854,
+            "distinct_slots": 1024,
+            "has_unseen_atom": 464,
+            "same_atomic_component": 170,
+            "within_reference": 92
+          }
+        },
+        {
+          "seed": 2026110701,
+          "overall": 0.685546875,
+          "within_reference": 0.7083333333333334,
+          "cross_reference": 0.6838235294117647,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 47,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 522,
+            "cross_reference": 952,
+            "different_atomic_components": 790,
+            "distinct_slots": 1024,
+            "has_unseen_atom": 502,
+            "same_atomic_component": 234,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110702,
+          "overall": 0.724609375,
+          "within_reference": 0.5138888888888888,
+          "cross_reference": 0.740546218487395,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 41,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 582,
+            "cross_reference": 952,
+            "different_atomic_components": 838,
+            "distinct_slots": 1024,
+            "has_unseen_atom": 442,
+            "same_atomic_component": 186,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110703,
+          "overall": 0.6572265625,
+          "within_reference": 0.45121951219512196,
+          "cross_reference": 0.6751592356687898,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 21,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 77,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 19
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 670,
+            "cross_reference": 942,
+            "different_atomic_components": 942,
+            "distinct_slots": 1024,
+            "has_unseen_atom": 354,
+            "same_atomic_component": 82,
+            "within_reference": 82
+          }
+        },
+        {
+          "seed": 2026110704,
+          "overall": 0.7421875,
+          "within_reference": 0.65,
+          "cross_reference": 0.75,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 34,
+            "distinct_training_pairs": 64,
+            "largest_component": 40,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 66,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 30
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 446,
+            "cross_reference": 944,
+            "different_atomic_components": 816,
+            "distinct_slots": 1024,
+            "has_unseen_atom": 578,
+            "same_atomic_component": 208,
+            "within_reference": 80
+          }
+        },
+        {
+          "seed": 2026110705,
+          "overall": 0.666015625,
+          "within_reference": 0.5161290322580645,
+          "cross_reference": 0.6756756756756757,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 37,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 73,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 23
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 564,
+            "cross_reference": 962,
+            "different_atomic_components": 894,
+            "distinct_slots": 1024,
+            "has_unseen_atom": 460,
+            "same_atomic_component": 130,
+            "within_reference": 62
+          }
+        },
+        {
+          "seed": 2026110706,
+          "overall": 0.681640625,
+          "within_reference": 0.38095238095238093,
+          "cross_reference": 0.6945010183299389,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 36,
+            "distinct_training_pairs": 64,
+            "largest_component": 29,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 71,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 25
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 586,
+            "cross_reference": 982,
+            "different_atomic_components": 920,
+            "distinct_slots": 1024,
+            "has_unseen_atom": 438,
+            "same_atomic_component": 104,
+            "within_reference": 42
+          }
+        },
+        {
+          "seed": 2026110707,
+          "overall": 0.7431640625,
+          "within_reference": 0.7236842105263158,
+          "cross_reference": 0.7447257383966245,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 32,
+            "distinct_training_pairs": 64,
+            "largest_component": 50,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 73,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 23
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 576,
+            "cross_reference": 948,
+            "different_atomic_components": 756,
+            "distinct_slots": 1024,
+            "has_unseen_atom": 448,
+            "same_atomic_component": 268,
+            "within_reference": 76
+          }
+        },
+        {
+          "seed": 2026110708,
+          "overall": 0.720703125,
+          "within_reference": 0.41379310344827586,
+          "cross_reference": 0.7391304347826086,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 35,
+            "distinct_training_pairs": 64,
+            "largest_component": 59,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 64,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 32
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 452,
+            "cross_reference": 966,
+            "different_atomic_components": 638,
+            "distinct_slots": 1024,
+            "has_unseen_atom": 572,
+            "same_atomic_component": 386,
+            "within_reference": 58
+          }
+        },
+        {
+          "seed": 2026110709,
+          "overall": 0.7001953125,
+          "within_reference": 0.7222222222222222,
+          "cross_reference": 0.6985294117647058,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 47,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 76,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 20
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 636,
+            "cross_reference": 952,
+            "different_atomic_components": 754,
+            "distinct_slots": 1024,
+            "has_unseen_atom": 388,
+            "same_atomic_component": 270,
+            "within_reference": 72
+          }
+        }
+      ]
+    },
+    {
+      "train_pairs": 64,
+      "arm": {
+        "name": "family2",
+        "kind": "family",
+        "size": 2
+      },
+      "overall": {
+        "mean": 0.74482421875,
+        "sample_std": 0.03292124656009443,
+        "min": 0.7041015625,
+        "max": 0.806640625,
+        "n_seeds": 10
+      },
+      "within_reference": {
+        "mean": 0.5192473086350999,
+        "sample_std": 0.12106375657945957,
+        "min": 0.3103448275862069,
+        "max": 0.6710526315789473,
+        "n_seeds": 10
+      },
+      "cross_reference": {
+        "mean": 0.760548942740288,
+        "sample_std": 0.03373312212950375,
+        "min": 0.7184873949579832,
+        "max": 0.8175105485232067,
+        "n_seeds": 10
+      },
+      "paired_delta_atomic": {
+        "mean": 0.0478515625,
+        "sample_std": 0.029570481638478554,
+        "min": 0.0087890625,
+        "max": 0.099609375,
+        "n_seeds": 10
+      },
+      "delta_positive_seeds": 10,
+      "delta_negative_seeds": 0,
+      "shared_slot_fraction": {
+        "mean": 0.010546875,
+        "sample_std": 0.005142817098471745,
+        "min": 0.00390625,
+        "max": 0.017578125,
+        "n_seeds": 10
+      },
+      "conflicting_row_fraction": {
+        "mean": 0.04375,
+        "sample_std": 0.009795959830106265,
+        "min": 0.029296875,
+        "max": 0.0625,
+        "n_seeds": 10
+      },
+      "posthoc_lookup_reference": {
+        "mean": 0.97421875,
+        "sample_std": 0.004744124141207468,
+        "min": 0.96875,
+        "max": 0.9833984375,
+        "n_seeds": 10
+      },
+      "per_seed": [
+        {
+          "seed": 2026110700,
+          "overall": 0.7041015625,
+          "within_reference": 0.5108695652173914,
+          "cross_reference": 0.723175965665236,
+          "delta_atomic": 0.0556640625,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 32,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 560,
+            "cross_reference": 932,
+            "different_atomic_components": 854,
+            "distinct_slots": 1006,
+            "has_unseen_atom": 464,
+            "same_atomic_component": 170,
+            "shared_slot": 18,
+            "within_reference": 92
+          }
+        },
+        {
+          "seed": 2026110701,
+          "overall": 0.7294921875,
+          "within_reference": 0.625,
+          "cross_reference": 0.7373949579831933,
+          "delta_atomic": 0.0439453125,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 47,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 522,
+            "cross_reference": 952,
+            "different_atomic_components": 790,
+            "distinct_slots": 1010,
+            "has_unseen_atom": 502,
+            "same_atomic_component": 234,
+            "shared_slot": 14,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110702,
+          "overall": 0.763671875,
+          "within_reference": 0.5833333333333334,
+          "cross_reference": 0.7773109243697479,
+          "delta_atomic": 0.0390625,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 41,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 582,
+            "cross_reference": 952,
+            "different_atomic_components": 838,
+            "distinct_slots": 1020,
+            "has_unseen_atom": 442,
+            "same_atomic_component": 186,
+            "shared_slot": 4,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110703,
+          "overall": 0.7568359375,
+          "within_reference": 0.573170731707317,
+          "cross_reference": 0.772823779193206,
+          "delta_atomic": 0.099609375,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 21,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 77,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 19
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 670,
+            "cross_reference": 942,
+            "different_atomic_components": 942,
+            "distinct_slots": 1010,
+            "has_unseen_atom": 354,
+            "same_atomic_component": 82,
+            "shared_slot": 14,
+            "within_reference": 82
+          }
+        },
+        {
+          "seed": 2026110704,
+          "overall": 0.7646484375,
+          "within_reference": 0.575,
+          "cross_reference": 0.7807203389830508,
+          "delta_atomic": 0.0224609375,
+          "graph": {
+            "components_including_isolated": 34,
+            "distinct_training_pairs": 64,
+            "largest_component": 40,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 66,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 30
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 446,
+            "cross_reference": 944,
+            "different_atomic_components": 816,
+            "distinct_slots": 1008,
+            "has_unseen_atom": 578,
+            "same_atomic_component": 208,
+            "shared_slot": 16,
+            "within_reference": 80
+          }
+        },
+        {
+          "seed": 2026110705,
+          "overall": 0.755859375,
+          "within_reference": 0.4032258064516129,
+          "cross_reference": 0.7785862785862786,
+          "delta_atomic": 0.08984375,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 37,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 73,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 23
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 564,
+            "cross_reference": 962,
+            "different_atomic_components": 894,
+            "distinct_slots": 1018,
+            "has_unseen_atom": 460,
+            "same_atomic_component": 130,
+            "shared_slot": 6,
+            "within_reference": 62
+          }
+        },
+        {
+          "seed": 2026110706,
+          "overall": 0.7041015625,
+          "within_reference": 0.35714285714285715,
+          "cross_reference": 0.7189409368635438,
+          "delta_atomic": 0.0224609375,
+          "graph": {
+            "components_including_isolated": 36,
+            "distinct_training_pairs": 64,
+            "largest_component": 29,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 71,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 25
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 586,
+            "cross_reference": 982,
+            "different_atomic_components": 920,
+            "distinct_slots": 1018,
+            "has_unseen_atom": 438,
+            "same_atomic_component": 104,
+            "shared_slot": 6,
+            "within_reference": 42
+          }
+        },
+        {
+          "seed": 2026110707,
+          "overall": 0.806640625,
+          "within_reference": 0.6710526315789473,
+          "cross_reference": 0.8175105485232067,
+          "delta_atomic": 0.0634765625,
+          "graph": {
+            "components_including_isolated": 32,
+            "distinct_training_pairs": 64,
+            "largest_component": 50,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 73,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 23
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 576,
+            "cross_reference": 948,
+            "different_atomic_components": 756,
+            "distinct_slots": 1010,
+            "has_unseen_atom": 448,
+            "same_atomic_component": 268,
+            "shared_slot": 14,
+            "within_reference": 76
+          }
+        },
+        {
+          "seed": 2026110708,
+          "overall": 0.75390625,
+          "within_reference": 0.3103448275862069,
+          "cross_reference": 0.7805383022774327,
+          "delta_atomic": 0.033203125,
+          "graph": {
+            "components_including_isolated": 35,
+            "distinct_training_pairs": 64,
+            "largest_component": 59,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 64,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 32
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 452,
+            "cross_reference": 966,
+            "different_atomic_components": 638,
+            "distinct_slots": 1020,
+            "has_unseen_atom": 572,
+            "same_atomic_component": 386,
+            "shared_slot": 4,
+            "within_reference": 58
+          }
+        },
+        {
+          "seed": 2026110709,
+          "overall": 0.708984375,
+          "within_reference": 0.5833333333333334,
+          "cross_reference": 0.7184873949579832,
+          "delta_atomic": 0.0087890625,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 47,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 76,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 20
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 636,
+            "cross_reference": 952,
+            "different_atomic_components": 754,
+            "distinct_slots": 1012,
+            "has_unseen_atom": 388,
+            "same_atomic_component": 270,
+            "shared_slot": 12,
+            "within_reference": 72
+          }
+        }
+      ]
+    },
+    {
+      "train_pairs": 64,
+      "arm": {
+        "name": "family4",
+        "kind": "family",
+        "size": 4
+      },
+      "overall": {
+        "mean": 0.7892578125,
+        "sample_std": 0.028310208326817597,
+        "min": 0.7412109375,
+        "max": 0.8232421875,
+        "n_seeds": 10
+      },
+      "within_reference": {
+        "mean": 0.5118808824086032,
+        "sample_std": 0.07790169107098467,
+        "min": 0.41379310344827586,
+        "max": 0.6111111111111112,
+        "n_seeds": 10
+      },
+      "cross_reference": {
+        "mean": 0.809693465098991,
+        "sample_std": 0.03439054586736099,
+        "min": 0.7515274949083504,
+        "max": 0.8538135593220338,
+        "n_seeds": 10
+      },
+      "paired_delta_atomic": {
+        "mean": 0.09228515625,
+        "sample_std": 0.03576065262819338,
+        "min": 0.0595703125,
+        "max": 0.166015625,
+        "n_seeds": 10
+      },
+      "delta_positive_seeds": 10,
+      "delta_negative_seeds": 0,
+      "shared_slot_fraction": {
+        "mean": 0.03046875,
+        "sample_std": 0.009077304717673634,
+        "min": 0.013671875,
+        "max": 0.046875,
+        "n_seeds": 10
+      },
+      "conflicting_row_fraction": {
+        "mean": 0.1615234375,
+        "sample_std": 0.030286385559886775,
+        "min": 0.125,
+        "max": 0.21875,
+        "n_seeds": 10
+      },
+      "posthoc_lookup_reference": {
+        "mean": 0.9240234375,
+        "sample_std": 0.010656022801219233,
+        "min": 0.908203125,
+        "max": 0.94140625,
+        "n_seeds": 10
+      },
+      "per_seed": [
+        {
+          "seed": 2026110700,
+          "overall": 0.76953125,
+          "within_reference": 0.6086956521739131,
+          "cross_reference": 0.7854077253218884,
+          "delta_atomic": 0.12109375,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 32,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 560,
+            "cross_reference": 932,
+            "different_atomic_components": 854,
+            "distinct_slots": 976,
+            "has_unseen_atom": 464,
+            "same_atomic_component": 170,
+            "shared_slot": 48,
+            "within_reference": 92
+          }
+        },
+        {
+          "seed": 2026110701,
+          "overall": 0.75390625,
+          "within_reference": 0.6111111111111112,
+          "cross_reference": 0.7647058823529411,
+          "delta_atomic": 0.068359375,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 47,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 522,
+            "cross_reference": 952,
+            "different_atomic_components": 790,
+            "distinct_slots": 988,
+            "has_unseen_atom": 502,
+            "same_atomic_component": 234,
+            "shared_slot": 36,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110702,
+          "overall": 0.796875,
+          "within_reference": 0.4166666666666667,
+          "cross_reference": 0.8256302521008403,
+          "delta_atomic": 0.072265625,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 41,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 582,
+            "cross_reference": 952,
+            "different_atomic_components": 838,
+            "distinct_slots": 996,
+            "has_unseen_atom": 442,
+            "same_atomic_component": 186,
+            "shared_slot": 28,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110703,
+          "overall": 0.8232421875,
+          "within_reference": 0.524390243902439,
+          "cross_reference": 0.8492569002123143,
+          "delta_atomic": 0.166015625,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 21,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 77,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 19
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 670,
+            "cross_reference": 942,
+            "different_atomic_components": 942,
+            "distinct_slots": 990,
+            "has_unseen_atom": 354,
+            "same_atomic_component": 82,
+            "shared_slot": 34,
+            "within_reference": 82
+          }
+        },
+        {
+          "seed": 2026110704,
+          "overall": 0.8203125,
+          "within_reference": 0.425,
+          "cross_reference": 0.8538135593220338,
+          "delta_atomic": 0.078125,
+          "graph": {
+            "components_including_isolated": 34,
+            "distinct_training_pairs": 64,
+            "largest_component": 40,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 66,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 30
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 446,
+            "cross_reference": 944,
+            "different_atomic_components": 816,
+            "distinct_slots": 984,
+            "has_unseen_atom": 578,
+            "same_atomic_component": 208,
+            "shared_slot": 40,
+            "within_reference": 80
+          }
+        },
+        {
+          "seed": 2026110705,
+          "overall": 0.8017578125,
+          "within_reference": 0.5,
+          "cross_reference": 0.8212058212058212,
+          "delta_atomic": 0.1357421875,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 37,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 73,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 23
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 564,
+            "cross_reference": 962,
+            "different_atomic_components": 894,
+            "distinct_slots": 998,
+            "has_unseen_atom": 460,
+            "same_atomic_component": 130,
+            "shared_slot": 26,
+            "within_reference": 62
+          }
+        },
+        {
+          "seed": 2026110706,
+          "overall": 0.7412109375,
+          "within_reference": 0.5,
+          "cross_reference": 0.7515274949083504,
+          "delta_atomic": 0.0595703125,
+          "graph": {
+            "components_including_isolated": 36,
+            "distinct_training_pairs": 64,
+            "largest_component": 29,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 71,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 25
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 586,
+            "cross_reference": 982,
+            "different_atomic_components": 920,
+            "distinct_slots": 1010,
+            "has_unseen_atom": 438,
+            "same_atomic_component": 104,
+            "shared_slot": 14,
+            "within_reference": 42
+          }
+        },
+        {
+          "seed": 2026110707,
+          "overall": 0.818359375,
+          "within_reference": 0.6052631578947368,
+          "cross_reference": 0.8354430379746836,
+          "delta_atomic": 0.0751953125,
+          "graph": {
+            "components_including_isolated": 32,
+            "distinct_training_pairs": 64,
+            "largest_component": 50,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 73,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 23
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 576,
+            "cross_reference": 948,
+            "different_atomic_components": 756,
+            "distinct_slots": 992,
+            "has_unseen_atom": 448,
+            "same_atomic_component": 268,
+            "shared_slot": 32,
+            "within_reference": 76
+          }
+        },
+        {
+          "seed": 2026110708,
+          "overall": 0.787109375,
+          "within_reference": 0.41379310344827586,
+          "cross_reference": 0.8095238095238095,
+          "delta_atomic": 0.06640625,
+          "graph": {
+            "components_including_isolated": 35,
+            "distinct_training_pairs": 64,
+            "largest_component": 59,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 64,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 32
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 452,
+            "cross_reference": 966,
+            "different_atomic_components": 638,
+            "distinct_slots": 1000,
+            "has_unseen_atom": 572,
+            "same_atomic_component": 386,
+            "shared_slot": 24,
+            "within_reference": 58
+          }
+        },
+        {
+          "seed": 2026110709,
+          "overall": 0.7802734375,
+          "within_reference": 0.5138888888888888,
+          "cross_reference": 0.8004201680672269,
+          "delta_atomic": 0.080078125,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 47,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 76,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 20
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 636,
+            "cross_reference": 952,
+            "different_atomic_components": 754,
+            "distinct_slots": 994,
+            "has_unseen_atom": 388,
+            "same_atomic_component": 270,
+            "shared_slot": 30,
+            "within_reference": 72
+          }
+        }
+      ]
+    },
+    {
+      "train_pairs": 64,
+      "arm": {
+        "name": "family8",
+        "kind": "family",
+        "size": 8
+      },
+      "overall": {
+        "mean": 0.8255859375,
+        "sample_std": 0.028572497272183327,
+        "min": 0.759765625,
+        "max": 0.8603515625,
+        "n_seeds": 10
+      },
+      "within_reference": {
+        "mean": 0.5,
+        "sample_std": 0.0,
+        "min": 0.5,
+        "max": 0.5,
+        "n_seeds": 10
+      },
+      "cross_reference": {
+        "mean": 0.8497474932310017,
+        "sample_std": 0.030033317271278413,
+        "min": 0.7794117647058824,
+        "max": 0.89171974522293,
+        "n_seeds": 10
+      },
+      "paired_delta_atomic": {
+        "mean": 0.12861328125,
+        "sample_std": 0.04874135084671122,
+        "min": 0.0595703125,
+        "max": 0.203125,
+        "n_seeds": 10
+      },
+      "delta_positive_seeds": 10,
+      "delta_negative_seeds": 0,
+      "shared_slot_fraction": {
+        "mean": 0.069140625,
+        "sample_std": 0.013662571239140286,
+        "min": 0.041015625,
+        "max": 0.08984375,
+        "n_seeds": 10
+      },
+      "conflicting_row_fraction": {
+        "mean": 0.3251953125,
+        "sample_std": 0.06981188732649815,
+        "min": 0.248046875,
+        "max": 0.48046875,
+        "n_seeds": 10
+      },
+      "posthoc_lookup_reference": {
+        "mean": 0.875390625,
+        "sample_std": 0.017512899821453043,
+        "min": 0.84375,
+        "max": 0.896484375,
+        "n_seeds": 10
+      },
+      "per_seed": [
+        {
+          "seed": 2026110700,
+          "overall": 0.814453125,
+          "within_reference": 0.5,
+          "cross_reference": 0.8454935622317596,
+          "delta_atomic": 0.166015625,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 32,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 560,
+            "cross_reference": 932,
+            "different_atomic_components": 854,
+            "distinct_slots": 932,
+            "has_unseen_atom": 464,
+            "same_atomic_component": 170,
+            "shared_slot": 92,
+            "within_reference": 92
+          }
+        },
+        {
+          "seed": 2026110701,
+          "overall": 0.822265625,
+          "within_reference": 0.5,
+          "cross_reference": 0.8466386554621849,
+          "delta_atomic": 0.13671875,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 47,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 522,
+            "cross_reference": 952,
+            "different_atomic_components": 790,
+            "distinct_slots": 952,
+            "has_unseen_atom": 502,
+            "same_atomic_component": 234,
+            "shared_slot": 72,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110702,
+          "overall": 0.80859375,
+          "within_reference": 0.5,
+          "cross_reference": 0.8319327731092437,
+          "delta_atomic": 0.083984375,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 41,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 582,
+            "cross_reference": 952,
+            "different_atomic_components": 838,
+            "distinct_slots": 952,
+            "has_unseen_atom": 442,
+            "same_atomic_component": 186,
+            "shared_slot": 72,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110703,
+          "overall": 0.8603515625,
+          "within_reference": 0.5,
+          "cross_reference": 0.89171974522293,
+          "delta_atomic": 0.203125,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 21,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 77,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 19
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 670,
+            "cross_reference": 942,
+            "different_atomic_components": 942,
+            "distinct_slots": 942,
+            "has_unseen_atom": 354,
+            "same_atomic_component": 82,
+            "shared_slot": 82,
+            "within_reference": 82
+          }
+        },
+        {
+          "seed": 2026110704,
+          "overall": 0.8203125,
+          "within_reference": 0.5,
+          "cross_reference": 0.847457627118644,
+          "delta_atomic": 0.078125,
+          "graph": {
+            "components_including_isolated": 34,
+            "distinct_training_pairs": 64,
+            "largest_component": 40,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 66,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 30
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 446,
+            "cross_reference": 944,
+            "different_atomic_components": 816,
+            "distinct_slots": 944,
+            "has_unseen_atom": 578,
+            "same_atomic_component": 208,
+            "shared_slot": 80,
+            "within_reference": 80
+          }
+        },
+        {
+          "seed": 2026110705,
+          "overall": 0.8486328125,
+          "within_reference": 0.5,
+          "cross_reference": 0.8711018711018711,
+          "delta_atomic": 0.1826171875,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 37,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 73,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 23
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 564,
+            "cross_reference": 962,
+            "different_atomic_components": 894,
+            "distinct_slots": 962,
+            "has_unseen_atom": 460,
+            "same_atomic_component": 130,
+            "shared_slot": 62,
+            "within_reference": 62
+          }
+        },
+        {
+          "seed": 2026110706,
+          "overall": 0.8369140625,
+          "within_reference": 0.5,
+          "cross_reference": 0.8513238289205702,
+          "delta_atomic": 0.1552734375,
+          "graph": {
+            "components_including_isolated": 36,
+            "distinct_training_pairs": 64,
+            "largest_component": 29,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 71,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 25
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 586,
+            "cross_reference": 982,
+            "different_atomic_components": 920,
+            "distinct_slots": 982,
+            "has_unseen_atom": 438,
+            "same_atomic_component": 104,
+            "shared_slot": 42,
+            "within_reference": 42
+          }
+        },
+        {
+          "seed": 2026110707,
+          "overall": 0.833984375,
+          "within_reference": 0.5,
+          "cross_reference": 0.8607594936708861,
+          "delta_atomic": 0.0908203125,
+          "graph": {
+            "components_including_isolated": 32,
+            "distinct_training_pairs": 64,
+            "largest_component": 50,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 73,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 23
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 576,
+            "cross_reference": 948,
+            "different_atomic_components": 756,
+            "distinct_slots": 948,
+            "has_unseen_atom": 448,
+            "same_atomic_component": 268,
+            "shared_slot": 76,
+            "within_reference": 76
+          }
+        },
+        {
+          "seed": 2026110708,
+          "overall": 0.8505859375,
+          "within_reference": 0.5,
+          "cross_reference": 0.8716356107660456,
+          "delta_atomic": 0.1298828125,
+          "graph": {
+            "components_including_isolated": 35,
+            "distinct_training_pairs": 64,
+            "largest_component": 59,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 64,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 32
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 452,
+            "cross_reference": 966,
+            "different_atomic_components": 638,
+            "distinct_slots": 966,
+            "has_unseen_atom": 572,
+            "same_atomic_component": 386,
+            "shared_slot": 58,
+            "within_reference": 58
+          }
+        },
+        {
+          "seed": 2026110709,
+          "overall": 0.759765625,
+          "within_reference": 0.5,
+          "cross_reference": 0.7794117647058824,
+          "delta_atomic": 0.0595703125,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 47,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 76,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 20
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 636,
+            "cross_reference": 952,
+            "different_atomic_components": 754,
+            "distinct_slots": 952,
+            "has_unseen_atom": 388,
+            "same_atomic_component": 270,
+            "shared_slot": 72,
+            "within_reference": 72
+          }
+        }
+      ]
+    },
+    {
+      "train_pairs": 64,
+      "arm": {
+        "name": "random2",
+        "kind": "random",
+        "size": 2
+      },
+      "overall": {
+        "mean": 0.63974609375,
+        "sample_std": 0.05770163229769842,
+        "min": 0.517578125,
+        "max": 0.7041015625,
+        "n_seeds": 10
+      },
+      "within_reference": {
+        "mean": 0.5168517967077286,
+        "sample_std": 0.10820941638072373,
+        "min": 0.3275862068965517,
+        "max": 0.6527777777777778,
+        "n_seeds": 10
+      },
+      "cross_reference": {
+        "mean": 0.6479668986152312,
+        "sample_std": 0.06330601173297948,
+        "min": 0.5176715176715176,
+        "max": 0.7267080745341615,
+        "n_seeds": 10
+      },
+      "paired_delta_atomic": {
+        "mean": -0.0572265625,
+        "sample_std": 0.037979228628069316,
+        "min": -0.1484375,
+        "max": -0.009765625,
+        "n_seeds": 10
+      },
+      "delta_positive_seeds": 0,
+      "delta_negative_seeds": 10,
+      "shared_slot_fraction": {
+        "mean": 0.009765625,
+        "sample_std": 0.0044155794160971795,
+        "min": 0.00390625,
+        "max": 0.017578125,
+        "n_seeds": 10
+      },
+      "conflicting_row_fraction": {
+        "mean": 0.123828125,
+        "sample_std": 0.028781638313220732,
+        "min": 0.08984375,
+        "max": 0.17578125,
+        "n_seeds": 10
+      },
+      "posthoc_lookup_reference": {
+        "mean": 0.93671875,
+        "sample_std": 0.013443655728271152,
+        "min": 0.9130859375,
+        "max": 0.9521484375,
+        "n_seeds": 10
+      },
+      "per_seed": [
+        {
+          "seed": 2026110700,
+          "overall": 0.6142578125,
+          "within_reference": 0.6413043478260869,
+          "cross_reference": 0.6115879828326181,
+          "delta_atomic": -0.0341796875,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 32,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 560,
+            "cross_reference": 932,
+            "different_atomic_components": 854,
+            "distinct_slots": 1018,
+            "has_unseen_atom": 464,
+            "same_atomic_component": 170,
+            "shared_slot": 6,
+            "within_reference": 92
+          }
+        },
+        {
+          "seed": 2026110701,
+          "overall": 0.630859375,
+          "within_reference": 0.6388888888888888,
+          "cross_reference": 0.6302521008403361,
+          "delta_atomic": -0.0546875,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 47,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 522,
+            "cross_reference": 952,
+            "different_atomic_components": 790,
+            "distinct_slots": 1018,
+            "has_unseen_atom": 502,
+            "same_atomic_component": 234,
+            "shared_slot": 6,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110702,
+          "overall": 0.6669921875,
+          "within_reference": 0.5,
+          "cross_reference": 0.6796218487394958,
+          "delta_atomic": -0.0576171875,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 41,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 582,
+            "cross_reference": 952,
+            "different_atomic_components": 838,
+            "distinct_slots": 1014,
+            "has_unseen_atom": 442,
+            "same_atomic_component": 186,
+            "shared_slot": 10,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110703,
+          "overall": 0.59375,
+          "within_reference": 0.5121951219512195,
+          "cross_reference": 0.6008492569002123,
+          "delta_atomic": -0.0634765625,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 21,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 77,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 19
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 670,
+            "cross_reference": 942,
+            "different_atomic_components": 942,
+            "distinct_slots": 1016,
+            "has_unseen_atom": 354,
+            "same_atomic_component": 82,
+            "shared_slot": 8,
+            "within_reference": 82
+          }
+        },
+        {
+          "seed": 2026110704,
+          "overall": 0.685546875,
+          "within_reference": 0.525,
+          "cross_reference": 0.6991525423728814,
+          "delta_atomic": -0.056640625,
+          "graph": {
+            "components_including_isolated": 34,
+            "distinct_training_pairs": 64,
+            "largest_component": 40,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 66,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 30
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 446,
+            "cross_reference": 944,
+            "different_atomic_components": 816,
+            "distinct_slots": 1016,
+            "has_unseen_atom": 578,
+            "same_atomic_component": 208,
+            "shared_slot": 8,
+            "within_reference": 80
+          }
+        },
+        {
+          "seed": 2026110705,
+          "overall": 0.517578125,
+          "within_reference": 0.5161290322580645,
+          "cross_reference": 0.5176715176715176,
+          "delta_atomic": -0.1484375,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 37,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 73,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 23
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 564,
+            "cross_reference": 962,
+            "different_atomic_components": 894,
+            "distinct_slots": 1020,
+            "has_unseen_atom": 460,
+            "same_atomic_component": 130,
+            "shared_slot": 4,
+            "within_reference": 62
+          }
+        },
+        {
+          "seed": 2026110706,
+          "overall": 0.611328125,
+          "within_reference": 0.38095238095238093,
+          "cross_reference": 0.6211812627291242,
+          "delta_atomic": -0.0703125,
+          "graph": {
+            "components_including_isolated": 36,
+            "distinct_training_pairs": 64,
+            "largest_component": 29,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 71,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 25
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 586,
+            "cross_reference": 982,
+            "different_atomic_components": 920,
+            "distinct_slots": 1008,
+            "has_unseen_atom": 438,
+            "same_atomic_component": 104,
+            "shared_slot": 16,
+            "within_reference": 42
+          }
+        },
+        {
+          "seed": 2026110707,
+          "overall": 0.6826171875,
+          "within_reference": 0.47368421052631576,
+          "cross_reference": 0.6993670886075949,
+          "delta_atomic": -0.060546875,
+          "graph": {
+            "components_including_isolated": 32,
+            "distinct_training_pairs": 64,
+            "largest_component": 50,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 73,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 23
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 576,
+            "cross_reference": 948,
+            "different_atomic_components": 756,
+            "distinct_slots": 1006,
+            "has_unseen_atom": 448,
+            "same_atomic_component": 268,
+            "shared_slot": 18,
+            "within_reference": 76
+          }
+        },
+        {
+          "seed": 2026110708,
+          "overall": 0.7041015625,
+          "within_reference": 0.3275862068965517,
+          "cross_reference": 0.7267080745341615,
+          "delta_atomic": -0.0166015625,
+          "graph": {
+            "components_including_isolated": 35,
+            "distinct_training_pairs": 64,
+            "largest_component": 59,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 64,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 32
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 452,
+            "cross_reference": 966,
+            "different_atomic_components": 638,
+            "distinct_slots": 1012,
+            "has_unseen_atom": 572,
+            "same_atomic_component": 386,
+            "shared_slot": 12,
+            "within_reference": 58
+          }
+        },
+        {
+          "seed": 2026110709,
+          "overall": 0.6904296875,
+          "within_reference": 0.6527777777777778,
+          "cross_reference": 0.6932773109243697,
+          "delta_atomic": -0.009765625,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 47,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 76,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 20
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 636,
+            "cross_reference": 952,
+            "different_atomic_components": 754,
+            "distinct_slots": 1012,
+            "has_unseen_atom": 388,
+            "same_atomic_component": 270,
+            "shared_slot": 12,
+            "within_reference": 72
+          }
+        }
+      ]
+    },
+    {
+      "train_pairs": 64,
+      "arm": {
+        "name": "random4",
+        "kind": "random",
+        "size": 4
+      },
+      "overall": {
+        "mean": 0.59990234375,
+        "sample_std": 0.03577783471123356,
+        "min": 0.5439453125,
+        "max": 0.65234375,
+        "n_seeds": 10
+      },
+      "within_reference": {
+        "mean": 0.49354296929876074,
+        "sample_std": 0.07515852264647108,
+        "min": 0.3793103448275862,
+        "max": 0.5972222222222222,
+        "n_seeds": 10
+      },
+      "cross_reference": {
+        "mean": 0.6075755746863764,
+        "sample_std": 0.03801192769373842,
+        "min": 0.5446985446985447,
+        "max": 0.6645569620253164,
+        "n_seeds": 10
+      },
+      "paired_delta_atomic": {
+        "mean": -0.0970703125,
+        "sample_std": 0.03790102681536286,
+        "min": -0.1474609375,
+        "max": -0.009765625,
+        "n_seeds": 10
+      },
+      "delta_positive_seeds": 0,
+      "delta_negative_seeds": 10,
+      "shared_slot_fraction": {
+        "mean": 0.0283203125,
+        "sample_std": 0.00766185045308582,
+        "min": 0.017578125,
+        "max": 0.04296875,
+        "n_seeds": 10
+      },
+      "conflicting_row_fraction": {
+        "mean": 0.4884765625,
+        "sample_std": 0.041056423987353555,
+        "min": 0.4296875,
+        "max": 0.556640625,
+        "n_seeds": 10
+      },
+      "posthoc_lookup_reference": {
+        "mean": 0.80224609375,
+        "sample_std": 0.01766981535868762,
+        "min": 0.7685546875,
+        "max": 0.822265625,
+        "n_seeds": 10
+      },
+      "per_seed": [
+        {
+          "seed": 2026110700,
+          "overall": 0.638671875,
+          "within_reference": 0.5869565217391305,
+          "cross_reference": 0.6437768240343348,
+          "delta_atomic": -0.009765625,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 32,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 560,
+            "cross_reference": 932,
+            "different_atomic_components": 854,
+            "distinct_slots": 1000,
+            "has_unseen_atom": 464,
+            "same_atomic_component": 170,
+            "shared_slot": 24,
+            "within_reference": 92
+          }
+        },
+        {
+          "seed": 2026110701,
+          "overall": 0.6044921875,
+          "within_reference": 0.5555555555555556,
+          "cross_reference": 0.6081932773109243,
+          "delta_atomic": -0.0810546875,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 47,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 522,
+            "cross_reference": 952,
+            "different_atomic_components": 790,
+            "distinct_slots": 1002,
+            "has_unseen_atom": 502,
+            "same_atomic_component": 234,
+            "shared_slot": 22,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110702,
+          "overall": 0.61328125,
+          "within_reference": 0.4305555555555556,
+          "cross_reference": 0.6271008403361344,
+          "delta_atomic": -0.111328125,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 41,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 582,
+            "cross_reference": 952,
+            "different_atomic_components": 838,
+            "distinct_slots": 996,
+            "has_unseen_atom": 442,
+            "same_atomic_component": 186,
+            "shared_slot": 28,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110703,
+          "overall": 0.5634765625,
+          "within_reference": 0.5,
+          "cross_reference": 0.5690021231422505,
+          "delta_atomic": -0.09375,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 21,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 77,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 19
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 670,
+            "cross_reference": 942,
+            "different_atomic_components": 942,
+            "distinct_slots": 990,
+            "has_unseen_atom": 354,
+            "same_atomic_component": 82,
+            "shared_slot": 34,
+            "within_reference": 82
+          }
+        },
+        {
+          "seed": 2026110704,
+          "overall": 0.5947265625,
+          "within_reference": 0.425,
+          "cross_reference": 0.6091101694915254,
+          "delta_atomic": -0.1474609375,
+          "graph": {
+            "components_including_isolated": 34,
+            "distinct_training_pairs": 64,
+            "largest_component": 40,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 66,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 30
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 446,
+            "cross_reference": 944,
+            "different_atomic_components": 816,
+            "distinct_slots": 1002,
+            "has_unseen_atom": 578,
+            "same_atomic_component": 208,
+            "shared_slot": 22,
+            "within_reference": 80
+          }
+        },
+        {
+          "seed": 2026110705,
+          "overall": 0.5439453125,
+          "within_reference": 0.532258064516129,
+          "cross_reference": 0.5446985446985447,
+          "delta_atomic": -0.1220703125,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 37,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 73,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 23
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 564,
+            "cross_reference": 962,
+            "different_atomic_components": 894,
+            "distinct_slots": 1006,
+            "has_unseen_atom": 460,
+            "same_atomic_component": 130,
+            "shared_slot": 18,
+            "within_reference": 62
+          }
+        },
+        {
+          "seed": 2026110706,
+          "overall": 0.556640625,
+          "within_reference": 0.42857142857142855,
+          "cross_reference": 0.5621181262729125,
+          "delta_atomic": -0.125,
+          "graph": {
+            "components_including_isolated": 36,
+            "distinct_training_pairs": 64,
+            "largest_component": 29,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 71,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 25
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 586,
+            "cross_reference": 982,
+            "different_atomic_components": 920,
+            "distinct_slots": 980,
+            "has_unseen_atom": 438,
+            "same_atomic_component": 104,
+            "shared_slot": 44,
+            "within_reference": 42
+          }
+        },
+        {
+          "seed": 2026110707,
+          "overall": 0.65234375,
+          "within_reference": 0.5,
+          "cross_reference": 0.6645569620253164,
+          "delta_atomic": -0.0908203125,
+          "graph": {
+            "components_including_isolated": 32,
+            "distinct_training_pairs": 64,
+            "largest_component": 50,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 73,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 23
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 576,
+            "cross_reference": 948,
+            "different_atomic_components": 756,
+            "distinct_slots": 988,
+            "has_unseen_atom": 448,
+            "same_atomic_component": 268,
+            "shared_slot": 36,
+            "within_reference": 76
+          }
+        },
+        {
+          "seed": 2026110708,
+          "overall": 0.60546875,
+          "within_reference": 0.3793103448275862,
+          "cross_reference": 0.6190476190476191,
+          "delta_atomic": -0.115234375,
+          "graph": {
+            "components_including_isolated": 35,
+            "distinct_training_pairs": 64,
+            "largest_component": 59,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 64,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 32
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 452,
+            "cross_reference": 966,
+            "different_atomic_components": 638,
+            "distinct_slots": 992,
+            "has_unseen_atom": 572,
+            "same_atomic_component": 386,
+            "shared_slot": 32,
+            "within_reference": 58
+          }
+        },
+        {
+          "seed": 2026110709,
+          "overall": 0.6259765625,
+          "within_reference": 0.5972222222222222,
+          "cross_reference": 0.6281512605042017,
+          "delta_atomic": -0.07421875,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 47,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 76,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 20
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 636,
+            "cross_reference": 952,
+            "different_atomic_components": 754,
+            "distinct_slots": 994,
+            "has_unseen_atom": 388,
+            "same_atomic_component": 270,
+            "shared_slot": 30,
+            "within_reference": 72
+          }
+        }
+      ]
+    },
+    {
+      "train_pairs": 64,
+      "arm": {
+        "name": "random8",
+        "kind": "random",
+        "size": 8
+      },
+      "overall": {
+        "mean": 0.5521484375,
+        "sample_std": 0.033270713479485646,
+        "min": 0.4951171875,
+        "max": 0.5869140625,
+        "n_seeds": 10
+      },
+      "within_reference": {
+        "mean": 0.470036282175252,
+        "sample_std": 0.0729934998887817,
+        "min": 0.375,
+        "max": 0.5760869565217391,
+        "n_seeds": 10
+      },
+      "cross_reference": {
+        "mean": 0.5578785453477988,
+        "sample_std": 0.035605299703319916,
+        "min": 0.5,
+        "max": 0.5976890756302521,
+        "n_seeds": 10
+      },
+      "paired_delta_atomic": {
+        "mean": -0.14482421875,
+        "sample_std": 0.04095111597838595,
+        "min": -0.1875,
+        "max": -0.08203125,
+        "n_seeds": 10
+      },
+      "delta_positive_seeds": 0,
+      "delta_negative_seeds": 10,
+      "shared_slot_fraction": {
+        "mean": 0.073046875,
+        "sample_std": 0.010384063561133795,
+        "min": 0.0546875,
+        "max": 0.087890625,
+        "n_seeds": 10
+      },
+      "conflicting_row_fraction": {
+        "mean": 0.8720703125,
+        "sample_std": 0.022781807561097257,
+        "min": 0.837890625,
+        "max": 0.900390625,
+        "n_seeds": 10
+      },
+      "posthoc_lookup_reference": {
+        "mean": 0.6685546875,
+        "sample_std": 0.02039745854522486,
+        "min": 0.642578125,
+        "max": 0.7060546875,
+        "n_seeds": 10
+      },
+      "per_seed": [
+        {
+          "seed": 2026110700,
+          "overall": 0.548828125,
+          "within_reference": 0.5760869565217391,
+          "cross_reference": 0.546137339055794,
+          "delta_atomic": -0.099609375,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 32,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 560,
+            "cross_reference": 932,
+            "different_atomic_components": 854,
+            "distinct_slots": 956,
+            "has_unseen_atom": 464,
+            "same_atomic_component": 170,
+            "shared_slot": 68,
+            "within_reference": 92
+          }
+        },
+        {
+          "seed": 2026110701,
+          "overall": 0.58203125,
+          "within_reference": 0.375,
+          "cross_reference": 0.5976890756302521,
+          "delta_atomic": -0.103515625,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 47,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 522,
+            "cross_reference": 952,
+            "different_atomic_components": 790,
+            "distinct_slots": 964,
+            "has_unseen_atom": 502,
+            "same_atomic_component": 234,
+            "shared_slot": 60,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110702,
+          "overall": 0.537109375,
+          "within_reference": 0.4305555555555556,
+          "cross_reference": 0.5451680672268907,
+          "delta_atomic": -0.1875,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 41,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 72,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 24
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 582,
+            "cross_reference": 952,
+            "different_atomic_components": 838,
+            "distinct_slots": 948,
+            "has_unseen_atom": 442,
+            "same_atomic_component": 186,
+            "shared_slot": 76,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110703,
+          "overall": 0.5751953125,
+          "within_reference": 0.573170731707317,
+          "cross_reference": 0.5753715498938429,
+          "delta_atomic": -0.08203125,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 21,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 77,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 19
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 670,
+            "cross_reference": 942,
+            "different_atomic_components": 942,
+            "distinct_slots": 942,
+            "has_unseen_atom": 354,
+            "same_atomic_component": 82,
+            "shared_slot": 82,
+            "within_reference": 82
+          }
+        },
+        {
+          "seed": 2026110704,
+          "overall": 0.5673828125,
+          "within_reference": 0.4625,
+          "cross_reference": 0.576271186440678,
+          "delta_atomic": -0.1748046875,
+          "graph": {
+            "components_including_isolated": 34,
+            "distinct_training_pairs": 64,
+            "largest_component": 40,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 66,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 30
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 446,
+            "cross_reference": 944,
+            "different_atomic_components": 816,
+            "distinct_slots": 950,
+            "has_unseen_atom": 578,
+            "same_atomic_component": 208,
+            "shared_slot": 74,
+            "within_reference": 80
+          }
+        },
+        {
+          "seed": 2026110705,
+          "overall": 0.505859375,
+          "within_reference": 0.5,
+          "cross_reference": 0.5062370062370062,
+          "delta_atomic": -0.16015625,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 37,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 73,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 23
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 564,
+            "cross_reference": 962,
+            "different_atomic_components": 894,
+            "distinct_slots": 968,
+            "has_unseen_atom": 460,
+            "same_atomic_component": 130,
+            "shared_slot": 56,
+            "within_reference": 62
+          }
+        },
+        {
+          "seed": 2026110706,
+          "overall": 0.4951171875,
+          "within_reference": 0.38095238095238093,
+          "cross_reference": 0.5,
+          "delta_atomic": -0.1865234375,
+          "graph": {
+            "components_including_isolated": 36,
+            "distinct_training_pairs": 64,
+            "largest_component": 29,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 71,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 25
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 586,
+            "cross_reference": 982,
+            "different_atomic_components": 920,
+            "distinct_slots": 934,
+            "has_unseen_atom": 438,
+            "same_atomic_component": 104,
+            "shared_slot": 90,
+            "within_reference": 42
+          }
+        },
+        {
+          "seed": 2026110707,
+          "overall": 0.5869140625,
+          "within_reference": 0.4605263157894737,
+          "cross_reference": 0.5970464135021097,
+          "delta_atomic": -0.15625,
+          "graph": {
+            "components_including_isolated": 32,
+            "distinct_training_pairs": 64,
+            "largest_component": 50,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 73,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 23
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 576,
+            "cross_reference": 948,
+            "different_atomic_components": 756,
+            "distinct_slots": 946,
+            "has_unseen_atom": 448,
+            "same_atomic_component": 268,
+            "shared_slot": 78,
+            "within_reference": 76
+          }
+        },
+        {
+          "seed": 2026110708,
+          "overall": 0.5361328125,
+          "within_reference": 0.41379310344827586,
+          "cross_reference": 0.5434782608695652,
+          "delta_atomic": -0.1845703125,
+          "graph": {
+            "components_including_isolated": 35,
+            "distinct_training_pairs": 64,
+            "largest_component": 59,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 64,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 32
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 452,
+            "cross_reference": 966,
+            "different_atomic_components": 638,
+            "distinct_slots": 942,
+            "has_unseen_atom": 572,
+            "same_atomic_component": 386,
+            "shared_slot": 82,
+            "within_reference": 58
+          }
+        },
+        {
+          "seed": 2026110709,
+          "overall": 0.5869140625,
+          "within_reference": 0.5277777777777778,
+          "cross_reference": 0.5913865546218487,
+          "delta_atomic": -0.11328125,
+          "graph": {
+            "components_including_isolated": 33,
+            "distinct_training_pairs": 64,
+            "largest_component": 47,
+            "presented_unique_pairs": 64,
+            "seen_atoms": 76,
+            "selected_unique_pairs": 64,
+            "unseen_atoms": 20
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 636,
+            "cross_reference": 952,
+            "different_atomic_components": 754,
+            "distinct_slots": 942,
+            "has_unseen_atom": 388,
+            "same_atomic_component": 270,
+            "shared_slot": 82,
+            "within_reference": 72
+          }
+        }
+      ]
+    },
+    {
+      "train_pairs": 512,
+      "arm": {
+        "name": "atomic",
+        "kind": "family",
+        "size": 1
+      },
+      "overall": {
+        "mean": 0.8666015625,
+        "sample_std": 0.011864330116005812,
+        "min": 0.8515625,
+        "max": 0.884765625,
+        "n_seeds": 10
+      },
+      "within_reference": {
+        "mean": 0.7129776627971811,
+        "sample_std": 0.08413399701375514,
+        "min": 0.5365853658536586,
+        "max": 0.8333333333333334,
+        "n_seeds": 10
+      },
+      "cross_reference": {
+        "mean": 0.8782932854834947,
+        "sample_std": 0.013734037891690988,
+        "min": 0.8592436974789915,
+        "max": 0.8981288981288982,
+        "n_seeds": 10
+      },
+      "paired_delta_atomic": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n_seeds": 10
+      },
+      "delta_positive_seeds": 0,
+      "delta_negative_seeds": 0,
+      "shared_slot_fraction": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n_seeds": 10
+      },
+      "conflicting_row_fraction": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n_seeds": 10
+      },
+      "posthoc_lookup_reference": {
+        "mean": 1.0,
+        "sample_std": 0.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n_seeds": 10
+      },
+      "per_seed": [
+        {
+          "seed": 2026110700,
+          "overall": 0.8515625,
+          "within_reference": 0.7608695652173914,
+          "cross_reference": 0.8605150214592274,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 932,
+            "distinct_slots": 1024,
+            "same_atomic_component": 1024,
+            "within_reference": 92
+          }
+        },
+        {
+          "seed": 2026110701,
+          "overall": 0.8828125,
+          "within_reference": 0.7222222222222222,
+          "cross_reference": 0.8949579831932774,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 1024,
+            "same_atomic_component": 1024,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110702,
+          "overall": 0.8671875,
+          "within_reference": 0.7777777777777778,
+          "cross_reference": 0.8739495798319328,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 1024,
+            "same_atomic_component": 1024,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110703,
+          "overall": 0.853515625,
+          "within_reference": 0.5365853658536586,
+          "cross_reference": 0.881104033970276,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 942,
+            "distinct_slots": 1024,
+            "same_atomic_component": 1024,
+            "within_reference": 82
+          }
+        },
+        {
+          "seed": 2026110704,
+          "overall": 0.861328125,
+          "within_reference": 0.625,
+          "cross_reference": 0.8813559322033898,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 944,
+            "distinct_slots": 1024,
+            "same_atomic_component": 1024,
+            "within_reference": 80
+          }
+        },
+        {
+          "seed": 2026110705,
+          "overall": 0.884765625,
+          "within_reference": 0.6774193548387096,
+          "cross_reference": 0.8981288981288982,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 962,
+            "distinct_slots": 1024,
+            "same_atomic_component": 1024,
+            "within_reference": 62
+          }
+        },
+        {
+          "seed": 2026110706,
+          "overall": 0.859375,
+          "within_reference": 0.7619047619047619,
+          "cross_reference": 0.8635437881873728,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 982,
+            "distinct_slots": 1024,
+            "same_atomic_component": 1024,
+            "within_reference": 42
+          }
+        },
+        {
+          "seed": 2026110707,
+          "overall": 0.873046875,
+          "within_reference": 0.7105263157894737,
+          "cross_reference": 0.8860759493670886,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 948,
+            "distinct_slots": 1024,
+            "same_atomic_component": 1024,
+            "within_reference": 76
+          }
+        },
+        {
+          "seed": 2026110708,
+          "overall": 0.875,
+          "within_reference": 0.7241379310344828,
+          "cross_reference": 0.8840579710144928,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 966,
+            "distinct_slots": 1024,
+            "same_atomic_component": 1024,
+            "within_reference": 58
+          }
+        },
+        {
+          "seed": 2026110709,
+          "overall": 0.857421875,
+          "within_reference": 0.8333333333333334,
+          "cross_reference": 0.8592436974789915,
+          "delta_atomic": 0.0,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 1024,
+            "same_atomic_component": 1024,
+            "within_reference": 72
+          }
+        }
+      ]
+    },
+    {
+      "train_pairs": 512,
+      "arm": {
+        "name": "family2",
+        "kind": "family",
+        "size": 2
+      },
+      "overall": {
+        "mean": 0.8646484375,
+        "sample_std": 0.019418074877403383,
+        "min": 0.830078125,
+        "max": 0.89453125,
+        "n_seeds": 10
+      },
+      "within_reference": {
+        "mean": 0.6286872623458073,
+        "sample_std": 0.06889122796246208,
+        "min": 0.524390243902439,
+        "max": 0.7380952380952381,
+        "n_seeds": 10
+      },
+      "cross_reference": {
+        "mean": 0.8825010862438044,
+        "sample_std": 0.019109465268798413,
+        "min": 0.8445378151260504,
+        "max": 0.9173728813559322,
+        "n_seeds": 10
+      },
+      "paired_delta_atomic": {
+        "mean": -0.001953125,
+        "sample_std": 0.01909783872900082,
+        "min": -0.0283203125,
+        "max": 0.033203125,
+        "n_seeds": 10
+      },
+      "delta_positive_seeds": 4,
+      "delta_negative_seeds": 6,
+      "shared_slot_fraction": {
+        "mean": 0.010546875,
+        "sample_std": 0.005142817098471745,
+        "min": 0.00390625,
+        "max": 0.017578125,
+        "n_seeds": 10
+      },
+      "conflicting_row_fraction": {
+        "mean": 0.04375,
+        "sample_std": 0.009795959830106265,
+        "min": 0.029296875,
+        "max": 0.0625,
+        "n_seeds": 10
+      },
+      "posthoc_lookup_reference": {
+        "mean": 0.97421875,
+        "sample_std": 0.004744124141207468,
+        "min": 0.96875,
+        "max": 0.9833984375,
+        "n_seeds": 10
+      },
+      "per_seed": [
+        {
+          "seed": 2026110700,
+          "overall": 0.8603515625,
+          "within_reference": 0.6630434782608695,
+          "cross_reference": 0.8798283261802575,
+          "delta_atomic": 0.0087890625,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 932,
+            "distinct_slots": 1006,
+            "same_atomic_component": 1024,
+            "shared_slot": 18,
+            "within_reference": 92
+          }
+        },
+        {
+          "seed": 2026110701,
+          "overall": 0.8857421875,
+          "within_reference": 0.7083333333333334,
+          "cross_reference": 0.8991596638655462,
+          "delta_atomic": 0.0029296875,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 1010,
+            "same_atomic_component": 1024,
+            "shared_slot": 14,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110702,
+          "overall": 0.859375,
+          "within_reference": 0.6666666666666666,
+          "cross_reference": 0.8739495798319328,
+          "delta_atomic": -0.0078125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 1020,
+            "same_atomic_component": 1024,
+            "shared_slot": 4,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110703,
+          "overall": 0.8525390625,
+          "within_reference": 0.524390243902439,
+          "cross_reference": 0.881104033970276,
+          "delta_atomic": -0.0009765625,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 942,
+            "distinct_slots": 1010,
+            "same_atomic_component": 1024,
+            "shared_slot": 14,
+            "within_reference": 82
+          }
+        },
+        {
+          "seed": 2026110704,
+          "overall": 0.89453125,
+          "within_reference": 0.625,
+          "cross_reference": 0.9173728813559322,
+          "delta_atomic": 0.033203125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 944,
+            "distinct_slots": 1008,
+            "same_atomic_component": 1024,
+            "shared_slot": 16,
+            "within_reference": 80
+          }
+        },
+        {
+          "seed": 2026110705,
+          "overall": 0.8740234375,
+          "within_reference": 0.5967741935483871,
+          "cross_reference": 0.8918918918918919,
+          "delta_atomic": -0.0107421875,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 962,
+            "distinct_slots": 1018,
+            "same_atomic_component": 1024,
+            "shared_slot": 6,
+            "within_reference": 62
+          }
+        },
+        {
+          "seed": 2026110706,
+          "overall": 0.8779296875,
+          "within_reference": 0.7380952380952381,
+          "cross_reference": 0.8839103869653768,
+          "delta_atomic": 0.0185546875,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 982,
+            "distinct_slots": 1018,
+            "same_atomic_component": 1024,
+            "shared_slot": 6,
+            "within_reference": 42
+          }
+        },
+        {
+          "seed": 2026110707,
+          "overall": 0.8447265625,
+          "within_reference": 0.5394736842105263,
+          "cross_reference": 0.869198312236287,
+          "delta_atomic": -0.0283203125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 948,
+            "distinct_slots": 1010,
+            "same_atomic_component": 1024,
+            "shared_slot": 14,
+            "within_reference": 76
+          }
+        },
+        {
+          "seed": 2026110708,
+          "overall": 0.8671875,
+          "within_reference": 0.5862068965517241,
+          "cross_reference": 0.8840579710144928,
+          "delta_atomic": -0.0078125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 966,
+            "distinct_slots": 1020,
+            "same_atomic_component": 1024,
+            "shared_slot": 4,
+            "within_reference": 58
+          }
+        },
+        {
+          "seed": 2026110709,
+          "overall": 0.830078125,
+          "within_reference": 0.6388888888888888,
+          "cross_reference": 0.8445378151260504,
+          "delta_atomic": -0.02734375,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 1012,
+            "same_atomic_component": 1024,
+            "shared_slot": 12,
+            "within_reference": 72
+          }
+        }
+      ]
+    },
+    {
+      "train_pairs": 512,
+      "arm": {
+        "name": "family4",
+        "kind": "family",
+        "size": 4
+      },
+      "overall": {
+        "mean": 0.8623046875,
+        "sample_std": 0.016970846872053483,
+        "min": 0.8291015625,
+        "max": 0.8828125,
+        "n_seeds": 10
+      },
+      "within_reference": {
+        "mean": 0.545892325018492,
+        "sample_std": 0.0624027311255334,
+        "min": 0.45,
+        "max": 0.6388888888888888,
+        "n_seeds": 10
+      },
+      "cross_reference": {
+        "mean": 0.8854262519891372,
+        "sample_std": 0.020175674038653894,
+        "min": 0.8508403361344538,
+        "max": 0.9194915254237288,
+        "n_seeds": 10
+      },
+      "paired_delta_atomic": {
+        "mean": -0.004296875,
+        "sample_std": 0.019699793615405806,
+        "min": -0.0283203125,
+        "max": 0.021484375,
+        "n_seeds": 10
+      },
+      "delta_positive_seeds": 5,
+      "delta_negative_seeds": 5,
+      "shared_slot_fraction": {
+        "mean": 0.03046875,
+        "sample_std": 0.009077304717673634,
+        "min": 0.013671875,
+        "max": 0.046875,
+        "n_seeds": 10
+      },
+      "conflicting_row_fraction": {
+        "mean": 0.1615234375,
+        "sample_std": 0.030286385559886775,
+        "min": 0.125,
+        "max": 0.21875,
+        "n_seeds": 10
+      },
+      "posthoc_lookup_reference": {
+        "mean": 0.9240234375,
+        "sample_std": 0.010656022801219233,
+        "min": 0.908203125,
+        "max": 0.94140625,
+        "n_seeds": 10
+      },
+      "per_seed": [
+        {
+          "seed": 2026110700,
+          "overall": 0.857421875,
+          "within_reference": 0.6086956521739131,
+          "cross_reference": 0.8819742489270386,
+          "delta_atomic": 0.005859375,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 932,
+            "distinct_slots": 976,
+            "same_atomic_component": 1024,
+            "shared_slot": 48,
+            "within_reference": 92
+          }
+        },
+        {
+          "seed": 2026110701,
+          "overall": 0.861328125,
+          "within_reference": 0.6388888888888888,
+          "cross_reference": 0.8781512605042017,
+          "delta_atomic": -0.021484375,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 988,
+            "same_atomic_component": 1024,
+            "shared_slot": 36,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110702,
+          "overall": 0.84765625,
+          "within_reference": 0.6111111111111112,
+          "cross_reference": 0.865546218487395,
+          "delta_atomic": -0.01953125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 996,
+            "same_atomic_component": 1024,
+            "shared_slot": 28,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110703,
+          "overall": 0.8740234375,
+          "within_reference": 0.573170731707317,
+          "cross_reference": 0.9002123142250531,
+          "delta_atomic": 0.0205078125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 942,
+            "distinct_slots": 990,
+            "same_atomic_component": 1024,
+            "shared_slot": 34,
+            "within_reference": 82
+          }
+        },
+        {
+          "seed": 2026110704,
+          "overall": 0.8828125,
+          "within_reference": 0.45,
+          "cross_reference": 0.9194915254237288,
+          "delta_atomic": 0.021484375,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 944,
+            "distinct_slots": 984,
+            "same_atomic_component": 1024,
+            "shared_slot": 40,
+            "within_reference": 80
+          }
+        },
+        {
+          "seed": 2026110705,
+          "overall": 0.8662109375,
+          "within_reference": 0.5,
+          "cross_reference": 0.8898128898128899,
+          "delta_atomic": -0.0185546875,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 962,
+            "distinct_slots": 998,
+            "same_atomic_component": 1024,
+            "shared_slot": 26,
+            "within_reference": 62
+          }
+        },
+        {
+          "seed": 2026110706,
+          "overall": 0.8720703125,
+          "within_reference": 0.5,
+          "cross_reference": 0.8879837067209776,
+          "delta_atomic": 0.0126953125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 982,
+            "distinct_slots": 1010,
+            "same_atomic_component": 1024,
+            "shared_slot": 14,
+            "within_reference": 42
+          }
+        },
+        {
+          "seed": 2026110707,
+          "overall": 0.849609375,
+          "within_reference": 0.5526315789473685,
+          "cross_reference": 0.8734177215189873,
+          "delta_atomic": -0.0234375,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 948,
+            "distinct_slots": 992,
+            "same_atomic_component": 1024,
+            "shared_slot": 32,
+            "within_reference": 76
+          }
+        },
+        {
+          "seed": 2026110708,
+          "overall": 0.8828125,
+          "within_reference": 0.4827586206896552,
+          "cross_reference": 0.906832298136646,
+          "delta_atomic": 0.0078125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 966,
+            "distinct_slots": 1000,
+            "same_atomic_component": 1024,
+            "shared_slot": 24,
+            "within_reference": 58
+          }
+        },
+        {
+          "seed": 2026110709,
+          "overall": 0.8291015625,
+          "within_reference": 0.5416666666666666,
+          "cross_reference": 0.8508403361344538,
+          "delta_atomic": -0.0283203125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 994,
+            "same_atomic_component": 1024,
+            "shared_slot": 30,
+            "within_reference": 72
+          }
+        }
+      ]
+    },
+    {
+      "train_pairs": 512,
+      "arm": {
+        "name": "family8",
+        "kind": "family",
+        "size": 8
+      },
+      "overall": {
+        "mean": 0.8525390625,
+        "sample_std": 0.022725924056910235,
+        "min": 0.810546875,
+        "max": 0.888671875,
+        "n_seeds": 10
+      },
+      "within_reference": {
+        "mean": 0.5,
+        "sample_std": 0.0,
+        "min": 0.5,
+        "max": 0.5,
+        "n_seeds": 10
+      },
+      "cross_reference": {
+        "mean": 0.8788030828295752,
+        "sample_std": 0.025182791432090047,
+        "min": 0.8340336134453782,
+        "max": 0.9216101694915254,
+        "n_seeds": 10
+      },
+      "paired_delta_atomic": {
+        "mean": -0.0140625,
+        "sample_std": 0.020604208796721337,
+        "min": -0.046875,
+        "max": 0.02734375,
+        "n_seeds": 10
+      },
+      "delta_positive_seeds": 2,
+      "delta_negative_seeds": 8,
+      "shared_slot_fraction": {
+        "mean": 0.069140625,
+        "sample_std": 0.013662571239140286,
+        "min": 0.041015625,
+        "max": 0.08984375,
+        "n_seeds": 10
+      },
+      "conflicting_row_fraction": {
+        "mean": 0.3251953125,
+        "sample_std": 0.06981188732649815,
+        "min": 0.248046875,
+        "max": 0.48046875,
+        "n_seeds": 10
+      },
+      "posthoc_lookup_reference": {
+        "mean": 0.875390625,
+        "sample_std": 0.017512899821453043,
+        "min": 0.84375,
+        "max": 0.896484375,
+        "n_seeds": 10
+      },
+      "per_seed": [
+        {
+          "seed": 2026110700,
+          "overall": 0.83203125,
+          "within_reference": 0.5,
+          "cross_reference": 0.8648068669527897,
+          "delta_atomic": -0.01953125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 932,
+            "distinct_slots": 932,
+            "same_atomic_component": 1024,
+            "shared_slot": 92,
+            "within_reference": 92
+          }
+        },
+        {
+          "seed": 2026110701,
+          "overall": 0.87109375,
+          "within_reference": 0.5,
+          "cross_reference": 0.8991596638655462,
+          "delta_atomic": -0.01171875,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 952,
+            "same_atomic_component": 1024,
+            "shared_slot": 72,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110702,
+          "overall": 0.83984375,
+          "within_reference": 0.5,
+          "cross_reference": 0.865546218487395,
+          "delta_atomic": -0.02734375,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 952,
+            "same_atomic_component": 1024,
+            "shared_slot": 72,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110703,
+          "overall": 0.8603515625,
+          "within_reference": 0.5,
+          "cross_reference": 0.89171974522293,
+          "delta_atomic": 0.0068359375,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 942,
+            "distinct_slots": 942,
+            "same_atomic_component": 1024,
+            "shared_slot": 82,
+            "within_reference": 82
+          }
+        },
+        {
+          "seed": 2026110704,
+          "overall": 0.888671875,
+          "within_reference": 0.5,
+          "cross_reference": 0.9216101694915254,
+          "delta_atomic": 0.02734375,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 944,
+            "distinct_slots": 944,
+            "same_atomic_component": 1024,
+            "shared_slot": 80,
+            "within_reference": 80
+          }
+        },
+        {
+          "seed": 2026110705,
+          "overall": 0.8564453125,
+          "within_reference": 0.5,
+          "cross_reference": 0.8794178794178794,
+          "delta_atomic": -0.0283203125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 962,
+            "distinct_slots": 962,
+            "same_atomic_component": 1024,
+            "shared_slot": 62,
+            "within_reference": 62
+          }
+        },
+        {
+          "seed": 2026110706,
+          "overall": 0.8388671875,
+          "within_reference": 0.5,
+          "cross_reference": 0.8533604887983707,
+          "delta_atomic": -0.0205078125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 982,
+            "distinct_slots": 982,
+            "same_atomic_component": 1024,
+            "shared_slot": 42,
+            "within_reference": 42
+          }
+        },
+        {
+          "seed": 2026110707,
+          "overall": 0.85546875,
+          "within_reference": 0.5,
+          "cross_reference": 0.8839662447257384,
+          "delta_atomic": -0.017578125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 948,
+            "distinct_slots": 948,
+            "same_atomic_component": 1024,
+            "shared_slot": 76,
+            "within_reference": 76
+          }
+        },
+        {
+          "seed": 2026110708,
+          "overall": 0.8720703125,
+          "within_reference": 0.5,
+          "cross_reference": 0.8944099378881988,
+          "delta_atomic": -0.0029296875,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 966,
+            "distinct_slots": 966,
+            "same_atomic_component": 1024,
+            "shared_slot": 58,
+            "within_reference": 58
+          }
+        },
+        {
+          "seed": 2026110709,
+          "overall": 0.810546875,
+          "within_reference": 0.5,
+          "cross_reference": 0.8340336134453782,
+          "delta_atomic": -0.046875,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 952,
+            "same_atomic_component": 1024,
+            "shared_slot": 72,
+            "within_reference": 72
+          }
+        }
+      ]
+    },
+    {
+      "train_pairs": 512,
+      "arm": {
+        "name": "random2",
+        "kind": "random",
+        "size": 2
+      },
+      "overall": {
+        "mean": 0.726953125,
+        "sample_std": 0.03874983373900264,
+        "min": 0.6630859375,
+        "max": 0.791015625,
+        "n_seeds": 10
+      },
+      "within_reference": {
+        "mean": 0.55175082078525,
+        "sample_std": 0.12037531986710853,
+        "min": 0.4166666666666667,
+        "max": 0.7916666666666666,
+        "n_seeds": 10
+      },
+      "cross_reference": {
+        "mean": 0.7391695658349497,
+        "sample_std": 0.04266696832320227,
+        "min": 0.6587982832618026,
+        "max": 0.8064182194616977,
+        "n_seeds": 10
+      },
+      "paired_delta_atomic": {
+        "mean": -0.1396484375,
+        "sample_std": 0.03838662244403108,
+        "min": -0.193359375,
+        "max": -0.083984375,
+        "n_seeds": 10
+      },
+      "delta_positive_seeds": 0,
+      "delta_negative_seeds": 10,
+      "shared_slot_fraction": {
+        "mean": 0.009765625,
+        "sample_std": 0.0044155794160971795,
+        "min": 0.00390625,
+        "max": 0.017578125,
+        "n_seeds": 10
+      },
+      "conflicting_row_fraction": {
+        "mean": 0.123828125,
+        "sample_std": 0.028781638313220732,
+        "min": 0.08984375,
+        "max": 0.17578125,
+        "n_seeds": 10
+      },
+      "posthoc_lookup_reference": {
+        "mean": 0.93671875,
+        "sample_std": 0.013443655728271152,
+        "min": 0.9130859375,
+        "max": 0.9521484375,
+        "n_seeds": 10
+      },
+      "per_seed": [
+        {
+          "seed": 2026110700,
+          "overall": 0.6630859375,
+          "within_reference": 0.7065217391304348,
+          "cross_reference": 0.6587982832618026,
+          "delta_atomic": -0.1884765625,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 932,
+            "distinct_slots": 1018,
+            "same_atomic_component": 1024,
+            "shared_slot": 6,
+            "within_reference": 92
+          }
+        },
+        {
+          "seed": 2026110701,
+          "overall": 0.7412109375,
+          "within_reference": 0.5,
+          "cross_reference": 0.759453781512605,
+          "delta_atomic": -0.1416015625,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 1018,
+            "same_atomic_component": 1024,
+            "shared_slot": 6,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110702,
+          "overall": 0.7353515625,
+          "within_reference": 0.4166666666666667,
+          "cross_reference": 0.759453781512605,
+          "delta_atomic": -0.1318359375,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 1014,
+            "same_atomic_component": 1024,
+            "shared_slot": 10,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110703,
+          "overall": 0.71484375,
+          "within_reference": 0.5365853658536586,
+          "cross_reference": 0.7303609341825902,
+          "delta_atomic": -0.138671875,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 942,
+            "distinct_slots": 1016,
+            "same_atomic_component": 1024,
+            "shared_slot": 8,
+            "within_reference": 82
+          }
+        },
+        {
+          "seed": 2026110704,
+          "overall": 0.763671875,
+          "within_reference": 0.575,
+          "cross_reference": 0.7796610169491526,
+          "delta_atomic": -0.09765625,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 944,
+            "distinct_slots": 1016,
+            "same_atomic_component": 1024,
+            "shared_slot": 8,
+            "within_reference": 80
+          }
+        },
+        {
+          "seed": 2026110705,
+          "overall": 0.69140625,
+          "within_reference": 0.5806451612903226,
+          "cross_reference": 0.6985446985446986,
+          "delta_atomic": -0.193359375,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 962,
+            "distinct_slots": 1020,
+            "same_atomic_component": 1024,
+            "shared_slot": 4,
+            "within_reference": 62
+          }
+        },
+        {
+          "seed": 2026110706,
+          "overall": 0.703125,
+          "within_reference": 0.42857142857142855,
+          "cross_reference": 0.714867617107943,
+          "delta_atomic": -0.15625,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 982,
+            "distinct_slots": 1008,
+            "same_atomic_component": 1024,
+            "shared_slot": 16,
+            "within_reference": 42
+          }
+        },
+        {
+          "seed": 2026110707,
+          "overall": 0.7041015625,
+          "within_reference": 0.4473684210526316,
+          "cross_reference": 0.7246835443037974,
+          "delta_atomic": -0.1689453125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 948,
+            "distinct_slots": 1006,
+            "same_atomic_component": 1024,
+            "shared_slot": 18,
+            "within_reference": 76
+          }
+        },
+        {
+          "seed": 2026110708,
+          "overall": 0.791015625,
+          "within_reference": 0.5344827586206896,
+          "cross_reference": 0.8064182194616977,
+          "delta_atomic": -0.083984375,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 966,
+            "distinct_slots": 1012,
+            "same_atomic_component": 1024,
+            "shared_slot": 12,
+            "within_reference": 58
+          }
+        },
+        {
+          "seed": 2026110709,
+          "overall": 0.76171875,
+          "within_reference": 0.7916666666666666,
+          "cross_reference": 0.759453781512605,
+          "delta_atomic": -0.095703125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 1012,
+            "same_atomic_component": 1024,
+            "shared_slot": 12,
+            "within_reference": 72
+          }
+        }
+      ]
+    },
+    {
+      "train_pairs": 512,
+      "arm": {
+        "name": "random4",
+        "kind": "random",
+        "size": 4
+      },
+      "overall": {
+        "mean": 0.65068359375,
+        "sample_std": 0.03291480851864087,
+        "min": 0.595703125,
+        "max": 0.7109375,
+        "n_seeds": 10
+      },
+      "within_reference": {
+        "mean": 0.5187043435052842,
+        "sample_std": 0.09380025584218821,
+        "min": 0.39473684210526316,
+        "max": 0.7258064516129032,
+        "n_seeds": 10
+      },
+      "cross_reference": {
+        "mean": 0.6605957016469521,
+        "sample_std": 0.03575544114940998,
+        "min": 0.6008583690987125,
+        "max": 0.7321428571428571,
+        "n_seeds": 10
+      },
+      "paired_delta_atomic": {
+        "mean": -0.21591796875,
+        "sample_std": 0.03278061058892409,
+        "min": -0.255859375,
+        "max": -0.15625,
+        "n_seeds": 10
+      },
+      "delta_positive_seeds": 0,
+      "delta_negative_seeds": 10,
+      "shared_slot_fraction": {
+        "mean": 0.0283203125,
+        "sample_std": 0.00766185045308582,
+        "min": 0.017578125,
+        "max": 0.04296875,
+        "n_seeds": 10
+      },
+      "conflicting_row_fraction": {
+        "mean": 0.4884765625,
+        "sample_std": 0.041056423987353555,
+        "min": 0.4296875,
+        "max": 0.556640625,
+        "n_seeds": 10
+      },
+      "posthoc_lookup_reference": {
+        "mean": 0.80224609375,
+        "sample_std": 0.01766981535868762,
+        "min": 0.7685546875,
+        "max": 0.822265625,
+        "n_seeds": 10
+      },
+      "per_seed": [
+        {
+          "seed": 2026110700,
+          "overall": 0.595703125,
+          "within_reference": 0.5434782608695652,
+          "cross_reference": 0.6008583690987125,
+          "delta_atomic": -0.255859375,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 932,
+            "distinct_slots": 1000,
+            "same_atomic_component": 1024,
+            "shared_slot": 24,
+            "within_reference": 92
+          }
+        },
+        {
+          "seed": 2026110701,
+          "overall": 0.6474609375,
+          "within_reference": 0.4444444444444444,
+          "cross_reference": 0.6628151260504201,
+          "delta_atomic": -0.2353515625,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 1002,
+            "same_atomic_component": 1024,
+            "shared_slot": 22,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110702,
+          "overall": 0.7109375,
+          "within_reference": 0.4305555555555556,
+          "cross_reference": 0.7321428571428571,
+          "delta_atomic": -0.15625,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 996,
+            "same_atomic_component": 1024,
+            "shared_slot": 28,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110703,
+          "overall": 0.6318359375,
+          "within_reference": 0.524390243902439,
+          "cross_reference": 0.6411889596602972,
+          "delta_atomic": -0.2216796875,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 942,
+            "distinct_slots": 990,
+            "same_atomic_component": 1024,
+            "shared_slot": 34,
+            "within_reference": 82
+          }
+        },
+        {
+          "seed": 2026110704,
+          "overall": 0.6396484375,
+          "within_reference": 0.5,
+          "cross_reference": 0.6514830508474576,
+          "delta_atomic": -0.2216796875,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 944,
+            "distinct_slots": 1002,
+            "same_atomic_component": 1024,
+            "shared_slot": 22,
+            "within_reference": 80
+          }
+        },
+        {
+          "seed": 2026110705,
+          "overall": 0.6572265625,
+          "within_reference": 0.7258064516129032,
+          "cross_reference": 0.6528066528066528,
+          "delta_atomic": -0.2275390625,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 962,
+            "distinct_slots": 1006,
+            "same_atomic_component": 1024,
+            "shared_slot": 18,
+            "within_reference": 62
+          }
+        },
+        {
+          "seed": 2026110706,
+          "overall": 0.6953125,
+          "within_reference": 0.5714285714285714,
+          "cross_reference": 0.7006109979633401,
+          "delta_atomic": -0.1640625,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 982,
+            "distinct_slots": 980,
+            "same_atomic_component": 1024,
+            "shared_slot": 44,
+            "within_reference": 42
+          }
+        },
+        {
+          "seed": 2026110707,
+          "overall": 0.6484375,
+          "within_reference": 0.39473684210526316,
+          "cross_reference": 0.6687763713080169,
+          "delta_atomic": -0.224609375,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 948,
+            "distinct_slots": 988,
+            "same_atomic_component": 1024,
+            "shared_slot": 36,
+            "within_reference": 76
+          }
+        },
+        {
+          "seed": 2026110708,
+          "overall": 0.626953125,
+          "within_reference": 0.4827586206896552,
+          "cross_reference": 0.6356107660455487,
+          "delta_atomic": -0.248046875,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 966,
+            "distinct_slots": 992,
+            "same_atomic_component": 1024,
+            "shared_slot": 32,
+            "within_reference": 58
+          }
+        },
+        {
+          "seed": 2026110709,
+          "overall": 0.6533203125,
+          "within_reference": 0.5694444444444444,
+          "cross_reference": 0.6596638655462185,
+          "delta_atomic": -0.2041015625,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 994,
+            "same_atomic_component": 1024,
+            "shared_slot": 30,
+            "within_reference": 72
+          }
+        }
+      ]
+    },
+    {
+      "train_pairs": 512,
+      "arm": {
+        "name": "random8",
+        "kind": "random",
+        "size": 8
+      },
+      "overall": {
+        "mean": 0.5912109375,
+        "sample_std": 0.037192660560465045,
+        "min": 0.5400390625,
+        "max": 0.6533203125,
+        "n_seeds": 10
+      },
+      "within_reference": {
+        "mean": 0.5492009717390969,
+        "sample_std": 0.09685715785443826,
+        "min": 0.3793103448275862,
+        "max": 0.6463414634146342,
+        "n_seeds": 10
+      },
+      "cross_reference": {
+        "mean": 0.594156110228382,
+        "sample_std": 0.041872928691183135,
+        "min": 0.5354077253218884,
+        "max": 0.6624472573839663,
+        "n_seeds": 10
+      },
+      "paired_delta_atomic": {
+        "mean": -0.275390625,
+        "sample_std": 0.035751021126818786,
+        "min": -0.3349609375,
+        "max": -0.2197265625,
+        "n_seeds": 10
+      },
+      "delta_positive_seeds": 0,
+      "delta_negative_seeds": 10,
+      "shared_slot_fraction": {
+        "mean": 0.073046875,
+        "sample_std": 0.010384063561133795,
+        "min": 0.0546875,
+        "max": 0.087890625,
+        "n_seeds": 10
+      },
+      "conflicting_row_fraction": {
+        "mean": 0.8720703125,
+        "sample_std": 0.022781807561097257,
+        "min": 0.837890625,
+        "max": 0.900390625,
+        "n_seeds": 10
+      },
+      "posthoc_lookup_reference": {
+        "mean": 0.6685546875,
+        "sample_std": 0.02039745854522486,
+        "min": 0.642578125,
+        "max": 0.7060546875,
+        "n_seeds": 10
+      },
+      "per_seed": [
+        {
+          "seed": 2026110700,
+          "overall": 0.544921875,
+          "within_reference": 0.6413043478260869,
+          "cross_reference": 0.5354077253218884,
+          "delta_atomic": -0.306640625,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 932,
+            "distinct_slots": 956,
+            "same_atomic_component": 1024,
+            "shared_slot": 68,
+            "within_reference": 92
+          }
+        },
+        {
+          "seed": 2026110701,
+          "overall": 0.62109375,
+          "within_reference": 0.4305555555555556,
+          "cross_reference": 0.6355042016806722,
+          "delta_atomic": -0.26171875,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 964,
+            "same_atomic_component": 1024,
+            "shared_slot": 60,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110702,
+          "overall": 0.62890625,
+          "within_reference": 0.4583333333333333,
+          "cross_reference": 0.6418067226890757,
+          "delta_atomic": -0.23828125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 948,
+            "same_atomic_component": 1024,
+            "shared_slot": 76,
+            "within_reference": 72
+          }
+        },
+        {
+          "seed": 2026110703,
+          "overall": 0.6142578125,
+          "within_reference": 0.6463414634146342,
+          "cross_reference": 0.6114649681528662,
+          "delta_atomic": -0.2392578125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 942,
+            "distinct_slots": 942,
+            "same_atomic_component": 1024,
+            "shared_slot": 82,
+            "within_reference": 82
+          }
+        },
+        {
+          "seed": 2026110704,
+          "overall": 0.5673828125,
+          "within_reference": 0.5375,
+          "cross_reference": 0.5699152542372882,
+          "delta_atomic": -0.2939453125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 944,
+            "distinct_slots": 950,
+            "same_atomic_component": 1024,
+            "shared_slot": 74,
+            "within_reference": 80
+          }
+        },
+        {
+          "seed": 2026110705,
+          "overall": 0.5859375,
+          "within_reference": 0.6290322580645161,
+          "cross_reference": 0.5831600831600832,
+          "delta_atomic": -0.298828125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 512,
+            "largest_component": 96,
+            "presented_unique_pairs": 512,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 962,
+            "distinct_slots": 968,
+            "same_atomic_component": 1024,
+            "shared_slot": 56,
+            "within_reference": 62
+          }
+        },
+        {
+          "seed": 2026110706,
+          "overall": 0.5732421875,
+          "within_reference": 0.6190476190476191,
+          "cross_reference": 0.5712830957230143,
+          "delta_atomic": -0.2861328125,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 982,
+            "distinct_slots": 934,
+            "same_atomic_component": 1024,
+            "shared_slot": 90,
+            "within_reference": 42
+          }
+        },
+        {
+          "seed": 2026110707,
+          "overall": 0.6533203125,
+          "within_reference": 0.5394736842105263,
+          "cross_reference": 0.6624472573839663,
+          "delta_atomic": -0.2197265625,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 948,
+            "distinct_slots": 946,
+            "same_atomic_component": 1024,
+            "shared_slot": 78,
+            "within_reference": 76
+          }
+        },
+        {
+          "seed": 2026110708,
+          "overall": 0.5400390625,
+          "within_reference": 0.3793103448275862,
+          "cross_reference": 0.5496894409937888,
+          "delta_atomic": -0.3349609375,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 966,
+            "distinct_slots": 942,
+            "same_atomic_component": 1024,
+            "shared_slot": 82,
+            "within_reference": 58
+          }
+        },
+        {
+          "seed": 2026110709,
+          "overall": 0.5830078125,
+          "within_reference": 0.6111111111111112,
+          "cross_reference": 0.5808823529411765,
+          "delta_atomic": -0.2744140625,
+          "graph": {
+            "components_including_isolated": 1,
+            "distinct_training_pairs": 511,
+            "largest_component": 96,
+            "presented_unique_pairs": 511,
+            "seen_atoms": 96,
+            "selected_unique_pairs": 512,
+            "unseen_atoms": 0
+          },
+          "stratum_denominators": {
+            "all": 1024,
+            "both_atoms_seen": 1024,
+            "cross_reference": 952,
+            "distinct_slots": 942,
+            "same_atomic_component": 1024,
+            "shared_slot": 82,
+            "within_reference": 72
+          }
+        }
+      ]
+    }
+  ],
+  "family_vs_random": [
+    {
+      "train_pairs": 64,
+      "size": 2,
+      "paired_difference": {
+        "mean": 0.105078125,
+        "sample_std": 0.06071674758664202,
+        "min": 0.0185546875,
+        "max": 0.23828125,
+        "n_seeds": 10
+      }
+    },
+    {
+      "train_pairs": 64,
+      "size": 4,
+      "paired_difference": {
+        "mean": 0.18935546875,
+        "sample_std": 0.044551067144188376,
+        "min": 0.130859375,
+        "max": 0.259765625,
+        "n_seeds": 10
+      }
+    },
+    {
+      "train_pairs": 64,
+      "size": 8,
+      "paired_difference": {
+        "mean": 0.2734375,
+        "sample_std": 0.05131678749723582,
+        "min": 0.1728515625,
+        "max": 0.3427734375,
+        "n_seeds": 10
+      }
+    },
+    {
+      "train_pairs": 512,
+      "size": 2,
+      "paired_difference": {
+        "mean": 0.1376953125,
+        "sample_std": 0.04193284526272045,
+        "min": 0.068359375,
+        "max": 0.197265625,
+        "n_seeds": 10
+      }
+    },
+    {
+      "train_pairs": 512,
+      "size": 4,
+      "paired_difference": {
+        "mean": 0.21162109375,
+        "sample_std": 0.04031480570663105,
+        "min": 0.13671875,
+        "max": 0.26171875,
+        "n_seeds": 10
+      }
+    },
+    {
+      "train_pairs": 512,
+      "size": 8,
+      "paired_difference": {
+        "mean": 0.261328125,
+        "sample_std": 0.0433400153852505,
+        "min": 0.2021484375,
+        "max": 0.33203125,
+        "n_seeds": 10
+      }
+    }
+  ]
+}

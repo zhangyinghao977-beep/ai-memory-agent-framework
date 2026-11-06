@@ -2,9 +2,11 @@
 
 English · [简体中文](README.md)
 
+**Latest G1 execution:** [Complete ten-seed results](projects/the-abyss/research/g1-granularity-20261107/followup-20261107-execution3/README.en.md): 10/10 seeds and 140/140 units completed. The earlier two-seed resource-stop snapshot is retained.
+
 **Complete glossary:** [Bilingual terminology and event-chain boundaries](docs/GLOSSARY.en.md), including the latest three correction rounds, implementation mappings and open questions.
 
-**New evidence:** [2026-11-07 research-record update](projects/the-abyss/evidence/2026-11-07/README.en.md) covers v18.1, T11, subsequent-stage status, and the G1 granularity pilot. G1 stopped at its resource gate after 2/10 seeds; the earlier Abyss implementation copy's static-validation scope remains unchanged.
+**Earlier evidence snapshot:** [2026-11-07 research-record update](projects/the-abyss/evidence/2026-11-07/README.en.md) covers v18.1, T11, subsequent-stage status, and the G1 granularity pilot. G1 stopped at its resource gate after 2/10 seeds; the earlier Abyss implementation copy's static-validation scope remains unchanged.
 
 One repository, two separate research projects. This is an **unfinished AI approach to memory, learning, and agent collaboration**: adding persistent records, knowledge organization, and work continuity that a base LLM does not itself provide, while studying local learning. **This is a bilingual research preview, not a fully implemented or validated system. The project license has not been selected; public availability does not grant an open-source license.**
 

@@ -2,6 +2,8 @@
 
 [中文](README.md) | [English](README.en.md)
 
+**G1 最新执行：** [十种子完整结果](research/g1-granularity-20261107/followup-20261107-execution3/README.md)，保留初次资源停止及小样本结论的变化。
+
 **名词解释：** [完整术语汇编与事件链专节](../../docs/GLOSSARY.md)。这是最新讨论快照，保留历史定义和实验边界。
 
 [新证据与粒度小试（2026-11-07）](evidence/2026-11-07/README.md)：历史训练摘要、正在进行的阶段，以及仅完成 2/10 种子的 G1 新试验，分别记录。

@@ -1,0 +1,72 @@
+{
+  "audit_version": 1,
+  "created_utc": "2026-11-06T17:55:53.909938+00:00",
+  "status": "passed",
+  "independent_formula": true,
+  "experiment_modules_imported": false,
+  "training_performed": false,
+  "arithmetic_tolerance": 1e-12,
+  "coverage": {
+    "receipts": 140,
+    "seeds": 10,
+    "test_rows_per_receipt": 1024,
+    "unique_unordered_pairs_per_receipt": 512,
+    "all_metric_fields_including_deterministic_ties": true,
+    "entire_summary_including_per_seed_and_paired_comparisons": true,
+    "old_receipts_equal_except_completed_utc": 28,
+    "original_attempt2_files_checked": 53,
+    "frozen_source_files": 7,
+    "frozen_data_files_including_audit": 11
+  },
+  "method": "Read frozen rows, selections, orders and maps; reconstruct atomic graph with adjacency traversal; score saved finite 96-slot weights using signed differences and integer half-credit; recompute tie RNG, fixed-family strata, slot collisions and canonical-world group-pair conflicts; recompute all seed-level summary statistics. No SGD or generator execution.",
+  "limitations": [
+    "Saved weights were evaluated, not retrained or independently reproduced by optimization.",
+    "Online training-loss curves checked only for finite values, planned checkpoints and noncollapsed update counts; losses not recalculated by training.",
+    "Two world rows repeat one unordered pair; 10 seeds are the reporting units.",
+    "This audit verifies evidence consistency, not real-knowledge validity or learned grouping."
+  ],
+  "checks": {
+    "keys": 3030,
+    "value": 20296,
+    "complete_receipt_set": 1,
+    "length": 216,
+    "run_status": 1,
+    "fixed_reference_label": 10240,
+    "atomic_winner_label": 10240,
+    "world_sign": 10240,
+    "evaluation_unit_count": 10,
+    "world_reversal_pairs": 10,
+    "training_selection": 20,
+    "training_test_pair_separation": 20,
+    "presentation_budget": 20,
+    "group_partition": 140,
+    "family_group_boundary": 80,
+    "finite_96_weights": 140,
+    "unused_slots_zero": 140,
+    "weight_sum_conservation": 140,
+    "finite_online_loss": 420,
+    "old_receipts_count": 1
+  },
+  "errors": [],
+  "resources": {
+    "scope": "this audit process only",
+    "gpu_used": false,
+    "priority": "IDLE",
+    "cpu_affinity": [
+      22
+    ],
+    "cooperative_duty_fraction": 0.1,
+    "cpu_seconds": 1.125,
+    "wall_seconds": 10.536427600076422
+  },
+  "input_hashes": {
+    "FROZEN.json": "769ee5d20e79e0e8dc8c5e8d2cc68d430086079516a46a2bd8de6cc982e0a3d8",
+    "SUMMARY.json": "d0e60ffaee4e20f40fc849f299edf4b4cf6cc592340b33d146b29f25b7591d35",
+    "EXECUTION_NOTE.json": "072c46eddb3addefbb71db1dc00e41ae6fabc88c115863edd2b3ba9c2151b42d",
+    "RUN_STATUS.json": "6c8b2737e1a4865be29177a830cfd1164bd214ea13eb2b6741b9354ee46bc4dc"
+  },
+  "local_full_audit_sha256": "bd2b944df18e6b68f710f225d101d0e90db0b482bc48a4e82925409d2b9900bf",
+  "publication_transform": "Selected metadata and coverage from the full local audit. Redundant aggregate/per-receipt result arrays are omitted; all 140 cells were checked.",
+  "public_inputs_available": false,
+  "recomputation_boundary": "The independent audit scored local saved weights against local frozen inputs. Those weight-bearing receipts and datasets are not distributed. Public summaries and hashes alone cannot repeat that historical audit."
+}

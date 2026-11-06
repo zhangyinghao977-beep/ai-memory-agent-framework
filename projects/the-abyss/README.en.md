@@ -2,6 +2,8 @@
 
 [中文](README.md) | [English](README.en.md)
 
+**Latest G1 execution:** [Complete ten-seed results](research/g1-granularity-20261107/followup-20261107-execution3/README.en.md), preserving the original resource stop and changes from the small initial sample.
+
 **Glossary:** [Consolidated terminology and event-chain section](../../docs/GLOSSARY.en.md), a dated discussion snapshot preserving historical definitions and experiment boundaries.
 
 [New evidence and granularity pilot (2026-11-07)](evidence/2026-11-07/README.en.md) separates historical training summaries, ongoing stages, and the new G1 pilot that completed only 2/10 seeds.

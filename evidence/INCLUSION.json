@@ -45,6 +45,13 @@
       "executable": false,
       "evidence": "Definitions and operationalizations are separate from experimental validation; source originals with private conversation are omitted.",
       "record": "evidence/GLOSSARY_UPDATE_20261107.json"
+    },
+    {
+      "path": "projects/the-abyss/research/g1-granularity-20261107/followup-20261107-execution3",
+      "content": "Complete ten-seed isolated G1 re-execution: bilingual results, aggregate summary, status, resource record, source/receipt digests and independent audit. Original partial snapshot retained.",
+      "executable": false,
+      "evidence": "Actual 140-unit completion; supplied synthetic family prior and changing effective capacity remain limitations. No raw data or weight-bearing receipts distributed.",
+      "record": "evidence/G1_EXECUTION3_UPDATE.json"
     }
   ],
   "notIncluded": [

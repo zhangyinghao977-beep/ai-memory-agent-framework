@@ -2,6 +2,8 @@
 
 [中文](RESULTS.md) · [Reproduction entry](README.md) · [Preregistration](PREREG.md) · [Configuration](PLAN.json) · [Combined evidence](../../evidence/2026-11-07/README.en.md)
 
+**Follow-up:** [execution3 completed all ten seeds](followup-20261107-execution3/README.en.md). This page retains the original two-seed historical snapshot; its stopped status and numbers do not describe the later execution.
+
 **Status: `INCOMPLETE_RESOURCE_STOP`. Only the first 2 of 10 planned seeds completed, covering 28/140 experimental cells.** Each completed seed contains all seven grouping arms and both supervision regimes. They are a prefix of the predetermined execution order, not seeds selected for favorable scores. Eight seeds remain incomplete; this is not a successful ten-seed reproduction.
 
 This pilot was newly executed. It reuses the reviewed standard-library T1 generator with a new shared-scalar comparison learner. It is not a rerun of the original T1 neural model, T11, or v18.1, and does not test attention.

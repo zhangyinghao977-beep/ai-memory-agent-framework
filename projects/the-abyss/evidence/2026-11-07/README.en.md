@@ -2,6 +2,8 @@
 
 [中文](README.md) · [Project entry](../../README.en.md) · [Structured results](RESULTS.json) · [Source snapshot and hashes](source_snapshot.json)
 
+**Later G1 execution:** [New results for all ten seeds](../../research/g1-granularity-20261107/followup-20261107-execution3/README.en.md) are recorded separately. The text below retains the initial run and time-bounded snapshots of other tracks; original results and predictions are not rewritten.
+
 Logic is the path that makes knowledge reachable. This states a research direction, not a complete theory established by the experiments below. The Abyss remains an incomplete AI scheme for memory and learning. This page separates implemented components, historical measurements and unverified hypotheses.
 
 The v18.1 and T11 entries summarize original local receipts and code checks from their respective tracks; they were not independently rerun for this publication. G1 was newly executed but completed only part of its preregistered plan. Published summaries and source hashes do not include the original corpora, model weights or all raw receipts. Hashes identify sources; they do not replace omitted inputs or reproduction.
