@@ -1,0 +1,18 @@
+{
+  "reviewedDate": "2026-11-06",
+  "repository": "https://github.com/deepseek-ai/deepseek-harness",
+  "licensePage": "https://github.com/deepseek-ai/deepseek-harness/blob/master/LICENSE",
+  "thirdPartyNoticesPage": "https://github.com/deepseek-ai/deepseek-harness/blob/master/THIRD_PARTY_NOTICES.md",
+  "observedRootLicense": "MIT",
+  "observedCopyright": "Copyright (c) 2026 DeepSeek",
+  "ref": "master",
+  "commit": null,
+  "exactRawBlobVerified": false,
+  "licenseTextRecord": "third_party/DeepSeek-Harness-MIT.txt",
+  "limits": [
+    "Displayed text verified; raw page retrieval was unavailable.",
+    "No claim that master matches installed rc.5.",
+    "Upstream dependency licenses differ.",
+    "Project license not selected."
+  ]
+}

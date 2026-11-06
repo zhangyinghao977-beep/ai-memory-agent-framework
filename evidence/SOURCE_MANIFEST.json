@@ -1,0 +1,262 @@
+{
+  "sourceArchiveSha256": "f8a1d1675f8b98d715a811d1e34e3f6defaad5677a1ac97d5721f01b53a2139a",
+  "scope": "Offline Hongchenxian research preview derived from the sealed central-step v04 local SDK-double candidate, relocated under projects/hongchenxian. Empiricist theory content is separate.",
+  "files": [
+    {
+      "path": "projects/hongchenxian/research/central-step/catalog-policy.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "catalog-policy.mjs",
+      "sourceSha256": "b6372ddc4177b2c1bcb352a9e846d0886a848c11a0c05169038c35eaf91be1d8",
+      "change": "byte-identical",
+      "previewSha256": "b6372ddc4177b2c1bcb352a9e846d0886a848c11a0c05169038c35eaf91be1d8"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/catalog-policy.test.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "catalog-policy.test.mjs",
+      "sourceSha256": "7fe816125b1ba4a126e2cd9050d34b7fdcd7f8ea9ddc8354e42df5f3871caa3e",
+      "change": "preview-only: replace deployment static-check test with no-SDK-load test",
+      "previewSha256": "178ccb40864d708a6588271945f25f4ee77aec03349ed9f9fe9033f73ed77392"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/plugin-recovery.test.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "plugin-recovery.test.mjs",
+      "sourceSha256": "8ed8c7c2e0bb2c75ef11e0cb169499d13d47a23811d86d8cdb3c49a959fa8821",
+      "change": "byte-identical",
+      "previewSha256": "8ed8c7c2e0bb2c75ef11e0cb169499d13d47a23811d86d8cdb3c49a959fa8821"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/plugin-runtime.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "plugin-runtime.mjs",
+      "sourceSha256": "8dbc8eacef7d98ef6216b3f553250808db62bc049b32d6bb47eb0599f2fe89a7",
+      "change": "preview-only: remove installed SDK loader",
+      "previewSha256": "78367c463ce5abc722cfdd59be77e51ebf15726bb73e4a7dd54df5507f48b744"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/plugin.test.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "plugin.test.mjs",
+      "sourceSha256": "2346af226e73648096fcd8688d07bcc5a0476b9839246fee89cb973cacac7dcd",
+      "change": "byte-identical",
+      "previewSha256": "2346af226e73648096fcd8688d07bcc5a0476b9839246fee89cb973cacac7dcd"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/protected-wire.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "protected-wire.mjs",
+      "sourceSha256": "147ee472ff09b57cd705f0b0230a672ebd5d74abbf42ece7751c891e50fc9d7e",
+      "change": "byte-identical",
+      "previewSha256": "147ee472ff09b57cd705f0b0230a672ebd5d74abbf42ece7751c891e50fc9d7e"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/protected-wire.test.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "protected-wire.test.mjs",
+      "sourceSha256": "d46cc4cb0d5b4c948b4e1fd57e816ddccdac6054d2c0362c7a7126a2110c2ff7",
+      "change": "byte-identical",
+      "previewSha256": "d46cc4cb0d5b4c948b4e1fd57e816ddccdac6054d2c0362c7a7126a2110c2ff7"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/provider-double.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "provider-double.mjs",
+      "sourceSha256": "43b30b5ff245cdcb297cf4843623c4be2fc2744bc9ecc9ea2984664eebef0a90",
+      "change": "byte-identical",
+      "previewSha256": "43b30b5ff245cdcb297cf4843623c4be2fc2744bc9ecc9ea2984664eebef0a90"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/recovery-evidence.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "recovery-evidence.mjs",
+      "sourceSha256": "0ed5d272b51457bcf76617a0fe9eece698603417b7cfa4469a2f26976a3a72ad",
+      "change": "byte-identical",
+      "previewSha256": "0ed5d272b51457bcf76617a0fe9eece698603417b7cfa4469a2f26976a3a72ad"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/recovery-evidence.test.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "recovery-evidence.test.mjs",
+      "sourceSha256": "d7a30810336149f5017dde2d2c10fa95feb392d40cdf959080ca1cd5d486eae4",
+      "change": "byte-identical",
+      "previewSha256": "d7a30810336149f5017dde2d2c10fa95feb392d40cdf959080ca1cd5d486eae4"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/reference-state.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "reference-state.mjs",
+      "sourceSha256": "20c5295d450656b6b66bc5d3555a5c635860a1c74041c1b918fd32025e132f12",
+      "change": "byte-identical",
+      "previewSha256": "20c5295d450656b6b66bc5d3555a5c635860a1c74041c1b918fd32025e132f12"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/sdk-runtime-double.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "sdk-runtime-double.mjs",
+      "sourceSha256": "e9df4b1ec7abb4a3424243e931c6339e7b86cba728c9cb90268b2f3a8f5f0ebe",
+      "change": "byte-identical",
+      "previewSha256": "e9df4b1ec7abb4a3424243e931c6339e7b86cba728c9cb90268b2f3a8f5f0ebe"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/synthetic-scenario.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "synthetic-scenario.mjs",
+      "sourceSha256": "88e4b0136ed9c64e1a07ac76a7ebe524dac304495129002ae3e226b9d2f9bb86",
+      "change": "byte-identical",
+      "previewSha256": "88e4b0136ed9c64e1a07ac76a7ebe524dac304495129002ae3e226b9d2f9bb86"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-assembly-shortref-20261106-v02/shortref.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-assembly-shortref-20261106-v02/shortref.mjs",
+      "sourceSha256": "7c152a982746cb57b0fa742e8c153fe0d5600e6ce4fcfb742113a156459f88cf",
+      "change": "byte-identical",
+      "previewSha256": "7c152a982746cb57b0fa742e8c153fe0d5600e6ce4fcfb742113a156459f88cf"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-continuity-round-router-20261106-v01/router.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-continuity-round-router-20261106-v01/router.mjs",
+      "sourceSha256": "d49f060e2ec35dac465a17a51ed53d858653b9f2f0314a48266754aed82267a9",
+      "change": "byte-identical",
+      "previewSha256": "d49f060e2ec35dac465a17a51ed53d858653b9f2f0314a48266754aed82267a9"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-fish-pool-20261106-v01/body.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-fish-pool-20261106-v01/body.mjs",
+      "sourceSha256": "c811701c43526a20fd79cfafa55aabcd115a14613a2c4763dd2c802054d9a9b7",
+      "change": "byte-identical",
+      "previewSha256": "c811701c43526a20fd79cfafa55aabcd115a14613a2c4763dd2c802054d9a9b7"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-fish-pool-20261106-v01/memory.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-fish-pool-20261106-v01/memory.mjs",
+      "sourceSha256": "0e0ef33ff741161bfe1a982cc9cabe35b77e7099877da248c7453396400c672c",
+      "change": "byte-identical",
+      "previewSha256": "0e0ef33ff741161bfe1a982cc9cabe35b77e7099877da248c7453396400c672c"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-fish-pool-20261106-v01/pool-choice.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-fish-pool-20261106-v01/pool-choice.mjs",
+      "sourceSha256": "05e764377522c48f77ea5a22a107a87eb8548b23df40f0d48664e007126965d2",
+      "change": "byte-identical",
+      "previewSha256": "05e764377522c48f77ea5a22a107a87eb8548b23df40f0d48664e007126965d2"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-native-lifecycle-adapter-20261106-v02/memory-reference.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-native-lifecycle-adapter-20261106-v02/memory-reference.mjs",
+      "sourceSha256": "733e0fa8eda2f2939f66f7987429ca7a6e5cea8de2baf6b2431045c18b1e10d9",
+      "change": "byte-identical",
+      "previewSha256": "733e0fa8eda2f2939f66f7987429ca7a6e5cea8de2baf6b2431045c18b1e10d9"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-native-lifecycle-adapter-20261106-v02/native-lifecycle.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-native-lifecycle-adapter-20261106-v02/native-lifecycle.mjs",
+      "sourceSha256": "5d485f1031876c13973953cac38c64fe6a77c7d34c9b93ba6a624c28d49ff8f5",
+      "change": "byte-identical",
+      "previewSha256": "5d485f1031876c13973953cac38c64fe6a77c7d34c9b93ba6a624c28d49ff8f5"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-native-lifecycle-adapter-20261106-v02/source-completion.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-native-lifecycle-adapter-20261106-v02/source-completion.mjs",
+      "sourceSha256": "7c91065dca59ade731e59bf0b42301fc03b5e8662026f4050f74a1ab58ead96f",
+      "change": "byte-identical",
+      "previewSha256": "7c91065dca59ade731e59bf0b42301fc03b5e8662026f4050f74a1ab58ead96f"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-native-lifecycle-adapter-20261106-v02/step-transport.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-native-lifecycle-adapter-20261106-v02/step-transport.mjs",
+      "sourceSha256": "e12455cbddcdc2e5cb532e15cb1f78c5f84586171e50cf3c0b89182c2ffc4d99",
+      "change": "byte-identical",
+      "previewSha256": "e12455cbddcdc2e5cb532e15cb1f78c5f84586171e50cf3c0b89182c2ffc4d99"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-protected-duty-20261106-v01/duty.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-protected-duty-20261106-v01/duty.mjs",
+      "sourceSha256": "858fe2421c032c871b0611cd3870e706729a1d3cdc1faaccf97967bb415d1cd0",
+      "change": "byte-identical",
+      "previewSha256": "858fe2421c032c871b0611cd3870e706729a1d3cdc1faaccf97967bb415d1cd0"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-round-recall-bridge-20261106-v01/round-recall.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-round-recall-bridge-20261106-v01/round-recall.mjs",
+      "sourceSha256": "0caa759374f7facf4f7d15ccaa891f27e3d67523efc6a17d979ebc192a7d33bf",
+      "change": "byte-identical",
+      "previewSha256": "0caa759374f7facf4f7d15ccaa891f27e3d67523efc6a17d979ebc192a7d33bf"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-round-recall-bridge-20261106-v01/vendor/legacy-tool-contract.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-round-recall-bridge-20261106-v01/vendor/legacy-tool-contract.mjs",
+      "sourceSha256": "e1b5324e59841dfbd14265ba6017c6fd57c594e00f3121cae838b6eb079b4591",
+      "change": "byte-identical",
+      "previewSha256": "e1b5324e59841dfbd14265ba6017c6fd57c594e00f3121cae838b6eb079b4591"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-round-recall-bridge-20261106-v01/vendor/migration-plan.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-round-recall-bridge-20261106-v01/vendor/migration-plan.mjs",
+      "sourceSha256": "689e7aac7b8f927e250c3a85b3c9dadd4fe24afcb90000d14ccbeff72e6a74bf",
+      "change": "byte-identical",
+      "previewSha256": "689e7aac7b8f927e250c3a85b3c9dadd4fe24afcb90000d14ccbeff72e6a74bf"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-round-recall-bridge-20261106-v01/vendor/paragraph/paragraph-memory.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-round-recall-bridge-20261106-v01/vendor/paragraph/paragraph-memory.mjs",
+      "sourceSha256": "84cd48fe7297b8f298ea0948dab443dbc10c0a8d0a84f81311da7fe00502f4b3",
+      "change": "byte-identical",
+      "previewSha256": "84cd48fe7297b8f298ea0948dab443dbc10c0a8d0a84f81311da7fe00502f4b3"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-round-recall-bridge-20261106-v01/vendor/paragraph/vendor/memory.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-round-recall-bridge-20261106-v01/vendor/paragraph/vendor/memory.mjs",
+      "sourceSha256": "0e0ef33ff741161bfe1a982cc9cabe35b77e7099877da248c7453396400c672c",
+      "change": "byte-identical",
+      "previewSha256": "0e0ef33ff741161bfe1a982cc9cabe35b77e7099877da248c7453396400c672c"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-round-recall-bridge-20261106-v01/vendor/recall-adapter.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-round-recall-bridge-20261106-v01/vendor/recall-adapter.mjs",
+      "sourceSha256": "b4228dde5a02d8f7e116831b4dbb85a86b5574abc4fe924664bf32a2ae2b5d99",
+      "change": "byte-identical",
+      "previewSha256": "b4228dde5a02d8f7e116831b4dbb85a86b5574abc4fe924664bf32a2ae2b5d99"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-round-recall-bridge-20261106-v01/vendor/rolling/native-history.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-round-recall-bridge-20261106-v01/vendor/rolling/native-history.mjs",
+      "sourceSha256": "f94187c63abc2ee86ddab77475d7c91f59b1155e087406235017015bfe7e4a70",
+      "change": "byte-identical",
+      "previewSha256": "f94187c63abc2ee86ddab77475d7c91f59b1155e087406235017015bfe7e4a70"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-round-recall-bridge-20261106-v01/vendor/rolling/rolling-bridge.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-round-recall-bridge-20261106-v01/vendor/rolling/rolling-bridge.mjs",
+      "sourceSha256": "36f5b1421310a86c27322068c2e08b2f1cda5170e7198e6ee6ddb5d2dcd29194",
+      "change": "byte-identical",
+      "previewSha256": "36f5b1421310a86c27322068c2e08b2f1cda5170e7198e6ee6ddb5d2dcd29194"
+    },
+    {
+      "path": "projects/hongchenxian/research/central-step/vendor/hcx-round-recall-bridge-20261106-v01/vendor/rolling/vendor/wal-format.mjs",
+      "sourcePackage": "hcx-central-step-abi-20261106-v04",
+      "sourcePath": "vendor/hcx-round-recall-bridge-20261106-v01/vendor/rolling/vendor/wal-format.mjs",
+      "sourceSha256": "39a887b466e6b1c0d8e04d140618ace69a0f3ee3ee9725dfc3e87df146544bf4",
+      "change": "byte-identical",
+      "previewSha256": "39a887b466e6b1c0d8e04d140618ace69a0f3ee3ee9725dfc3e87df146544bf4"
+    }
+  ]
+}

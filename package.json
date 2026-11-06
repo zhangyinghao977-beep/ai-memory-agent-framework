@@ -1,0 +1,15 @@
+{
+  "name": "empiricist-ai-hongchenxian-research-preview",
+  "version": "0.0.0-preview.2",
+  "private": true,
+  "description": "Empiricist AI design notes plus Hongchenxian offline lifecycle, indexed-memory and recovery tests. Project license pending.",
+  "type": "module",
+  "engines": {
+    "node": "24.22.1"
+  },
+  "scripts": {
+    "test": "node --import ./scripts/offline-network-guard.mjs --test projects/hongchenxian/research/central-step/catalog-policy.test.mjs projects/hongchenxian/research/central-step/plugin.test.mjs projects/hongchenxian/research/central-step/plugin-recovery.test.mjs projects/hongchenxian/research/central-step/protected-wire.test.mjs projects/hongchenxian/research/central-step/recovery-evidence.test.mjs scripts/offline-network-guard.test.mjs",
+    "verify:integrity": "node scripts/verify-integrity.mjs",
+    "scan:release": "node scripts/scan-release.mjs"
+  }
+}

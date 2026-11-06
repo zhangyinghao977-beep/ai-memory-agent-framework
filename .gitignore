@@ -1,0 +1,22 @@
+# Defense in depth; publication still uses the reviewed file manifest.
+node_modules/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+*.sqlite-wal
+*.sqlite-shm
+*.log
+*.tar
+*.tar.gz
+*.zip
+coverage/
+.cache/
+.DS_Store

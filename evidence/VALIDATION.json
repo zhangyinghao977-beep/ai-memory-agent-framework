@@ -1,0 +1,58 @@
+{
+  "status": "bilingual-checkpoint-awaiting-abyss-source-integration",
+  "checkedUtc": "2026-11-06T15:05:23.814405+00:00",
+  "runtime": {
+    "node": "24.22.1",
+    "os": "Linux",
+    "externalNpmDependencies": 0
+  },
+  "testCommand": "npm test",
+  "environment": "Empty environment with fresh synthetic HOME, DSH_HOME and TMPDIR.",
+  "hongchenxian": {
+    "nodeTests": 72,
+    "passed": 72,
+    "failed": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "unchangedBaselineTestCases": 69,
+    "previewLoaderTest": 1,
+    "networkGuardTests": 2,
+    "sourceFiles": 32,
+    "sourceHashesVerified": 32,
+    "codeRelocationChangedBytes": false,
+    "officialRuntimeExecuted": false,
+    "realModelCalls": 0
+  },
+  "theAbyss": {
+    "bilingualDocumentPairs": 4,
+    "firstPropositionChinese": "逻辑是知识的可达路径",
+    "firstPropositionEnglish": "Logic is the reachable path through knowledge.",
+    "propositionStatus": "Theoretical claim, not an empirically established conclusion.",
+    "latestSourceInventoryConfirmed": true,
+    "sourceFilesIncluded": 0,
+    "fullSourceReproduced": false,
+    "integrationStatus": "Isolated latest-source candidate pending review and integration.",
+    "T10Interpretation": "50/50 receipts are not a 50/50 experiment success rate; results below expectations remain."
+  },
+  "documentation": {
+    "markdownFiles": 24,
+    "bilingualPairs": 12,
+    "brokenRelativeLinks": 0,
+    "bilingualReview": "Reviewed all 12 Chinese/English pairs for scope and evidence consistency; no major issue found."
+  },
+  "realSessionDataAccessed": false,
+  "originalSealedCandidateModified": false,
+  "testLogSha256": "a02dcc0cb7c6bf96fe286e93205d828a48237541410ec33657335b8d8ea7af40",
+  "limits": [
+    "Local synthetic Hongchenxian tests only.",
+    "No real SDK, ten-member real collaboration, 72-hour continuity, or empiricist training claim.",
+    "Network guard is accidental-call protection, not a hostile-code sandbox.",
+    "No project license selected. Publication is limited to the reviewed bilingual research preview."
+  ],
+  "publicationCheck": {
+    "sourceCodeChangedSinceReviewedCandidate": false,
+    "scope": "Publication wording and refreshed validation only; latest Abyss executable source is still excluded.",
+    "testsPassed": 72,
+    "testsFailed": 0
+  }
+}

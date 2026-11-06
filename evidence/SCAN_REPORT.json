@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "scope": "Bilingual checkpoint only; latest Abyss executable source is not yet integrated.",
+  "scannedFiles": 72,
+  "unresolvedFindings": 0,
+  "bilingualDocumentPairs": 12,
+  "brokenRelativeLinks": 0,
+  "reviewedSyntheticFixtureLiterals": 2,
+  "scannerSha256": "f2df870ed13579e1de0e3025e15150757980802fedd2e85920e7912d3d90f052",
+  "limits": "Heuristic candidate-only scanning plus source/document review. It does not guarantee absence of every secret or rights issue. No GitHub personal account identifiers were added to this candidate."
+}

@@ -1,0 +1,35 @@
+{
+  "status": "bilingual-research-preview-awaiting-abyss-source-integration",
+  "included": [
+    {
+      "path": "projects/hongchenxian/research/central-step",
+      "content": "32 source/test/fixture modules from sealed central-step v04, with two recorded preview-only changes.",
+      "executable": true,
+      "evidence": "Local synthetic tests only."
+    },
+    {
+      "path": "projects/the-abyss",
+      "content": "Four bilingual document pairs: user-specified opening proposition, technical summaries, sources, and evidence boundaries.",
+      "executable": false,
+      "evidence": "Design and source review; no new training or implementation claim."
+    },
+    {
+      "path": "scripts",
+      "content": "Offline test guard, guard tests, candidate scan and integrity verification.",
+      "executable": true
+    }
+  ],
+  "notIncluded": [
+    "Real sessions, memories, credentials, account identifiers and original operational logs.",
+    "Official SDK/deployment launchers or upstream package dependencies.",
+    "Private chat transcripts, complete glossary, private local paths and original theory drafts.",
+    "Empiricist executable code, datasets, weights or repeatable training entry point."
+  ],
+  "pendingDecisions": [
+    "Review and integrate the latest local Abyss source separately.",
+    "Project license and contribution attribution.",
+    "Any new content requires renewed scope, privacy, and authorization review."
+  ],
+  "thirdPartyLicenseReview": "DeepSeek Harness current public master root MIT verified as displayed; not a project license selection or full upstream dependency license audit.",
+  "repositoryOrganization": "One repository, two clearly separated project areas. This publication contains only the reviewed research preview."
+}
