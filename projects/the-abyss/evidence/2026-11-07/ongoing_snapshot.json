@@ -1,0 +1,354 @@
+{
+  "as_of_utc": "2026-11-06T17:03:14.6220414Z",
+  "scope": "Read-only inspection of existing technical metadata and receipts; no project code executed, no models or datasets loaded, no experiments changed.",
+  "snapshot_kind": "Partial run: completed balanced old-learning cells only; not independent reproduction.",
+  "source_paths_relative_to": "Unpublished research working tree; relative technical experiment paths only",
+  "t12": {
+    "version": 3,
+    "run": "run_002",
+    "old_receipts_observed": 16,
+    "old_receipts_expected": 20,
+    "completed_balanced_cells": [
+      {
+        "model": "tf",
+        "chains": 65536,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "complete_balanced_cell": true,
+        "mean_old_choice_two": 0.5244196891784668,
+        "min_old_choice_two": 0.5128443241119385,
+        "max_old_choice_two": 0.5357474684715271,
+        "mean_new_choice_two_before_continual_learning": 0.5021329343318939,
+        "mean_final_dev_choice_two": 0.5376397490501403
+      },
+      {
+        "model": "tf",
+        "chains": 262144,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "complete_balanced_cell": true,
+        "mean_old_choice_two": 0.8629526376724244,
+        "min_old_choice_two": 0.5069637894630432,
+        "max_old_choice_two": 0.985762894153595,
+        "mean_new_choice_two_before_continual_learning": 0.4929211735725403,
+        "mean_final_dev_choice_two": 0.8561490654945374
+      },
+      {
+        "model": "tf_sup",
+        "chains": 65536,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "complete_balanced_cell": true,
+        "mean_old_choice_two": 0.9278861045837402,
+        "min_old_choice_two": 0.6527391076087952,
+        "max_old_choice_two": 1,
+        "mean_new_choice_two_before_continual_learning": 0.5017001509666443,
+        "mean_final_dev_choice_two": 0.9298136711120606
+      }
+    ],
+    "incomplete_cell": {
+      "model": "tf_sup",
+      "chains": 262144,
+      "completed_seeds": [
+        0
+      ],
+      "expected_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "reported_as_result": false,
+      "source": "experiments/t12_keep_learning_20261107/run_002/receipts/old-tf_sup-n262144-s0.json",
+      "sha256": "3b45df104f22f53a76433e398feeb26d66d5bb8396b47fb95bfcbf805d5c455e"
+    },
+    "parameters_per_tf_model": 23297,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "final_steps": 48000,
+    "gate_problems": [],
+    "superseded_run": {
+      "run": "run_001",
+      "receipt_count_observed": 0,
+      "reason": "Version 2 was superseded by version 3 before any result receipts were produced."
+    },
+    "metric_definition": "choice_two = argmax selected target accuracy restricted to examples with exactly two candidates. start.old is test_iid after old-package training; start.new is test_new before continual learning.",
+    "not_claimed": [
+      "completion of T12",
+      "new-package learning or forgetting results",
+      "architectural superiority",
+      "granularity causality"
+    ],
+    "complete_cell_receipts": [
+      {
+        "path": "experiments/t12_keep_learning_20261107/run_002/receipts/old-tf-n65536-s0.json",
+        "model": "tf",
+        "chains": 65536,
+        "seed": 0,
+        "parameters": 23297,
+        "final_step": 48000,
+        "old_choice_two": 0.5128443241119385,
+        "new_choice_two_before_continual_learning": 0.49953633546829224,
+        "final_dev_choice_two": 0.5273292064666748,
+        "sha256": "57094672a6eacdc40c05c5c9479d3e3f49f77d4f8a43ea24feb9f7fc3115c806"
+      },
+      {
+        "path": "experiments/t12_keep_learning_20261107/run_002/receipts/old-tf-n65536-s1.json",
+        "model": "tf",
+        "chains": 65536,
+        "seed": 1,
+        "parameters": 23297,
+        "final_step": 48000,
+        "old_choice_two": 0.5357474684715271,
+        "new_choice_two_before_continual_learning": 0.49304482340812683,
+        "final_dev_choice_two": 0.5335403680801392,
+        "sha256": "9d6fb61d47e66775435ed23ffe021c7f830af41e480b73f13ee5f5c770ca1a94"
+      },
+      {
+        "path": "experiments/t12_keep_learning_20261107/run_002/receipts/old-tf-n65536-s2.json",
+        "model": "tf",
+        "chains": 65536,
+        "seed": 2,
+        "parameters": 23297,
+        "final_step": 48000,
+        "old_choice_two": 0.5168678164482117,
+        "new_choice_two_before_continual_learning": 0.5069552063941956,
+        "final_dev_choice_two": 0.5291925668716431,
+        "sha256": "c6273af5904a25a34b8cd148e21a5ab74755cce1d627bc35e79bf325c529d01c"
+      },
+      {
+        "path": "experiments/t12_keep_learning_20261107/run_002/receipts/old-tf-n65536-s3.json",
+        "model": "tf",
+        "chains": 65536,
+        "seed": 3,
+        "parameters": 23297,
+        "final_step": 48000,
+        "old_choice_two": 0.5348189473152161,
+        "new_choice_two_before_continual_learning": 0.5072643160820007,
+        "final_dev_choice_two": 0.5583850741386414,
+        "sha256": "e3711b35a7502770ab1a5b73bdcab3503c89457d8e34c58259d3f94c1cda9825"
+      },
+      {
+        "path": "experiments/t12_keep_learning_20261107/run_002/receipts/old-tf-n65536-s4.json",
+        "model": "tf",
+        "chains": 65536,
+        "seed": 4,
+        "parameters": 23297,
+        "final_step": 48000,
+        "old_choice_two": 0.5218198895454407,
+        "new_choice_two_before_continual_learning": 0.5038639903068542,
+        "final_dev_choice_two": 0.5397515296936035,
+        "sha256": "e55f6686ba8de38cb7c522e69ce13c943a5909525fbc0ff2058372a6b5c562d6"
+      },
+      {
+        "path": "experiments/t12_keep_learning_20261107/run_002/receipts/old-tf-n262144-s0.json",
+        "model": "tf",
+        "chains": 262144,
+        "seed": 0,
+        "parameters": 23297,
+        "final_step": 48000,
+        "old_choice_two": 0.5069637894630432,
+        "new_choice_two_before_continual_learning": 0.49737247824668884,
+        "final_dev_choice_two": 0.49503105878829956,
+        "sha256": "e08aeeabc5293e7061a6ce70b297bbe79f8a53460bf3d7fcff05eb55b7d1ca1c"
+      },
+      {
+        "path": "experiments/t12_keep_learning_20261107/run_002/receipts/old-tf-n262144-s1.json",
+        "model": "tf",
+        "chains": 262144,
+        "seed": 1,
+        "parameters": 23297,
+        "final_step": 48000,
+        "old_choice_two": 0.9647167921066284,
+        "new_choice_two_before_continual_learning": 0.5156105160713196,
+        "final_dev_choice_two": 0.9614906907081604,
+        "sha256": "d886de26d86bc708b56b5a5869a39c4a2ce15af9afb803d8117c6a391be0595e"
+      },
+      {
+        "path": "experiments/t12_keep_learning_20261107/run_002/receipts/old-tf-n262144-s2.json",
+        "model": "tf",
+        "chains": 262144,
+        "seed": 2,
+        "parameters": 23297,
+        "final_step": 48000,
+        "old_choice_two": 0.8811513185501099,
+        "new_choice_two_before_continual_learning": 0.47758886218070984,
+        "final_dev_choice_two": 0.865217387676239,
+        "sha256": "11cf58f07761002d87bf579eb8416dd2136e25dffd24489df2681b4fb667274b"
+      },
+      {
+        "path": "experiments/t12_keep_learning_20261107/run_002/receipts/old-tf-n262144-s3.json",
+        "model": "tf",
+        "chains": 262144,
+        "seed": 3,
+        "parameters": 23297,
+        "final_step": 48000,
+        "old_choice_two": 0.985762894153595,
+        "new_choice_two_before_continual_learning": 0.5020092725753784,
+        "final_dev_choice_two": 0.9832298159599304,
+        "sha256": "d500f800c97efa7b9b4d5bac5c47d616c727e1ed0224806671c3fddbd9195940"
+      },
+      {
+        "path": "experiments/t12_keep_learning_20261107/run_002/receipts/old-tf-n262144-s4.json",
+        "model": "tf",
+        "chains": 262144,
+        "seed": 4,
+        "parameters": 23297,
+        "final_step": 48000,
+        "old_choice_two": 0.9761683940887451,
+        "new_choice_two_before_continual_learning": 0.47202473878860474,
+        "final_dev_choice_two": 0.9757763743400574,
+        "sha256": "2190431988797f374a036e8e7c2511b4f274521620c217cf959fced924eeaa4d"
+      },
+      {
+        "path": "experiments/t12_keep_learning_20261107/run_002/receipts/old-tf_sup-n65536-s0.json",
+        "model": "tf_sup",
+        "chains": 65536,
+        "seed": 0,
+        "parameters": 23297,
+        "final_step": 48000,
+        "old_choice_two": 1,
+        "new_choice_two_before_continual_learning": 0.5020092725753784,
+        "final_dev_choice_two": 0.9987577795982361,
+        "sha256": "17a88fa950f2d63b6bf5e86cba72ad16d6360ee2c079fdd65efc97186123c2fa"
+      },
+      {
+        "path": "experiments/t12_keep_learning_20261107/run_002/receipts/old-tf_sup-n65536-s1.json",
+        "model": "tf_sup",
+        "chains": 65536,
+        "seed": 1,
+        "parameters": 23297,
+        "final_step": 48000,
+        "old_choice_two": 0.999071478843689,
+        "new_choice_two_before_continual_learning": 0.4902627468109131,
+        "final_dev_choice_two": 1,
+        "sha256": "4413c7d9944b62dd129c0272b9de1e224020ff97fe45fda06a3e19d1eccd1bd7"
+      },
+      {
+        "path": "experiments/t12_keep_learning_20261107/run_002/receipts/old-tf_sup-n65536-s2.json",
+        "model": "tf_sup",
+        "chains": 65536,
+        "seed": 2,
+        "parameters": 23297,
+        "final_step": 48000,
+        "old_choice_two": 0.990714967250824,
+        "new_choice_two_before_continual_learning": 0.5057187080383301,
+        "final_dev_choice_two": 0.9863353967666626,
+        "sha256": "773f08fa65a73714cf49d00cf275b5a1bc50aa5c49edf79b3d5918d2bbee0600"
+      },
+      {
+        "path": "experiments/t12_keep_learning_20261107/run_002/receipts/old-tf_sup-n65536-s3.json",
+        "model": "tf_sup",
+        "chains": 65536,
+        "seed": 3,
+        "parameters": 23297,
+        "final_step": 48000,
+        "old_choice_two": 0.9969049692153931,
+        "new_choice_two_before_continual_learning": 0.5202472805976868,
+        "final_dev_choice_two": 0.9968944191932678,
+        "sha256": "379bcd28d3ec983c103321cd8af237025c22500b1158d6efc0da795afa9f54e3"
+      },
+      {
+        "path": "experiments/t12_keep_learning_20261107/run_002/receipts/old-tf_sup-n65536-s4.json",
+        "model": "tf_sup",
+        "chains": 65536,
+        "seed": 4,
+        "parameters": 23297,
+        "final_step": 48000,
+        "old_choice_two": 0.6527391076087952,
+        "new_choice_two_before_continual_learning": 0.4902627468109131,
+        "final_dev_choice_two": 0.6670807600021362,
+        "sha256": "042e32f45007f739a30719226532214dd48aa12f95672bc12172c2f63b310158"
+      }
+    ]
+  },
+  "t11": {
+    "as_of_utc": "2026-11-06T17:00:27Z",
+    "completed": 40,
+    "expected": 40,
+    "new_technical_correction_found": false,
+    "prior_hash_baseline_available": false,
+    "limitations": [
+      "Previously existing correction clarifies test_new is comparator transfer before new-package supervised learning, not ability to learn later.",
+      "Gate comparison at 3000 steps checks the first curve item, not weights or predictions bit for bit."
+    ]
+  },
+  "t13": {
+    "state": "Unfrozen, untrained draft only; no run or results observed.",
+    "separate_from_hongchenxian": true
+  },
+  "granularity": {
+    "state": "Post-hoc package-difference analysis plan only; no result inspected.",
+    "causal_claim_supported": false
+  },
+  "sources": [
+    {
+      "path": "experiments/t12_keep_learning_20261107/PLAN.json",
+      "sha256": "e6015cbf68a9fd7a465b8ab471dccc411d833831a4af908f778fe96f242667e4"
+    },
+    {
+      "path": "experiments/t12_keep_learning_20261107/冻结计划.md",
+      "sha256": "6d2c42522a7734112a676607c0fdf95d1295123ce3c3b7fcc525faa188e9b685"
+    },
+    {
+      "path": "experiments/t12_keep_learning_20261107/run_t12.py",
+      "sha256": "15500508d101fd9cd67ddf3f4de92019932265ae823c82ea3b39a07ca887f07f"
+    },
+    {
+      "path": "experiments/t12_keep_learning_20261107/report_t12.py",
+      "sha256": "d82cf42f9e7ae0a482793c3e9cc2cda020c0b2861d28ec6f07e05f5ed96e29a1"
+    },
+    {
+      "path": "experiments/t12_keep_learning_20261107/run_002/FROZEN.json",
+      "sha256": "402a6c4f162b2e1ca594c92b69c9104cb8c00cb34c737d0258796e6fd343521a"
+    },
+    {
+      "path": "experiments/t12_keep_learning_20261107/run_002/gate.json",
+      "sha256": "1de2e4a7edac873d7d4249c41b3b1c8bbdc779ccb09e93c7550ab875c8f4e9cc"
+    },
+    {
+      "path": "experiments/t12_keep_learning_20261107/每个包的差别_事后检查计划.md",
+      "sha256": "1b4321c61cd0a926c6f0d557bd120098d24d613f142350fa62ce4c5f429aaebc"
+    },
+    {
+      "path": "experiments/t13_transformer_memory_draft_20261107/切片草稿.md",
+      "sha256": "e37865c99f1cfe7dadd9fa645ddfddf8331fb245d775d4ea72020087cac91c2f"
+    },
+    {
+      "path": "project/empirical_core/t12/study.py",
+      "sha256": "9875ad0c1656b09b949c8aedd6e6be7f7b6361fda83825b5918cf5a4e504bc74"
+    },
+    {
+      "path": "project/empirical_core/t5/model.py",
+      "sha256": "2000803d93d8d352455885891b51f5a1ae5861505560838fdeef468449fb3386"
+    },
+    {
+      "path": "experiments/t11_fresh_chains_20261106/run_001/REPORT.zh.md",
+      "sha256": "ee65ef899239095a37daffb518934c60527367104e39b5c52bc29589472ce90d"
+    },
+    {
+      "path": "experiments/t11_fresh_chains_20261106/说明.md",
+      "sha256": "a4ad42bd14178bc6972986556662f8ec434848a246269f535b3b253563f77122"
+    },
+    {
+      "path": "experiments/t11_fresh_chains_20261106/posthoc_001/REPORT.zh.md",
+      "sha256": "6a6ff1d4d50c13d0005d9ff9b92d730a0f1aec67148cbd4fbc9c7377932bf6e3"
+    }
+  ]
+}

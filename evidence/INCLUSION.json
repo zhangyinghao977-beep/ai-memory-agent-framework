@@ -1,5 +1,5 @@
 {
-  "status": "bilingual-research-preview-with-selected-abyss-implementation",
+  "status": "bilingual-research-preview-with-dated-evidence-and-incomplete-granularity-pilot",
   "included": [
     {
       "path": "projects/hongchenxian/research/central-step",
@@ -25,6 +25,19 @@
       "validation": "Static parsing and bounded scans only. No new unit-test, training, dependency-installation, or model-loading run.",
       "evidence": "Historical report summaries retain failed predictions and limitations. Raw historical receipts and weights are excluded.",
       "record": "evidence/ABYSS_INTEGRATION.json"
+    },
+    {
+      "path": "projects/the-abyss/evidence/2026-11-07",
+      "content": "Bilingual v18.1/T11 evidence summaries, source hashes, a bounded incomplete T12/T13 snapshot, and granularity interpretation limits.",
+      "executable": false,
+      "evidence": "Original external runs were not retrained during review. Hashes identify reviewed files, not independent reproducibility."
+    },
+    {
+      "path": "projects/the-abyss/research/g1-granularity-20261107",
+      "content": "Preregistered fixed-task pilot source and selected historical aggregates/status/resources. Original T1 generator reused unchanged.",
+      "executable": true,
+      "evidence": "New local run completed 2/10 balanced seeds, 28/140 units; stopped at resource gate. No generated datasets or weight-bearing receipts are distributed.",
+      "record": "evidence/RESEARCH_UPDATE_20261107.json"
     }
   ],
   "notIncluded": [
@@ -35,7 +48,7 @@
   ],
   "pendingDecisions": [
     "Project license, attribution and contribution ownership remain undecided; public readability is not an open-source license.",
-    "Installation, importability, selected tests and training workflows require a separately scoped new runtime validation.",
+    "The original implementation workflows still require separately scoped runtime validation. G1 has only a partial new execution; its remaining seeds are unexecuted.",
     "External-material provenance and reproduction gaps, including the 119M source/license chain and missing corpus-index construction entry point, remain documented and unresolved.",
     "Any expanded content scope requires its own provenance and privacy review."
   ],

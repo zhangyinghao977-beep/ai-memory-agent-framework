@@ -1,0 +1,12 @@
+/data/
+/receipts/
+/FROZEN.json
+/DATA_AUDIT.json
+/RUN_STATUS.json
+/PREPARE_STATUS.json
+/RESOURCES_*.json
+/REPORT.md
+/SUMMARY.json
+/VERIFICATION.json
+__pycache__/
+*.py[cod]

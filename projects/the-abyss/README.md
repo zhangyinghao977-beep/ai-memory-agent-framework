@@ -2,6 +2,8 @@
 
 [中文](README.md) | [English](README.en.md)
 
+[新证据与粒度小试（2026-11-07）](evidence/2026-11-07/README.md)：历史训练摘要、正在进行的阶段，以及仅完成 2/10 种子的 G1 新试验，分别记录。
+
 1. **逻辑是知识的可达路径。**
    Logic is the path that makes knowledge reachable.
 

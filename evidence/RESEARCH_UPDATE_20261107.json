@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-11-06T17:11:47.756161+00:00",
+  "base_commit": "5c2f2b282d6dc7024c4c1b5602197ca41cb2a8b0",
+  "scope": "Dated evidence summaries plus a source-and-summary snapshot of the incomplete G1 pilot. No original research experiments modified by this update.",
+  "evidence_entry": "projects/the-abyss/evidence/2026-11-07/README.md",
+  "external_training_rerun": false,
+  "g1_status": "INCOMPLETE_RESOURCE_STOP",
+  "g1_complete_seeds": 2,
+  "g1_planned_seeds": 10,
+  "g1_receipts_completed": 28,
+  "g1_receipts_planned": 140,
+  "external_record_boundary": "v18.1/T11 are reviewed historical records; T12 is a timestamped partial stage. No full continual-learning or granularity-causality claim.",
+  "g1_public_scope": "Seven frozen source files and selected historical aggregates/audit/status/resource records; no generated data or weight-bearing receipts. Historical verification is local and cannot be repeated from this limited snapshot alone.",
+  "license": "Unchanged: project license not selected; public access is not a new license grant.",
+  "excluded": [
+    "private conversations and identities",
+    "credentials",
+    "absolute original-machine paths",
+    "external corpora and tokenizer artifacts",
+    "pretrained or trained weights",
+    "original v18.1/T11/T12 receipts and raw logs",
+    "G1 generated datasets and weight-bearing receipts"
+  ],
+  "no_retraining_for_publication": true,
+  "checks": {
+    "python_files_parsed": 127,
+    "json_files_parsed": 36,
+    "relative_markdown_links": 254,
+    "broken_links": [],
+    "g1_frozen_source_files_verified": 7,
+    "existing_updated": [
+      "README.en.md",
+      "README.md",
+      "SHA256SUMS",
+      "evidence/INCLUSION.json",
+      "projects/the-abyss/README.en.md",
+      "projects/the-abyss/README.md"
+    ],
+    "existing_deleted": [],
+    "original_hongchenxian_and_abyss_implementation_unchanged": true
+  },
+  "scan": {
+    "status": "passed",
+    "scannedFiles": 258,
+    "findings": [],
+    "limits": "Heuristic candidate-only review; does not prove absence of all secrets or rights issues."
+  }
+}

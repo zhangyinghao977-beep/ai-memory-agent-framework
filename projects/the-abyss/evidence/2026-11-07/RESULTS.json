@@ -1,0 +1,502 @@
+{
+  "captured_utc": "2026-11-06T17:06:58.467178+00:00",
+  "number_units": "Accuracies and standard deviations are fractions, not percentages.",
+  "v18_1": {
+    "status": "AUTHORIZED_RECRYSTALLIZED_TRAINING_COMPLETED",
+    "seeds": [
+      20261106,
+      20261107,
+      20261108
+    ],
+    "recorded_device": "cuda",
+    "recorded_elapsed_seconds": 166.604,
+    "task": "Text-derived eight-candidate member-slot selection; not open-ended question answering.",
+    "training_data_budget": {
+      "total_train_tiles_streamed": 8,
+      "total_train_docs_streamed": 3200,
+      "total_train_tokens_streamed": 2132662,
+      "tinystories_packages": 48,
+      "simplewiki_packages": 48,
+      "total_packages_crystallized": 96,
+      "total_registered_whole_words": 1001
+    },
+    "validation_episode_counts": {
+      "tinystories_val_answerable": 320,
+      "tinystories_val_unknown": 64,
+      "simplewiki_novel_pkg_val_answerable": 260,
+      "simplewiki_all_val_answerable": 320,
+      "simplewiki_all_val_unknown": 64
+    },
+    "results": {
+      "full": {
+        "parameter_counts": [
+          28465,
+          43825
+        ],
+        "answerable_accuracy": {
+          "stage1_tinystories_val": {
+            "mean": 0.3271,
+            "std": 0.0214
+          },
+          "stage2_zeroshot_hotswap_all_wiki": {
+            "mean": 0.1458,
+            "std": 0.0064
+          },
+          "stage3_post_anneal_all_wiki": {
+            "mean": 0.2115,
+            "std": 0.0141
+          },
+          "stage3_tinystories_retention": {
+            "mean": 0.3073,
+            "std": 0.0118
+          }
+        },
+        "stage1_sibling_win_rate": {
+          "mean": 0.5698,
+          "std": 0.0145
+        }
+      },
+      "pairwise_no_softmax": {
+        "parameter_counts": [
+          28465,
+          43825
+        ],
+        "answerable_accuracy": {
+          "stage1_tinystories_val": {
+            "mean": 0.3604,
+            "std": 0.0192
+          },
+          "stage2_zeroshot_hotswap_all_wiki": {
+            "mean": 0.1375,
+            "std": 0.0199
+          },
+          "stage3_post_anneal_all_wiki": {
+            "mean": 0.224,
+            "std": 0.0078
+          },
+          "stage3_tinystories_retention": {
+            "mean": 0.3104,
+            "std": 0.012
+          }
+        },
+        "stage1_sibling_win_rate": {
+          "mean": 0.5708,
+          "std": 0.0154
+        }
+      },
+      "self_no_chain_attn": {
+        "parameter_counts": [
+          28465,
+          43825
+        ],
+        "answerable_accuracy": {
+          "stage1_tinystories_val": {
+            "mean": 0.3156,
+            "std": 0.0153
+          },
+          "stage2_zeroshot_hotswap_all_wiki": {
+            "mean": 0.1375,
+            "std": 0.0025
+          },
+          "stage3_post_anneal_all_wiki": {
+            "mean": 0.2156,
+            "std": 0.0092
+          },
+          "stage3_tinystories_retention": {
+            "mean": 0.2656,
+            "std": 0.031
+          }
+        },
+        "stage1_sibling_win_rate": {
+          "mean": 0.5604,
+          "std": 0.0029
+        }
+      },
+      "soft_wall_plus4": {
+        "parameter_counts": [
+          28465,
+          43825
+        ],
+        "answerable_accuracy": {
+          "stage1_tinystories_val": {
+            "mean": 0.3344,
+            "std": 0.0193
+          },
+          "stage2_zeroshot_hotswap_all_wiki": {
+            "mean": 0.1385,
+            "std": 0.0029
+          },
+          "stage3_post_anneal_all_wiki": {
+            "mean": 0.1969,
+            "std": 0.0132
+          },
+          "stage3_tinystories_retention": {
+            "mean": 0.2938,
+            "std": 0.0092
+          }
+        },
+        "stage1_sibling_win_rate": {
+          "mean": 0.5802,
+          "std": 0.0115
+        }
+      },
+      "no_lattice_glass": {
+        "parameter_counts": [
+          28465,
+          43825
+        ],
+        "answerable_accuracy": {
+          "stage1_tinystories_val": {
+            "mean": 0.2573,
+            "std": 0.0287
+          },
+          "stage2_zeroshot_hotswap_all_wiki": {
+            "mean": 0.1521,
+            "std": 0.0141
+          },
+          "stage3_post_anneal_all_wiki": {
+            "mean": 0.1865,
+            "std": 0.0145
+          },
+          "stage3_tinystories_retention": {
+            "mean": 0.2427,
+            "std": 0.0103
+          }
+        },
+        "stage1_sibling_win_rate": {
+          "mean": 0.5698,
+          "std": 0.003
+        }
+      }
+    },
+    "earlier_v18_full_answerable_accuracy": {
+      "stage1_tinystories_val": {
+        "mean": 0.3687,
+        "std": 0.0067
+      },
+      "stage2_zeroshot_hotswap_all_wiki": {
+        "mean": 0.1781,
+        "std": 0.016
+      },
+      "stage3_post_anneal_all_wiki": {
+        "mean": 0.2562,
+        "std": 0.0051
+      },
+      "stage3_tinystories_retention": {
+        "mean": 0.2156,
+        "std": 0.0092
+      }
+    },
+    "verification_scope": "Technical source review and receipt arithmetic only; no independent retraining.",
+    "limits": [
+      "The no-lattice arm changes initialization, local reference representation and legality masking together.",
+      "v18.1 also changes tokenization, selection/aggregation, aliases, package sealing and old-task replay; test content changes.",
+      "Sibling win rate is a score comparison against same-package distractors, not a semantic-purity measure.",
+      "Unknown rejection probes are constructed with illegal candidates; hard rejection is largely a contract.",
+      "Known impurity checks and cosine thresholds do not establish semantic purity."
+    ]
+  },
+  "t11": {
+    "status": "40_of_40_recorded_complete",
+    "task": "Synthetic eight-event mutual-support task; primary choice_two chance level is 0.5.",
+    "results": [
+      {
+        "model": "attn",
+        "relation_input": "zero",
+        "distinct_training_chains": 65536,
+        "seeds": 5,
+        "steps": 48000,
+        "batch_size": 128,
+        "parameters": 18593,
+        "choice_two_iid_mean": 0.9995047926902771,
+        "choice_two_new_mean": 0.6587326169013977,
+        "iid_per_seed": [
+          0.9978334903717041,
+          0.9996904730796814,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "new_per_seed": [
+          0.6553323268890381,
+          0.6714065074920654,
+          0.7233384847640991,
+          0.6037093997001648,
+          0.6398763656616211
+        ]
+      },
+      {
+        "model": "attn",
+        "relation_input": "zero",
+        "distinct_training_chains": 262144,
+        "seeds": 5,
+        "steps": 48000,
+        "batch_size": 128,
+        "parameters": 18593,
+        "choice_two_iid_mean": 0.9465799927711487,
+        "choice_two_new_mean": 0.5909119009971618,
+        "iid_per_seed": [
+          1.0,
+          1.0,
+          0.734138011932373,
+          0.999071478843689,
+          0.9996904730796814
+        ],
+        "new_per_seed": [
+          0.6596599817276001,
+          0.6074188351631165,
+          0.5211746692657471,
+          0.577743411064148,
+          0.5885626077651978
+        ]
+      },
+      {
+        "model": "attn",
+        "relation_input": "zero",
+        "distinct_training_chains": 1048576,
+        "seeds": 5,
+        "steps": 48000,
+        "batch_size": 128,
+        "parameters": 18593,
+        "choice_two_iid_mean": 0.5993809938430786,
+        "choice_two_new_mean": 0.5217310726642609,
+        "iid_per_seed": [
+          0.5147013068199158,
+          0.5713401436805725,
+          0.5041782855987549,
+          0.7338285446166992,
+          0.6728566884994507
+        ],
+        "new_per_seed": [
+          0.5115919709205627,
+          0.49953633546829224,
+          0.4986089766025543,
+          0.5378670692443848,
+          0.5610510110855103
+        ]
+      },
+      {
+        "model": "attn",
+        "relation_input": "zero",
+        "distinct_training_chains": 6144000,
+        "seeds": 5,
+        "steps": 48000,
+        "batch_size": 128,
+        "parameters": 18593,
+        "choice_two_iid_mean": 0.5169916450977325,
+        "choice_two_new_mean": 0.5015765130519867,
+        "iid_per_seed": [
+          0.49427422881126404,
+          0.5017022490501404,
+          0.5054162740707397,
+          0.5097492933273315,
+          0.573816180229187
+        ],
+        "new_per_seed": [
+          0.5177743434906006,
+          0.49489954113960266,
+          0.49613600969314575,
+          0.4877898097038269,
+          0.5112828612327576
+        ]
+      },
+      {
+        "model": "attn",
+        "relation_input": "off",
+        "distinct_training_chains": 6144000,
+        "seeds": 5,
+        "steps": 48000,
+        "batch_size": 128,
+        "parameters": 18593,
+        "choice_two_iid_mean": 0.7351284503936768,
+        "choice_two_new_mean": 0.589180839061737,
+        "iid_per_seed": [
+          0.9993810057640076,
+          0.6205509305000305,
+          0.5057258009910583,
+          0.6292169690132141,
+          0.9207675457000732
+        ],
+        "new_per_seed": [
+          0.6933539509773254,
+          0.5567233562469482,
+          0.5060278177261353,
+          0.5545595288276672,
+          0.6352395415306091
+        ]
+      },
+      {
+        "model": "attn",
+        "relation_input": "one",
+        "distinct_training_chains": 6144000,
+        "seeds": 5,
+        "steps": 48000,
+        "batch_size": 128,
+        "parameters": 18593,
+        "choice_two_iid_mean": 0.5032497704029083,
+        "choice_two_new_mean": 0.49860896468162536,
+        "iid_per_seed": [
+          0.5078923106193542,
+          0.4995357394218445,
+          0.5063447952270508,
+          0.5069637894630432,
+          0.4955122172832489
+        ],
+        "new_per_seed": [
+          0.49366307258605957,
+          0.5097372531890869,
+          0.5023183822631836,
+          0.4964451193809509,
+          0.4908809959888458
+        ]
+      },
+      {
+        "model": "pair",
+        "relation_input": "one",
+        "distinct_training_chains": 6144000,
+        "seeds": 5,
+        "steps": 48000,
+        "batch_size": 128,
+        "parameters": 20705,
+        "choice_two_iid_mean": 0.6700092852115631,
+        "choice_two_new_mean": 0.5302627503871917,
+        "iid_per_seed": [
+          0.8656762838363647,
+          0.4911791980266571,
+          0.5063447952270508,
+          0.5029402375221252,
+          0.9839059114456177
+        ],
+        "new_per_seed": [
+          0.5357032418251038,
+          0.4958269000053406,
+          0.5041730999946594,
+          0.493353933095932,
+          0.6222565770149231
+        ]
+      },
+      {
+        "model": "pair",
+        "relation_input": "zero",
+        "distinct_training_chains": 6144000,
+        "seeds": 5,
+        "steps": 48000,
+        "batch_size": 128,
+        "parameters": 20705,
+        "choice_two_iid_mean": 0.641597044467926,
+        "choice_two_new_mean": 0.5676043272018433,
+        "iid_per_seed": [
+          0.6029093265533447,
+          0.5094398260116577,
+          0.5094398260116577,
+          0.5880532264709473,
+          0.9981430172920227
+        ],
+        "new_per_seed": [
+          0.5802164077758789,
+          0.5115919709205627,
+          0.5007727742195129,
+          0.5629057288169861,
+          0.6825347542762756
+        ]
+      }
+    ],
+    "verification_scope": "Read-only receipt aggregation and source review; no independent retraining.",
+    "limits": [
+      "No granularity sweep or no-lattice ablation.",
+      "Pair models have 20705 parameters versus 18593 for attention; not equal effective capacity or FLOPs.",
+      "Changing pool size changes diversity/repetition and the largest-pool sampling regime.",
+      "New-package vectors already use unsupervised chains; test_new is not a subsequent-learning result.",
+      "The pair block differs from v18.1 pairwise_no_softmax."
+    ]
+  },
+  "g1": {
+    "status": "INCOMPLETE_RESOURCE_STOP",
+    "complete_seeds": [
+      2026110700,
+      2026110701
+    ],
+    "planned_seed_count": 10,
+    "receipts_completed": 28,
+    "receipts_planned": 140,
+    "summary_path": "../../research/g1-granularity-20261107/historical/SUMMARY.json",
+    "method_path": "../../research/g1-granularity-20261107/PREREG.md",
+    "verification_scope": "New local execution for two balanced seeds; stored predictions/metrics independently recomputed locally without retraining. Public snapshot omits generated datasets and weight-bearing receipts.",
+    "limits": [
+      "Only 2/10 seeds; no stability or significance claim.",
+      "Family partitions use the generator-supplied prior, not discovered group structure.",
+      "Effective degrees of freedom change with sharing.",
+      "Sparse training graphs contain disconnected components and unseen atoms.",
+      "Only this synthetic scorer/task is tested; no direct validation of the original neural architecture."
+    ]
+  },
+  "t12_and_t13": {
+    "snapshot_utc": "2026-11-06T17:03:14.6220414Z",
+    "status": "T12 v3/run_002 is incomplete; T13 is an unfrozen, untrained draft.",
+    "record": "ongoing_snapshot.json",
+    "old_stage_receipts_observed": 16,
+    "old_stage_receipts_expected": 20,
+    "complete_old_learning_cells": [
+      {
+        "model": "tf",
+        "chains": 65536,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "complete_balanced_cell": true,
+        "mean_old_choice_two": 0.5244196891784668,
+        "min_old_choice_two": 0.5128443241119385,
+        "max_old_choice_two": 0.5357474684715271,
+        "mean_new_choice_two_before_continual_learning": 0.5021329343318939,
+        "mean_final_dev_choice_two": 0.5376397490501403
+      },
+      {
+        "model": "tf",
+        "chains": 262144,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "complete_balanced_cell": true,
+        "mean_old_choice_two": 0.8629526376724244,
+        "min_old_choice_two": 0.5069637894630432,
+        "max_old_choice_two": 0.985762894153595,
+        "mean_new_choice_two_before_continual_learning": 0.4929211735725403,
+        "mean_final_dev_choice_two": 0.8561490654945374
+      },
+      {
+        "model": "tf_sup",
+        "chains": 65536,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "complete_balanced_cell": true,
+        "mean_old_choice_two": 0.9278861045837402,
+        "min_old_choice_two": 0.6527391076087952,
+        "max_old_choice_two": 1,
+        "mean_new_choice_two_before_continual_learning": 0.5017001509666443,
+        "mean_final_dev_choice_two": 0.9298136711120606
+      }
+    ],
+    "metric_boundary": "choice_two = argmax selected target accuracy restricted to examples with exactly two candidates. start.old is test_iid after old-package training; start.new is test_new before continual learning.",
+    "hypothesis_H1": "The frozen threshold prediction (at least 4/5 tf seeds below 70% in both pool sizes) is not met: 4/5 seeds at 262144 exceed 70%. This concerns that prediction, not the entire theory.",
+    "not_claimed": [
+      "completion of T12",
+      "new-package learning or forgetting results",
+      "architectural superiority",
+      "granularity causality"
+    ],
+    "verification_scope": "Read-only snapshot and arithmetic on existing receipts; no new execution or independent retraining."
+  }
+}

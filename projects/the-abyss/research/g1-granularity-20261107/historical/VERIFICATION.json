@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "frozen_sources_and_data_match": true,
+  "same_data_observations_order_and_allocated_slots_within_each_condition": true,
+  "same_presentation_budget": true,
+  "finite_weights": true,
+  "only_balanced_seeds_aggregated": true,
+  "complete_balanced_seeds": [
+    2026110700,
+    2026110701
+  ],
+  "receipt_count": 28,
+  "runtime_status": "INCOMPLETE_RESOURCE_STOP"
+}

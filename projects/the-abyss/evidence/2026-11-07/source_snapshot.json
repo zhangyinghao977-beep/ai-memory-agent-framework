@@ -1,0 +1,511 @@
+{
+  "schema_version": 1,
+  "captured_utc": "2026-11-06T17:06:58.467663+00:00",
+  "scope": "Selected technical source identities. Relative experiment labels only; originals may contain private paths and are not distributed. Hashes do not establish authorship, scientific validity, or independent reproducibility.",
+  "records": [
+    {
+      "source_record": "v18_1_purified_nucleation_20261106/RECEIPT_v18_1_PURIFIED.json",
+      "role": "Recorded v18.1 training results",
+      "sha256": "84276a83bce3a8fd941a36a278b19f60b222119aea14779936e51bbf8243cfab",
+      "bytes": 75445,
+      "captured_utc": "2026-11-06T17:06:58.458611+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "v18_corpus_sharded_crystallization_20261106/RECEIPT_v18_TRAINED.json",
+      "role": "Earlier v18 training comparator",
+      "sha256": "f0e0d02103c38cceea1b5a05c91441176247173112c89fc067c72ec48041ef01",
+      "bytes": 69756,
+      "captured_utc": "2026-11-06T17:06:58.459183+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "v18_1_purified_nucleation_20261106/PURITY_VERIFY_v18_1.json",
+      "role": "Provenance and static method review; original not published",
+      "sha256": "72e30637b8ab5c2868a6d2b6193a824e5b4350421cf7cf8dc1765b5aee2883ea",
+      "bytes": 9306,
+      "captured_utc": "2026-11-06T17:06:58.459755+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "v18_1_purified_nucleation_20261106/README.zh.md",
+      "role": "Provenance and static method review; original not published",
+      "sha256": "375571966f0f723fd74ea4dfa3d51069ecc2b4cff389abad9496d4f8d3bdfe26",
+      "bytes": 3368,
+      "captured_utc": "2026-11-06T17:06:58.459853+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "v18_1_purified_nucleation_20261106/purified_corpus_bridge.py",
+      "role": "Provenance and static method review; original not published",
+      "sha256": "f7806b6ff935b34b66799d17b08e0886fc3e0de574454f6ced436aee45c6b0e6",
+      "bytes": 18664,
+      "captured_utc": "2026-11-06T17:06:58.459951+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "v18_1_purified_nucleation_20261106/recrystallized_lattice_builder.py",
+      "role": "Provenance and static method review; original not published",
+      "sha256": "a7aef6029f89473a3ef09867744f4e643f45ad914c9b1af2676c652f09ea44db",
+      "bytes": 28960,
+      "captured_utc": "2026-11-06T17:06:58.460049+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "v18_1_purified_nucleation_20261106/recrystallized_trainer.py",
+      "role": "Provenance and static method review; original not published",
+      "sha256": "1c95a010412acb5833feb0f57bbe4f7820a7175b0ac3e9adda8b6f0ac4472b96",
+      "bytes": 35441,
+      "captured_utc": "2026-11-06T17:06:58.460165+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "v18_1_purified_nucleation_20261106/run_v18_1_purified_experiment.py",
+      "role": "Provenance and static method review; original not published",
+      "sha256": "4088ee1c5d6feffff3c7095f72246b2551e96513c5cbe05c7668a4dc5a82f2f9",
+      "bytes": 27335,
+      "captured_utc": "2026-11-06T17:06:58.460258+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/PLAN.json",
+      "role": "T11 plan, frozen identity, gate or historical report",
+      "sha256": "3914e2dec8f91b7d070f57ac0bfc43660838b3bac3e201d440d4ac393d0efc62",
+      "bytes": 1353,
+      "captured_utc": "2026-11-06T17:06:58.460362+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/FROZEN.json",
+      "role": "T11 plan, frozen identity, gate or historical report",
+      "sha256": "040193d0de3ebef59dc9ca246e7e5a9efbf5361fbc82afe904f6b0707170f5c2",
+      "bytes": 3274,
+      "captured_utc": "2026-11-06T17:06:58.460455+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/gate.json",
+      "role": "T11 plan, frozen identity, gate or historical report",
+      "sha256": "ad1eb18c516175f556c8a31ba99b5aa69b80c43ed2541f4a302ef708dc1d787a",
+      "bytes": 683,
+      "captured_utc": "2026-11-06T17:06:58.460534+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/REPORT.zh.md",
+      "role": "T11 plan, frozen identity, gate or historical report",
+      "sha256": "ee65ef899239095a37daffb518934c60527367104e39b5c52bc29589472ce90d",
+      "bytes": 8085,
+      "captured_utc": "2026-11-06T17:06:58.460609+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n65536-s0.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "f760ef0b33f1a5a51c33f84400478af42490c3b8f62214368b786ba667006984",
+      "bytes": 2548,
+      "captured_utc": "2026-11-06T17:06:58.460700+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n65536-s1.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "08c404b5a4191869e058416521031566344220d3b2ccb59777bef849c52a4704",
+      "bytes": 2589,
+      "captured_utc": "2026-11-06T17:06:58.460840+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n65536-s2.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "b96ac404a8b721e85c5da655e91f258b6e375f7c6aec15af966eb719040dde4c",
+      "bytes": 2485,
+      "captured_utc": "2026-11-06T17:06:58.460958+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n65536-s3.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "b4f45597046de80ae5c32a6cd742e7726b88f528a0d16a3678a16781884903c9",
+      "bytes": 2467,
+      "captured_utc": "2026-11-06T17:06:58.461077+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n65536-s4.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "cf78ea2b55aadd86d71f3c39a3eede311e2d9ff1f6e034cff8a8473897460ebb",
+      "bytes": 2480,
+      "captured_utc": "2026-11-06T17:06:58.461180+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n262144-s0.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "be24408fe7c9ac51f247c80297fd572a15fe5e9e14503e3383f75398440974ab",
+      "bytes": 2509,
+      "captured_utc": "2026-11-06T17:06:58.461403+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n262144-s1.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "cc42ec579042ee61f3eaa66d7e6c0c4d75405b0b59d2b60d62cef6b7f4c085e6",
+      "bytes": 2532,
+      "captured_utc": "2026-11-06T17:06:58.461530+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n262144-s2.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "aa5a5812587fd2d1bdd460803fff7238d312577d4ec3c9125cec8508435481e8",
+      "bytes": 2623,
+      "captured_utc": "2026-11-06T17:06:58.461638+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n262144-s3.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "a8f69667bd69458ee3f17203d1cd63844f55341b5fa56a9388932320f416550b",
+      "bytes": 2554,
+      "captured_utc": "2026-11-06T17:06:58.461755+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n262144-s4.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "85cded877c059ac0bc0c7959a21e9797c2dcab8be737bbaa28350d145ddb47de",
+      "bytes": 2584,
+      "captured_utc": "2026-11-06T17:06:58.461857+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n1048576-s0.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "c2b4323595f0c691cab1f8230828d1d6ad60f4a873fe5197e2d3d69e93d403d5",
+      "bytes": 2619,
+      "captured_utc": "2026-11-06T17:06:58.462038+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n1048576-s1.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "34cdf73bc55ce23e8129c197d759f95e9e45b822b50732b0641aa59b9d1b4a72",
+      "bytes": 2623,
+      "captured_utc": "2026-11-06T17:06:58.462161+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n1048576-s2.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "68a2bf455d315ea9e83db47a36d3d642c3f2c89a5d9e80ec06241b84b4ea6872",
+      "bytes": 2629,
+      "captured_utc": "2026-11-06T17:06:58.462270+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n1048576-s3.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "c26d0d1b71ceddc3f63c80689819c92a419008c33f2bb141d5036c2f1fa8c623",
+      "bytes": 2619,
+      "captured_utc": "2026-11-06T17:06:58.462369+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n1048576-s4.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "2bc7745469b2d9c0ab397a22e4d745398f460ac1cb759c13716b248f2cfbdfdf",
+      "bytes": 2630,
+      "captured_utc": "2026-11-06T17:06:58.462657+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n6144000-s0.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "c9445b2e61c0b4d14dbc32a131e202eb16b221cf21c71b8193112c9dc0f6fca6",
+      "bytes": 2628,
+      "captured_utc": "2026-11-06T17:06:58.462859+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n6144000-s1.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "9bd74b32133030ffbf206b3d473ac8aa0cad24288f32b3f024a57798a9a26386",
+      "bytes": 2621,
+      "captured_utc": "2026-11-06T17:06:58.462991+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n6144000-s2.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "532ccb2080dd5933762ede9f4b18b737e63124da65c70bc0b76d424000de4d8e",
+      "bytes": 2619,
+      "captured_utc": "2026-11-06T17:06:58.463102+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n6144000-s3.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "9045424acaab42490ad14dc1858b7f514e059717576f237dace96253a98c6cdd",
+      "bytes": 2622,
+      "captured_utc": "2026-11-06T17:06:58.463211+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-zero-n6144000-s4.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "78c0be03c0ddf1c533f60b379a2cef053435469cdc8a3d6750a3a9c505c989b6",
+      "bytes": 2620,
+      "captured_utc": "2026-11-06T17:06:58.463308+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-off-n6144000-s0.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "c883e220e4af18af0646c16d145b60096779085f0d8db412de24a0811c0f97aa",
+      "bytes": 2602,
+      "captured_utc": "2026-11-06T17:06:58.463463+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-off-n6144000-s1.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "5aedfa01239ed95469126d1caf5e0cb602f7efc2d95506a009b95338e6cab66a",
+      "bytes": 2598,
+      "captured_utc": "2026-11-06T17:06:58.463572+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-off-n6144000-s2.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "93345acc950ff0aa3afc262ecb89ecb1c8957e58fabc4eeeb6a975a9020bec64",
+      "bytes": 2614,
+      "captured_utc": "2026-11-06T17:06:58.463670+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-off-n6144000-s3.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "409af37960047fb4aa7108b6467adc0882d15a88e2752ad18b82786bf0587ca1",
+      "bytes": 2600,
+      "captured_utc": "2026-11-06T17:06:58.463767+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-off-n6144000-s4.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "efcf739ccf2cb7655ec8e9dcf729c02c3c69db07202c878913e3db9f1c759c4e",
+      "bytes": 2603,
+      "captured_utc": "2026-11-06T17:06:58.463864+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-one-n6144000-s0.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "1d6d8a5c71c9ac7f8c243ca8e5cfa6d949c468d524976d52d4d38d5386e94b5b",
+      "bytes": 2623,
+      "captured_utc": "2026-11-06T17:06:58.464005+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-one-n6144000-s1.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "32c24c772e911270e12acc47dd21a4d9a2daeade7f93e5b0923cecec96dea362",
+      "bytes": 2633,
+      "captured_utc": "2026-11-06T17:06:58.464132+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-one-n6144000-s2.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "f88ec08e40e5551ad70234e35a33dfdffc365d257ac99059915600d5be2b138f",
+      "bytes": 2625,
+      "captured_utc": "2026-11-06T17:06:58.464233+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-one-n6144000-s3.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "f2c98d215ca8729d20dab3a00e046376e7f96dccc05ffb2328cf2de7f14f0de5",
+      "bytes": 2628,
+      "captured_utc": "2026-11-06T17:06:58.464336+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/attn-one-n6144000-s4.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "cb156138b874e1487d261e521b379a396c0e46a09b41d56f7cecb58164350b29",
+      "bytes": 2631,
+      "captured_utc": "2026-11-06T17:06:58.464434+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/pair-one-n6144000-s0.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "1dfac28dfb483707768c2d5426a2163dbfb77768b821d79aba902d83eadfac2d",
+      "bytes": 2615,
+      "captured_utc": "2026-11-06T17:06:58.464596+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/pair-one-n6144000-s1.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "67d1cb81229e5bdeee287d2591da63736c47d27365a9a1d982a3430adc5d48b9",
+      "bytes": 2610,
+      "captured_utc": "2026-11-06T17:06:58.464698+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/pair-one-n6144000-s2.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "8cf43776e7c1c9fce38b764c4fd5311e9b9c7c592915f46f5f01bd178a47fc99",
+      "bytes": 2626,
+      "captured_utc": "2026-11-06T17:06:58.464796+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/pair-one-n6144000-s3.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "9da4cc4714616e54711a2d543f04b5a92ff66277991f05082494ba6f11ae6424",
+      "bytes": 2615,
+      "captured_utc": "2026-11-06T17:06:58.464894+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/pair-one-n6144000-s4.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "9c79c7e1f5387f144d8703632b0e8955a426b07c4aef84b7885f76a18ebf60e2",
+      "bytes": 2608,
+      "captured_utc": "2026-11-06T17:06:58.464990+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/pair-zero-n6144000-s0.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "3f5352fe9e4b5c92328174b402457e720f87c505d7ff373d3caac181466c4414",
+      "bytes": 2624,
+      "captured_utc": "2026-11-06T17:06:58.465135+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/pair-zero-n6144000-s1.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "92d7d2d9d700890ca7adee4c43aa81e8f290e2d445ee2e78b472c5935a858392",
+      "bytes": 2612,
+      "captured_utc": "2026-11-06T17:06:58.465242+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/pair-zero-n6144000-s2.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "4990f3c5863b182fd01709f316f94f459c507d06580c10d1e4bf3f5650b1e290",
+      "bytes": 2627,
+      "captured_utc": "2026-11-06T17:06:58.465342+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/pair-zero-n6144000-s3.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "cebfa6c65bba90b59689e99a593acf249be5abc74fb0a9999947d3d127d0dd55",
+      "bytes": 2623,
+      "captured_utc": "2026-11-06T17:06:58.465449+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "t11_fresh_chains_20261106/run_001/receipts/pair-zero-n6144000-s4.json",
+      "role": "Original T11 task receipt; not rerun in this review",
+      "sha256": "2deb3d77aac770a1238511c22d968d1d32378f3e233d4ca5354291e8673d43ef",
+      "bytes": 2629,
+      "captured_utc": "2026-11-06T17:06:58.465546+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "g1_local_partial_run/PLAN.json",
+      "role": "New G1 local pilot; selected copies separately included under research/g1-granularity-20261107",
+      "sha256": "77b6f5b9fb7bc550cc9022f32c46251d7eaecbddb0729def3876c98d86a9b5b6",
+      "bytes": 2421,
+      "captured_utc": "2026-11-06T17:06:58.466133+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "g1_local_partial_run/PREREG.md",
+      "role": "New G1 local pilot; selected copies separately included under research/g1-granularity-20261107",
+      "sha256": "08c2af9dec47beab4111b6e35805ee9b3743530a551fb36c71fa5c9a9de16ff5",
+      "bytes": 4742,
+      "captured_utc": "2026-11-06T17:06:58.466237+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "g1_local_partial_run/pilot.py",
+      "role": "New G1 local pilot; selected copies separately included under research/g1-granularity-20261107",
+      "sha256": "f39de1ecf490310a4ae968ee1a34d4f390b4ca3f3b25135911777f5476f405e6",
+      "bytes": 17563,
+      "captured_utc": "2026-11-06T17:06:58.466418+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "g1_local_partial_run/report.py",
+      "role": "New G1 local pilot; selected copies separately included under research/g1-granularity-20261107",
+      "sha256": "48dedccc9470308187afc1730d9f6758a07b6382c3e3c37f66b4eed85f852be7",
+      "bytes": 8339,
+      "captured_utc": "2026-11-06T17:06:58.466541+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "g1_local_partial_run/FROZEN.json",
+      "role": "New G1 local pilot; selected copies separately included under research/g1-granularity-20261107",
+      "sha256": "769ee5d20e79e0e8dc8c5e8d2cc68d430086079516a46a2bd8de6cc982e0a3d8",
+      "bytes": 1743,
+      "captured_utc": "2026-11-06T17:06:58.466636+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "g1_local_partial_run/DATA_AUDIT.json",
+      "role": "New G1 local pilot; selected copies separately included under research/g1-granularity-20261107",
+      "sha256": "65cdbcf737cf41062449ec050591e710841542c9013f32a1a48edd8cfe71a627",
+      "bytes": 10458,
+      "captured_utc": "2026-11-06T17:06:58.466732+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "g1_local_partial_run/SUMMARY.json",
+      "role": "New G1 local pilot; selected copies separately included under research/g1-granularity-20261107",
+      "sha256": "352f51eba764da30684d5bb19c2127e4869d50aa7d19e73fb780fec32fd51f63",
+      "bytes": 47596,
+      "captured_utc": "2026-11-06T17:06:58.466839+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "g1_local_partial_run/RUN_STATUS.json",
+      "role": "New G1 local pilot; selected copies separately included under research/g1-granularity-20261107",
+      "sha256": "e815f99ae42a2e24f6af62eb02f0edd3c04ac8f62f0a6207d7bcc9ecf3e968fe",
+      "bytes": 198,
+      "captured_utc": "2026-11-06T17:06:58.466925+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "g1_local_partial_run/VERIFICATION.json",
+      "role": "New G1 local pilot; selected copies separately included under research/g1-granularity-20261107",
+      "sha256": "ee0d5f3b235277266aa497a4ca491d2785fe2097c318d2d9f80a902ef1921f01",
+      "bytes": 390,
+      "captured_utc": "2026-11-06T17:06:58.467009+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "g1_local_partial_run/RESOURCES_prepare.json",
+      "role": "New G1 local pilot; selected copies separately included under research/g1-granularity-20261107",
+      "sha256": "dec44eefa24ebb1a4dcc88f13687642ebba91f28734355dd0534e40deed2d2e5",
+      "bytes": 1729,
+      "captured_utc": "2026-11-06T17:06:58.467093+00:00",
+      "original_not_distributed": true
+    },
+    {
+      "source_record": "g1_local_partial_run/RESOURCES_run.json",
+      "role": "New G1 local pilot; selected copies separately included under research/g1-granularity-20261107",
+      "sha256": "f7fa50bed22cf3b17ec006e881852255b5ba4611f6cca886cf3357d5351b804a",
+      "bytes": 1089,
+      "captured_utc": "2026-11-06T17:06:58.467175+00:00",
+      "original_not_distributed": true
+    }
+  ]
+}
