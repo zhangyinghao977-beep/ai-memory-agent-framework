@@ -1,0 +1,106 @@
+{
+  "plan_id": "t3_mutual_stability_20261103_reproduction",
+  "reproduction_config": true,
+  "historical_experiment": "t3_mutual_stability_20261103",
+  "status": "New reproduction configuration; not executed or historically frozen.",
+  "questions": [
+    "问题一（筛子与材料）：EA↔KA 双向修正（KA 也从 EA、CA 的选择拿材料）和 T2 的单向做法比，能不能互相适应、稳不稳定、会不会来回摆、包内差异有没有被抹平。",
+    "问题二（校验节奏）：以“相互修正是否稳定”为校验对象，每 1 轮和每 3、4、5 轮校验一次，各花多少校验时间、晚几轮发现稳定、停下时成绩差多少。"
+  ],
+  "task": {
+    "preset": "main",
+    "overrides": {}
+  },
+  "model": {
+    "size": "main",
+    "overrides": {}
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "arms": {
+    "one_way": "T2 做法：KA 只用 CPU 能精确对应的材料；EA 读 KA 产品去适应 KA",
+    "two_way": "另外从筛子拿材料：上一轮 CA 选链概率 × EA 选事件概率；每道 CPU 不能精确对应的题交给权重最大的事件所属的包；KA_p 只写 o、W、b"
+  },
+  "training": {
+    "optimizer": "Adam",
+    "rounds_cap": 20,
+    "arrival_over": 4,
+    "arrival_seed": 20261103,
+    "epochs_per_phase": {
+      "ka": 10,
+      "ea": 3,
+      "ca": 3
+    },
+    "batch_size": 256,
+    "lr": {
+      "ka": 0.003,
+      "ea": 0.001,
+      "ca": 0.001
+    },
+    "clip": 1.0,
+    "budgets": {
+      "ka": 134217728,
+      "ea": 2147483648,
+      "ca": 2147483648
+    },
+    "predict_chunk": 2048,
+    "no_early_stopping": true,
+    "no_checkpoint_selection_by_dev_or_test": true,
+    "no_hyperparameter_tuning": true,
+    "hyperparameters_note": "学习率、epoch 数、批大小、模型大小都沿用 T2 main，没有为 T3 调"
+  },
+  "check": {
+    "probe_size": 8192,
+    "probe_seed": 20261103,
+    "measures": [
+      "slot",
+      "ka",
+      "ea",
+      "answer"
+    ],
+    "main_measure": "slot",
+    "cadences": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "tolerances": [
+      0.1,
+      0.05,
+      0.02,
+      0.01,
+      0.005
+    ],
+    "windows": [
+      1,
+      2
+    ],
+    "note": "变化量、阈值、窗口都是候选观察（图谱写明待定），不选定；阈值这一组在 main 测速之前就固定了。训练总是跑到硬上限，停在哪一轮事后模拟。"
+  },
+  "gates": {
+    "min_main": 2000,
+    "min_indirect_main": 500,
+    "max_shortcut_accuracy": 0.75
+  },
+  "resources": {
+    "device": "cpu",
+    "threads": 1,
+    "cpu_affinity": null,
+    "gpu_memory_fraction": 0.4,
+    "gpu_duty": null,
+    "min_free_physical_gib": 1,
+    "memory_wait_minutes": 1,
+    "max_rss_gib": 16,
+    "time_cap_hours": 24
+  },
+  "dependency_runs": {},
+  "reproduction_notes": [
+    "Research task/model/seed/training parameters retained from the historical main plan.",
+    "CPU one-thread defaults and portable runtime plumbing differ from the historical machine. New hashes, timings and results must be generated.",
+    "Training has not been executed in this release copy. See docs/EXPERIMENT_CHANGES_T1_T4.md."
+  ]
+}

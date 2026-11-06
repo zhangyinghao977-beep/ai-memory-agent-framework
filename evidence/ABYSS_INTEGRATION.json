@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "preparedUtc": "2026-11-06T15:25:30.085186+00:00",
+  "baseCommit": "f6bf64aefb4857e44381756b625286a38ba82e71",
+  "status": "static-checks-passed; runtime-unvalidated",
+  "staticCheckEnvironment": {
+    "python": "3.13.9",
+    "node": "v24.15.0"
+  },
+  "scope": "Selected Abyss research implementation added under projects/the-abyss/implementation. No complete product or independent replication claim.",
+  "implementationFiles": 160,
+  "implementationStaticReport": "projects/the-abyss/implementation/STATIC_CHECKS.json",
+  "implementationStaticCounts": {
+    "python": 124,
+    "json": 13,
+    "toml": 1,
+    "text_scanned": 159,
+    "local_markdown_links": 36
+  },
+  "historicalEvidence": {
+    "location": "projects/the-abyss/implementation/historical",
+    "type": "Selected report summaries and provenance hashes; not raw receipts or a new reproduction.",
+    "T10": "50/50 tasks recorded complete; S2 failed and unseen-package generalization remains unresolved.",
+    "existingRootEvidence": "VALIDATION.json, SCAN_REPORT.json, SOURCE_MANIFEST.json and UPSTREAM_LICENSE_REVIEW.json retain their earlier checkpoint scope. Hongchenxian test results are not Abyss results."
+  },
+  "notPerformed": [
+    "project imports",
+    "dependency installation",
+    "pytest",
+    "training",
+    "model loading",
+    "independent historical replication",
+    "changes to original working tree or running experiments"
+  ],
+  "license": "Project license not selected. No license grant inferred from public visibility. No third-party datasets or dependency implementations bundled.",
+  "reproductionLimits": [
+    "Runtime and dependency compatibility not executed.",
+    "New entry points were adapted; relocation of previously generated runs/checkpoints is unverified.",
+    "Historical exact environment and raw receipts are not bundled.",
+    "External material acquisition notes retain unresolved provenance and build gaps."
+  ],
+  "preservation": {
+    "baseFiles": 72,
+    "existingFilesUpdated": [
+      "README.en.md",
+      "README.md",
+      "SHA256SUMS",
+      "THIRD_PARTY_NOTICES.en.md",
+      "THIRD_PARTY_NOTICES.md",
+      "docs/EXCLUSIONS.en.md",
+      "docs/EXCLUSIONS.md",
+      "docs/RELEASE_CHECKLIST.en.md",
+      "docs/RELEASE_CHECKLIST.md",
+      "evidence/INCLUSION.json",
+      "projects/the-abyss/EVIDENCE.en.md",
+      "projects/the-abyss/EVIDENCE.md",
+      "projects/the-abyss/README.en.md",
+      "projects/the-abyss/README.md"
+    ],
+    "existingFilesDeleted": [],
+    "hongchenxianSubtreeUnchanged": true,
+    "abyssDesignAndSourcesUnchanged": true,
+    "implementationCodeIdenticalToAuditedCandidate": true,
+    "implementationDocumentationReportAndIgnoreUpdates": [
+      ".gitignore",
+      "docs/REPRODUCIBILITY.en.md",
+      "docs/REPRODUCIBILITY.zh.md",
+      "LICENSE-STATUS.md",
+      "README.en.md",
+      "README.md",
+      "STATIC_CHECKS.json"
+    ]
+  },
+  "documentChecks": {
+    "relativeMarkdownLinks": 198,
+    "brokenRelativeLinks": [],
+    "jsonParsed": 22
+  },
+  "wholeRepositoryScan": {
+    "status": "passed",
+    "scannedFiles": 233,
+    "findings": [],
+    "limits": "Heuristic candidate-only review; does not prove absence of all secrets or rights issues.",
+    "scannerSha256": "f2df870ed13579e1de0e3025e15150757980802fedd2e85920e7912d3d90f052"
+  }
+}

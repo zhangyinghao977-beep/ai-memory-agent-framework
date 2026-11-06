@@ -1,0 +1,150 @@
+{
+  "plan_id": "t4_survival_20261103_reproduction",
+  "reproduction_config": true,
+  "historical_experiment": "t4_survival_20261103",
+  "status": "New reproduction configuration; not executed or historically frozen.",
+  "questions": [
+    "边用边学：世界慢慢变，旧本领保住多少，新本领多久学会。",
+    "有限资源：真实的 CPU、显卡消耗和存储有没有界；睡眠池小的时候会怎样。",
+    "延续：突然断电以后，登记过的东西有没有丢，有没有重复执行，能不能接着活。",
+    "CA 约束 EA：EA 受 CA 指引和看不到 CA，差多少。"
+  ],
+  "world": {
+    "t3_preset": "main",
+    "t3_overrides": [],
+    "new_packages": 4,
+    "new_package_day": 2,
+    "new_package_fraction": 0.2,
+    "new_genre_day": 4,
+    "new_genre_fraction": 0.4,
+    "new_genre_dup_fraction": 0.5,
+    "days": 10,
+    "questions_per_day": 1024,
+    "probe_size": 1024,
+    "new_pair_probe_fraction": 0.3,
+    "seed": 20261105
+  },
+  "model_size": "main",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "arms": [
+    "frozen",
+    "survive",
+    "survive_blind",
+    "survive_tight",
+    "full_repair"
+  ],
+  "arm_overrides": {
+    "survive_tight": {
+      "arm": "survive",
+      "life": {
+        "pools": {
+          "awake": {
+            "cpu_seconds": 60.0,
+            "gpu_seconds": 30.0
+          },
+          "sleep": {
+            "cpu_seconds": 120.0,
+            "gpu_seconds": 40.0
+          }
+        }
+      }
+    }
+  },
+  "days": 10,
+  "life": {
+    "batch_per_call": 64,
+    "cache_capacity": 256,
+    "sleep_rounds": 3,
+    "learn_window": 3072,
+    "margin": 0.02,
+    "min_group": 20,
+    "epochs": {
+      "ka": 10,
+      "ea": 3,
+      "ca": 3
+    },
+    "batch_size": 256,
+    "lr": {
+      "ka": 0.003,
+      "ea": 0.001,
+      "ca": 0.001
+    },
+    "budgets": {
+      "ka": 134217728,
+      "ea": 2147483648,
+      "ca": 2147483648
+    },
+    "pools": {
+      "awake": {
+        "cpu_seconds": 60.0,
+        "gpu_seconds": 30.0
+      },
+      "sleep": {
+        "cpu_seconds": 600.0,
+        "gpu_seconds": 200.0
+      }
+    },
+    "persist_every_s": 10.0,
+    "trigger": 0.85
+  },
+  "fsm": {
+    "fatigue_scale": 1024
+  },
+  "crash": {
+    "seeds": [
+      2
+    ],
+    "points": [
+      [
+        "after_call_start",
+        20
+      ],
+      [
+        "inside_answer",
+        30
+      ],
+      [
+        "after_call_end",
+        30
+      ],
+      [
+        "unit_tmp_written",
+        40
+      ],
+      [
+        "sleep_before_adopt",
+        2
+      ],
+      [
+        "before_long_commit",
+        2
+      ]
+    ]
+  },
+  "resources": {
+    "device": "cpu",
+    "threads": 1,
+    "cpu_affinity": null,
+    "gpu_memory_fraction": 0.4,
+    "gpu_duty": null,
+    "min_free_physical_gib": 1,
+    "memory_wait_minutes": 1,
+    "max_rss_gib": 16,
+    "time_cap_hours": 24
+  },
+  "dependency_runs": {
+    "t3": "experiments/t3_mutual_stability_20261103/run_reproduction"
+  },
+  "start": {
+    "dependency": "t3"
+  },
+  "reproduction_notes": [
+    "Research task/model/seed/training parameters retained from the historical main plan.",
+    "CPU one-thread defaults and portable runtime plumbing differ from the historical machine. New hashes, timings and results must be generated.",
+    "Training has not been executed in this release copy. See docs/EXPERIMENT_CHANGES_T1_T4.md."
+  ]
+}

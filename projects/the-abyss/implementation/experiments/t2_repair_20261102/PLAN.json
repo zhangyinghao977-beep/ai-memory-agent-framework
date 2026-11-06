@@ -1,0 +1,107 @@
+{
+  "plan_id": "t2_repair_20261102_reproduction",
+  "reproduction_config": true,
+  "historical_experiment": "t2_repair_20261102",
+  "status": "New reproduction configuration; not executed or historically frozen.",
+  "questions": [
+    "问题一（局部修复）：条件变更后，只修系统自己找出的相关单元，够不够用、花多少；和全部重修、从头重训比。",
+    "问题二（回修深度）：变更出在 KA、EA、CA 不同层时，只修哪几层就够；修了不相干的层会怎样；KA 要不要回修。"
+  ],
+  "task": {
+    "preset": "main",
+    "overrides": {}
+  },
+  "model": {
+    "size": "main",
+    "overrides": {}
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "arms": {
+    "KA_local": [
+      "KA_local"
+    ],
+    "CA": [
+      "CA"
+    ],
+    "EA": [
+      "EA"
+    ],
+    "CA+EA": [
+      "CA",
+      "EA"
+    ],
+    "ALL": [
+      "CA",
+      "EA",
+      "KA_all"
+    ]
+  },
+  "training": {
+    "optimizer": "Adam",
+    "base_rounds": 8,
+    "arrival_seed": 20261102,
+    "epochs_per_phase": {
+      "ka": 10,
+      "ea": 3,
+      "ca": 3
+    },
+    "batch_size": 256,
+    "lr": {
+      "ka": 0.003,
+      "ea": 0.001,
+      "ca": 0.001
+    },
+    "clip": 1.0,
+    "budgets": {
+      "ka": 134217728,
+      "ea": 2147483648,
+      "ca": 2147483648
+    },
+    "curve_subset": 4096,
+    "predict_chunk": 2048,
+    "no_early_stopping": true,
+    "no_checkpoint_selection_by_dev_or_test": true,
+    "no_hyperparameter_tuning": true
+  },
+  "repair": {
+    "rounds": 3,
+    "replay_ratio": 1.0,
+    "enough_margin": 0.02,
+    "ladder": "KA_local → CA → EA → CA+EA → 全部（empirical_core/t2/repair.py LADDER）；每级从基线快照出发，不够用就回退；够用标准：新条件 DEV 和旧条件 DEV 都不低于基线旧条件 DEV 减 0.02"
+  },
+  "unknown_rule": {
+    "forced_choice": "logit > 0 → A 赢",
+    "unknown_margin": 0.1,
+    "none_limit": 0.5
+  },
+  "gates": {
+    "min_main": {
+      "base": 2000,
+      "C1": 300,
+      "C2": 1000,
+      "C3": 1000
+    },
+    "max_shortcut_accuracy": 0.75
+  },
+  "resources": {
+    "device": "cpu",
+    "threads": 1,
+    "cpu_affinity": null,
+    "gpu_memory_fraction": 0.4,
+    "gpu_duty": null,
+    "min_free_physical_gib": 1,
+    "memory_wait_minutes": 1,
+    "max_rss_gib": 16,
+    "time_cap_hours": 24
+  },
+  "dependency_runs": {},
+  "reproduction_notes": [
+    "Research task/model/seed/training parameters retained from the historical main plan.",
+    "CPU one-thread defaults and portable runtime plumbing differ from the historical machine. New hashes, timings and results must be generated.",
+    "Training has not been executed in this release copy. See docs/EXPERIMENT_CHANGES_T1_T4.md."
+  ]
+}

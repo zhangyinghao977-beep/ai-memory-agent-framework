@@ -1,0 +1,104 @@
+{
+  "name": "T9 规则从事件链里长出来，世界变了能修订",
+  "spec": {
+    "n_train_packages": 48,
+    "n_new_packages": 16,
+    "n_members": 4,
+    "n_relations": 8,
+    "chain_len": 8,
+    "k": 16,
+    "member_offset": 0.2,
+    "single_fraction": 0.2,
+    "n_train": 16384,
+    "n_dev": 2048,
+    "n_test": 4096,
+    "seed": 20261106
+  },
+  "tasks": [
+    "anchor",
+    "mutual"
+  ],
+  "vectors": {
+    "chains": 16384,
+    "dilute": 0.0,
+    "n_life": 4096
+  },
+  "tables": {
+    "all": {
+      "chains": 16384,
+      "shuffle": false
+    },
+    "n64": {
+      "chains": 64,
+      "shuffle": false
+    },
+    "relshuf": {
+      "chains": 16384,
+      "shuffle": true
+    }
+  },
+  "shuffle_seed": 3,
+  "arms": {
+    "sim": [
+      "all",
+      "n64",
+      "relshuf"
+    ],
+    "pair": [
+      "all"
+    ],
+    "attn": [
+      "all"
+    ],
+    "vec": [
+      "all"
+    ]
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "steps": 48000,
+  "m4_steps": 96000,
+  "batch": 128,
+  "lr": 0.001,
+  "eval_every": 3000,
+  "sweep": {
+    "chains": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "windows": 8
+  },
+  "shift": {
+    "seed": 9,
+    "window": 256,
+    "new_chains": [
+      0,
+      64,
+      128,
+      192,
+      224,
+      256
+    ],
+    "streams": 8
+  },
+  "resources": {
+    "device": "cpu",
+    "workers": 1,
+    "threads_per_worker": 1,
+    "cpu_affinity": null,
+    "hard_utilization_limit": false
+  },
+  "status": "New reproduction configuration; not the historical frozen plan or a completed run.",
+  "dependency_runs": {
+    "t8": "experiments/t8_grown_lattice_20261106/run_reproduction"
+  },
+  "release_note": "Research parameters retained; private conversation and machine scheduling removed. Runtime defaults changed; numerical equivalence is unverified."
+}

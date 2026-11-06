@@ -1,5 +1,5 @@
 {
-  "status": "bilingual-research-preview-awaiting-abyss-source-integration",
+  "status": "bilingual-research-preview-with-selected-abyss-implementation",
   "included": [
     {
       "path": "projects/hongchenxian/research/central-step",
@@ -9,26 +9,35 @@
     },
     {
       "path": "projects/the-abyss",
-      "content": "Four bilingual document pairs: user-specified opening proposition, technical summaries, sources, and evidence boundaries.",
-      "executable": false,
-      "evidence": "Design and source review; no new training or implementation claim."
+      "content": "Four bilingual theory/source/evidence document pairs, plus an independently prepared implementation subtree.",
+      "executable": true,
+      "evidence": "Theory summaries remain distinct from selected implementation, historical summaries, and static checks. Abyss runtime workflows were not executed during publication preparation."
     },
     {
       "path": "scripts",
       "content": "Offline test guard, guard tests, candidate scan and integrity verification.",
       "executable": true
+    },
+    {
+      "path": "projects/the-abyss/implementation",
+      "content": "65 core Python files, 25 named test files plus two support files, 31 experiment Python files including one shared helper, 11 sanitized fresh-run plans, provenance, and bilingual reproduction notes.",
+      "executable": true,
+      "validation": "Static parsing and bounded scans only. No new unit-test, training, dependency-installation, or model-loading run.",
+      "evidence": "Historical report summaries retain failed predictions and limitations. Raw historical receipts and weights are excluded.",
+      "record": "evidence/ABYSS_INTEGRATION.json"
     }
   ],
   "notIncluded": [
     "Real sessions, memories, credentials, account identifiers and original operational logs.",
-    "Official SDK/deployment launchers or upstream package dependencies.",
+    "Official SDK/deployment launchers or vendored upstream package dependencies.",
     "Private chat transcripts, complete glossary, private local paths and original theory drafts.",
-    "Empiricist executable code, datasets, weights or repeatable training entry point."
+    "External corpora, tokenizer artifacts, pretrained or trained weights, runtime databases, raw historical experiment receipts, the retired toy task, and external-material adapters."
   ],
   "pendingDecisions": [
-    "Review and integrate the latest local Abyss source separately.",
-    "Project license and contribution attribution.",
-    "Any new content requires renewed scope, privacy, and authorization review."
+    "Project license, attribution and contribution ownership remain undecided; public readability is not an open-source license.",
+    "Installation, importability, selected tests and training workflows require a separately scoped new runtime validation.",
+    "External-material provenance and reproduction gaps, including the 119M source/license chain and missing corpus-index construction entry point, remain documented and unresolved.",
+    "Any expanded content scope requires its own provenance and privacy review."
   ],
   "thirdPartyLicenseReview": "DeepSeek Harness current public master root MIT verified as displayed; not a project license selection or full upstream dependency license audit.",
   "repositoryOrganization": "One repository, two clearly separated project areas. This publication contains only the reviewed research preview."

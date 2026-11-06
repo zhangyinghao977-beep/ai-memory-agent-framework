@@ -1,0 +1,55 @@
+{
+  "name": "T7 参考向量变模糊时，比较靠不靠得住",
+  "spec": {
+    "n_train_packages": 48,
+    "n_new_packages": 16,
+    "n_members": 4,
+    "n_relations": 8,
+    "chain_len": 8,
+    "k": 16,
+    "member_offset": 0.2,
+    "single_fraction": 0.2,
+    "n_train": 16384,
+    "n_dev": 2048,
+    "n_test": 4096,
+    "seed": 20261106
+  },
+  "tasks": [
+    "anchor",
+    "mutual"
+  ],
+  "sigmas": [
+    0.8,
+    1.25,
+    2.0
+  ],
+  "kinds": [
+    "attn",
+    "pair",
+    "sim"
+  ],
+  "part": "full",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "steps": 72000,
+  "batch": 128,
+  "lr": 0.001,
+  "eval_every": 3000,
+  "resources": {
+    "device": "cpu",
+    "workers": 1,
+    "threads_per_worker": 1,
+    "cpu_affinity": null,
+    "hard_utilization_limit": false
+  },
+  "status": "New reproduction configuration; not the historical frozen plan or a completed run.",
+  "dependency_runs": {
+    "t6": "experiments/t6_lattice_parts_20261105/run_reproduction"
+  },
+  "release_note": "Research parameters retained; private conversation and machine scheduling removed. Runtime defaults changed; numerical equivalence is unverified."
+}

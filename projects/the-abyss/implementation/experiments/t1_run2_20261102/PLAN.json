@@ -1,0 +1,188 @@
+{
+  "plan_id": "t1_run2_20261102_reproduction",
+  "reproduction_config": true,
+  "historical_experiment": "t1_run2_20261102",
+  "status": "New reproduction configuration; not executed or historically frozen.",
+  "questions": [
+    "large 档：螺旋训练多转几轮（24 轮对 8 轮，见题总量相同）有没有用？",
+    "xl 档：语料 4 倍、参数约 2.5 倍以后，模型 A 和同参数 Transformer、MLP 的差距怎样变化？"
+  ],
+  "task_variant": "T1-b：所有模型都不给已登记偏差，数值全部从训练反馈里学",
+  "sizes": [
+    "large",
+    "xl"
+  ],
+  "seed_groups": {
+    "large": [
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "xl": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ]
+  },
+  "model_order_by_size": {
+    "large": [
+      "A_spiral_r8",
+      "A_spiral_r24"
+    ],
+    "xl": [
+      "A_spiral_r24",
+      "A_joint",
+      "TFM",
+      "MLP",
+      "LinearPrior"
+    ]
+  },
+  "report_focus": [
+    "A_spiral_r24",
+    "A_spiral_r8",
+    "A_joint"
+  ],
+  "model_a": {
+    "identity_bias": 6.0
+  },
+  "models": {
+    "A_spiral_r8": {
+      "kind": "A_spiral",
+      "lr": 0.001,
+      "label": "A-spiral 8 轮（回放 1:1）",
+      "spiral": {
+        "rounds": 8,
+        "replay_ratio": 1.0,
+        "epochs_per_phase": {
+          "large": 2,
+          "xl": 2
+        },
+        "arrival_seed": 20261101,
+        "l0_budget_bytes": 67108864,
+        "l1_budget_bytes": 4294967296
+      }
+    },
+    "A_spiral_r24": {
+      "kind": "A_spiral",
+      "lr": 0.001,
+      "label": "A-spiral 24 轮（回放 1:1）",
+      "spiral": {
+        "rounds": 24,
+        "replay_ratio": 1.0,
+        "epochs_per_phase": {
+          "large": 2,
+          "xl": 2
+        },
+        "arrival_seed": 20261101,
+        "l0_budget_bytes": 67108864,
+        "l1_budget_bytes": 4294967296
+      }
+    },
+    "A_joint": {
+      "kind": "A_joint",
+      "lr": 0.001,
+      "label": "A-joint（整体训练）"
+    },
+    "TFM": {
+      "kind": "TFM",
+      "lr": 0.001,
+      "label": "C 同参数 Transformer"
+    },
+    "MLP": {
+      "kind": "MLP",
+      "lr": 0.001,
+      "label": "B 同参数 MLP"
+    },
+    "LinearPrior": {
+      "kind": "LinearPrior",
+      "lr": 0.01,
+      "label": "D′ 线性先验（已知答案形式的参照）"
+    }
+  },
+  "control_sizes": {
+    "large": {
+      "mlp_d": 128,
+      "mlp_range": [
+        1,
+        4097,
+        8
+      ],
+      "tfm_layers": 6,
+      "tfm_heads": 4,
+      "tfm_range": [
+        16,
+        1025,
+        16
+      ]
+    },
+    "xl": {
+      "mlp_d": 192,
+      "mlp_range": [
+        16,
+        8193,
+        16
+      ],
+      "tfm_layers": 6,
+      "tfm_heads": 4,
+      "tfm_range": [
+        16,
+        1025,
+        16
+      ]
+    }
+  },
+  "training": {
+    "optimizer": "Adam",
+    "batch_size": 256,
+    "epochs": {
+      "large": 10,
+      "xl": 10
+    },
+    "clip": 1.0,
+    "curve_points": 10,
+    "curve_subset": 4096,
+    "predict_chunk": 256,
+    "no_early_stopping": true,
+    "no_checkpoint_selection_by_dev_or_test": true,
+    "no_hyperparameter_tuning": true
+  },
+  "unknown_rule": {
+    "forced_choice": "logit > 0 → A 赢",
+    "unknown_margin": 0.1,
+    "ea_none_limit": 0.5
+  },
+  "hybrid": "每个模型另算“逻辑优先”成绩：训练事实用传递关系推得出的题用推理答案，其余用模型；推理阶段组合，不另训练",
+  "gates": {
+    "min_main": 200,
+    "max_shortcut_accuracy": 0.75,
+    "splits": [
+      "dev",
+      "test"
+    ]
+  },
+  "resources": {
+    "device": "cpu",
+    "threads": 1,
+    "cpu_affinity": null,
+    "gpu_memory_fraction": 0.4,
+    "gpu_duty": null,
+    "min_free_physical_gib": 1,
+    "memory_wait_minutes": 1,
+    "max_rss_gib": 16,
+    "time_cap_hours": 24
+  },
+  "dependency_runs": {},
+  "reproduction_notes": [
+    "Research task/model/seed/training parameters retained from the historical main plan.",
+    "CPU one-thread defaults and portable runtime plumbing differ from the historical machine. New hashes, timings and results must be generated.",
+    "Training has not been executed in this release copy. See docs/EXPERIMENT_CHANGES_T1_T4.md."
+  ]
+}

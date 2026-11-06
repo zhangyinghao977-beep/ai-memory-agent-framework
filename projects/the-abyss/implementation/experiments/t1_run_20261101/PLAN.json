@@ -1,0 +1,192 @@
+{
+  "plan_id": "t1_run_20261101_reproduction",
+  "reproduction_config": true,
+  "historical_experiment": "t1_run_20261101",
+  "status": "New reproduction configuration; not executed or historically frozen.",
+  "task_variant": "T1-b：所有模型都不给已登记偏差，数值全部从训练反馈里学",
+  "sizes": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "seed_groups": {
+    "small": [
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "medium": [
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "large": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ]
+  },
+  "model_order": [
+    "A_spiral",
+    "A_joint",
+    "TFM",
+    "MLP",
+    "LinearPrior"
+  ],
+  "model_order_by_size": {
+    "small": [
+      "A_spiral",
+      "A_joint",
+      "TFM",
+      "MLP",
+      "LinearPrior",
+      "A_joint_noid"
+    ],
+    "medium": [
+      "A_spiral",
+      "A_joint",
+      "TFM",
+      "MLP",
+      "LinearPrior",
+      "A_joint_noid"
+    ]
+  },
+  "model_a": {
+    "identity_bias": 6.0,
+    "note": "CPU 身份判断加在 EA 选择分数上的固定偏置（结构约束）；运行前只试过 6.0 这一个值，没有挑选"
+  },
+  "models": {
+    "A_spiral": {
+      "lr": 0.001,
+      "note": "模型 A，螺旋式分层训练（t1/spiral.py）"
+    },
+    "A_joint": {
+      "lr": 0.001,
+      "note": "同一个模型 A，整体一起训练（对照）"
+    },
+    "A_joint_noid": {
+      "lr": 0.001,
+      "note": "消融：模型 A 不加身份约束（identity_bias=0），整体训练"
+    },
+    "TFM": {
+      "lr": 0.001,
+      "note": "C：同参数小 Transformer"
+    },
+    "MLP": {
+      "lr": 0.001,
+      "note": "B：同参数 MLP"
+    },
+    "LinearPrior": {
+      "lr": 0.01,
+      "note": "D′：每个对象一个数值、每个世界一个方向；不对齐参数量"
+    }
+  },
+  "control_sizes": {
+    "small": {
+      "mlp_d": 4,
+      "mlp_step": 1,
+      "tfm_layers": 1,
+      "tfm_heads": 1
+    },
+    "medium": {
+      "mlp_d": 64,
+      "mlp_step": 8,
+      "tfm_layers": 3,
+      "tfm_heads": 4
+    },
+    "large": {
+      "mlp_d": 128,
+      "mlp_step": 8,
+      "tfm_layers": 6,
+      "tfm_heads": 4
+    }
+  },
+  "training": {
+    "optimizer": "Adam",
+    "batch_size": 256,
+    "epochs": {
+      "small": 200,
+      "medium": 30,
+      "large": 10
+    },
+    "clip": 1.0,
+    "curve_points": 10,
+    "curve_subset": 4096,
+    "predict_chunk": 256,
+    "spiral": {
+      "rounds": 8,
+      "epochs_per_phase": {
+        "small": 20,
+        "medium": 3,
+        "large": 1
+      },
+      "arrival_seed": 20261101,
+      "l0_budget_bytes": 67108864,
+      "l1_budget_bytes": 2147483648
+    },
+    "no_early_stopping": true,
+    "no_checkpoint_selection_by_dev_or_test": true,
+    "no_hyperparameter_tuning": true
+  },
+  "unknown_rule": {
+    "forced_choice": "logit > 0 → A 赢；所有模型都照常计分",
+    "unknown_margin": 0.1,
+    "ea_none_limit": 0.5,
+    "baselines": "规则返回 None（没见过、并列、推不出）算“不知道”，强制二选一时算答错"
+  },
+  "metrics": {
+    "main": "TEST 强制二选一正确率，按“新组合×冲突”类别（gate=new_conflict）",
+    "also": [
+      "全部",
+      "路径推不出",
+      "跨包／同包",
+      "这一对见过与否",
+      "作答率与作答题正确率",
+      "DEV 固定子集学习曲线",
+      "成本账单"
+    ],
+    "intervals": "每个种子 95% Wilson 区间；比较时两两区间都不重叠才说高于／低于"
+  },
+  "gates": {
+    "min_main": 200,
+    "max_shortcut_accuracy": 0.75,
+    "splits": [
+      "dev",
+      "test"
+    ]
+  },
+  "program_checks": [
+    "每个训练阶段都有收据",
+    "DEV／TEST 预测题数对得上",
+    "模型 A 参考成员偏差恒为 0",
+    "A-spiral 组装时没有混用新旧版本",
+    "损失都是有限值（训练中检查）"
+  ],
+  "resources": {
+    "device": "cpu",
+    "threads": 1,
+    "cpu_affinity": null,
+    "gpu_memory_fraction": 0.4,
+    "gpu_duty": null,
+    "min_free_physical_gib": 1,
+    "memory_wait_minutes": 1,
+    "max_rss_gib": 8,
+    "time_cap_hours": 10
+  },
+  "dependency_runs": {},
+  "reproduction_notes": [
+    "Research task/model/seed/training parameters retained from the historical main plan.",
+    "CPU one-thread defaults and portable runtime plumbing differ from the historical machine. New hashes, timings and results must be generated.",
+    "Training has not been executed in this release copy. See docs/EXPERIMENT_CHANGES_T1_T4.md."
+  ]
+}
