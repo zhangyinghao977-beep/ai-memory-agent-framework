@@ -16,6 +16,14 @@ One repository, two separate research projects. This is an **unfinished AI appro
 
 ### [The Abyss / 深渊](projects/the-abyss/README.en.md)
 
+**Opening: a tribute to Newton**
+
+> Next, I will show you the basic rules by which logic operates.
+>
+> What is an apple?
+
+This opening and apple question form the project's twofold tribute to Isaac Newton. Neither is a quotation from him. They introduce the research proposition below; the “basic rules” remain to be articulated and tested.
+
 1. **Logic is the path that makes knowledge reachable.**
    逻辑是知识的可达路径。
 

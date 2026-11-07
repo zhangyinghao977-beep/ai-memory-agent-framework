@@ -16,6 +16,14 @@
 
 ### [深渊 / The Abyss](projects/the-abyss/README.md)
 
+**开场：向牛顿致敬**
+
+> 接下来我将向你们展示逻辑运行的基本规则
+>
+> 什么是苹果？
+
+这句开场与苹果问题是本项目向艾萨克·牛顿的双重致敬，并非牛顿原话。它们引出下述研究主张；“基本规则”仍待阐述和检验。
+
 1. **逻辑是知识的可达路径。**
    Logic is the path that makes knowledge reachable.
 

@@ -1,0 +1,45 @@
+{
+  "record_type": "project_introduction_newton_tribute",
+  "recorded_date": "2026-11-07",
+  "base_commit": "ae976c32d72d03b7a5ed67c308d35168490026f3",
+  "scope": "Add the author-requested opening and apple question to the root and Abyss introductions in Chinese and English.",
+  "chinese_opening": "接下来我将向你们展示逻辑运行的基本规则",
+  "chinese_question": "什么是苹果？",
+  "english_opening": "Next, I will show you the basic rules by which logic operates.",
+  "english_question": "What is an apple?",
+  "attribution": "Project wording used as a twofold tribute to Isaac Newton, explicitly not a Newton quotation.",
+  "evidence_boundary": "Introduces the project research proposition that logic is the path that makes knowledge reachable. The basic rules remain to be articulated and tested; no established scientific law or new experimental result is claimed.",
+  "preservation": {
+    "changed_existing_files": [
+      "README.md",
+      "README.en.md",
+      "projects/the-abyss/README.md",
+      "projects/the-abyss/README.en.md",
+      "SHA256SUMS"
+    ],
+    "new_files": [
+      "evidence/NEWTON_TRIBUTE_20261107.json"
+    ],
+    "unchanged_existing_files": 270,
+    "source_code_unchanged": true,
+    "historical_experiments_unchanged": true,
+    "evaluation_corrections_unchanged": true,
+    "deleted_files": 0,
+    "license_changed": false
+  },
+  "validation_scope": {
+    "baseline": "All 275 baseline file bytes matched Git blob identities at base_commit before editing.",
+    "documentation": "Requested Chinese wording preserved, English translation checked, attribution and research-status boundaries explicit. Relative links and reference definitions checked.",
+    "integrity": "Exact final candidate file-set SHA256SUMS refreshed and verified before publication.",
+    "release_scan": "Candidate-only heuristic scan, not proof of absence of every secret or rights issue.",
+    "learning_experiments": "Not run for this documentation addition.",
+    "offline_protocol_tests": {
+      "command": "npm test",
+      "node": "24.22.1",
+      "passed": 72,
+      "failed": 0,
+      "scope": "Existing Hongchenxian and offline-network-guard protocols, not scientific validation of the opening or Abyss learning."
+    }
+  },
+  "privacy_scope": "Only the explicitly requested public-facing opening and question are quoted. No surrounding private conversation, account details, datasets, weights or raw operational receipts are added."
+}

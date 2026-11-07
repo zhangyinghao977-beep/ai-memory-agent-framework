@@ -10,6 +10,14 @@
 
 [New evidence and granularity pilot (2026-11-07)](evidence/2026-11-07/README.en.md) separates historical training summaries, ongoing stages, and the new G1 pilot that completed only 2/10 seeds.
 
+**Opening: a tribute to Newton**
+
+> Next, I will show you the basic rules by which logic operates.
+>
+> What is an apple?
+
+This opening and apple question form the project's twofold tribute to Isaac Newton. Neither is a quotation from him. They introduce the research proposition below; the “basic rules” remain to be articulated and tested.
+
 1. **Logic is the path that makes knowledge reachable.**
    逻辑是知识的可达路径。
 
