@@ -15,7 +15,7 @@ This correction concerns evaluation method and interpretation. It does not claim
 ## The author's two primary evaluation directions
 
 1. **Is the system becoming more like a human?** This is a direction-setting question for the project. It should be considered across the system's accumulation of experience, retention and use of memory, organization of knowledge, revision of understanding and continuity of work. A single static task score cannot stand in for that whole process.
-2. **Does it accord with the ideas of Turing and von Neumann, and to what extent does it combine them?** The author has confirmed the intended figures as Alan Turing and John von Neumann. The particular works, propositions or proposals, and the project's interpretation of them, still need to be specified. No correspondence is assumed here, and no claim is made that their ideas have already been implemented or validated.
+2. **Does it accord with the ideas of Turing and von Neumann, and to what extent does it combine them?** The author has confirmed the intended figures as Alan Turing and John von Neumann. Around the project's central proposition, “Logic is the path that makes knowledge reachable,” specific connections can already be identified with Turing's rule-governed computation and von Neumann's stored-program and self-reproducing-automaton organization. These are set out below. Intellectual connections can be recognized now; rigorous formal mappings, implementation and evaluation metrics still require separate work.
 
 These are evaluation directions specified by the project author. The first is not an established “human-likeness” score, nor is the second an established “intellectual fidelity” percentage. Human behavior varies, and interpretation of ideas requires sources and context. This page does not present value judgments, anthropomorphic descriptions or historical motivations as directly quantifiable facts, or infer consciousness, life or personhood from them.
 
@@ -33,9 +33,29 @@ The following are **candidate validation dimensions**, proposed from the existin
 
 “Becoming more” requires longitudinal comparison: specify the versions being compared, the experiences acquired, the components changed, and improvements as well as regressions. Scores from different tasks, budgets or supplied priors may not be directly comparable. An actual human-system behavioral comparison would additionally require a defined human reference, task and interpretation standard. Existing experiments do not supply that evidence.
 
-## Turning the second direction into a traceable correspondence
+## Specific intellectual correspondences for the second direction
 
-After the author specifies the particular ideas, create a record for each rather than starting with an aggregate score:
+**Further correction:** The earlier statement that the particular ideas and mechanisms were not yet defined was too sweeping. I described the absence of a completed rigorous mapping and validation as though no intellectual connection could be identified. The author clarified that these connections should be understood through the central proposition that logic is the path that makes knowledge reachable. The following primary-source-based correspondences replace that blanket deferral.
+
+Three levels are kept distinct: **what the historical texts actually say; how the project connects and extends those ideas; and what implementation and experiments support.** The central proposition is the project's formulation, not a quotation from Turing or von Neumann or a theorem rigorously derived from these texts.
+
+| Historical idea and source | Specific connection to the project's central proposition | Project extension and evidence boundary |
+|---|---|---|
+| **Turing: rule-governed transitions and encodable computation.** The 1936 paper, §§1–3, relates states and scanned symbols to actions; §§5–7 encode machine descriptions for a universal machine to execute. [Original paper, printed pp. 231–234 and 239–246](https://people.cs.umass.edu/~immerman/cs513/Turing1936OnComputableNumbers.pdf) | A project “path” with defined input states, conditions, transition rules and results has a substantive conceptual correspondence with rule-governed computation. A process can itself have a stored, readable description. This supplies a reference for discussing executable event chains. | Reachability by state transitions does not establish valid knowledge or factual truth. Provenance, semantics, context and revision through experience are further project requirements, not substitutes supplied by the machine model. |
+| **Von Neumann: stored instructions and their interpretation.** The EDVAC draft, §§2.3–2.5 and §14.1, separates memory and control: orders and numbers reside in M, and control reads and interprets orders. [Retypeset original work, §14.1](https://itf.njszt.hu/wp-content/uploads/2018/05/Firstdraft.pdf#page=43) | The project considers storing, reading and unfolding event chains and process structures as knowledge. Putting a path description in a knowledge carrier for an execution mechanism to use has a concrete organizational connection to storing and executing program descriptions. | This compares responsibilities, not knowledge packages with machine instructions or addresses. Stored programs do not imply autonomous learning. Knowledge descriptions, execution semantics and version revision still require their own contracts. |
+| **Von Neumann: descriptions, construction, description copying and coordinating control.** Part One, Fifth Lecture of *Theory of Self-Reproducing Automata*, printed pp. 84–86, distinguishes description-guided constructor A, description copier B and coordinating controller C. [1966 original-book scan, edited and completed by Arthur W. Burks](https://fab.cba.mit.edu/classes/862.16/notes/computation/vonNeumann-1966.pdf) | This provides a specific reference for distinguishing a process description, unfolding or construction from it, copying the description, and coordinating execution. It connects to treating process structures as reusable knowledge. | This is an organizational analogy. Reusing packages, copying records or recovering an event chain does not establish a self-reproducing automaton. No universal construction, self-reproduction or autonomous knowledge formation is established for this project by this comparison. |
+
+The Turing reference uses printed pages and sections. The EDVAC link is Michael D. Godfrey's 1992 retypesetting, whose title page identifies corrected typographical errors and marked added cross-references; it is not an unedited manuscript scan. The automata passage was checked through searchable excerpts of the relevant original-book pages, not a new full-book reading. These are paraphrases; none of the historical texts is added to the repository.
+
+### What “combination” can mean in this project
+
+Following the relationships among knowledge carriers, event chains, composition and unfolding in the [existing design](DESIGN.en.md), the proposed combination can be made explicit: **give knowledge and processes storable representations; connect states into executable paths through explicit rules; allow path descriptions themselves to be stored, read, composed and unfolded; and retain practical results as experience for subsequent revision.** Rule-governed transitions, stored descriptions with interpretation, and distinct description/construction/copying responsibilities have the references above. Provenance, knowledge semantics, shared structure with retained differences, and revision are the project's further organization and extension.
+
+Some organizational ideas can therefore be recognized as related, and their joint role in the central proposition can be discussed now. This does not assert a direct historical lineage, that the two authors stated the same epistemological proposition, or that the whole project follows by simple formal derivation from their works. Recognizing intellectual connections and testing implementation are compatible tasks.
+
+### Further checking and validation
+
+These three correspondences form an initial mapping to refine, rather than returning to a blanket “ideas unknown” status or starting with an aggregate score:
 
 1. **Source of the idea:** identify the specific text by Turing or von Neumann, edition, page/section and context. Distinguish the original text, later interpretation and the author's project-specific interpretation.
 2. **Project correspondence:** identify the architectural responsibility, data structure or algorithm proposed to correspond to the idea. State what is an analogy and what remains unimplemented.
@@ -43,7 +63,7 @@ After the author specifies the particular ideas, create a record for each rather
 4. **Testable aspects:** for questions amenable to experiments, state observable predictions, alternative explanations and controls, then record implementation, execution and results. Keep nonquantitative interpretation as a sourced argument.
 5. **Differences and gaps:** record departures from the original ideas, engineering trade-offs, unspecified points and counterexamples. If a source or mechanism cannot be checked, retain “to be specified” or “not yet validated.”
 
-Current status: the figures are confirmed; the specific ideas and corresponding mechanisms are not yet defined. This correction makes no finding about the degree of correspondence or combination.
+Current status: **the figures are confirmed, three conceptual correspondences and a project-level form of combination are explicitly recorded, and rigorous mapping, implementation coverage and metric operationalization remain to be completed.** This update does not quantify correspondence or combination, or establish new learning capabilities.
 
 ## Continuing to use existing results
 
@@ -56,4 +76,4 @@ Future reports should say **which project goal they serve, what object they actu
 
 ## Scope of this change
 
-This change adds bilingual corrections, entry-point notices and a separate change record, and refreshes the integrity manifest. Frozen plans, source code, historical scores, failure records and snapshots retain their original bytes. No training or learning experiment was rerun, human comparison fabricated, old criterion changed, or license altered. Private conversations and identity information outside the technical scope are not published in this change.
+The first correction added bilingual documents, entry-point notices and a separate change record. This follow-up replaces the blanket deferral of intellectual correspondences with sourced connections and boundaries, adds a [follow-up record](../../evidence/EVALUATION_CORRESPONDENCE_20261107.json), and refreshes the integrity manifest. Frozen plans, source code, historical scores, failure records and the first change record retain their original bytes. No training or learning experiment was rerun, human comparison fabricated, old criterion changed, or license altered. Private conversations and identity information outside the technical scope are not published in this change.
