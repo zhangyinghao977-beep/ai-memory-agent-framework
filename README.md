@@ -2,6 +2,8 @@
 
 [English](README.en.md) · 简体中文
 
+**逻辑、记忆与 FSM：** [本轮设计原则与逐维评价](docs/MEMORY_LOGIC_FSM_PRINCIPLES.md)，整理原文保留、知识关系、Agent 切片及局部注意力，分别标明设计、已见实现与待验证事项。
+
 **评估方法更正：** [承认评估视角与推论范围错误，登记两项项目评估方向](projects/the-abyss/EVALUATION_CORRECTION.md)：是否越来越接近人；是否符合图灵和冯·诺依曼的思想及二者结合程度。历史结果与冻结记录保留。
 
 **G1 最新执行：** [十种子完整结果](projects/the-abyss/research/g1-granularity-20261107/followup-20261107-execution3/README.md)：10/10 种子、140/140 单元完成；此前资源停止的两种子快照继续保留。

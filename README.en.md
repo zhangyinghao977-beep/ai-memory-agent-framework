@@ -2,6 +2,8 @@
 
 English · [简体中文](README.md)
 
+**Logic, memory and FSM:** [New design-principles and evaluation note (Chinese)](docs/MEMORY_LOGIC_FSM_PRINCIPLES.md) separates original memory text from knowledge relations, explains the agent slice and local attention, and distinguishes design, inspected implementation and open validation questions.
+
 **Evaluation correction:** [Acknowledging errors in evaluation perspective and inference, and recording two project evaluation directions](projects/the-abyss/EVALUATION_CORRECTION.en.md): becoming more like a human; correspondence with and combination of Turing’s and von Neumann’s ideas. Historical results and frozen records are retained.
 
 **Latest G1 execution:** [Complete ten-seed results](projects/the-abyss/research/g1-granularity-20261107/followup-20261107-execution3/README.en.md): 10/10 seeds and 140/140 units completed. The earlier two-seed resource-stop snapshot is retained.

@@ -2,6 +2,8 @@
 
 [中文](README.md) | [English](README.en.md)
 
+**逻辑、记忆与 FSM：** [本轮原则与评价整理](../../docs/MEMORY_LOGIC_FSM_PRINCIPLES.md)明确记忆原文保留、知识关系可压缩的作者观点、Agent 切片和逐维差异；不据此改写历史实验结论。
+
 **评估方法更正：** [评估错误与两项主要方向](EVALUATION_CORRECTION.md)。承认误用评估视角及局部结果泛化整体；登记人类接近程度与图灵、冯·诺依曼思想对应及结合方向，不改写历史结果。
 
 **G1 最新执行：** [十种子完整结果](research/g1-granularity-20261107/followup-20261107-execution3/README.md)，保留初次资源停止及小样本结论的变化。

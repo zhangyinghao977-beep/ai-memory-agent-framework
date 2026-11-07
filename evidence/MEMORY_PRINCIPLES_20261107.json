@@ -1,0 +1,77 @@
+{
+  "record_type": "memory_logic_fsm_design_and_evaluation_clarification",
+  "recorded_date": "2026-11-07",
+  "base_commit": "60149abef169425d8234559516eb0f1bc0cbb057",
+  "base_tree": "1c3c23460906ae6da2791ede58f279d3dbf7a547",
+  "document": "docs/MEMORY_LOGIC_FSM_PRINCIPLES.md",
+  "scope": "Chinese technical synthesis of the author's current project principles, with public-code inspection and explicit design, implementation and validation boundaries. Documentation changes only.",
+  "principles_recorded": [
+    "Logic, memory and FSM have distinct architectural responsibilities.",
+    "Preserve original memory text; the author's compressible-relation account concerns KA, EA, CA and related knowledge organization, not replacing memory originals with summaries.",
+    "The agent approach borrows the base model's existing knowledge-relation capabilities as a slice; that account is attributed to the author, not presented as a new empirical finding about model internals.",
+    "Local attention combines target original text with relevant surrounding or hierarchical index introductions and expands sources when needed; introductions do not replace originals.",
+    "Evaluate accuracy, reliability, resistance to arbitrary contamination, speed and honest unknown handling through dimension-specific differences rather than one aggregate score.",
+    "Traditional methods and baselines may be used after checking their assumptions and fit to project goals."
+  ],
+  "implementation_findings": {
+    "original_input_boundary": "ParagraphMemory.ingestDocument accepts JavaScript strings and uses UTF-16 code-unit offsets. Retention inside that boundary is not a guarantee about pre-ingestion decoding, OCR, transcription or arbitrary source-file bytes.",
+    "summaries": "Index and paragraph summaries are separate, provenance-bearing interpretation records.",
+    "integration_gap": "The lower paragraph module supports summary-preferred neighbors, but RecallAdapter.readOriginal currently forces raw neighbors. Automatic composition of target text with relevant upper/lower or surrounding index introductions is not claimed complete.",
+    "security_boundary": "Append-only protocol checks, hashes and lineage are not host-level exclusive custody, cryptographic identity authentication or truth certification.",
+    "epistemic_boundary": "Original retention, retrieval, local context sufficiency and final judgment require separate evidence. No end-to-end perfect fidelity or hallucination-free guarantee is claimed."
+  },
+  "preservation": {
+    "changed_existing_files": [
+      "README.md",
+      "README.en.md",
+      "docs/GLOSSARY.md",
+      "projects/hongchenxian/README.md",
+      "projects/hongchenxian/docs/ARCHITECTURE.md",
+      "projects/the-abyss/README.md",
+      "projects/the-abyss/EVALUATION_CORRECTION.md",
+      "SHA256SUMS"
+    ],
+    "new_files": [
+      "docs/MEMORY_LOGIC_FSM_PRINCIPLES.md",
+      "evidence/MEMORY_PRINCIPLES_20261107.json"
+    ],
+    "existing_documents": "Only linked addenda were inserted; previous text, dated glossary compilation, historical corrections and results were retained.",
+    "source_code_unchanged": true,
+    "historical_experiments_unchanged": true,
+    "deleted_files": 0,
+    "license_changed": false,
+    "unchanged_existing_files": 268
+  },
+  "validation_scope": {
+    "baseline": "All 276 baseline file bytes matched public Git blob identities at base_commit before editing.",
+    "offline_protocol_tests": {
+      "command": "npm test",
+      "node": "24.22.1",
+      "passed": 72,
+      "failed": 0,
+      "scope": "Existing Hongchenxian synthetic/double and offline-network-guard protocols only. No new behavioral or scientific validation of all principles."
+    },
+    "learning_experiments": "Not run; no training, new human comparison, threshold freeze or real-member operation performed.",
+    "documentation": {
+      "relative_link_targets_checked": 447,
+      "broken_links": 0,
+      "unresolved_reference_links": 0,
+      "json_files_parsed": 49,
+      "review": "Claims checked against the referenced public implementation. Existing text preserved by insertion-only addenda; all code and historical experiment bytes unchanged."
+    },
+    "integrity": {
+      "command": "npm run verify:integrity",
+      "verified_content_files": 277,
+      "total_files": 278,
+      "scope": "Exact final candidate file-set manifest; not scientific or security certification."
+    },
+    "release_scan": {
+      "command": "npm run scan:release",
+      "status": "passed",
+      "scanned_files": 278,
+      "findings": [],
+      "limits": "Heuristic candidate-only scan, not proof of absence of every secret or rights issue."
+    }
+  },
+  "privacy_scope": "Only a paraphrased technical principles note is published. No private conversation transcript, personal identifiers, credentials, actual member memories, raw runtime logs, datasets or weights are added."
+}

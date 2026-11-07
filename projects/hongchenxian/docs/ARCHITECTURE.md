@@ -2,6 +2,8 @@
 
 [English](ARCHITECTURE.en.md)
 
+**2026-11-07 补充：** [逻辑、记忆与 FSM 原则](../../../docs/MEMORY_LOGIC_FSM_PRINCIPLES.md)说明原文与关系、索引及简介的区别。现有底层 `summary-preferred` 窗口能力与原生 `readOriginal` 固定读取原文的链路应分开说明；二者不能合写为完整局部注意力策略已经实现。
+
 ## 数据与执行链
 
 合成 claim 绑定成员、session、policy 和 ticket。记忆引用只携带固定 snapshot/pin；工具先查索引，再预览，最后读取选择的原文。原生工具的来源记录与结果必须匹配，工具返回不自动成为成员的最终意见或生命周期决定。
