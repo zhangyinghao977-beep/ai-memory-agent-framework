@@ -8,6 +8,8 @@ English · [简体中文](README.md)
 
 **Latest G1 execution:** [Complete ten-seed results](projects/the-abyss/research/g1-granularity-20261107/followup-20261107-execution3/README.en.md): 10/10 seeds and 140/140 units completed. The earlier two-seed resource-stop snapshot is retained.
 
+**CA naming confirmed:** PA (Page Attention) is the former name of CA (Chain Attention). [Use-side addressing follows CA → EA → KA](docs/ARCHITECTURE_FLOWS.en.md#use-addressing), separately from learning loops.
+
 **Current concepts and workflows (2026-11-07):** [Learning event chain EA, cached-experience integration, and active memory search](docs/ARCHITECTURE_FLOWS.en.md). Local attention is registered as a phase-two design, not a completed implementation. Active search now takes priority over the earlier passive-first plan, which is retained as history.
 
 **Complete glossary:** [Bilingual terminology and event-chain boundaries](docs/GLOSSARY.en.md), including the latest three correction rounds, implementation mappings and open questions.

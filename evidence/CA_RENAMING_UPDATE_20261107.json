@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "record_type": "ca_renaming_and_use_side_order_confirmation",
+  "recorded_date": "2026-11-07",
+  "compilation_version": "2026-11-07-r3",
+  "base_commit": "c33a8ef5c56863516ed94e5b4ae5c57565f346f0",
+  "scope": "Bilingual documentation and one new bilingual use-side addressing diagram; no implementation or experiment changes.",
+  "confirmed_definitions": [
+    "PA (Page Attention) has been renamed CA (Chain Attention); PA is retained as the former name.",
+    "Use-side addressing follows CA → EA → KA. This is not a fixed single-pass order for all learning or training.",
+    "Learning event chain remains EA. Knowledge-package and EA learning loops retain mutual adaptation and revision."
+  ],
+  "source_record": "docs/GLOSSARY_SOURCES.json",
+  "source_scope": "Direct U-CA-1107 author confirmation controls the name and use-side order. F50 feedback supplies comparison context, not certification of v18.1/v19 code or experimental success. No private attachment, local machine paths, or conversation identifiers are distributed.",
+  "superseded_status": "Earlier current-document statements that PA/CA naming and expansion were unresolved are replaced and preserved as historical resolution notes.",
+  "preservation": {
+    "original_historical_code_unchanged": true,
+    "frozen_experiments_unchanged": true,
+    "previous_evidence_records_unchanged": true,
+    "deleted_files": 0,
+    "local_experiments_accessed_or_interrupted": false
+  },
+  "validation": {
+    "documentation": {
+      "relative_links_checked": 501,
+      "reference_links_resolved": 142,
+      "broken_links": [],
+      "json_files_parsed": 51,
+      "svg_files_parsed": 6,
+      "matched_bilingual_numbered_sections": 66,
+      "implementation_and_frozen_experiments_unchanged": true,
+      "files_deleted": 0
+    },
+    "offline_protocol_tests": {
+      "command": "npm test",
+      "node": "24.22.1",
+      "passed": 72,
+      "failed": 0,
+      "scope": "Existing synthetic/double protocols only, not CA/EA/KA implementation validation."
+    },
+    "diagrams": {
+      "new_dot_sources": 2,
+      "new_svg_outputs": 2,
+      "new_images_rendered_and_visually_inspected": 2,
+      "all_six_svg_outputs_reproduced_identically": true,
+      "scope": "Layout, syntax and diagram/document consistency."
+    },
+    "integrity": {
+      "command": "npm run verify:integrity",
+      "expected_content_files": 293,
+      "expected_total_files": 294
+    },
+    "release_scan": {
+      "command": "npm run scan:release",
+      "status": "passed",
+      "findings": [],
+      "limits": "Heuristic review, not a guarantee of absence of all sensitive content or rights issues."
+    },
+    "not_run": [
+      "Training",
+      "New experiments",
+      "Real model calls",
+      "Full CA/EA/KA runtime validation",
+      "Website deployment"
+    ]
+  }
+}

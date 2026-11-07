@@ -17,7 +17,7 @@ Arrows describe design responsibilities and feedback directions, not completed o
 - Awake activity is more restrained. Mind-wandering has no task or purpose and is not assigned fixed background duties. Sleep can support more aggressive integration, without guaranteeing local or global optimality. The state annotation is not a complete transition table.
 - Raw records, interpretations formed through learning and knowledge versions remain distinguishable. Briefs or relation representations cannot replace memory originals; revisions preserve earlier evidence.
 
-This view confirms EA as learning event chains without inventing an English expansion of the acronym or inserting CA into the meaning of historical diagram 01. Integration operators, scheduling triggers, admission criteria, resource allocation, retention and recovery protocols remain to be specified. No new R algorithm is introduced. If R is added later, its feedback into knowledge, chains, memory admission and the FSM must be made explicit rather than drawing a score box with no defined effect.
+This overview confirms EA as the learning event chain without inventing expansions for KA or EA. The subsequently confirmed CA name (formerly PA) and CA → EA → KA use-side order appear separately in diagram 3, without rewriting the meaning of historical diagram 01. Integration operators, scheduling triggers, admission criteria, resource allocation, retention and recovery protocols remain to be specified. No new R algorithm is introduced. If R is added later, its feedback into knowledge, chains, memory admission and the FSM must be made explicit rather than drawing a score box with no defined effect.
 
 ## 2. Agent: active retrieval first and phase-two local attention
 
@@ -31,7 +31,26 @@ The **phase-two design** provides the target original, related upper/lower index
 
 **Observed implementation and gaps:** the public RecallAdapter exposes components including `readIndex`, `previewIndex` and `readOriginal`; `readOriginal` currently fixes `neighborMode: 'raw'`. The lower-level `readParagraphWindow` supports `summary-preferred` for physical neighboring paragraphs only: the target stays original, and neighbors fall back to originals when no brief exists. This is not the full index-relationship policy. The complete phase-two combination, relevance and sufficiency judgments are not yet connected and validated. The dashed yellow box marks phase-two design; the green note marks component capabilities only. Other nodes remain responsibility descriptions, not evidence of end-to-end completion.
 
-## 3. Two senses of merging and the scope of complete validation
+<a id="use-addressing"></a>
+
+## 3. Use-side addressing: CA → EA → KA
+
+![CA, EA and KA use-side addressing design](diagrams/use-addressing.en.svg)
+
+[Editable DOT source](diagrams/use-addressing.en.dot)
+
+**The author has formally confirmed that PA (Page Attention) was renamed CA (Chain Attention), and that use-side addressing follows CA → EA → KA.** PA remains a former name. This supersedes the previous unresolved PA/CA status; historical files and frozen code retain their original wording rather than being renamed into new experimental claims. [U-CA-1107; F50; see the [source inventory](GLOSSARY_SOURCES.json)]
+
+- **CA:** Locate the core sentence and focus across chains; use context to complete missing objects and check conflicts. It is not a direct knowledge-scope selector that skips intermediate steps.
+- **EA:** Use the learning event chain's within-chain relations to locate the required SLOT keywords. The name “learning event chain = EA” is unchanged, while formation and use still need separate descriptions.
+- **KA:** Address corresponding knowledge through within-package member relations organized relative to a fixed reference. The diagram invents neither KA/EA expansions nor a unified formula.
+- **When clarification is needed:** Bind it to the current question and resume the original chain; one object choice is not a global default. Concrete protocols, resources and exceptional paths still need engineering validation.
+
+**The use-side order is not an overall learning order.** Formation retains a knowledge-package learning loop and a learning-event-chain EA loop, with mutual adaptation and later revision. CA → EA → KA is not a fixed single pass for all training, nor evidence that v18.1, v19 or similarly named modules completely implement this diagram. The attachment's implementation-alignment claims were not independently verified here.
+
+This view belongs to the empiricist proposal. Hongchenxian's active dictionary/summary/original retrieval steps cannot be mechanically mapped to internal CA/EA/KA modules; using black-box logic does not implement this internal architecture. Diagram 1 remains a broad formation/use cycle; this diagram adds detail to use-side addressing without rewriting the historical meaning of older views.
+
+## 4. Two senses of merging and the scope of complete validation
 
 “Connecting a subchain into a structure” and “integrating cached experiences” are explanatory qualifiers to avoid ambiguity, not two newly coined formal terms:
 
@@ -42,7 +61,7 @@ The complete empiricist proposal includes **logic + memory + FSM**, whose intera
 
 State the models, materials, visible information, budgets, versions and task differences. Compare accuracy, reliability, resistance to contamination, speed and honest preservation of unknowns separately rather than hiding trade-offs in one score. Offline doubles, synthetic identities, correct storage and source checks support only their tested scope. They do not establish complete learning, original-identity recovery, real multi-member collaboration or long-term continuous operation. This update adds documentation and diagrams, not new learning experiments.
 
-## 4. Public sources and reproduction
+## 5. Public sources and reproduction
 
 - [The Abyss design](../projects/the-abyss/DESIGN.en.md): dual forests, knowledge composition, feedback and resource boundaries.
 - [Hongchenxian architecture](../projects/hongchenxian/docs/ARCHITECTURE.en.md): retrieval interfaces and offline evidence scope.
@@ -57,4 +76,4 @@ for f in docs/diagrams/*.dot; do
 done
 ```
 
-For visual checking, use e.g. `dot -Tpng docs/diagrams/formation-use.en.dot -o /tmp/formation-use.en.png`; PNG files need not be committed. Graphviz and font versions can affect layout. These two bilingual diagram pairs are public comparison views, not replacements for unlisted old diagrams or frozen architecture records.
+For visual checking, use e.g. `dot -Tpng docs/diagrams/formation-use.en.dot -o /tmp/formation-use.en.png`; PNG files need not be committed. Graphviz and font versions can affect layout. These three bilingual diagram pairs are public comparison views, not replacements for unlisted old diagrams or frozen architecture records.

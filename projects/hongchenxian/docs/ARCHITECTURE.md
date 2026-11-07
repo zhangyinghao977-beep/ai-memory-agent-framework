@@ -16,6 +16,8 @@
 
 [双语流程图及设计／实现对照](../../../docs/ARCHITECTURE_FLOWS.md)与[当前词典](../../../docs/GLOSSARY.md)给出同一口径。完整经验派的检验对象始终是逻辑、记忆与 FSM 的整体；这里的 agent 切片和离线协议检查不能代替完全体的验证。
 
+**跨项目命名边界：** 经验主义的 PA 已更名为 CA（Chain Attention），使用寻址为 CA → EA → KA，见[对应设计图](../../../docs/ARCHITECTURE_FLOWS.md#use-addressing)。这不把红尘仙的 dictionary／preview／readOriginal 接口逐一等同于 CA／EA／KA，也不表示黑盒模型的内部训练已按此实现。
+
 ## 数据与执行链
 
 合成 claim 绑定成员、session、policy 和 ticket。记忆引用只携带固定 snapshot/pin；工具先查索引，再预览，最后读取选择的原文。原生工具的来源记录与结果必须匹配，工具返回不自动成为成员的最终意见或生命周期决定。

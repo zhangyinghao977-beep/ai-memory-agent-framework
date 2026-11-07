@@ -14,6 +14,12 @@ Awake, mind-wandering, and sleep are individual states. Awake integration is mor
 
 Active search takes priority at this stage. The former passive-first plan is retained as history without permanently excluding passive supply. Full empiricism still means logic, memory store, and FSM operating together; a slice missing part of that system cannot validate the complete form. Numbers may describe differences, causes, phenomena, and costs, but a single score does not replace those judgments. Historical plans, predictions, failures, and frozen records are not rewritten.
 
+### CA naming and use-side order
+
+PA (Page Attention) has formally been renamed **CA (Chain Attention)**. PA remains only as a historical name. **Use-side addressing follows CA → EA → KA**: CA first locates the core sentence and focus, uses context to complete missing objects, and checks conflicts; EA then locates the required SLOT keyword relations; KA finally addresses the corresponding knowledge and within-package reference members. CA is not simply a direct selector of knowledge scope, and a clarification about one object is not a global default.
+
+This describes use-side addressing, not a fixed single-pass order for all training. Formation still distinguishes the knowledge-package learning loop and the learning-event-chain EA loop, with return paths and later revision. Neither the name, a diagram, nor experimental module labels establish a complete implementation or learning capability. The [use-side workflow](../../docs/ARCHITECTURE_FLOWS.en.md#use-addressing) makes this boundary explicit. Original historical code, old names, and frozen records are not mass-renamed.
+
 ## Knowledge carriers and the three question facets
 
 What concerns knowledge and its organization; why concerns connection computation and generalized functional mapping rules; how concerns practice, tools, and event-chain organization. These facets can be transformed into one another, but each transformation still needs explicit inputs, operations, outputs, and feedback. Arrows in a diagram cannot substitute for algorithms.

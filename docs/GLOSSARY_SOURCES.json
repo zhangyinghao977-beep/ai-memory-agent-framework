@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "compilation_version": "2026-11-07-r2",
+  "compilation_version": "2026-11-07-r3",
   "base_commit": "9ba27a5a0dd21fd9f6ac26f010866dde2c5cdfe6",
   "source_verification_utc": "2026-11-06T17:25:09.872432Z",
   "source_verification_scope": "Bounded source snapshot; not a complete-chat review or global-latest-version guarantee.",
@@ -221,13 +221,31 @@
       "access": "Supplied candidate read in full; only project-technical paraphrases included. Original private discussion and complete attachment are not distributed.",
       "original_public": false,
       "private_messages_or_identifiers_included": false
+    },
+    {
+      "id": "U-CA-1107",
+      "source_date": "2026-11-07",
+      "scope": "Direct author confirmation: PA (Page Attention) renamed CA (Chain Attention); CA → EA → KA is the formal use-side addressing order.",
+      "access": "Author confirmation inspected; technical paraphrase only.",
+      "original_public": false,
+      "private_messages_or_identifiers_included": false
+    },
+    {
+      "id": "F50",
+      "source_date": "2026-11-07",
+      "source_title": "Architecture 0.50 and Hongchenxian 0.17 terminology and workflow comparison feedback",
+      "authority": "Third-party review provided as context, not independent certification of code or experiments. User directly confirmed the CA name and use-side order through U-CA-1107.",
+      "scope": "Cross-check of use-side CA context/focus, EA SLOT relations, KA knowledge addressing, and separation from learning loops.",
+      "access": "Feedback read in full. Private paths, complete attachment, and unverified v18.1/v19 code-alignment claims are not published.",
+      "original_public": false
     }
   ],
   "precedence": [
     "Explicit R26 round-two corrections supersede the initial table and contrary ending.",
     "R26 round three supersedes the previous learning/restart criterion.",
     "Original frozen experiments remain unchanged; new terminology changes interpretation, not prior predictions.",
-    "U-1107 confirms learning event chain = EA and gives active search priority at the present stage; contrary current wording is revised, prior plans and frozen evidence are retained as history. C58 remains a candidate except where the author confirmed its points."
+    "U-1107 confirms learning event chain = EA and gives active search priority at the present stage; contrary current wording is revised, prior plans and frozen evidence are retained as history. C58 remains a candidate except where the author confirmed its points.",
+    "U-CA-1107 supersedes the previous unresolved PA/CA naming status. PA is retained as a former name; frozen historical implementations are not renamed and the use-side order is not generalized to all training."
   ],
   "excluded": [
     "private quotations and complete chats",
@@ -238,12 +256,17 @@
   ],
   "unresolved": [
     "Full v0.57 glossary original not acquired in this pass.",
-    "CA / PA equivalence and full acronym expansions are not established.",
     "Nine transformation algorithms, flattening measurement, and thermodynamic correspondence remain incomplete.",
     "T13 remains an evolving proposal in the inspected directory.",
     "Phase-two local attention requires full related-index composition and end-to-end validation; existing raw-neighbor reads are not that implementation.",
     "Rest triggers, integration criteria, FSM transitions, and any later active/passive combination remain open."
   ],
-  "current_update_base_commit": "23f366b94a7997b57d5b48ec8c9c60bb1955887a",
-  "historical_source_verification_retained": true
+  "current_update_base_commit": "c33a8ef5c56863516ed94e5b4ae5c57565f346f0",
+  "historical_source_verification_retained": true,
+  "historical_resolution_notes": [
+    {
+      "previous_status": "CA / PA equivalence and full acronym expansions are not established.",
+      "resolution": "U-CA-1107 confirms PA (Page Attention) was renamed CA (Chain Attention), and confirms CA → EA → KA as the use-side addressing order. Algorithms and implementation coverage remain separate open questions."
+    }
+  ]
 }

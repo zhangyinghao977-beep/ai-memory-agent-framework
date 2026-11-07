@@ -8,6 +8,8 @@
 
 **G1 最新执行：** [十种子完整结果](projects/the-abyss/research/g1-granularity-20261107/followup-20261107-execution3/README.md)：10/10 种子、140/140 单元完成；此前资源停止的两种子快照继续保留。
 
+**CA 更名确认：** PA（Page Attention）为旧名，现名为 CA（Chain Attention）；[使用寻址按 CA → EA → KA](docs/ARCHITECTURE_FLOWS.md#use-addressing)，与学习循环分开说明。
+
 **当前概念与流程图（2026-11-07）：** [学习事件链 EA、缓存经历整合与主动记忆搜索](docs/ARCHITECTURE_FLOWS.md)。局部注意力作为二期设计登记，图示不代表完整实现；此前先被动的计划保留为历史，现阶段先主动。
 
 **完整名词解释：** [中英文术语与事件链边界](docs/GLOSSARY.md)，收录最新三轮修正、实现对应和未定问题。

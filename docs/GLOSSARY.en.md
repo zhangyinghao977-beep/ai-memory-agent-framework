@@ -4,13 +4,13 @@
 
 **Navigation:** [Current clarifications](#current-clarifications) · [Event chains](#event-chains) · [Core concepts](#core-terms) · [Implementation crosswalk](#implementation-terms) · [Sources](#sources) · [Meeting agenda](#meeting-agenda)
 
-**Compilation 2026-11-07-r2: a discussion snapshot, not a newly ratified specification.** This document combines the existing glossary, later clarifications and operational meanings in code. It can be read from the beginning without following earlier supplements. It does not replace the author's version numbering or derive theoretical definitions from implementation shortcuts. “Complete” means coverage of the main concepts and cross-project ambiguities in the inspected sources, not that every mechanism has been specified.
+**Compilation 2026-11-07-r3: a discussion snapshot, not a newly ratified specification.** This document combines the existing glossary, later clarifications and operational meanings in code. It can be read from the beginning without following earlier supplements. It does not replace the author's version numbering or derive theoretical definitions from implementation shortcuts. “Complete” means coverage of the main concepts and cross-project ambiguities in the inspected sources, not that every mechanism has been specified.
 
 The Abyss is an unfinished empiricist AI research proposal involving memory, knowledge organization, paths and learning. Hongchenxian studies memory and work coordination for black-box agents. These are **project-specific terms**. Adopting a definition, implementing an interface and obtaining experimental support are different states.
 
 ## Reading conventions
 
-Entries distinguish **author definitions / working agreements**, **operational meanings** and **open questions**. English names are editorial translations. Acronyms such as KA, EA, PA and CA are not given invented expansions. `D54:345` refers to line 345 of source D54; source identifiers are listed at the end. Private quotations, complete conversations, accounts and absolute local paths are excluded.
+Entries distinguish **author definitions / working agreements**, **operational meanings** and **open questions**. English names are editorial translations. CA officially expands to Chain Attention; its former name PA expands to Page Attention. Unspecified expansions such as those of KA and EA are not invented. `D54:345` refers to line 345 of source D54; source identifiers are listed at the end. Private quotations, complete conversations, accounts and absolute local paths are excluded.
 
 Precedence is not simply the last paragraph or newest file timestamp. An explicit correction takes precedence over the statement it replaces; code establishes what was implemented, not what the author must mean. The latest R26 document records three correction rounds but retains contradictory older conclusions at its end. This glossary preserves that evolution and **does not treat the superseded ending as the current definition**. R26 is a researcher's record of user-confirmed terminology; the complete underlying conversation was not independently reauthenticated for this compilation. Remaining ambiguities stay explicit.
 
@@ -18,7 +18,7 @@ Precedence is not simply the last paragraph or newest file timestamp. An explici
 
 ## Current clarifications: November 7, 2026
 
-**U-1107** marks the author's current definitions and directly updates current usage. Historical sources and frozen experiments remain intact; new terminology does not rewrite earlier results. See the [logic, memory and FSM principles](MEMORY_LOGIC_FSM_PRINCIPLES.md) for responsibilities and evidence limits.
+**U-1107** and **U-CA-1107** mark the author's current definitions and directly update current usage. Historical sources and frozen experiments remain intact; new terminology does not rewrite earlier results. See the [logic, memory and FSM principles](MEMORY_LOGIC_FSM_PRINCIPLES.md) for responsibilities and evidence limits.
 
 ### N01 Learning event chain (EA) and working event chain
 
@@ -47,6 +47,12 @@ Existing paragraph windows, indexes, descriptions and read interfaces establish 
 ### N06 Tokens and experiment status
 
 The empiricist system's own representation does not take traditional tokens as a basic concept; the closest concepts are indexes and event-chain nodes. This does not define a separate unit called an empiricist token. Agents using an LLM still incur API token usage, and cost discussions must account for actual underlying LLM input, output and other token usage. T14–T22 are observations from synthetic key-and-door world experiments reported in the candidate supplement. The corresponding complete experimental materials were not obtained and independently checked in this revision. These observations cannot be generalized into conclusions about the complete empiricist system or universal claims about RAG; lack of this independent check also does not negate that the experiments were run. Existing frozen predictions, failures and original results remain intact. [U-1107; C58; C40]
+
+### N07 CA renaming and addressing order during use
+
+**PA (Page Attention) has officially been renamed CA (Chain Attention); addressing during use follows CA → EA → KA.** The author has confirmed both the renaming and the order, so the naming relationship is no longer an open question. CA attends across event chains and locates context: identifying the core sentence, using context to fill missing objects and checking conflicts. EA is the learning event chain and organizes within-chain SLOT relations; during use it locates the required SLOT keywords. KA handles member differences against a fixed reference within a knowledge package and addresses the corresponding knowledge. [U-CA-1107; U-1107; U-KA]
+
+This is an **addressing order during use**, not a mandatory single-pass total order for all training. Learning still includes knowledge-package loops and learning-event-chain (EA) loops, which can revise one another. PA remains in historical material as the former name. Local CA/EA/KA implementations retain their track-specific, versioned meanings; renaming does not establish a complete implementation. Attention formulas, scheduling and experimental acceptance still need independent evidence. See [architecture flows](ARCHITECTURE_FLOWS.en.md).
 
 <a id="event-chains"></a>
 
@@ -140,7 +146,7 @@ R26 clarifies that crystallization is intended to derive knowledge from experien
 
 ### E17 “Based on our construction” and scope labels — “基于我们的构造”与 EA／CA／PA 边界
 
-The historical R26 interpretation permits calling the small models then discussed “based on our construction,” restricted to EA / sentence-level scope, not the complete architecture. This scope description does not prove one sentence equals one node or chain. CA appears in that discussion, but an explicit complete meaning, English expansion or equivalence with PA was not established in the inspected material. Keep that CA question unresolved. Current naming identifies the learning event chain as EA (U-1107); the historical small-model scope does not validate complete EA. Sources: R26:15–16; U-KA; U-1107.
+The historical R26 interpretation permits calling the small models then discussed “based on our construction,” restricted to EA / sentence-level scope, not the complete architecture. This scope description does not prove one sentence equals one node or chain. Earlier compilation left CA's expansion and relationship to PA unresolved. U-CA-1107 now confirms that PA (Page Attention) was officially renamed CA (Chain Attention), with addressing during use following CA → EA → KA, superseding that naming question. Current naming identifies the learning event chain as EA (U-1107); the historical small-model scope does not validate complete EA, nor does the renaming retroactively establish complete CA/EA/KA coverage by any experiment. Sources: R26:15–16; U-KA; U-1107; U-CA-1107.
 
 ### E18 Path interference / loss of knowledge — 路径受影响／知识丢失
 
@@ -150,6 +156,7 @@ Lower old-task scores are observations. Temporary inaccessibility, a readout mis
 
 | Issue | Earlier interpretation / ambiguity | Current handling | Still open |
 |---|---|---|---|
+| CA/PA and use-time order | CA expansion and relationship to PA previously unresolved | PA (Page Attention) officially renamed CA (Chain Attention); use-time CA → EA → KA addressing | Concrete mechanisms, scheduling and full implementation evidence; addressing order does not impose a total order on all training |
 | Event chain | Chronological log or fixed language tree | Generalized AST / knowledge composition, with separate occurrence records | General execution semantics and learned encoding |
 | Node | “The T series has no nodes” | Withdraw blanket claim; comparison-and-selection can be a what→what process | Other transformations and unified representation |
 | First member / package | No explicit first member means it cannot be a package | Separate conceptual reference from explicit implementation; allow qualified usage | Indexed package objects and fixed references |
@@ -246,9 +253,9 @@ Author's definition. Components maintain relatively independent use/update bound
 
 Author's definition with editorial qualifiers. A slot is a relational structural position with scope and context, not an empty cell, vector row or transformation algorithm. Position, constraint, candidate material and binding are explanatory qualifiers, not four established modules. Version 0.41 retains linguistic roles as a bootstrap and extends toward general process positions; tokenization does not replace role identification. D54 preserves an established package's slot affiliation while particular occurrence bindings may change. [D54:365–391,48–58; D57:27]
 
-### C21 KA, EA and PA: relational scope across abstraction levels
+### C21 CA, EA and KA: relational scope across abstraction levels
 
-Later author clarification. KA handles member differences relative to a fixed reference within a knowledge package. **EA is the learning event chain.** Its earlier mechanism description refers to KA and SLOT when organizing relations and combinations among slots within a chain/sentence; that description does not negate the explicit naming. PA handles relations between event chains; its classification is incomplete. These iterate the same reference-frame idea across abstraction levels, rather than constituting three independent theories. Words, sentences, paragraphs and documents are scale examples, not fixed layers. No attention formula or model count follows. Retain PA and describe it as inter-chain relational scope; do not invent its expansion or equate it with CA without confirmation. [U-1107; U-KA; D54:399–408,429]
+The author now confirms: **CA (Chain Attention) is the official new name for PA (Page Attention), and addressing during use follows CA → EA → KA.** CA attends across event chains and locates context, identifying the core sentence, using context to fill missing objects and checking conflicts. **EA is the learning event chain.** Its mechanism refers to KA and SLOT when organizing relations and combinations among slots within a chain/sentence; during use it locates the required SLOT keywords. KA handles member differences relative to a fixed reference within a knowledge package and addresses the corresponding knowledge. These iterate the same reference-frame idea across abstraction levels, rather than constituting three independent theories. Words, sentences, paragraphs and documents are scale examples, not fixed layers. No attention formula or model count follows. Knowledge-package and EA learning loops can revise one another; the use-time order is not a mandatory single-pass total order for all training. PA remains a historical name. See I30 for experiment-specific roles, whose local implementations do not validate the complete architecture. Do not invent KA/EA expansions. [U-CA-1107; U-1107; U-KA; D54:399–408,429]
 
 ### C22 Attention, Q / K / V and knowledge vectors
 
@@ -455,7 +462,7 @@ Sources are the [historical T1–T10 summary][R1], [T11/v18.1 checkpoint][R2], [
 
 ## Sources, evolution and open questions
 
-Chinese and English entries share identifiers; translated labels do not introduce separate definitions. Limits and open questions are part of each entry. Where no new correction is listed, the cited usage is retained, not declared validated. **2026-11-07** follows the project's local date; source verification occurred at **2026-11-06 17:25 UTC**. That verification time belongs to the historical r1 snapshot; r2 adds the U-1107 current clarifications without rewriting that earlier verification.
+Chinese and English entries share identifiers; translated labels do not introduce separate definitions. Limits and open questions are part of each entry. Where no new correction is listed, the cited usage is retained, not declared validated. **2026-11-07** follows the project's local date; source verification occurred at **2026-11-06 17:25 UTC**. That verification time belongs to the historical r1 snapshot; r2 adds the U-1107 current clarifications and r3 adds the U-CA-1107 renaming and use-time order confirmation, without rewriting that earlier verification.
 
 | Source ID | Inspected material and purpose | Access and limits |
 |---|---|---|
@@ -470,7 +477,8 @@ Chinese and English entries share identifiers; translated labels do not introduc
 | E26 / V18 | [Dated research evidence](../projects/the-abyss/evidence/2026-11-07/README.en.md) and its source digests | v18.1 and T11 are reviewed historical records; T12 is an incomplete, time-bounded stage snapshot, without independent retraining |
 | G1 | [Granularity pilot](../projects/the-abyss/research/g1-granularity-20261107/RESULTS.en.md) and [preregistration](../projects/the-abyss/research/g1-granularity-20261107/PREREG.md) | 2/10 complete seeds and 28/140 units before a resource gate stopped execution; the remaining seeds incomplete and excluded from the summary |
 | U-AST / U-COMPOSE | Inspected author history: generalized AST on October 25; knowledge composition and event chains on October 31 | Technical definitions paraphrased; no chats, personal address terms or message identifiers published |
-| U-KA | November 2 author clarification of KA / EA / PA scopes and iterative application of reference-frame ideas | Does not supply PA / CA formulas or establish their equivalence |
+| U-KA | November 2 author clarification of KA / EA / PA scopes and iterative application of reference-frame ideas; PA was the name then in use | U-CA-1107 confirms the current renaming; the historical clarification supplies neither attention formulas nor complete implementation evidence |
+| U-CA-1107 | November 7, 2026 author confirmation that PA (Page Attention) was officially renamed CA (Chain Attention), with CA → EA → KA addressing during use | Technical paraphrase only; supersedes the open naming question, without rewriting historical experiments or validating third-party implementation or score claims |
 | U-HCX | November 5 author distinction: agent work event chains | Does not transfer The Abyss's theory or acceptance, or equate paragraphs with ledger events |
 | U-ENTROPY / U-ITER | November 5 chain-change / entropy-loss motivation; November 6 loop, iteration and accumulation direction | Research usage and motivation, not thermodynamic proof, proven learning advantage or a global-optimum guarantee |
 
@@ -488,7 +496,7 @@ These are open questions, **not agreed conclusions**. Record whether each item r
 | M02 | How do folding, unfolding, nesting, sharing and loops differ? | Structure and instance are linked but distinct; computational backtracking does not undo real actions or erase failed experience. | Identities, bindings, versions and outputs each operation must preserve; semantic-preservation properties still needing tests. |
 | M03 | How does conceptual firstness map to a reference and implemented package? | R26 permits conceptual firstness; D54's first-inserted fixed reference is a historical implementation direction. Neighboring vectors do not automatically implement a package protocol. | Distinguish conceptual existence, explicit anchor, addressable package object and changing trained numeric values. |
 | M04 | How do the new learning / initialization phases connect to older learning layers and streaming training? | R26 round three restricts this learning sense to post-startup FSM memory writing; older text also discusses learning forests, abstraction and training startup. | Names and interfaces for startup, FSM writes, vector recomputation, gradient training and structural revision; do not revive the withdrawn restart criterion. |
-| M05 | How do KA / EA / PA relate to CA? | Package-internal KA, the learning event chain as EA (retaining its within-chain relational mechanism), and inter-chain PA are documented; CA occurs in experiments and discussion but its equivalence to PA is unconfirmed. | Define usage by track first, then decide whether to unify labels; no guessed acronym expansions or formulas. |
+| M05 | How should the confirmed CA → EA → KA use-time addressing be implemented? | PA is officially renamed CA (Chain Attention); CA locates inter-chain context, EA is the learning event chain / within-chain SLOT relations, and KA uses a package-internal fixed reference. Learning loops can revise one another. | Record track-specific inputs, outputs, gaps, conflict handling and acceptance; do not reopen the confirmed renaming, impose the use-time order on all training, or invent KA/EA expansions or formulas. |
 | M06 | How do the two memory-store senses, path memory and occurrence records connect? | Agent work memory and concrete–abstract mappings have different roles; T13 proposes a path-memory arm whose method is unsettled. | Minimal write/read objects, provenance, versions, unknown and failure states; preserve the distinction between T13 proposals and results. |
 | M07 | How can flattening be distinguished from retained but unreachable knowledge? | Vectors, old-task drops, coordinate-change drops and retraining recovery do not individually establish their cause. | Observable information-retention criteria and controls for readout mismatch, rapid relearning and other explanations. |
 | M08 | Are crystallization, entropy loss and loop-plus-iteration definitions, analogies or testable hypotheses? | The motivations are preserved; no unified physical quantities, equations or evidence of global advantage from local scores is established. | Separate meanings, measurable quantities, hypotheses and possible counterexamples; do not relabel analogy as law. |

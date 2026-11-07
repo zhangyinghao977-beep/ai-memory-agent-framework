@@ -16,6 +16,8 @@ See the matching [bilingual workflows and design/implementation comparison](../.
 
 **Implementation boundary:** The underlying `summary-preferred` window and the native `readOriginal` path must be described separately. `readOriginal` currently fixes `neighborMode: 'raw'`; the underlying summary option covers neighboring paragraphs, not all related upper/lower indexes. The complete phase-two composition and its end-to-end behavior are not established.
 
+**Cross-project naming boundary:** Empiricist PA has been renamed CA (Chain Attention), with use-side addressing CA → EA → KA; see the [design workflow](../../../docs/ARCHITECTURE_FLOWS.en.md#use-addressing). This does not identify Hongchenxian dictionary/preview/readOriginal interfaces one-to-one with CA/EA/KA, or claim that the black-box model internally implements that training architecture.
+
 ## Data and execution path
 
 A synthetic claim binds a member, session, policy, and ticket. Memory references carry only fixed snapshots/pins. Tools search the index, inspect a preview, and then retrieve selected original text. Native-tool source records must match their results. A tool return does not automatically become a member's final opinion or lifecycle decision.

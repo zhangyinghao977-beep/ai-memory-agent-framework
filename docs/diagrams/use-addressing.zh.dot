@@ -1,0 +1,23 @@
+digraph G {
+graph [rankdir=TB, bgcolor="#ffffff", pad="0.3", nodesep="0.35", ranksep="0.4", fontname="Noto Sans CJK SC", fontsize=18, labelloc=t, label="使用寻址：CA → EA → KA（设计，非实现验收）"];
+node [shape=box, style="rounded,filled", fillcolor="#eef4ff", color="#55718f", fontname="Noto Sans CJK SC", fontsize=12, margin="0.16,0.12"];
+edge [color="#55718f", fontname="Noto Sans CJK SC", fontsize=10];
+input [label="当前问题与上下文"];
+ca [label="CA · Chain Attention\n旧名 PA · Page Attention\n链间定位核心语句与关注位置"];
+context [label="结合上下文补全缺失对象\n检查是否存在冲突"];
+conflict [label="目标对象有歧义或冲突？",shape=diamond];
+clarify [label="澄清当前问题的目标对象\n不写成全局默认偏好",fillcolor="#fff5dc"];
+ea [label="EA · 学习事件链的使用侧\n定位所需 SLOT 的关键词关系"];
+ka [label="KA · 包内相对固定参考\n寻址对应知识与成员"];
+output [label="在当前条件下使用知识\n保留来源、未知与适用范围"];
+note [label="范围边界\n这是使用侧寻址顺序\n不是全部学习／训练的固定单趟全序\n形成侧仍有知识包与 EA 学习循环",shape=note,fillcolor="#fff5dc"];
+input -> ca;
+ca -> context;
+context -> conflict;
+conflict -> clarify [label="有"];
+clarify -> context [label="澄清关联，原链续接"];
+conflict -> ea [label="无冲突"];
+ea -> ka;
+ka -> output;
+note -> ca [style=dashed,arrowhead=none,label="当前定义"];
+}
