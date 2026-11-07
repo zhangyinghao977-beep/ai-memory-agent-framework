@@ -2,6 +2,8 @@
 
 [中文](README.md) | [English](README.en.md)
 
+**评估方法更正：** [评估错误与两项主要方向](EVALUATION_CORRECTION.md)。承认误用评估视角及局部结果泛化整体；登记人类接近程度与图灵、冯·诺依曼思想对应及结合方向，不改写历史结果。
+
 **G1 最新执行：** [十种子完整结果](research/g1-granularity-20261107/followup-20261107-execution3/README.md)，保留初次资源停止及小样本结论的变化。
 
 **名词解释：** [完整术语汇编与事件链专节](../../docs/GLOSSARY.md)。这是最新讨论快照，保留历史定义和实验边界。

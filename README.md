@@ -2,6 +2,8 @@
 
 [English](README.en.md) · 简体中文
 
+**评估方法更正：** [承认评估视角与推论范围错误，登记两项项目评估方向](projects/the-abyss/EVALUATION_CORRECTION.md)：是否越来越接近人；是否符合图灵和冯·诺依曼的思想及二者结合程度。历史结果与冻结记录保留。
+
 **G1 最新执行：** [十种子完整结果](projects/the-abyss/research/g1-granularity-20261107/followup-20261107-execution3/README.md)：10/10 种子、140/140 单元完成；此前资源停止的两种子快照继续保留。
 
 **完整名词解释：** [中英文术语与事件链边界](docs/GLOSSARY.md)，收录最新三轮修正、实现对应和未定问题。

@@ -2,6 +2,8 @@
 
 [中文](EVIDENCE.md) | [English](EVIDENCE.en.md)
 
+**Subsequent evaluation correction:** [Evaluation directions and inference boundaries](EVALUATION_CORRECTION.en.md). The local evidence limits on this page remain valid. The two overall evaluation directions are recorded separately; local success or failure cannot substitute directly for an overall judgment.
+
 ## What this compilation can establish
 
 - [implementation](implementation/README.en.md) now contains selected original research sources and release adaptations: 65 core Python files, 25 `test_*.py` files, 31 experiment Python files including the shared helper, and 11 plans. Test helpers and a static-check tool are additional files; these counts are not passed-test counts.

@@ -2,6 +2,8 @@
 
 English · [简体中文](README.md)
 
+**Evaluation correction:** [Acknowledging errors in evaluation perspective and inference, and recording two project evaluation directions](projects/the-abyss/EVALUATION_CORRECTION.en.md): becoming more like a human; correspondence with and combination of Turing’s and von Neumann’s ideas. Historical results and frozen records are retained.
+
 **Latest G1 execution:** [Complete ten-seed results](projects/the-abyss/research/g1-granularity-20261107/followup-20261107-execution3/README.en.md): 10/10 seeds and 140/140 units completed. The earlier two-seed resource-stop snapshot is retained.
 
 **Complete glossary:** [Bilingual terminology and event-chain boundaries](docs/GLOSSARY.en.md), including the latest three correction rounds, implementation mappings and open questions.

@@ -1,0 +1,52 @@
+{
+  "record_type": "evaluation_method_correction",
+  "recorded_date": "2026-11-07",
+  "base_commit": "2fae35847a754e6de5ce9772887847a9e3139c8a",
+  "scope": "Bilingual acknowledgment of evaluation-perspective error and component-to-system overgeneralization; registration of two author-specified evaluation directions.",
+  "documents": [
+    "projects/the-abyss/EVALUATION_CORRECTION.md",
+    "projects/the-abyss/EVALUATION_CORRECTION.en.md"
+  ],
+  "evaluation_directions": [
+    {
+      "direction": "Whether the system is becoming more like a human",
+      "status": "Author-specified direction; operational dimensions are proposals, not new empirical findings or an established overall score."
+    },
+    {
+      "direction": "Correspondence with and combination of the ideas of Alan Turing and John von Neumann",
+      "status": "Figures confirmed by the project author; particular ideas, source texts and mechanism mappings remain to be specified."
+    }
+  ],
+  "preservation": {
+    "unchanged_existing_files_except": [
+      "README.md",
+      "README.en.md",
+      "projects/the-abyss/README.md",
+      "projects/the-abyss/README.en.md",
+      "projects/the-abyss/EVIDENCE.md",
+      "projects/the-abyss/EVIDENCE.en.md",
+      "SHA256SUMS"
+    ],
+    "frozen_plans_unchanged": true,
+    "historical_results_unchanged": true,
+    "source_code_unchanged": true,
+    "no_deleted_files": true,
+    "new_experimental_results": false,
+    "license_changed": false
+  },
+  "validation_scope": {
+    "baseline": "All 271 baseline file bytes matched the Git blobs in the base commit before editing.",
+    "documentation": "Chinese and English reviewed for matching scope; Markdown relative file targets and reference definitions checked; no HTTP availability check of external links.",
+    "release_scan": "Candidate-only heuristic scan; not proof of absence of every secret or rights issue.",
+    "integrity": "SHA256SUMS regenerated for the exact final candidate file set and verified before publication.",
+    "scientific_validation": "No Abyss training, learning experiment or human comparison was run for this correction.",
+    "offline_protocol_tests": {
+      "command": "npm test",
+      "node": "24.22.1",
+      "passed": 72,
+      "failed": 0,
+      "scope": "Existing Hongchenxian/offline-guard protocol tests only; not Abyss learning validation."
+    }
+  },
+  "privacy_scope": "Only the requested technical correction and directions are published. No private chat transcript, account details, raw datasets, weights or raw operational receipts are added."
+}

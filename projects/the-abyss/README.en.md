@@ -2,6 +2,8 @@
 
 [中文](README.md) | [English](README.en.md)
 
+**Evaluation correction:** [Evaluation errors and two primary directions](EVALUATION_CORRECTION.en.md). This acknowledges a misplaced evaluation perspective and component-to-system overgeneralization, and records human-likeness and correspondence with and combination of Turing’s and von Neumann’s ideas as directions, without rewriting historical results.
+
 **Latest G1 execution:** [Complete ten-seed results](research/g1-granularity-20261107/followup-20261107-execution3/README.en.md), preserving the original resource stop and changes from the small initial sample.
 
 **Glossary:** [Consolidated terminology and event-chain section](../../docs/GLOSSARY.en.md), a dated discussion snapshot preserving historical definitions and experiment boundaries.

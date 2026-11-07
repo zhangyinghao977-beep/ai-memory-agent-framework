@@ -2,6 +2,8 @@
 
 [中文](EVIDENCE.md) | [English](EVIDENCE.en.md)
 
+**后续评估方法更正：** [评估方向与推论边界](EVALUATION_CORRECTION.md)。本页已有的局部证据限制继续有效；两项整体评估方向另行登记，局部成功或失败不能直接替代整体判断。
+
 ## 本次可以确认的内容
 
 - 本次已纳入 [implementation](implementation/README.md) 中选取的原研究代码及发布适配：65 个核心 Python 文件、25 个 `test_*.py` 文件、31 个实验 Python 文件（含共用辅助文件）和 11 份计划。另有测试辅助文件与静态检查工具；文件数不是通过的测试数。
