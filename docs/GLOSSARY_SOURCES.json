@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "compilation_version": "2026-11-07-r1",
+  "compilation_version": "2026-11-07-r2",
   "base_commit": "9ba27a5a0dd21fd9f6ac26f010866dde2c5cdfe6",
   "source_verification_utc": "2026-11-06T17:25:09.872432Z",
   "source_verification_scope": "Bounded source snapshot; not a complete-chat review or global-latest-version guarantee.",
@@ -203,12 +203,31 @@
       "original_public": false,
       "file_hash": null,
       "private_messages_or_identifiers_included": false
+    },
+    {
+      "id": "U-1107",
+      "source_date": "2026-11-07",
+      "scope": "Current author confirmations: learning event chain is EA; disambiguate structural merging and cached-experience integration; document local attention now as phase two; active search first supersedes the earlier passive-first priority without permanently abolishing passive supply. Earlier same-day confirmations cover original retention, the three approaches, and the logic-memory-FSM whole.",
+      "access": "Author conversation inspected; technical paraphrases only.",
+      "original_public": false,
+      "private_messages_or_identifiers_included": false
+    },
+    {
+      "id": "C58",
+      "source_date": "2026-11-07",
+      "source_title": "Glossary v0.58 supplemental candidate",
+      "authority": "Candidate synthesis containing attributed author statements, researcher interpretations, unresolved questions, and reported synthetic observations. Not ratified wholesale; current direct author confirmations take precedence.",
+      "scope": "Formation/use chain symmetry; cached tool results; same-FSM rest integration; index-dependent summaries; open definitions; reported T14–T22 observations not independently reproduced in this update.",
+      "access": "Supplied candidate read in full; only project-technical paraphrases included. Original private discussion and complete attachment are not distributed.",
+      "original_public": false,
+      "private_messages_or_identifiers_included": false
     }
   ],
   "precedence": [
     "Explicit R26 round-two corrections supersede the initial table and contrary ending.",
     "R26 round three supersedes the previous learning/restart criterion.",
-    "Original frozen experiments remain unchanged; new terminology changes interpretation, not prior predictions."
+    "Original frozen experiments remain unchanged; new terminology changes interpretation, not prior predictions.",
+    "U-1107 confirms learning event chain = EA and gives active search priority at the present stage; contrary current wording is revised, prior plans and frozen evidence are retained as history. C58 remains a candidate except where the author confirmed its points."
   ],
   "excluded": [
     "private quotations and complete chats",
@@ -221,6 +240,10 @@
     "Full v0.57 glossary original not acquired in this pass.",
     "CA / PA equivalence and full acronym expansions are not established.",
     "Nine transformation algorithms, flattening measurement, and thermodynamic correspondence remain incomplete.",
-    "T13 remains an evolving proposal in the inspected directory."
-  ]
+    "T13 remains an evolving proposal in the inspected directory.",
+    "Phase-two local attention requires full related-index composition and end-to-end validation; existing raw-neighbor reads are not that implementation.",
+    "Rest triggers, integration criteria, FSM transitions, and any later active/passive combination remain open."
+  ],
+  "current_update_base_commit": "23f366b94a7997b57d5b48ec8c9c60bb1955887a",
+  "historical_source_verification_retained": true
 }

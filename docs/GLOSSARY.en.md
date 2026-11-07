@@ -2,9 +2,9 @@
 
 [中文](GLOSSARY.md) · [Repository](../README.en.md) · [Sources and versions](GLOSSARY_SOURCES.json)
 
-**Navigation:** [Event chains](#event-chains) · [Core concepts](#core-terms) · [Implementation crosswalk](#implementation-terms) · [Sources](#sources) · [Meeting agenda](#meeting-agenda)
+**Navigation:** [Current clarifications](#current-clarifications) · [Event chains](#event-chains) · [Core concepts](#core-terms) · [Implementation crosswalk](#implementation-terms) · [Sources](#sources) · [Meeting agenda](#meeting-agenda)
 
-**Compilation 2026-11-07-r1: a discussion snapshot, not a newly ratified specification.** This document combines the existing glossary, later clarifications and operational meanings in code. It can be read from the beginning without following earlier supplements. It does not replace the author's version numbering or derive theoretical definitions from implementation shortcuts. “Complete” means coverage of the main concepts and cross-project ambiguities in the inspected sources, not that every mechanism has been specified.
+**Compilation 2026-11-07-r2: a discussion snapshot, not a newly ratified specification.** This document combines the existing glossary, later clarifications and operational meanings in code. It can be read from the beginning without following earlier supplements. It does not replace the author's version numbering or derive theoretical definitions from implementation shortcuts. “Complete” means coverage of the main concepts and cross-project ambiguities in the inspected sources, not that every mechanism has been specified.
 
 The Abyss is an unfinished empiricist AI research proposal involving memory, knowledge organization, paths and learning. Hongchenxian studies memory and work coordination for black-box agents. These are **project-specific terms**. Adopting a definition, implementing an interface and obtaining experimental support are different states.
 
@@ -13,6 +13,40 @@ The Abyss is an unfinished empiricist AI research proposal involving memory, kno
 Entries distinguish **author definitions / working agreements**, **operational meanings** and **open questions**. English names are editorial translations. Acronyms such as KA, EA, PA and CA are not given invented expansions. `D54:345` refers to line 345 of source D54; source identifiers are listed at the end. Private quotations, complete conversations, accounts and absolute local paths are excluded.
 
 Precedence is not simply the last paragraph or newest file timestamp. An explicit correction takes precedence over the statement it replaces; code establishes what was implemented, not what the author must mean. The latest R26 document records three correction rounds but retains contradictory older conclusions at its end. This glossary preserves that evolution and **does not treat the superseded ending as the current definition**. R26 is a researcher's record of user-confirmed terminology; the complete underlying conversation was not independently reauthenticated for this compilation. Remaining ambiguities stay explicit.
+
+<a id="current-clarifications"></a>
+
+## Current clarifications: November 7, 2026
+
+**U-1107** marks the author's current definitions and directly updates current usage. Historical sources and frozen experiments remain intact; new terminology does not rewrite earlier results. See the [logic, memory and FSM principles](MEMORY_LOGIC_FSM_PRINCIPLES.md) for responsibilities and evidence limits.
+
+### N01 Learning event chain (EA) and working event chain
+
+**The learning event chain is EA. This equivalence is explicit, no longer an open naming question.** Learning/working event chains are the formation/use counterparts, just as learning/working forests are. A chain and a tree are not the two opposing roles. Chains and forests describe organizational scope; formation and use describe responsibilities. Earlier descriptions of EA attention/composition over within-chain slot relations remain relevant mechanisms, but cannot override the author's naming or establish that existing small EA experiments implement the complete learning event chain. [U-1107; U-KA; C16, C21]
+
+### N02 Merging, caching and integration during rest
+
+Merging a subchain into the current analysis changes structural scope. Integrating cached experience organizes, relates and revises material already encountered. These are distinct operations. “Structural” and “cached experience” are explanatory qualifiers, not a mandatory new terminology system.
+
+Tool results enter the cache first, preserving original experience, provenance, conditions and failures. They must not directly contaminate knowledge or replace original records with summaries. During rest, **another part of the same FSM** handles integration; this does not introduce a separate rest FSM. Awake operation is more restrained. Mind-wandering has no task or purpose and is not assigned a fixed housekeeping duty. Sleep may be more aggressive, but need not perform global optimization every time. Triggers, budgets, writes and checks still need implementation and validation. This is a design requirement, not proof of immunity to contamination. [U-1107; C05, C31, C36]
+
+### N03 Three project camps and complete validation
+
+Current “traditional” usage includes traditional Transformers and traditional agents. The “compromise” camp denotes the author's agent slice. The “empiricist” camp denotes the complete **logic + memory store + FSM** form. This does not assert that the compromise camp and the Hongchenxian project name are fully synonymous. Complete validation requires evidence of all three working together; offline slices, synthetic/double tests and capabilities of a strong underlying model cannot stand in for validation of the complete system. [U-1107; C40, C41]
+
+### N04 Local attention: documented now, phase-two design
+
+Local attention is recorded now as a phase-two design: provide **target original text + descriptions of related upper/lower indexes**, with further expansion on demand. Original text is not compressed into a substitute; indexes may themselves be indexed, and descriptions stay with their indexes rather than becoming authoritative replacements for originals. Related indexes require explicit structural and associative relations; physically preceding/following paragraphs do not constitute the full intended context.
+
+Existing paragraph windows, indexes, descriptions and read interfaces establish component capabilities only. They do not establish end-to-end implementation, sufficient context or correct judgment. “No compression” prohibits replacing original memory with summaries or abstractions; it does not prescribe a general lossless storage encoding. [U-1107; principle document linked above]
+
+### N05 Active and passive memory search
+
+**Active search takes priority at the current stage, superseding the previous passive-first plan.** Active search means logic first chooses an initial entry from the index dictionary and can continue lookup, reading and expansion level by level. In passive search, logic need not issue a request first: external input or the FSM provides material. Its complete triggering mechanism remains to be designed. Retain the old plan as history, not the current implementation order. This change does not permanently abolish passive search or specify a final balance. This documentation revision does not itself validate either mode. [U-1107]
+
+### N06 Tokens and experiment status
+
+The empiricist system's own representation does not take traditional tokens as a basic concept; the closest concepts are indexes and event-chain nodes. This does not define a separate unit called an empiricist token. Agents using an LLM still incur API token usage, and cost discussions must account for actual underlying LLM input, output and other token usage. T14–T22 are observations from synthetic key-and-door world experiments reported in the candidate supplement. The corresponding complete experimental materials were not obtained and independently checked in this revision. These observations cannot be generalized into conclusions about the complete empiricist system or universal claims about RAG; lack of this independent check also does not negate that the experiments were run. Existing frozen predictions, failures and original results remain intact. [U-1107; C58; C40]
 
 <a id="event-chains"></a>
 
@@ -106,7 +140,7 @@ R26 clarifies that crystallization is intended to derive knowledge from experien
 
 ### E17 “Based on our construction” and scope labels — “基于我们的构造”与 EA／CA／PA 边界
 
-R26 permits calling the relevant small models “based on our construction,” restricted to EA / sentence-level scope, not the complete architecture. This scope description does not prove one sentence equals one node or chain. CA appears in that discussion, but an explicit complete meaning, English expansion or equivalence with PA was not established in the inspected material. Keep it unresolved. Sources: R26:15–16; U-KA.
+The historical R26 interpretation permits calling the small models then discussed “based on our construction,” restricted to EA / sentence-level scope, not the complete architecture. This scope description does not prove one sentence equals one node or chain. CA appears in that discussion, but an explicit complete meaning, English expansion or equivalence with PA was not established in the inspected material. Keep that CA question unresolved. Current naming identifies the learning event chain as EA (U-1107); the historical small-model scope does not validate complete EA. Sources: R26:15–16; U-KA; U-1107.
 
 ### E18 Path interference / loss of knowledge — 路径受影响／知识丢失
 
@@ -130,7 +164,7 @@ R26's ending still includes “no nodes / first member,” “possibly flattened
 
 ## Core concepts and mechanisms
 
-C01–C41 cover the main categories of the existing glossary. Current R26 corrections take precedence over conflicting historical wording; responsibilities not revised remain in place.
+C01–C41 cover the main categories of the existing glossary. Current U-1107 clarifications and the R26 corrections they do not supersede take precedence over conflicting historical wording; responsibilities not revised remain in place.
 
 ### C01 Three question facets: what / why / how
 
@@ -150,7 +184,7 @@ Author's definition. Memory organizes concrete experiences, relations, condition
 
 ### C05 Long-term memory, cached memory and chained caches
 
-Author's definition with engineering candidates. Unfinished subchains, progress, intermediate products and blocked attempts may belong to cached memory knowledge; a cache is not the opposite of memory. Transitions to long-term retention, retention periods and eviction remain undecided. Separating shared structures from instance state and saving consistent state before releasing active resources are candidate mechanisms. A record does not establish completion, unlimited retention or lossless recovery. [D54:24–81,84–90,126–134]
+Author's definition with engineering candidates. Unfinished subchains, progress, intermediate products and blocked attempts may belong to cached memory knowledge; a cache is not the opposite of memory. Current tool results enter the cache first with original experience preserved; another part of the same FSM integrates them during rest without directly contaminating knowledge or substituting summaries for originals (U-1107; N02). Transitions to long-term retention, retention periods and eviction remain undecided. Separating shared structures from instance state and saving consistent state before releasing active resources are candidate mechanisms. A record does not establish completion, unlimited retention or lossless recovery. [D54:24–81,84–90,126–134]
 
 ### C06 Concrete-knowledge repository, abstract-knowledge repository and intermediate binding region
 
@@ -194,7 +228,7 @@ Author's definition with a working interpretation. Extended reference scope conc
 
 ### C16 Learning forest and working forest
 
-Author's definition. The learning forest progressively combines material into knowledge and mappings; the working forest uses and unfolds existing combinations and accommodates new experience locally. These are formation/use roles, not two fixed neural layers. Lower-level combinations must become higher-level material while historical trees and provenance remain available. New experience must not directly overwrite global learning structures. Shared DAGs, persistence and parameter layouts are engineering choices. [D54:327–335,710–713; D57:19]
+Author's definition. The learning forest progressively combines material into knowledge and mappings; the working forest uses and unfolds existing combinations and accommodates new experience locally. These are formation/use roles, symmetric with learning event chains (EA)/working event chains, not a chain/tree opposition or two fixed neural layers. Lower-level combinations must become higher-level material while historical trees and provenance remain available. New experience must not directly overwrite global learning structures. Shared DAGs, persistence and parameter layouts are engineering choices. [U-1107; D54:327–335,710–713; D57:19]
 
 ### C17 Stepwise learning, hierarchy and two training loops
 
@@ -214,7 +248,7 @@ Author's definition with editorial qualifiers. A slot is a relational structural
 
 ### C21 KA, EA and PA: relational scope across abstraction levels
 
-Later author clarification. KA handles member differences relative to a fixed reference within a knowledge package. EA refers to KA and SLOT when organizing relations and combinations among slots within a chain/sentence. PA handles relations between event chains; its classification is incomplete. These iterate the same reference-frame idea across abstraction levels, rather than constituting three independent theories. Words, sentences, paragraphs and documents are scale examples, not fixed layers. No attention formula or model count follows. Retain PA and describe it as inter-chain relational scope; do not invent its expansion or equate it with CA without confirmation. [U-KA; D54:399–408,429]
+Later author clarification. KA handles member differences relative to a fixed reference within a knowledge package. **EA is the learning event chain.** Its earlier mechanism description refers to KA and SLOT when organizing relations and combinations among slots within a chain/sentence; that description does not negate the explicit naming. PA handles relations between event chains; its classification is incomplete. These iterate the same reference-frame idea across abstraction levels, rather than constituting three independent theories. Words, sentences, paragraphs and documents are scale examples, not fixed layers. No attention formula or model count follows. Retain PA and describe it as inter-chain relational scope; do not invent its expansion or equate it with CA without confirmation. [U-1107; U-KA; D54:399–408,429]
 
 ### C22 Attention, Q / K / V and knowledge vectors
 
@@ -254,7 +288,7 @@ Author's definition. Knowledge can produce experience through practice, memory c
 
 ### C31 Folding, unfolding and shared reuse
 
-Author's definition. Unfolding brings required subprocesses into the current scope; folding removes their internals from active scope while retaining necessary results, interfaces, indexes and parent/child relations. “Excision” here does not delete memory, and “merging” does not conflate call identities. Preparation may be shared under compatible versions and dependencies, but current context-dependent computation remains. Unfolding cannot recover discarded information; re-execution is a new experience. Invalidation mechanisms still require implementation. [D54:289–303,595–597,752–766]
+Author's definition. Unfolding brings required subprocesses into the current scope; folding removes their internals from active scope while retaining necessary results, interfaces, indexes and parent/child relations. “Excision” here does not delete memory. “Merging” a subchain into current analysis does not conflate call identities and is distinct from integrating cached experience (N02). Preparation may be shared under compatible versions and dependencies, but current context-dependent computation remains. Unfolding cannot recover discarded information; re-execution is a new experience. Invalidation mechanisms still require implementation. [U-1107; D54:289–303,595–597,752–766]
 
 ### C32 Memory boundary valve, world / premises and provenance boundaries
 
@@ -276,6 +310,8 @@ Later clarification available only through the published D57 digest. Version 0.5
 
 Author's theoretical proposal. The FSM triggers activity and state transitions and may revise its mapping on grounded experience; the term does not require an immutable table. A state transition alone does not establish a memory write; R26's learning denotes post-startup FSM recording. It is tied to actual resources; continuous resource/state quantities with discrete triggers are an engineering interpretation. States, triggers, revision scope and version interfaces remain open. A local fixed-FSM experiment does not establish the complete revisable mechanism, life or autonomy. [D54:840–863,936–944; R26:48–57]
 
+The same FSM also handles integration during rest: awake operation is restrained, mind-wandering has no task or purpose, and sleep may be more aggressive without requiring global optimization every time. [U-1107; N02]
+
 ### C37 Self: definition / feeling / behavior
 
 Author's working definition. Definition concerns the system's identity and history; feeling concerns current wants, thoughts, concerns and orientation toward action; behavior concerns what it can actually do and under which conditions. These are connected facets, not three selves or names interchangeable with modules. Direct access is understood through constituent relationships, not as making everything readable part of the self. This records the definition without establishing necessary/sufficient conditions for subjecthood or evidence of experience in this project. [D54:865–899]
@@ -292,9 +328,9 @@ Author's principle with engineering distinctions. Optimization must preserve ide
 
 D54's evidence conventions. Analogy/inspiration suggests a direction; hypotheses/candidates await testing; working definitions/agreements record adopted concepts; special-case results cover stated constraints; empirical validation is bounded by data and conditions; mathematical guarantees require premises and proof. Implemented, executed and passed respectively require code, execution records and acceptance evidence. Unknown/not found does not mean nonexistent. NOT_RUN and REVIEW must not be rewritten as success, and terminology registration does not upgrade design evidence. [D54:9–16,946–957]
 
-### C41 Traditional / function-centered approach and representation qualifiers
+### C41 Three camps, historical function-centered usage and representation qualifiers
 
-Project-specific names. In D54, “traditional” and “function-centered” both refer to the traditional Transformer under discussion, not two established schools. D54 does not supply complete standalone algorithms for “lattice point” or “hard boundary.” Object-vector rows, member slots, scalar score slots and semantic slots must be qualified by implementation. A missing grammatical edge does not automatically justify hard-masking an unknown relation. Later lattice, potential and entropy concepts and their experimental mappings belong in version-specific sections, not retroactively in D54 as defined or measured results. [D54:186–191,367–391,410–415; D57:31]
+Project-specific names. Current camps are traditional (traditional Transformers and agents), compromise (the author’s agent slice), and empiricist (the complete logic + memory store + FSM form). Full synonymy between compromise and Hongchenxian is not asserted. Historically, D54’s “traditional” and “function-centered” both referred to the Transformer then under discussion, not two established schools; that history does not restrict current traditional usage. [U-1107; N03] D54 does not supply complete standalone algorithms for “lattice point” or “hard boundary.” Object-vector rows, member slots, scalar score slots and semantic slots must be qualified by implementation. A missing grammatical edge does not automatically justify hard-masking an unknown relation. Later lattice, potential and entropy concepts and their experimental mappings belong in version-specific sections, not retroactively in D54 as defined or measured results. [D54:186–191,367–391,410–415; D57:31]
 
 
 <a id="implementation-terms"></a>
@@ -419,10 +455,12 @@ Sources are the [historical T1–T10 summary][R1], [T11/v18.1 checkpoint][R2], [
 
 ## Sources, evolution and open questions
 
-Chinese and English entries share identifiers; translated labels do not introduce separate definitions. Limits and open questions are part of each entry. Where no new correction is listed, the cited usage is retained, not declared validated. **2026-11-07** follows the project's local date; source verification occurred at **2026-11-06 17:25 UTC**. Later changes should receive another version.
+Chinese and English entries share identifiers; translated labels do not introduce separate definitions. Limits and open questions are part of each entry. Where no new correction is listed, the cited usage is retained, not declared validated. **2026-11-07** follows the project's local date; source verification occurred at **2026-11-06 17:25 UTC**. That verification time belongs to the historical r1 snapshot; r2 adds the U-1107 current clarifications without rewriting that earlier verification.
 
 | Source ID | Inspected material and purpose | Access and limits |
 |---|---|---|
+| C58 | Candidate glossary supplement: discussion context and T14–T22 synthetic-world observations | Original candidate text is not public; technical paraphrase only, not wholesale adoption as settled definitions. Corresponding complete experimental materials were not obtained and independently checked in this revision |
+| U-1107 | November 7, 2026 current author clarifications: EA naming, formation/use symmetry, merging versus cache integration, three camps, phase-two local attention and active-search priority | Technical paraphrase only; candidate additions and experiments are not validated results; historical originals and frozen experiments are unchanged |
 | D54 | Empiricist AI Project Glossary, discussion v0.54, updated October 31, 2026, 09:56 UTC+08; original line references | Complete local reference copy and SHA256 checked; technical paraphrases only, without private quotations or the full original |
 | D57 | Public [Abyss design digest](../projects/the-abyss/DESIGN.en.md) and [source notes](../projects/the-abyss/SOURCES.en.md), reporting selected updates through v0.57 | The complete v0.57 glossary was not obtained in this pass. No line-by-line audit of that original is claimed, and v0.54 is not called the globally latest version |
 | R26 | User-confirmed Terminology Crosswalk, local project date November 7, 2026; three correction rounds; 69-line local file | Technical record and digest inspected. Author definitions and researcher experiment mappings have different authority. Full underlying chat was not obtained; superseded ending remains inconsistent |
@@ -450,7 +488,7 @@ These are open questions, **not agreed conclusions**. Record whether each item r
 | M02 | How do folding, unfolding, nesting, sharing and loops differ? | Structure and instance are linked but distinct; computational backtracking does not undo real actions or erase failed experience. | Identities, bindings, versions and outputs each operation must preserve; semantic-preservation properties still needing tests. |
 | M03 | How does conceptual firstness map to a reference and implemented package? | R26 permits conceptual firstness; D54's first-inserted fixed reference is a historical implementation direction. Neighboring vectors do not automatically implement a package protocol. | Distinguish conceptual existence, explicit anchor, addressable package object and changing trained numeric values. |
 | M04 | How do the new learning / initialization phases connect to older learning layers and streaming training? | R26 round three restricts this learning sense to post-startup FSM memory writing; older text also discusses learning forests, abstraction and training startup. | Names and interfaces for startup, FSM writes, vector recomputation, gradient training and structural revision; do not revive the withdrawn restart criterion. |
-| M05 | How do KA / EA / PA relate to CA? | Current package-internal KA, chain-internal EA and inter-chain PA scopes are documented; CA occurs in experiments and discussion but its equivalence to PA is unconfirmed. | Define usage by track first, then decide whether to unify labels; no guessed acronym expansions or formulas. |
+| M05 | How do KA / EA / PA relate to CA? | Package-internal KA, the learning event chain as EA (retaining its within-chain relational mechanism), and inter-chain PA are documented; CA occurs in experiments and discussion but its equivalence to PA is unconfirmed. | Define usage by track first, then decide whether to unify labels; no guessed acronym expansions or formulas. |
 | M06 | How do the two memory-store senses, path memory and occurrence records connect? | Agent work memory and concrete–abstract mappings have different roles; T13 proposes a path-memory arm whose method is unsettled. | Minimal write/read objects, provenance, versions, unknown and failure states; preserve the distinction between T13 proposals and results. |
 | M07 | How can flattening be distinguished from retained but unreachable knowledge? | Vectors, old-task drops, coordinate-change drops and retraining recovery do not individually establish their cause. | Observable information-retention criteria and controls for readout mismatch, rapid relearning and other explanations. |
 | M08 | Are crystallization, entropy loss and loop-plus-iteration definitions, analogies or testable hypotheses? | The motivations are preserved; no unified physical quantities, equations or evidence of global advantage from local scores is established. | Separate meanings, measurable quantities, hypotheses and possible counterexamples; do not relabel analogy as law. |

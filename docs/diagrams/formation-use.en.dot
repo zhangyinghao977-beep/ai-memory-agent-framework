@@ -1,0 +1,21 @@
+digraph G {
+graph [rankdir=TB, bgcolor="#ffffff", pad="0.3", nodesep="0.35", ranksep="0.45", fontname="Noto Sans CJK SC", fontsize=18, labelloc=t, label="Formation and use: architecture design (not an implementation claim)"];
+node [shape=box, style="rounded,filled", fillcolor="#eef4ff", color="#55718f", fontname="Noto Sans CJK SC", fontsize=12, margin="0.16,0.12"];
+edge [color="#55718f", fontname="Noto Sans CJK SC", fontsize=10];
+tools [label="Tools / practice"];
+cache [label="Cache: retain raw occurrence records first\nDistinguish observations, inferences, plans and execution"];
+fsm [label="At rest: another part of the same FSM schedules integration\nNot a separate second FSM"];
+learn [label="Learning event chain (EA) and learning forest\nDecomposition, composition and revision: formation side"];
+memory [label="Knowledge / memory\nRetain sources, originals, relations and versions"];
+work [label="Work event chains / work forest\nConditional unfolding and calls: use side"];
+states [label="State boundaries (design)\nAwake: more restrained\nMind-wandering: no task or purpose; no fixed duties\nSleep: more aggressive integration, no global-optimum guarantee",shape=note,fillcolor="#fff5dc"];
+subgraph cluster_0 {label="Formation side"; color="#aac0d4"; cache;fsm;learn;}
+subgraph cluster_1 {label="Use side"; color="#aac0d4"; work;}
+tools -> cache [label="Record results first"];
+cache -> fsm [label="Experiences awaiting integration"];
+fsm -> learn [label="Schedule"];
+learn -> memory [label="Form / revise; preserve prior evidence"];
+memory -> work [label="Read and use"];
+work -> tools [label="Practice and feedback loop",constraint=false];
+states -> fsm [label="State constraints",style=dashed,arrowhead=none];
+}

@@ -8,6 +8,8 @@ English · [简体中文](README.md)
 
 **Latest G1 execution:** [Complete ten-seed results](projects/the-abyss/research/g1-granularity-20261107/followup-20261107-execution3/README.en.md): 10/10 seeds and 140/140 units completed. The earlier two-seed resource-stop snapshot is retained.
 
+**Current concepts and workflows (2026-11-07):** [Learning event chain EA, cached-experience integration, and active memory search](docs/ARCHITECTURE_FLOWS.en.md). Local attention is registered as a phase-two design, not a completed implementation. Active search now takes priority over the earlier passive-first plan, which is retained as history.
+
 **Complete glossary:** [Bilingual terminology and event-chain boundaries](docs/GLOSSARY.en.md), including the latest three correction rounds, implementation mappings and open questions.
 
 **Earlier evidence snapshot:** [2026-11-07 research-record update](projects/the-abyss/evidence/2026-11-07/README.en.md) covers v18.1, T11, subsequent-stage status, and the G1 granularity pilot. G1 stopped at its resource gate after 2/10 seeds; the earlier Abyss implementation copy's static-validation scope remains unchanged.
@@ -39,7 +41,7 @@ Code existence, historical execution, and validation of this copy are distinct s
 
 Research on collaboration among black-box agents: persistent identity, paragraph-indexed memory, frozen shared snapshots, per-step call accounting, lifecycle decisions, and source-verified recovery. Its existing offline synthetic engineering path uses Node built-ins. This integration preserves that source and its findings.
 
-Hongchenxian's work-event chain covers work records, calls, dependencies, suspension, and continuation. The Abyss's empiricist event chains represent objects, relations, conditions, and transitions for learning. They are distinct. The hand-written FSM in Abyss T4 only borrows survival and recovery ideas; neither it nor a collaboration ledger establishes complete knowledge learning, nine operators, or an autonomous coding system.
+The empiricist learning event chain (EA) and work event chain cover formation and use respectively, like the learning and work forests. Hongchenxian's work-event chain corresponds to the work side and covers records, calls, dependencies, suspension, and continuation; its collaboration ledger is not an implementation of the Abyss's complete knowledge structure. The hand-written FSM in Abyss T4 only borrows survival and recovery ideas; neither it nor a collaboration ledger establishes complete knowledge learning, nine operators, or an autonomous coding system.
 
 ## Running and interpreting evidence
 

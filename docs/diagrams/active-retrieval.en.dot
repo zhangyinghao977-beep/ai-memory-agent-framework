@@ -1,0 +1,23 @@
+digraph G {
+graph [rankdir=TB, bgcolor="#ffffff", pad="0.3", nodesep="0.35", ranksep="0.45", fontname="Noto Sans CJK SC", fontsize=18, labelloc=t, label="Agent active retrieval and phase-two local attention"];
+node [shape=box, style="rounded,filled", fillcolor="#eef4ff", color="#55718f", fontname="Noto Sans CJK SC", fontsize=12, margin="0.16,0.12"];
+edge [color="#55718f", fontname="Noto Sans CJK SC", fontsize=10];
+logic [label="Logic actively consults the index dictionary\nActive retrieval first at this stage"];
+index [label="Inspect indexes layer by layer\nAn index may itself be indexed"];
+brief [label="Read briefs from the index perspective\nNavigation / interpretation, not replacement originals"];
+decide [label="Logic decides whether / which\noriginals to expand",shape=diamond];
+local [label="Phase-two design: local attention\nTarget original + related upper/lower index briefs\n+ expandable references",fillcolor="#fff5dc",style="rounded,filled,dashed"];
+judge [label="Logic judges whether evidence is sufficient\nPreserve conflicts, gaps and budget limits"];
+result [label="Answer / tool practice\nCache tool results first; schedule integration later"];
+actual [label="Observed component interfaces, not a complete policy\nreadIndex → previewIndex → readOriginal\nreadOriginal fixes neighborMode: raw\nLower-level summary-preferred: physical neighbors only",shape=note,fillcolor="#e7f3e9"];
+logic -> index [label=""];
+index -> index [label="May be indexed again"];
+index -> brief [label=""];
+brief -> decide [label=""];
+decide -> local [label="Original needed"];
+decide -> index [label="Continue navigation"];
+local -> judge [label=""];
+judge -> index [label="More evidence needed"];
+judge -> result [label="Supported answer or explicit unknown"];
+actual -> local [label="Full phase two not yet connected",style=dashed,arrowhead=none];
+}

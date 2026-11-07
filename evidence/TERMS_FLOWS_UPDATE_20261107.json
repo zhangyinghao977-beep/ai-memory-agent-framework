@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "record_type": "current_terms_and_workflow_clarification",
+  "recorded_date": "2026-11-07",
+  "compilation_version": "2026-11-07-r2",
+  "base_commit": "23f366b94a7997b57d5b48ec8c9c60bb1955887a",
+  "scope": "Bilingual documentation and two bilingual workflow views. No implementation change, new learning experiment, deployment, or scientific-validation claim.",
+  "current_decisions": [
+    "Learning event chain is EA; learning/work chains cover formation/use, not chain-versus-tree symmetry.",
+    "Disambiguate structural merging of a subchain and integration of cached experiences without inventing new formal operators.",
+    "Preserve original tool occurrence records before integration; cached content is not automatically true. The same FSM coordinates rest integration.",
+    "Document local attention now as a phase-two design: target original plus related upper/lower-index summaries and expandable references. Originals are not replaced by summaries.",
+    "Active search first supersedes the earlier passive-first priority at this stage. History and the possibility of later passive supply are retained.",
+    "Separate traditional Transformer/traditional agent, the author agent slice, and full logic-memory-FSM empiricism. Full validation cannot be replaced by slice scores."
+  ],
+  "source_record": "docs/GLOSSARY_SOURCES.json",
+  "workflow_documents": [
+    "docs/ARCHITECTURE_FLOWS.md",
+    "docs/ARCHITECTURE_FLOWS.en.md"
+  ],
+  "source_scope": "C58 candidate reviewed in full; direct U-1107 confirmations take precedence. Private originals and message identifiers are not published. Candidate T14–T22 observations are attributed and not independently verified.",
+  "implementation_check": "Inspected public RecallAdapter.readOriginal: fixed raw neighbors; underlying summary-preferred applies to physical paragraph neighbors, not complete related-index composition.",
+  "preservation": {
+    "implementation_and_frozen_experiments_unchanged": true,
+    "existing_evidence_files_unchanged": true,
+    "deleted_files": 0,
+    "license_changed": false,
+    "local_experiments_accessed_or_interrupted": false
+  },
+  "validation": {
+    "node": "24.22.1",
+    "offline_protocol_tests": {
+      "command": "npm test",
+      "passed": 72,
+      "failed": 0,
+      "scope": "Existing Hongchenxian synthetic/double and offline-network-guard protocols only."
+    },
+    "documentation": {
+      "relative_links_checked": 486,
+      "reference_links_resolved": 142,
+      "broken_links": [],
+      "json_files_parsed": 50,
+      "svg_files_parsed": 4,
+      "matched_bilingual_numbered_sections": 65,
+      "implementation_and_frozen_experiments_unchanged": true,
+      "files_deleted": 0
+    },
+    "diagrams": {
+      "dot_sources": 4,
+      "svg_outputs": 4,
+      "rendered_and_visually_inspected": 4,
+      "reproducible_in_installed_graphviz": true,
+      "scope": "Layout and text/flow consistency, not mechanism or whole-system validation."
+    },
+    "integrity": {
+      "command": "npm run verify:integrity",
+      "expected_content_files": 288,
+      "expected_total_files": 289
+    },
+    "release_scan": {
+      "command": "npm run scan:release",
+      "status": "passed",
+      "findings": [],
+      "limits": "Heuristic scan, not a guarantee that every secret or rights issue is absent."
+    },
+    "not_run": [
+      "Training",
+      "New learning experiments",
+      "Real-member model calls",
+      "Production deployment",
+      "Full logic-memory-FSM end-to-end validation"
+    ]
+  }
+}

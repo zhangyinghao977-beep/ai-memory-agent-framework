@@ -1,0 +1,23 @@
+digraph G {
+graph [rankdir=TB, bgcolor="#ffffff", pad="0.3", nodesep="0.35", ranksep="0.45", fontname="Noto Sans CJK SC", fontsize=18, labelloc=t, label="Agent 主动搜索与二期局部注意力"];
+node [shape=box, style="rounded,filled", fillcolor="#eef4ff", color="#55718f", fontname="Noto Sans CJK SC", fontsize=12, margin="0.16,0.12"];
+edge [color="#55718f", fontname="Noto Sans CJK SC", fontsize=10];
+logic [label="逻辑主动查看索引字典\n现阶段先走主动搜索"];
+index [label="逐层查看索引\n索引本身也可被索引"];
+brief [label="按索引角度读取简介\n导航解释，不替代原文"];
+decide [label="逻辑决定是否／哪些原文要展开",shape=diamond];
+local [label="二期设计：局部注意力\n目标原文 + 相关上下索引简介\n+ 可展开引用",fillcolor="#fff5dc",style="rounded,filled,dashed"];
+judge [label="逻辑判断依据是否充分\n冲突／缺失／预算不足须保留"];
+result [label="回答／工具实践\n工具结果先缓存，再调度整合"];
+actual [label="已见组成接口，不等于完整策略\nreadIndex → previewIndex → readOriginal\nreadOriginal 固定 neighborMode: raw\n底层 summary-preferred 仅物理邻段",shape=note,fillcolor="#e7f3e9"];
+logic -> index [label=""];
+index -> index [label="可再索引"];
+index -> brief [label=""];
+brief -> decide [label=""];
+decide -> local [label="需要原文"];
+decide -> index [label="继续定位"];
+local -> judge [label=""];
+judge -> index [label="需要更多依据"];
+judge -> result [label="有据回答或明确未知"];
+actual -> local [label="完整二期尚未接通",style=dashed,arrowhead=none];
+}

@@ -4,6 +4,16 @@
 
 This page is a technical digest, not a newly ratified specification. The core design is based on the 2026-10-22 design draft; conceptual updates follow glossary v0.57 dated 2026-11-02. The latter records design intent and working agreements, which do not themselves establish implementation or experimental success.
 
+## Current clarification: 2026-11-07
+
+The [learning/work event-chain and cache-integration workflows](../../docs/ARCHITECTURE_FLOWS.en.md) supplement this page. The **learning event chain is EA**; it and the work event chain cover formation and use respectively, like the learning and work forests. Earlier descriptions of within-chain relational attention remain mechanism descriptions, not grounds for rejecting the current name. A particular experimental EA module is not thereby promoted to a complete implementation of the learning event chain.
+
+Practical tool results first enter the cache with their original occurrence records retained. During rest, another part of the same FSM coordinates integration, and the learning side organizes knowledge revisions. Caching does not certify content as true, and one result must not directly overwrite existing knowledge. Summaries do not replace original memory; revisable knowledge relations and retained original text have distinct roles. Integrating experiences is different from structurally merging a subchain into the analysis scope.
+
+Awake, mind-wandering, and sleep are individual states. Awake integration is more restrained because current activities matter. Mind-wandering has no current task or purpose and is not assigned a mandatory housekeeping role. Sleep permits more aggressive integration but neither guarantees nor mandates global optimization on every occasion. Triggers, transitions, and integration criteria still require concrete design.
+
+Active search takes priority at this stage. The former passive-first plan is retained as history without permanently excluding passive supply. Full empiricism still means logic, memory store, and FSM operating together; a slice missing part of that system cannot validate the complete form. Numbers may describe differences, causes, phenomena, and costs, but a single score does not replace those judgments. Historical plans, predictions, failures, and frozen records are not rewritten.
+
 ## Knowledge carriers and the three question facets
 
 What concerns knowledge and its organization; why concerns connection computation and generalized functional mapping rules; how concerns practice, tools, and event-chain organization. These facets can be transformed into one another, but each transformation still needs explicit inputs, operations, outputs, and feedback. Arrows in a diagram cannot substitute for algorithms.

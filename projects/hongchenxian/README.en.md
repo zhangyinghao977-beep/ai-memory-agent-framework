@@ -2,6 +2,8 @@
 
 [简体中文](README.md) · [Repository entry](../../README.en.md)
 
+**Current workflow:** [Active search first, phase-two local attention, and cached-experience integration](../../docs/ARCHITECTURE_FLOWS.en.md). This supersedes the earlier passive-first priority without erasing history or permanently abolishing passive supply.
+
 **Glossary:** [Complete bilingual glossary](../../docs/GLOSSARY.en.md) distinguishes agent work event chains, empiricist AST structures and occurrence records.
 
 This directory studies collaboration among black-box agents. It contains an offline engineering path for native memory-tool calls, a final lifecycle decision, per-step usage accounting, source verification, and conservative recovery after interruption. It does not implement The Abyss's complete empiricist learning architecture.
