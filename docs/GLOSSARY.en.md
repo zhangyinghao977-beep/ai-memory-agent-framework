@@ -1,5 +1,7 @@
 # Project glossary: consolidated coverage
 
+**2026-11-09 FSM clarification (U-FSM-1109):** [Confirmed responsibilities, resource protection and event-chain continuity](FSM_CONTINUITY.en.md). Memory/past, logic/present, FSM/future remain the classification. The FSM executes symbolic conditions, not understanding; low-risk exceptions are reported, high-risk ones are cut off before reporting, with memory-preservation reserves retained. Both tracks share the event-chain concept but differ in learning integration. This clarification takes precedence over contrary current wording below; historical evidence and implementation claims are unchanged.
+
 [中文](GLOSSARY.md) · [Repository](../README.en.md) · [Sources and versions](GLOSSARY_SOURCES.json)
 
 **Navigation:** [Current clarifications](#current-clarifications) · [Event chains](#event-chains) · [Core concepts](#core-terms) · [Implementation crosswalk](#implementation-terms) · [Sources](#sources) · [Meeting agenda](#meeting-agenda)
@@ -30,9 +32,11 @@ Merging a subchain into the current analysis changes structural scope. Integrati
 
 Tool results enter the cache first, preserving original experience, provenance, conditions and failures. They must not directly contaminate knowledge or replace original records with summaries. During rest, **another part of the same FSM** handles integration; this does not introduce a separate rest FSM. Awake operation is more restrained. Mind-wandering has no task or purpose and is not assigned a fixed housekeeping duty. Sleep may be more aggressive, but need not perform global optimization every time. Triggers, budgets, writes and checks still need implementation and validation. This is a design requirement, not proof of immunity to contamination. [U-1107; C05, C31, C36]
 
-### N03 Three project camps and complete validation
+### N03 Progressive categories and complete validation
 
-Current “traditional” usage includes traditional Transformers and traditional agents. The “compromise” camp denotes the author's agent slice. The “empiricist” camp denotes the complete **logic + memory store + FSM** form. This does not assert that the compromise camp and the Hongchenxian project name are fully synonymous. Complete validation requires evidence of all three working together; offline slices, synthetic/double tests and capabilities of a strong underlying model cannot stand in for validation of the complete system. [U-1107; C40, C41]
+Strict traditional means the Transformer-based LLM itself; improved/broad traditional means its agent framework; compromise adds this project's memory and FSM; empiricist rebuilds the complete architecture with its own memory and FSM. The original goal was the complete empiricist design; implementation difficulty led to a compromise slice compared with improved agents. Earlier three-arm wording remains historical comparison context, not permission to conflate model and agent system. [U-FSM-1109]
+
+Complete validation requires logic, memory and FSM working together. Preserve local results without treating them as full-system validation. See [FSM discussion](FSM_CONTINUITY.en.md).
 
 ### N04 Local attention: documented now, phase-two design
 
@@ -60,7 +64,7 @@ In the language example discussed here, the whole passage corresponds to CA; eac
 
 When necessary, CA brings in another relevant discussion from much earlier through the memory layer. Keywords and multilevel indexes locate material; descriptions provide low-cost orientation and help avoid the wrong record, followed by original text as needed. Participants, time, topic and original text stay associated so similar discussions by different people or at different times are distinguishable. These are association requirements, not a new mandatory field schema. Original memory is retained in full, not compressed into a summary substitute; compressible knowledge relations are treated separately. This retrieval route is already part of the design, not an unspecified new mechanism.
 
-These are the author's architectural definitions, not new validation results. Earlier experiments did not fully implement the whole architecture. Preserve their individual slice coverage, failures and scores; local results neither establish nor invalidate the entire proposal. This revision does not change FSM statements; that discussion remains separate.
+These are the author's architectural definitions, not new validation results. Earlier experiments did not fully implement the whole architecture. Preserve their individual slice coverage, failures and scores; local results neither establish nor invalidate the entire proposal. The previously deferred FSM discussion is now recorded in U-FSM-1109, linked at the top of this page.
 
 <a id="event-chains"></a>
 
@@ -140,7 +144,7 @@ Earlier discussions use these terms for process and path costs; main and child c
 
 **Latest restricted definition:** R26's third correction calls simple-FSM recording into memory after system startup “learning” in the human-like sense under discussion, and places gradient training in pre-startup initialization or the “embryonic stage.” This is a project-specific phase distinction, not a general definition of machine learning or human biology.
 
-**Evolution and operation:** It supersedes the second round's “adding memory without restarting” and the question of whether training counts as restarting. Earlier learning-layer and learning-forest terms still denote organization, abstraction and revision responsibilities; the phase vocabulary does not delete those mechanisms. T12 gradient updates should be called training. Recomputing `sim` representations is not automatically simple FSM memory writing. A T13 proposal does not establish implemented learning. Minimal FSM actions, startup boundaries and their complete interfaces to training remain open. Sources: R26:35–57; D54:527–609,840–863.
+**Evolution and operation:** It supersedes the second round's “adding memory without restarting” and the question of whether training counts as restarting. Earlier learning-layer and learning-forest terms still denote organization, abstraction and revision responsibilities; the phase vocabulary does not delete those mechanisms. T12 gradient updates should be called training. Recomputing `sim` representations is not automatically simple FSM memory writing. A T13 proposal does not establish implemented learning. FSM responsibilities are confirmed in U-FSM-1109; concrete startup boundaries and complete interfaces to training still require implementation detail. Sources: R26:35–57; D54:527–609,840–863.
 
 ### E15 Flattening (project sense) — 抹平
 
@@ -323,7 +327,7 @@ Later clarification available only through the published D57 digest. Version 0.5
 
 ### C36 Underlying revisable FSM
 
-Author's theoretical proposal. The FSM triggers activity and state transitions and may revise its mapping on grounded experience; the term does not require an immutable table. A state transition alone does not establish a memory write; R26's learning denotes post-startup FSM recording. It is tied to actual resources; continuous resource/state quantities with discrete triggers are an engineering interpretation. States, triggers, revision scope and version interfaces remain open. A local fixed-FSM experiment does not establish the complete revisable mechanism, life or autonomy. [D54:840–863,936–944; R26:48–57]
+Author's theoretical proposal. The FSM triggers activity and state transitions and may revise its mapping on grounded experience; the term does not require an immutable table. A state transition alone does not establish a memory write; R26's learning denotes post-startup FSM recording. It is tied to actual resources; continuous resource/state quantities with discrete triggers are an engineering interpretation. U-FSM-1109 confirms the body/tool role, symbolic evaluation, resource protection and range checks; concrete conditions, version interfaces and execution handoffs still need detail. A local fixed-FSM experiment does not establish the complete revisable mechanism, life or autonomy. [D54:840–863,936–944; R26:48–57]
 
 The same FSM also handles integration during rest: awake operation is restrained, mind-wandering has no task or purpose, and sleep may be more aggressive without requiring global optimization every time. [U-1107; N02]
 
@@ -345,7 +349,7 @@ D54's evidence conventions. Analogy/inspiration suggests a direction; hypotheses
 
 ### C41 Three camps, historical function-centered usage and representation qualifiers
 
-Project-specific names. Current camps are traditional (traditional Transformers and agents), compromise (the author’s agent slice), and empiricist (the complete logic + memory store + FSM form). Full synonymy between compromise and Hongchenxian is not asserted. Historically, D54’s “traditional” and “function-centered” both referred to the Transformer then under discussion, not two established schools; that history does not restrict current traditional usage. [U-1107; N03] D54 does not supply complete standalone algorithms for “lattice point” or “hard boundary.” Object-vector rows, member slots, scalar score slots and semantic slots must be qualified by implementation. A missing grammatical edge does not automatically justify hard-masking an unknown relation. Later lattice, potential and entropy concepts and their experimental mappings belong in version-specific sections, not retroactively in D54 as defined or measured results. [D54:186–191,367–391,410–415; D57:31]
+Project-specific names. Current categories distinguish strict traditional Transformer LLMs, improved/broad-traditional agent frameworks, the compromise slice and the complete empiricist architecture (U-FSM-1109; N03). Full synonymy between compromise and Hongchenxian is not asserted. Historically, D54’s “traditional” and “function-centered” both referred to the Transformer then under discussion, not two established schools; current strict/broad usage follows N03. [U-1107; N03] D54 does not supply complete standalone algorithms for “lattice point” or “hard boundary.” Object-vector rows, member slots, scalar score slots and semantic slots must be qualified by implementation. A missing grammatical edge does not automatically justify hard-masking an unknown relation. Later lattice, potential and entropy concepts and their experimental mappings belong in version-specific sections, not retroactively in D54 as defined or measured results. [D54:186–191,367–391,410–415; D57:31]
 
 
 <a id="implementation-terms"></a>
@@ -518,3 +522,5 @@ For new definitions, record the source date, replaced statement, scope and open 
 
 
 U-1109: Author clarification on 2026-11-09 covering training nuclei, CA ↔ EA ↔ KA, candidate questions and cross-time memory associations. Technical paraphrases only; FSM discussion and historical experiments are unchanged.
+
+U-FSM-1109: Later November 9 FSM and event-chain discussion, technical paraphrases in FSM_CONTINUITY.en.md; private quotations and message identifiers excluded.

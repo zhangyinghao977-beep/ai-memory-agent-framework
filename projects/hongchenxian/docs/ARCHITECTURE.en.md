@@ -1,5 +1,7 @@
 # Architecture scope of this preview
 
+**2026-11-09 FSM clarification (U-FSM-1109):** [Confirmed responsibilities, resource protection and event-chain continuity](../../../docs/FSM_CONTINUITY.en.md). Memory/past, logic/present, FSM/future remain the classification. The FSM executes symbolic conditions, not understanding; low-risk exceptions are reported, high-risk ones are cut off before reporting, with memory-preservation reserves retained. Both tracks share the event-chain concept but differ in learning integration. This clarification takes precedence over contrary current wording below; historical evidence and implementation claims are unchanged.
+
 [简体中文](ARCHITECTURE.md)
 
 **Association clarification, 2026-11-09:** Keep participants, time and topic associated with original text so similar discussions by different people or at different times remain distinguishable. Existing keyword indexes and descriptions provide retrieval and help avoid selecting the wrong record; this route is not an unspecified design. Empiricist CA may use memory to bring in relevant earlier experiences, without implying that the black-box Agent implements internal CA training.

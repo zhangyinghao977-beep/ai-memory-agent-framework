@@ -246,6 +246,14 @@
       "public_original_included": false,
       "access": "Public technical paraphrases only.",
       "authority": "Author confirmation: training nuclei; bidirectional CA/EA/KA; zero/one/multiple candidate behavior; cross-sentence and cross-time memory associations. FSM statements excluded from this revision; no experimental result added."
+    },
+    {
+      "id": "U-FSM-1109",
+      "source_title": "Author-confirmed FSM, resources and event-chain discussion",
+      "source_version": "2026-11-09",
+      "public_original_included": false,
+      "access": "Public technical paraphrases only.",
+      "authority": "Memory/past, logic/present, FSM/future; symbolic conditions without understanding; current physical state, reserves, adjustable protection within physical limits; range checks, step decomposition, low-risk reporting/high-risk cutoff; shared event-chain concept and progressive architecture categories. No new validation result."
     }
   ],
   "precedence": [
@@ -253,7 +261,8 @@
     "R26 round three supersedes the previous learning/restart criterion.",
     "Original frozen experiments remain unchanged; new terminology changes interpretation, not prior predictions.",
     "U-1107 confirms learning event chain = EA and gives active search priority at the present stage; contrary current wording is revised, prior plans and frozen evidence are retained as history. C58 remains a candidate except where the author confirmed its points.",
-    "U-CA-1107 supersedes the previous unresolved PA/CA naming status. PA is retained as a former name; frozen historical implementations are not renamed and the use-side order is not generalized to all training."
+    "U-CA-1107 supersedes the previous unresolved PA/CA naming status. PA is retained as a former name; frozen historical implementations are not renamed and the use-side order is not generalized to all training.",
+    "U-FSM-1109 supersedes broad undefined-FSM wording, separation of event-chain concepts, and conflation of Transformer models with agent frameworks; frozen evidence remains unchanged."
   ],
   "excluded": [
     "private quotations and complete chats",

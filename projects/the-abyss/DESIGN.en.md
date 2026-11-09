@@ -1,5 +1,7 @@
 # The empiricist proposal and current concepts
 
+**2026-11-09 FSM clarification (U-FSM-1109):** [Confirmed responsibilities, resource protection and event-chain continuity](../../docs/FSM_CONTINUITY.en.md). Memory/past, logic/present, FSM/future remain the classification. The FSM executes symbolic conditions, not understanding; low-risk exceptions are reported, high-risk ones are cut off before reporting, with memory-preservation reserves retained. Both tracks share the event-chain concept but differ in learning integration. This clarification takes precedence over contrary current wording below; historical evidence and implementation claims are unchanged.
+
 [中文](DESIGN.md) | [English](DESIGN.en.md)
 
 This page is a technical digest, not a newly ratified specification. The core design is based on the 2026-10-22 design draft; conceptual updates follow glossary v0.57 dated 2026-11-02. The latter records design intent and working agreements, which do not themselves establish implementation or experimental success.
@@ -26,7 +28,7 @@ In the language example discussed here, the whole passage corresponds to CA; eac
 
 When necessary, CA brings in another relevant discussion from much earlier through the memory layer. Keywords and multilevel indexes locate material; descriptions provide low-cost orientation and help avoid the wrong record, followed by original text as needed. Participants, time, topic and original text stay associated so similar discussions by different people or at different times are distinguishable. These are association requirements, not a new mandatory field schema. Original memory is retained in full, not compressed into a summary substitute; compressible knowledge relations are treated separately. This retrieval route is already part of the design, not an unspecified new mechanism.
 
-These are the author's architectural definitions, not new validation results. Earlier experiments did not fully implement the whole architecture. Preserve their individual slice coverage, failures and scores; local results neither establish nor invalidate the entire proposal. This revision does not change FSM statements; that discussion remains separate.
+These are the author's architectural definitions, not new validation results. Earlier experiments did not fully implement the whole architecture. Preserve their individual slice coverage, failures and scores; local results neither establish nor invalidate the entire proposal. The previously deferred FSM discussion is now recorded in U-FSM-1109, linked at the top of this page.
 
 
 ## Knowledge carriers and the three question facets
