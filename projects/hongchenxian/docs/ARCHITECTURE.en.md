@@ -2,6 +2,8 @@
 
 [简体中文](ARCHITECTURE.md)
 
+**Association clarification, 2026-11-09:** Keep participants, time and topic associated with original text so similar discussions by different people or at different times remain distinguishable. Existing keyword indexes and descriptions provide retrieval and help avoid selecting the wrong record; this route is not an unspecified design. Empiricist CA may use memory to bring in relevant earlier experiences, without implying that the black-box Agent implements internal CA training.
+
 ## Current design: active search and phase-two local attention
 
 The current choice, confirmed on 2026-11-07, is **active memory search first**. Logic actively chooses its first entry from an index dictionary, follows further index levels when needed, reads summaries from the respective index perspectives, and decides whether to unfold original text. An index may itself be indexed. Time, place, person, tool, object, and result are example entry points for an experience, not a mandatory six-field schema for all memory.

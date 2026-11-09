@@ -14,11 +14,20 @@ Awake, mind-wandering, and sleep are individual states. Awake integration is mor
 
 Active search takes priority at this stage. The former passive-first plan is retained as history without permanently excluding passive supply. Full empiricism still means logic, memory store, and FSM operating together; a slice missing part of that system cannot validate the complete form. Numbers may describe differences, causes, phenomena, and costs, but a single score does not replace those judgments. Historical plans, predictions, failures, and frozen records are not rewritten.
 
-### CA naming and use-side order
+### Current CA, EA and KA clarification
 
-PA (Page Attention) has formally been renamed **CA (Chain Attention)**. PA remains only as a historical name. **Use-side addressing follows CA → EA → KA**: CA first locates the core sentence and focus, uses context to complete missing objects, and checks conflicts; EA then locates the required SLOT keyword relations; KA finally addresses the corresponding knowledge and within-package reference members. CA is not simply a direct selector of knowledge scope, and a clarification about one object is not a global default.
+**Author confirmation on 2026-11-09 (U-1109): the arrows in CA ↔ EA ↔ KA are bidirectional, denoting cyclic training as well as addressing.** CA → EA → KA can describe one direction from a passage-level question to knowledge candidates; it does not replace the full bidirectional relationship. PA (Page Attention) is the former name of CA (Chain Attention). EA is the learning event chain; no new English expansions are assigned to KA or EA.
 
-This describes use-side addressing, not a fixed single-pass order for all training. Formation still distinguishes the knowledge-package learning loop and the learning-event-chain EA loop, with return paths and later revision. Neither the name, a diagram, nor experimental module labels establish a complete implementation or learning capability. The [use-side workflow](../../docs/ARCHITECTURE_FLOWS.en.md#use-addressing) makes this boundary explicit. Original historical code, old names, and frozen records are not mass-renamed.
+Preset slots and EA belong to **training initialization**. Relatively fixed positions in human language help distinguish words that could occupy the same position; fixed surrounding expressions then help form a composite knowledge package. These presets serve as “condensation nuclei” in the knowledge system, not an alternative use-time entry that bypasses CA or a fixed specification of all final knowledge.
+
+In the language example discussed here, the whole passage corresponds to CA; each statement portion that can end independently corresponds to EA; each trained position in EA is a slot, and each slot corresponds to KA. This describes scope and responsibility, not a punctuation-based segmentation algorithm. Inheriting conditions or objects across statements involves an implicit statement merge and belongs to CA. The final question also belongs to CA.
+
+**KA seeks a candidate queue: with no candidates, ask directly without an extra registration solely for “not found”; with one candidate, continue without an additional question; with multiple candidates, ask which target to select.** The zero-candidate rule does not change existing experience-recording requirements, and a single candidate is not experimental proof of open-world correctness.
+
+When necessary, CA brings in another relevant discussion from much earlier through the memory layer. Keywords and multilevel indexes locate material; descriptions provide low-cost orientation and help avoid the wrong record, followed by original text as needed. Participants, time, topic and original text stay associated so similar discussions by different people or at different times are distinguishable. These are association requirements, not a new mandatory field schema. Original memory is retained in full, not compressed into a summary substitute; compressible knowledge relations are treated separately. This retrieval route is already part of the design, not an unspecified new mechanism.
+
+These are the author's architectural definitions, not new validation results. Earlier experiments did not fully implement the whole architecture. Preserve their individual slice coverage, failures and scores; local results neither establish nor invalidate the entire proposal. This revision does not change FSM statements; that discussion remains separate.
+
 
 ## Knowledge carriers and the three question facets
 

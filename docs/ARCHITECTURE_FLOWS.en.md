@@ -2,7 +2,7 @@
 
 [中文](ARCHITECTURE_FLOWS.md) · [Glossary](GLOSSARY.en.md) · [Logic, memory and FSM principles](MEMORY_LOGIC_FSM_PRINCIPLES.md)
 
-Updated: 2026-11-07. Sources: U-1107 and C58 (see the [source register](GLOSSARY_SOURCES.json)) and the public designs below. These are public comparison views of the current discussion, not a newly frozen specification or experimental result. This update does not claim a review of every diagram on the earlier site. Frozen plans, historical scores and failure records remain unchanged.
+Updated: 2026-11-09. Sources: U-1109, U-1107 and C58 (see the [source register](GLOSSARY_SOURCES.json)) and the public designs below. These are public comparison views of the current discussion, not a newly frozen specification or experimental result. This update does not claim a review of every diagram on the earlier site. Frozen plans, historical scores and failure records remain unchanged.
 
 ## 1. Forming experience-based knowledge and using it in work
 
@@ -17,7 +17,7 @@ Arrows describe design responsibilities and feedback directions, not completed o
 - Awake activity is more restrained. Mind-wandering has no task or purpose and is not assigned fixed background duties. Sleep can support more aggressive integration, without guaranteeing local or global optimality. The state annotation is not a complete transition table.
 - Raw records, interpretations formed through learning and knowledge versions remain distinguishable. Briefs or relation representations cannot replace memory originals; revisions preserve earlier evidence.
 
-This overview confirms EA as the learning event chain without inventing expansions for KA or EA. The subsequently confirmed CA name (formerly PA) and CA → EA → KA use-side order appear separately in diagram 3, without rewriting the meaning of historical diagram 01. Integration operators, scheduling triggers, admission criteria, resource allocation, retention and recovery protocols remain to be specified. No new R algorithm is introduced. If R is added later, its feedback into knowledge, chains, memory admission and the FSM must be made explicit rather than drawing a score box with no defined effect.
+This overview confirms EA as the learning event chain without inventing expansions for KA or EA. The subsequently confirmed CA name (formerly PA) and CA ↔ EA ↔ KA cyclic training and addressing appear separately in diagram 3, without rewriting the meaning of historical diagram 01. Integration operators, scheduling triggers, admission criteria, resource allocation, retention and recovery protocols remain to be specified. No new R algorithm is introduced. If R is added later, its feedback into knowledge, chains, memory admission and the FSM must be made explicit rather than drawing a score box with no defined effect.
 
 ## 2. Agent: active retrieval first and phase-two local attention
 
@@ -33,22 +33,25 @@ The **phase-two design** provides the target original, related upper/lower index
 
 <a id="use-addressing"></a>
 
-## 3. Use-side addressing: CA → EA → KA
+## 3. CA ↔ EA ↔ KA: bidirectional cycles and addressing
 
-![CA, EA and KA use-side addressing design](diagrams/use-addressing.en.svg)
+![CA / EA / KA](diagrams/use-addressing.en.svg)
 
-[Editable DOT source](diagrams/use-addressing.en.dot)
+[DOT](diagrams/use-addressing.en.dot)
 
-**The author has formally confirmed that PA (Page Attention) was renamed CA (Chain Attention), and that use-side addressing follows CA → EA → KA.** PA remains a former name. This supersedes the previous unresolved PA/CA status; historical files and frozen code retain their original wording rather than being renamed into new experimental claims. [U-CA-1107; F50; see the [source inventory](GLOSSARY_SOURCES.json)]
+**Author confirmation on 2026-11-09 (U-1109): the arrows in CA ↔ EA ↔ KA are bidirectional, denoting cyclic training as well as addressing.** CA → EA → KA can describe one direction from a passage-level question to knowledge candidates; it does not replace the full bidirectional relationship. PA (Page Attention) is the former name of CA (Chain Attention). EA is the learning event chain; no new English expansions are assigned to KA or EA.
 
-- **CA:** Locate the core sentence and focus across chains; use context to complete missing objects and check conflicts. It is not a direct knowledge-scope selector that skips intermediate steps.
-- **EA:** Use the learning event chain's within-chain relations to locate the required SLOT keywords. The name “learning event chain = EA” is unchanged, while formation and use still need separate descriptions.
-- **KA:** Address corresponding knowledge through within-package member relations organized relative to a fixed reference. The diagram invents neither KA/EA expansions nor a unified formula.
-- **When clarification is needed:** Bind it to the current question and resume the original chain; one object choice is not a global default. Concrete protocols, resources and exceptional paths still need engineering validation.
+Preset slots and EA belong to **training initialization**. Relatively fixed positions in human language help distinguish words that could occupy the same position; fixed surrounding expressions then help form a composite knowledge package. These presets serve as “condensation nuclei” in the knowledge system, not an alternative use-time entry that bypasses CA or a fixed specification of all final knowledge.
 
-**The use-side order is not an overall learning order.** Formation retains a knowledge-package learning loop and a learning-event-chain EA loop, with mutual adaptation and later revision. CA → EA → KA is not a fixed single pass for all training, nor evidence that v18.1, v19 or similarly named modules completely implement this diagram. The attachment's implementation-alignment claims were not independently verified here.
+In the language example discussed here, the whole passage corresponds to CA; each statement portion that can end independently corresponds to EA; each trained position in EA is a slot, and each slot corresponds to KA. This describes scope and responsibility, not a punctuation-based segmentation algorithm. Inheriting conditions or objects across statements involves an implicit statement merge and belongs to CA. The final question also belongs to CA.
 
-This view belongs to the empiricist proposal. Hongchenxian's active dictionary/summary/original retrieval steps cannot be mechanically mapped to internal CA/EA/KA modules; using black-box logic does not implement this internal architecture. Diagram 1 remains a broad formation/use cycle; this diagram adds detail to use-side addressing without rewriting the historical meaning of older views.
+**KA seeks a candidate queue: with no candidates, ask directly without an extra registration solely for “not found”; with one candidate, continue without an additional question; with multiple candidates, ask which target to select.** The zero-candidate rule does not change existing experience-recording requirements, and a single candidate is not experimental proof of open-world correctness.
+
+When necessary, CA brings in another relevant discussion from much earlier through the memory layer. Keywords and multilevel indexes locate material; descriptions provide low-cost orientation and help avoid the wrong record, followed by original text as needed. Participants, time, topic and original text stay associated so similar discussions by different people or at different times are distinguishable. These are association requirements, not a new mandatory field schema. Original memory is retained in full, not compressed into a summary substitute; compressible knowledge relations are treated separately. This retrieval route is already part of the design, not an unspecified new mechanism.
+
+These are the author's architectural definitions, not new validation results. Earlier experiments did not fully implement the whole architecture. Preserve their individual slice coverage, failures and scores; local results neither establish nor invalidate the entire proposal. This revision does not change FSM statements; that discussion remains separate.
+
+This diagram belongs to the empiricist proposal. Hongchenxian black-box index-reading interfaces are not themselves implementations of internal CA/EA/KA.
 
 ## 4. Two senses of merging and the scope of complete validation
 

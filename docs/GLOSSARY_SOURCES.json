@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "compilation_version": "2026-11-07-r3",
+  "compilation_version": "2026-11-09-r4",
   "base_commit": "9ba27a5a0dd21fd9f6ac26f010866dde2c5cdfe6",
   "source_verification_utc": "2026-11-06T17:25:09.872432Z",
   "source_verification_scope": "Bounded source snapshot; not a complete-chat review or global-latest-version guarantee.",
@@ -238,6 +238,14 @@
       "scope": "Cross-check of use-side CA context/focus, EA SLOT relations, KA knowledge addressing, and separation from learning loops.",
       "access": "Feedback read in full. Private paths, complete attachment, and unverified v18.1/v19 code-alignment claims are not published.",
       "original_public": false
+    },
+    {
+      "id": "U-1109",
+      "source_title": "Author-confirmed terminology and flow clarification",
+      "source_version": "2026-11-09",
+      "public_original_included": false,
+      "access": "Public technical paraphrases only.",
+      "authority": "Author confirmation: training nuclei; bidirectional CA/EA/KA; zero/one/multiple candidate behavior; cross-sentence and cross-time memory associations. FSM statements excluded from this revision; no experimental result added."
     }
   ],
   "precedence": [
