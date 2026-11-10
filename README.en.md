@@ -1,5 +1,7 @@
 # The Abyss and Hongchenxian / 深渊与红尘仙
 
+**2026-11-10 follow-up (U-FSM-1110 / U-CHAIN-1110):** [FSM interruption, recording and specific takeover](docs/FSM_CONTINUITY.en.md); [learning-chain inclusion, concrete/abstract knowledge and CA↔EA](docs/EVENT_CHAIN_RELATIONS.en.md). These explicit corrections take precedence over conflicting current wording below; historical experiments and frozen results remain unchanged.
+
 English · [简体中文](README.md)
 
 **Logic, memory and FSM:** [New design-principles and evaluation note (Chinese)](docs/MEMORY_LOGIC_FSM_PRINCIPLES.md) separates original memory text from knowledge relations, explains the agent slice and local attention, and distinguishes design, inspected implementation and open validation questions.
@@ -43,7 +45,7 @@ Code existence, historical execution, and validation of this copy are distinct s
 
 Research on collaboration among black-box agents: persistent identity, paragraph-indexed memory, frozen shared snapshots, per-step call accounting, lifecycle decisions, and source-verified recovery. Its existing offline synthetic engineering path uses Node built-ins. This integration preserves that source and its findings.
 
-The empiricist learning event chain (EA) and work event chain cover formation and use respectively, like the learning and work forests. Hongchenxian's work-event chain corresponds to the work side and covers records, calls, dependencies, suspension, and continuation; its collaboration ledger is not an implementation of the Abyss's complete knowledge structure. The hand-written FSM in Abyss T4 only borrows survival and recovery ideas; neither it nor a collaboration ledger establishes complete knowledge learning, nine operators, or an autonomous coding system.
+The empiricist learning event chain (EA) is a subset of the work event chain. Formation/use describes responsibilities rather than disjoint event-chain systems. Hongchenxian's work-event chain corresponds to the work side and covers records, calls, dependencies, suspension, and continuation; its collaboration ledger is not an implementation of the Abyss's complete knowledge structure. The hand-written FSM in Abyss T4 only borrows survival and recovery ideas; neither it nor a collaboration ledger establishes complete knowledge learning, nine operators, or an autonomous coding system.
 
 ## Running and interpreting evidence
 

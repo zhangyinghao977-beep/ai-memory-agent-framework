@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "compilation_version": "2026-11-09-r4",
+  "compilation_version": "2026-11-10-r5",
   "base_commit": "9ba27a5a0dd21fd9f6ac26f010866dde2c5cdfe6",
   "source_verification_utc": "2026-11-06T17:25:09.872432Z",
   "source_verification_scope": "Bounded source snapshot; not a complete-chat review or global-latest-version guarantee.",
@@ -254,6 +254,22 @@
       "public_original_included": false,
       "access": "Public technical paraphrases only.",
       "authority": "Memory/past, logic/present, FSM/future; symbolic conditions without understanding; current physical state, reserves, adjustable protection within physical limits; range checks, step decomposition, low-risk reporting/high-risk cutoff; shared event-chain concept and progressive architecture categories. No new validation result."
+    },
+    {
+      "id": "U-FSM-1110",
+      "source_title": "FSM interruption, recording and takeover follow-up",
+      "source_version": "2026-11-09–10 author confirmations",
+      "public_original_included": false,
+      "access": "Technical paraphrase only; private conversation not distributed.",
+      "authority": "Confirmed design boundaries; temporary large memory remains explicitly untested."
+    },
+    {
+      "id": "U-CHAIN-1110",
+      "source_title": "Learning-chain subset, concrete/abstract knowledge and CA–EA clarification",
+      "source_version": "2026-11-09–10 author confirmations",
+      "public_original_included": false,
+      "access": "Technical paraphrase only; private conversation not distributed.",
+      "authority": "Latest explicit inclusion relation supersedes earlier paired-only descriptions; algorithms and empirical effects not established."
     }
   ],
   "precedence": [

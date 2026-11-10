@@ -1,5 +1,7 @@
 # The empiricist proposal and current concepts
 
+**2026-11-10 follow-up (U-FSM-1110 / U-CHAIN-1110):** [FSM interruption, recording and specific takeover](../../docs/FSM_CONTINUITY.en.md); [learning-chain inclusion, concrete/abstract knowledge and CA↔EA](../../docs/EVENT_CHAIN_RELATIONS.en.md). These explicit corrections take precedence over conflicting current wording below; historical experiments and frozen results remain unchanged.
+
 **2026-11-09 FSM clarification (U-FSM-1109):** [Confirmed responsibilities, resource protection and event-chain continuity](../../docs/FSM_CONTINUITY.en.md). Memory/past, logic/present, FSM/future remain the classification. The FSM executes symbolic conditions, not understanding; low-risk exceptions are reported, high-risk ones are cut off before reporting, with memory-preservation reserves retained. Both tracks share the event-chain concept but differ in learning integration. This clarification takes precedence over contrary current wording below; historical evidence and implementation claims are unchanged.
 
 [中文](DESIGN.md) | [English](DESIGN.en.md)
@@ -8,7 +10,7 @@ This page is a technical digest, not a newly ratified specification. The core de
 
 ## Current clarification: 2026-11-07
 
-The [learning/work event-chain and cache-integration workflows](../../docs/ARCHITECTURE_FLOWS.en.md) supplement this page. The **learning event chain is EA**; it and the work event chain cover formation and use respectively, like the learning and work forests. Earlier descriptions of within-chain relational attention remain mechanism descriptions, not grounds for rejecting the current name. A particular experimental EA module is not thereby promoted to a complete implementation of the learning event chain.
+The [learning/work event-chain and cache-integration workflows](../../docs/ARCHITECTURE_FLOWS.en.md) supplement this page. The **learning event chain is EA**; it is a subset of the work event chain, with formation/use describing responsibilities rather than disjoint systems. Earlier descriptions of within-chain relational attention remain mechanism descriptions, not grounds for rejecting the current name. A particular experimental EA module is not thereby promoted to a complete implementation of the learning event chain.
 
 Practical tool results first enter the cache with their original occurrence records retained. During rest, another part of the same FSM coordinates integration, and the learning side organizes knowledge revisions. Caching does not certify content as true, and one result must not directly overwrite existing knowledge. Summaries do not replace original memory; revisable knowledge relations and retained original text have distinct roles. Integrating experiences is different from structurally merging a subchain into the analysis scope.
 

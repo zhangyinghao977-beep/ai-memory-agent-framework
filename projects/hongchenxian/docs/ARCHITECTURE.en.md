@@ -1,5 +1,7 @@
 # Architecture scope of this preview
 
+**2026-11-10 follow-up (U-FSM-1110 / U-CHAIN-1110):** [FSM interruption, recording and specific takeover](../../../docs/FSM_CONTINUITY.en.md); [learning-chain inclusion, concrete/abstract knowledge and CA↔EA](../../../docs/EVENT_CHAIN_RELATIONS.en.md). These explicit corrections take precedence over conflicting current wording below; historical experiments and frozen results remain unchanged.
+
 **2026-11-09 FSM clarification (U-FSM-1109):** [Confirmed responsibilities, resource protection and event-chain continuity](../../../docs/FSM_CONTINUITY.en.md). Memory/past, logic/present, FSM/future remain the classification. The FSM executes symbolic conditions, not understanding; low-risk exceptions are reported, high-risk ones are cut off before reporting, with memory-preservation reserves retained. Both tracks share the event-chain concept but differ in learning integration. This clarification takes precedence over contrary current wording below; historical evidence and implementation claims are unchanged.
 
 [简体中文](ARCHITECTURE.md)

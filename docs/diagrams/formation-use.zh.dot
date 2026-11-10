@@ -9,13 +9,14 @@ learn [label="学习事件链（EA）与学习森林\n拆解、组合、修订�
 memory [label="知识／记忆\n保留来源、原文、关系与版本"];
 work [label="工作事件链／工作森林\n按条件展开与调用：使用侧"];
 states [label="状态边界（设计）\n清醒：较克制\n走神：无任务、无目的，不派固定职责\n睡眠：可更激进整合，不保证全局最优",shape=note,fillcolor="#fff5dc"];
-subgraph cluster_0 {label="形成侧"; color="#aac0d4"; cache;fsm;learn;}
-subgraph cluster_1 {label="使用侧"; color="#aac0d4"; work;}
+subgraph cluster_0 {label="形成职责（学习链属于工作链）"; color="#aac0d4"; cache;fsm;learn;}
+subgraph cluster_1 {label="使用职责（非互斥体系）"; color="#aac0d4"; work;}
 tools -> cache [label="结果先记录"];
 cache -> fsm [label="待整合经历"];
 fsm -> learn [label="调度"];
 learn -> memory [label="形成／修订，保留旧依据"];
 memory -> work [label="读取并使用"];
+work -> learn [label="包含：学习事件链是工作事件链的子集",style=dashed,constraint=false];
 work -> tools [label="实践与反馈循环",constraint=false];
 states -> fsm [label="状态约束",style=dashed,arrowhead=none];
 }

@@ -1,5 +1,7 @@
 # 逻辑记忆与 FSM 的设计原则和评价方法
 
+**2026-11-10 后续澄清（U-FSM-1110／U-CHAIN-1110）：** [FSM 的中断、记录与特定接管](FSM_CONTINUITY.md)；[学习链子集、具体知识与抽象关系及 CA↔EA](EVENT_CHAIN_RELATIONS.md)。以下现行措辞如有冲突，以这些明确修正为准；历史实验和冻结结果保持原样。
+
 **2026-11-09 FSM 后续确认（U-FSM-1109）：** [职责、资源保护与事件链接续](FSM_CONTINUITY.md)。记忆／过去、逻辑／现在、FSM／未来的分类不变；FSM 可执行符号条件，不承担理解。低危报告、高危先拉闸再报告，并保留记忆登记余量。两轨共享事件链概念，区别在学习整合范围。此澄清优先于下方相冲突的现行措辞；历史证据与实现结论不改写。
 
 [仓库入口](../README.md) · [深渊设计](../projects/the-abyss/DESIGN.md) · [红尘仙架构](../projects/hongchenxian/docs/ARCHITECTURE.md) · [术语汇编](GLOSSARY.md)

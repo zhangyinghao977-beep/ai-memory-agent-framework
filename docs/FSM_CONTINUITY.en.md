@@ -2,7 +2,7 @@
 
 [中文](FSM_CONTINUITY.md) · [Glossary](GLOSSARY.en.md) · [Architecture flows](ARCHITECTURE_FLOWS.en.md)
 
-Recorded 2026-11-09. Source U-FSM-1109: technical paraphrases of explicit author confirmations in the discussion with the assistant. These are design definitions, not completed implementation, successful tests, or evidence of current AI subjective experience. Historical experiments remain unchanged.
+Updated 2026-11-10. U-FSM-1110 adds subsequent takeover and recording boundaries. Original source U-FSM-1109: technical paraphrases of explicit author confirmations in the discussion with the assistant. These are design definitions, not completed implementation, successful tests, or evidence of current AI subjective experience. Historical experiments remain unchanged.
 
 ## 1. Responsibilities and integration
 
@@ -16,18 +16,18 @@ Besides future continuity, the FSM must interact with current physical state, re
 
 The resource pool refers to actual physical/computational resources. Specific protection conditions may adapt through experience but cannot exceed physical limits. Adjustable protection conditions do not make actual capacity arbitrary.
 
-Protection must reserve enough capacity to record memory instead of waiting for exhaustion. The existing fixed-protocol requirement to save memory before reporting remains. This discussion does not prescribe a fixed reserve, measurement method or validated protection mechanism.
+Default protection reserves capacity to record memory instead of waiting for exhaustion; section 6 describes the specific logic-takeover exception. The existing fixed-protocol requirement to save memory before reporting remains. This discussion does not prescribe a fixed reserve, measurement method or validated protection mechanism.
 
 Ordinary fluctuations need not interrupt logic each time. An allocated working part that remains within its preset range can be left alone; exceeding that range requires attention. This does not mean deleting memories, disabling necessary state observation or assigning one threshold to all tasks.
 
-## 3. Symbolic exception handling
+## 3. Symbolic exception routing
 
-- **Low risk: report first and let logic decide.** No universal continue-or-pause behavior after reporting was specified.
-- **High risk: cut off first, then report.** For a clearly established problem requiring termination, such as a confirmed memory leak, the FSM may terminate according to rules without first requiring logic to understand the cause.
+- **Low risk: report first; logic decides.** The executing step may continue or pause depending on the case; no universal policy is imposed. Concrete conditions for increasing risk still need design and testing.
+- **High risk: interrupt the current task, preserve complete memory, then report and wake logic.** This default protection can execute through symbolic rules without waiting for logic to understand the cause. A sleeping or inactive logic is woken directly rather than waiting for natural awakening.
 
-Explicit symbolic conditions may classify the risk. Not every range exceedance requires immediate termination, and not every exception must wait for logic. This is not an implemented memory-leak detection algorithm.
+A complete record preserves the reason, progress, process and context, not merely a short status marker. “Cut off” does not by default mean terminating the entire process or machine. The FSM saves original records and registers fixed fields such as time, result and the current event chain. **Logic determines indexes and descriptions**; the FSM does not understand content to generate them. Logic subsequently processes the records and decides next actions.
 
-Preserve both “cut off before reporting” for high risk and “reserve capacity; save memory before reporting.” The cutoff scope and exact ordering of cutoff, memory preservation and reporting still need implementation detail. Do not infer a whole-machine power-off or shutdown of the memory-recording capability.
+Default protection preserves recording reserves and saves before reporting. Persistence, completeness and recovery under actual failure conditions still require engineering validation. This does not supply a tested memory-leak detector. The specific logic-takeover exception is described in section 6.
 
 ## 4. Event-chain steps and unfinished work
 
@@ -48,8 +48,18 @@ These are the author's project categories, not established schools:
 
 The initial conception moved directly from the traditional model to the empiricist architecture, leaving intermediate layers folded away. Difficulty implementing the whole led to a compromise slice compared with improved agents. The slice is not the original final goal or proof that the complete empiricist design is implemented. Comparisons must distinguish a model from an external framework and a complete system.
 
-## 6. Specific open details
+## 6. In-flight adjustment and specific logic takeover
 
-Responsibilities, symbolic evaluation, experience-adjustable protection within physical limits, range checks, low-risk reporting/high-risk cutoff, and event-chain decomposition are confirmed. Do not label those entire capabilities undefined.
+Ordinary budget or rule changes must account for resources already spent and current progress; a new rule does not uniformly cancel in-flight work. Default high-risk protection acts directly without waiting for deliberation. Reflexes are an explanatory analogy, not biological equivalence or implementation evidence.
 
-Open details include concrete per-step ranges and risk conditions; reliable identification of faults such as memory leaks; execution while a low-risk report awaits a decision; cutoff scope and memory preservation; detailed cache/memory recording interfaces; and how condition changes affect in-flight actions. These are open design or engineering questions, not author-approved protocols.
+The author also allows **logic to take over in specific circumstances, accept danger and force execution**. This may use all available resources, including memory-recording reserves, accepting the risk of incomplete records. Objective physical capacity cannot be exceeded. This research definition is not permission to bypass external authorization or deployment safety constraints.
+
+For termination of takeover, the author specifies “resource exhaustion + logic giving up,” explicitly meaning **both**, not either. Logic judges whether the event has ended; completion of one step does not automatically return control. How logic could still judge or execute after actual resource exhaustion remains an unverified engineering issue, not an established executable termination protocol.
+
+**The temporary large memory store is an untested hypothesis.** During takeover, logic may set aside other possibilities and concentrate computation and storage on a local capability for the current task, attempting to convert available costs into execution resources. The author explicitly states that this has not yet been tested in a real experiment. No performance gain or guaranteed completion is claimed.
+
+## 7. Remaining work
+
+Responsibilities, symbolic evaluation, range checks, high-risk interruption of the current task with complete recording and wake-up, logic-generated indexes/descriptions, and case-specific low-risk handling are confirmed rather than wholly undefined.
+
+Remaining work includes concrete step ranges and risk conditions; reliable leak detection; measurement of recording reserves; symbolic low-risk routing rules; interfaces between cache, original records and logic completion; exact application of rule changes to in-flight actions; executable takeover/exhaustion semantics; and experiments on the temporary large memory store. New definitions do not overwrite original facts, failures or historical results.

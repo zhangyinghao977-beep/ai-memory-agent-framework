@@ -1,5 +1,7 @@
 # Architecture flows: formation, use and active retrieval
 
+**2026-11-10 follow-up (U-FSM-1110 / U-CHAIN-1110):** [FSM interruption, recording and specific takeover](FSM_CONTINUITY.en.md); [learning-chain inclusion, concrete/abstract knowledge and CA↔EA](EVENT_CHAIN_RELATIONS.en.md). These explicit corrections take precedence over conflicting current wording below; historical experiments and frozen results remain unchanged.
+
 **2026-11-09 FSM clarification (U-FSM-1109):** [Confirmed responsibilities, resource protection and event-chain continuity](FSM_CONTINUITY.en.md). Memory/past, logic/present, FSM/future remain the classification. The FSM executes symbolic conditions, not understanding; low-risk exceptions are reported, high-risk ones are cut off before reporting, with memory-preservation reserves retained. Both tracks share the event-chain concept but differ in learning integration. This clarification takes precedence over contrary current wording below; historical evidence and implementation claims are unchanged.
 
 [中文](ARCHITECTURE_FLOWS.md) · [Glossary](GLOSSARY.en.md) · [Logic, memory and FSM principles](MEMORY_LOGIC_FSM_PRINCIPLES.md)
@@ -12,7 +14,7 @@ Updated: 2026-11-09. Sources: U-1109, U-1107 and C58 (see the [source register](
 
 [Editable DOT source](diagrams/formation-use.en.dot)
 
-Arrows describe design responsibilities and feedback directions, not completed operators, interfaces or scheduling algorithms. Learning and work are the **formation and use sides**, without requiring mutually exclusive databases or two separate FSMs.
+Arrows describe design responsibilities and feedback directions, not completed operators, interfaces or scheduling algorithms. **The learning event chain is a subset of the work event chain.** Formation/use describes responsibilities, without requiring mutually exclusive databases or two separate FSMs.
 
 - Tool-practice results enter the cache first, preserving raw occurrence records and source types. Recording a guess, plan or error does not turn it into a verified fact.
 - At rest, **another part of the same FSM** schedules integration of cached experiences. Learning event chains (EA) / the learning forest form or revise knowledge and memory; work event chains / the work forest use existing knowledge, unfold it and call tools. The loop does not require completed learning immediately after every tool call.

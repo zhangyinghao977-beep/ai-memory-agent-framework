@@ -9,13 +9,14 @@ learn [label="Learning event chain (EA) and learning forest\nDecomposition, comp
 memory [label="Knowledge / memory\nRetain sources, originals, relations and versions"];
 work [label="Work event chains / work forest\nConditional unfolding and calls: use side"];
 states [label="State boundaries (design)\nAwake: more restrained\nMind-wandering: no task or purpose; no fixed duties\nSleep: more aggressive integration, no global-optimum guarantee",shape=note,fillcolor="#fff5dc"];
-subgraph cluster_0 {label="Formation side"; color="#aac0d4"; cache;fsm;learn;}
-subgraph cluster_1 {label="Use side"; color="#aac0d4"; work;}
+subgraph cluster_0 {label="Formation responsibility (learning chain is within work chain)"; color="#aac0d4"; cache;fsm;learn;}
+subgraph cluster_1 {label="Use responsibility (not a disjoint system)"; color="#aac0d4"; work;}
 tools -> cache [label="Record results first"];
 cache -> fsm [label="Experiences awaiting integration"];
 fsm -> learn [label="Schedule"];
 learn -> memory [label="Form / revise; preserve prior evidence"];
 memory -> work [label="Read and use"];
+work -> learn [label="Includes: learning chain is a subset of work chain",style=dashed,constraint=false];
 work -> tools [label="Practice and feedback loop",constraint=false];
 states -> fsm [label="State constraints",style=dashed,arrowhead=none];
 }

@@ -1,5 +1,7 @@
 # Project glossary: consolidated coverage
 
+**2026-11-10 follow-up (U-FSM-1110 / U-CHAIN-1110):** [FSM interruption, recording and specific takeover](FSM_CONTINUITY.en.md); [learning-chain inclusion, concrete/abstract knowledge and CA↔EA](EVENT_CHAIN_RELATIONS.en.md). These explicit corrections take precedence over conflicting current wording below; historical experiments and frozen results remain unchanged.
+
 **2026-11-09 FSM clarification (U-FSM-1109):** [Confirmed responsibilities, resource protection and event-chain continuity](FSM_CONTINUITY.en.md). Memory/past, logic/present, FSM/future remain the classification. The FSM executes symbolic conditions, not understanding; low-risk exceptions are reported, high-risk ones are cut off before reporting, with memory-preservation reserves retained. Both tracks share the event-chain concept but differ in learning integration. This clarification takes precedence over contrary current wording below; historical evidence and implementation claims are unchanged.
 
 [中文](GLOSSARY.md) · [Repository](../README.en.md) · [Sources and versions](GLOSSARY_SOURCES.json)
@@ -24,7 +26,7 @@ Precedence is not simply the last paragraph or newest file timestamp. An explici
 
 ### N01 Learning event chain (EA) and working event chain
 
-**The learning event chain is EA. This equivalence is explicit, no longer an open naming question.** Learning/working event chains are the formation/use counterparts, just as learning/working forests are. A chain and a tree are not the two opposing roles. Chains and forests describe organizational scope; formation and use describe responsibilities. Earlier descriptions of EA attention/composition over within-chain slot relations remain relevant mechanisms, but cannot override the author's naming or establish that existing small EA experiments implement the complete learning event chain. [U-1107; U-KA; C16, C21]
+**The learning event chain is EA. This equivalence is explicit, no longer an open naming question.** The learning event chain is a subset of the work event chain. Formation/use describes responsibilities, not disjoint systems, and does not replace this inclusion relation. Chains and forests still describe organizational scope. Earlier descriptions of EA attention/composition over within-chain slot relations remain relevant mechanisms, but cannot override the author's naming or establish that existing small EA experiments implement the complete learning event chain. [U-1107; U-KA; C16, C21]
 
 ### N02 Merging, caching and integration during rest
 
