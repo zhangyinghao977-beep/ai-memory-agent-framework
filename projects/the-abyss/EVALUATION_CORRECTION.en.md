@@ -1,5 +1,7 @@
 # Evaluation correction and project evaluation directions
 
+**Intellectual lineage and tribute (2026-11-10):** [The author sees their role as “glue” connecting Turing’s and von Neumann’s ideas](../../docs/INTELLECTUAL_LINEAGE.en.md). This distinguishes the author’s self-description, historical texts and empirical validation; it does not claim mutual unfamiliarity or completed AI.
+
 [简体中文](EVALUATION_CORRECTION.md) · [Project entry](README.en.md) · [Existing evidence boundaries](EVIDENCE.en.md)
 
 Recorded: 2026-11-07. Type: correction of evaluation method and registration of future evaluation directions, not new experimental results.

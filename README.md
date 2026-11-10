@@ -1,5 +1,7 @@
 # 深渊与红尘仙 / The Abyss and Hongchenxian
 
+**思想来源与致敬（2026-11-10）：** [作者将自己的作用理解为结合图灵与冯·诺依曼思想的“粘合剂”](docs/INTELLECTUAL_LINEAGE.md)。区分作者的自我定位、历史文献和实验验证；不宣称两位彼此不了解或方案已完成。
+
 **2026-11-10 后续澄清（U-FSM-1110／U-CHAIN-1110）：** [FSM 的中断、记录与特定接管](docs/FSM_CONTINUITY.md)；[学习链子集、具体知识与抽象关系及 CA↔EA](docs/EVENT_CHAIN_RELATIONS.md)。以下现行措辞如有冲突，以这些明确修正为准；历史实验和冻结结果保持原样。
 
 [English](README.en.md) · 简体中文

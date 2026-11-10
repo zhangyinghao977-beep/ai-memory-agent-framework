@@ -1,5 +1,7 @@
 # The Abyss and Hongchenxian / 深渊与红尘仙
 
+**Intellectual lineage and tribute (2026-11-10):** [The author sees their role as “glue” connecting Turing’s and von Neumann’s ideas](docs/INTELLECTUAL_LINEAGE.en.md). This distinguishes the author’s self-description, historical texts and empirical validation; it does not claim mutual unfamiliarity or completed AI.
+
 **2026-11-10 follow-up (U-FSM-1110 / U-CHAIN-1110):** [FSM interruption, recording and specific takeover](docs/FSM_CONTINUITY.en.md); [learning-chain inclusion, concrete/abstract knowledge and CA↔EA](docs/EVENT_CHAIN_RELATIONS.en.md). These explicit corrections take precedence over conflicting current wording below; historical experiments and frozen results remain unchanged.
 
 English · [简体中文](README.md)
