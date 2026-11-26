@@ -1,5 +1,7 @@
 # 红尘仙 / Hongchenxian
 
+**先跑演示：** [前四阶段公开原型](demo/README.md)。合成场景、无需 API key；约一分钟复现。
+
 [English](README.en.md) · [仓库入口](../../README.md)
 
 **设计原则更新：** [原文记忆、Agent 切片与局部注意力](../../docs/MEMORY_LOGIC_FSM_PRINCIPLES.md)。底层窗口与索引能力已经存在；目标原文与相关上下索引简介的完整组合策略仍需接通并验证。

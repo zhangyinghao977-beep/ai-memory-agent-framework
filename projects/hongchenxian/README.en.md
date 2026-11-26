@@ -1,5 +1,7 @@
 # Hongchenxian / 红尘仙
 
+**Try it first:** [Four-stage public demo](demo/README.md). A synthetic example that runs in under a minute without an API key.
+
 [简体中文](README.md) · [Repository entry](../../README.en.md)
 
 **Current workflow:** [Active search first, phase-two local attention, and cached-experience integration](../../docs/ARCHITECTURE_FLOWS.en.md). This supersedes the earlier passive-first priority without erasing history or permanently abolishing passive supply.
