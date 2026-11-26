@@ -1,6 +1,6 @@
 # The Abyss and Hongchenxian / 深渊与红尘仙
 
-**Runnable demo:** [Hongchenxian in four stages](projects/hongchenxian/demo/README.md). A Python standard-library walkthrough of memory, FSM retrieval, reflexes and event-chain handoff.
+**Runnable demo:** [Hongchenxian in four stages](projects/hongchenxian/demo/README.md). A Python standard-library walkthrough of memory, FSM retrieval, reflexes and event-chain handoff. **Extensions:** [DLC 01–03](projects/hongchenxian/demo/DLC.en.md) · [Stage 5 / DLC 04 theory](projects/hongchenxian/demo/STAGE5.en.md).
 
 **Intellectual lineage and tribute (2026-11-10):** [The author sees their role as “glue” connecting Turing’s and von Neumann’s ideas](docs/INTELLECTUAL_LINEAGE.en.md). This distinguishes the author’s self-description, historical texts and empirical validation; it does not claim mutual unfamiliarity or completed AI.
 

@@ -1,6 +1,6 @@
 # 深渊与红尘仙 / The Abyss and Hongchenxian
 
-**可运行演示：** [红尘仙四阶段公开原型](projects/hongchenxian/demo/README.md)。Python 标准库即可运行；用合成场景演示记忆、FSM 检索、反射和事件链交班。
+**可运行演示：** [红尘仙四阶段公开原型](projects/hongchenxian/demo/README.md)。Python 标准库即可运行；用合成场景演示记忆、FSM 检索、反射和事件链交班。 **扩展：** [前三个 DLC](projects/hongchenxian/demo/DLC.zh.md) · [阶段 5／DLC 04 理论](projects/hongchenxian/demo/STAGE5.zh.md)。
 
 **路线决策（2026-11-19）：** [从经验学习三疑问面之间的转换](docs/ROUTE_CONVERSION_20261119.md)。不再把完整逆向拆解 Transformer 作为前置条件；DNA／蛋白质仅为软件类比。已有实验保留为诊断，转换学习与完整架构仍待实现和验证。
 

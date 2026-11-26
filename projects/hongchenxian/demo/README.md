@@ -1,5 +1,7 @@
 # Hongchenxian: a four-stage Agent demo / 红尘仙四阶段演示
 
+**Extensions and theory:** [DLC 01–03 (English)](DLC.en.md) · [前三个 DLC（中文）](DLC.zh.md) · Stage 5 / DLC 04 theory [English](STAGE5.en.md) · [中文](STAGE5.zh.md)
+
 **Run it in under a minute.** Python 3.10 or newer. No dependencies to install, API key, model, game, or network connection needed after checkout.
 
 ```text
