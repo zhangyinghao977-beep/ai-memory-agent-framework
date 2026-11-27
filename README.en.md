@@ -1,5 +1,7 @@
 # The Abyss and Hongchenxian / 深渊与红尘仙
 
+**Architecture comparison:** [Hongchenxian and Claude: from remembering progress to resuming execution](docs/CLAUDE_ARCHITECTURE_COMPARISON_20261127.en.md).
+
 **Latest research note:** [Event chains: pause, handle the interruption, and resume](docs/EVENT_CHAIN_REFLEX_20261126.en.md) · [Standalone prototype repository](https://github.com/zhangyinghao977-beep/hongchenxian-prototype).
 
 **Runnable demo:** [Hongchenxian in four stages](projects/hongchenxian/demo/README.md). A Python standard-library walkthrough of memory, FSM retrieval, reflexes and event-chain handoff. **Extensions:** [DLC 01–03](projects/hongchenxian/demo/DLC.en.md) · [Stage 5 / DLC 04 theory](projects/hongchenxian/demo/STAGE5.en.md).

@@ -1,5 +1,7 @@
 # 深渊与红尘仙 / The Abyss and Hongchenxian
 
+**架构对照：** [红尘仙与 Claude：从记住进度到接着执行](docs/CLAUDE_ARCHITECTURE_COMPARISON_20261127.zh.md)。
+
 **最新研究补充：** [事件链：暂停、反射、接着做](docs/EVENT_CHAIN_REFLEX_20261126.zh.md) · [独立原型仓库](https://github.com/zhangyinghao977-beep/hongchenxian-prototype)。
 
 **可运行演示：** [红尘仙四阶段公开原型](projects/hongchenxian/demo/README.md)。Python 标准库即可运行；用合成场景演示记忆、FSM 检索、反射和事件链交班。 **扩展：** [前三个 DLC](projects/hongchenxian/demo/DLC.zh.md) · [阶段 5／DLC 04 理论](projects/hongchenxian/demo/STAGE5.zh.md)。
